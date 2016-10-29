@@ -6,3 +6,21 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto inglés";
+
+/*Menu*/
+"menu_home" = "";
+"menu_como_llegar" = "";
+"menu_castro" = "";
+"menu_reconstrucion" = "";
+"menu_lugares" = "";
+"menu_bibliografía" = "";
+"menu_ajustes" = "";
+"menu_creditos" = "";
+
+/*Home*/
+
+"title_logo" = "C";
+"sub_title_logo" = "";
+"btn_como_llegar" = "";
+"btn_como_castro" = "";
+"btn_como_lugares" = "";

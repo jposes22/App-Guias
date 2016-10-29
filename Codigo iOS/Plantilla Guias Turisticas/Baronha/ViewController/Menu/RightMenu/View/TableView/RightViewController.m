@@ -46,23 +46,23 @@
 }
 -(void) loadListElementsMenu{
     _listElementsMenu = [[NSMutableArray alloc] init];
-    //cargamos el menú interior de la app
-    MenuObject * homeMenu = [[MenuObject alloc] initWithTitle:@"Home" iconRow:nil idElementMenu:SideDrawerMenuItemHome];
-    MenuObject * torresMenu = [[MenuObject alloc] initWithTitle:@"Torres do Oeste" iconRow:nil idElementMenu:SideDrawerMenuItemTorres];
-    MenuObject * romeriaMenu = [[MenuObject alloc] initWithTitle:@"Romería" iconRow:nil idElementMenu:SideDrawerMenuItemRomeria];
-    MenuObject * poiMenu = [[MenuObject alloc] initWithTitle:@"Lugares de interés" iconRow:nil idElementMenu:SideDrawerMenuItemPoi];
-    MenuObject * comoLlegarMenu = [[MenuObject alloc] initWithTitle:@"Como llegar" iconRow:nil idElementMenu:SideDrawerMenuItemComoLlegar];
-    MenuObject * galeriaMenu = [[MenuObject alloc] initWithTitle:@"Galeria" iconRow:nil idElementMenu:SideDrawerMenuItemGaleria];
-    MenuObject * informacionMenu = [[MenuObject alloc] initWithTitle:@"Información" iconRow:nil idElementMenu:SideDrawerMenuItemInformacion];
-    MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:@"Referencias bibliograficas" iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
-    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:@"Copyright" iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
-    MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:@"Ajustes" iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
+    //cargamos el menú interior de la app/*Menu*/
+    MenuObject * homeMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_home", nil) iconRow:nil idElementMenu:SideDrawerMenuItemHome];
+    MenuObject * torresMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_castro", nil) iconRow:nil idElementMenu:SideDrawerMenuItemTorres];
+    //MenuObject * romeriaMenu = [[MenuObject alloc] initWithTitle:@"Romería" iconRow:nil idElementMenu:SideDrawerMenuItemRomeria];
+    MenuObject * poiMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_lugares", nil) iconRow:nil idElementMenu:SideDrawerMenuItemPoi];
+    MenuObject * comoLlegarMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_como_llegar", nil) iconRow:nil idElementMenu:SideDrawerMenuItemComoLlegar];
+    //MenuObject * galeriaMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_", nil)iconRow:nil idElementMenu:SideDrawerMenuItemGaleria];
+    //MenuObject * informacionMenu = [[MenuObject alloc] initWithTitle:@"Información" iconRow:nil idElementMenu:SideDrawerMenuItemInformacion];
+    MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_bibliografía", nil) iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
+    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_creditos", nil) iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
+    MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_ajustes", nil)iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
+    MenuObject * reconstruccion3D = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_reconstrucion", nil)iconRow:nil idElementMenu:SideDrawerMenuReconstruccion3D];
     
     //creamos un dicionario provisional para buscar los elementos que vienen del servidor y enlazarlos si están activos y ponerlos en el menú si coinciden
-    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, romeriaMenu, poiMenu,comoLlegarMenu,galeriaMenu,informacionMenu,referenciasMenu,copyrightMenu,ajustesMenu] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemTorres),@(SideDrawerMenuItemRomeria),@(SideDrawerMenuItemPoi),@(   SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemGaleria),@(SideDrawerMenuItemInformacion),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
+    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, poiMenu,comoLlegarMenu,referenciasMenu,copyrightMenu,ajustesMenu,reconstruccion3D] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemTorres),@(SideDrawerMenuItemPoi),@(SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes),@(SideDrawerMenuReconstruccion3D)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
     NSArray *listItemsMenu = [MenuDAO getMenuItems];
     for (Menu *item in listItemsMenu) {
-    
         if([dictionaryItemsMenu objectForKey:@(item.codeMenu)]){
             [_listElementsMenu addObject:[dictionaryItemsMenu objectForKey:@(item.codeMenu)]];
         }

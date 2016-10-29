@@ -6,3 +6,20 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto español";
+/*Menu*/
+"menu_home" = "INICIO";
+"menu_como_llegar" = "COMO LLEGAR";
+"menu_castro" = "CASTRO BAROÑA";
+"menu_reconstrucion" = "RECONSTRUCCIÓN 3D";
+"menu_lugares" = "LUGARES DE INTERÉS";
+"menu_bibliografía" = "BIBLIOGRAFÍA";
+"menu_ajustes" = "AJUSTES";
+"menu_creditos" = "CRÉDITOS";
+
+/*Home*/
+
+"title_logo" = "CASTRO DE BAROÑA";
+"sub_title_logo" = "Comienza la visita";
+"btn_como_llegar" = "Como llegar";
+"btn_como_castro" = "Castro de Baroña";
+"btn_como_lugares" = "Lugares de interés";

@@ -1,15 +1,16 @@
 //
-//  UtilsAppearance.m
-//  TorresDeOeste
+//  StylesBaronha.m
+//  Plantilla Guias Turisticas
 //
-//  Created by Evelb on 8/10/16.
+//  Created by Jose Pose on 29/10/16.
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "UtilsAppearance.h"
 #import "StylesBaronha.h"
 
-@implementation UtilsAppearance
+@implementation StylesBaronha
+
+
 +(UIColor * )getPrimaryColor{
     return [UIColor colorWithRed:51.0/255.0 green:157.0/255.0 blue:182.0/255.0 alpha:1.0];
 }
@@ -17,7 +18,7 @@
     return [UIColor colorWithRed:25.0/255.0 green:187.0/255.0 blue:216.0/255.0 alpha:1.0];
 }
 +(UIColor * )getSecondaryColor{
-    return [StylesBaronha getPrimaryLightColor];
+    return [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
 }
 
 +(UIColor * )getThirdColor{
@@ -27,21 +28,26 @@
 
 + (void)setStyleTitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Santana" size:30]];
-    label.textColor = [UtilsAppearance getPrimaryColor];
+    label.textColor = [StylesBaronha getPrimaryColor];
+    
+}
++ (void)setStyleTitleWhite:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Santana" size:25]];
+    label.textColor = [UIColor whiteColor];
     
 }
 + (void)setSytleSubtitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Santana" size:20]];
-
+    
 }
 + (void)setStyleText:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:15]];
-
+    
     
 }
 + (void)setStyleTextBold:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Bold" size:12]];
-
+    
     
 }
 + (void)setStyleButtonText:(UIButton *) button{
@@ -49,17 +55,17 @@
 }
 + (void)setStyleTitleList:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:20]];
-    label.textColor = [UtilsAppearance getPrimaryColor];
-
+    label.textColor = [StylesBaronha getPrimaryColor];
+    
 }
 + (void)setSytleSubtitleList:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:15]];
-
+    
     
 }
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"CaviarDreams-Bold" size:12]];
-
+    
     
 }
 
@@ -77,7 +83,7 @@
     //navigationBar.barTintColor = [UIColor whiteColor];
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
     [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];
-    [attString addAttribute:NSForegroundColorAttributeName value:[UtilsAppearance getPrimaryColor] range:rangeText];
+    [attString addAttribute:NSForegroundColorAttributeName value:[StylesBaronha getPrimaryColor] range:rangeText];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(81, 11, 300, 44)];
     label.attributedText = attString;
     [label sizeToFit];

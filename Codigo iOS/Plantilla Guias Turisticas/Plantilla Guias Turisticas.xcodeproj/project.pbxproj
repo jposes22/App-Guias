@@ -16,7 +16,6 @@
 		8295EBBC1DC4A4CC0049FB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295EBBA1DC4A4CC0049FB7D /* LaunchScreen.storyboard */; };
 		8295EC071DC4A8650049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC061DC4A8640049FB7D /* main.m */; };
 		8295EC0A1DC4A8650049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC091DC4A8650049FB7D /* AppDelegate.m */; };
-		8295EC0D1DC4A8650049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC0C1DC4A8650049FB7D /* ViewController.m */; };
 		8295EC121DC4A8650049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295EC111DC4A8650049FB7D /* Assets.xcassets */; };
 		8295EC151DC4A8650049FB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295EC131DC4A8650049FB7D /* LaunchScreen.storyboard */; };
 		8295EC221DC4A8710049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC211DC4A8710049FB7D /* main.m */; };
@@ -386,8 +385,6 @@
 		8295EC061DC4A8640049FB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8295EC081DC4A8650049FB7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8295EC091DC4A8650049FB7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8295EC0B1DC4A8650049FB7D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8295EC0C1DC4A8650049FB7D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8295EC111DC4A8650049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8295EC141DC4A8650049FB7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8295EC161DC4A8650049FB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -730,8 +727,6 @@
 				8295EE671DC4AF5C0049FB7D /* ViewController */,
 				8295EC081DC4A8650049FB7D /* AppDelegate.h */,
 				8295EC091DC4A8650049FB7D /* AppDelegate.m */,
-				8295EC0B1DC4A8650049FB7D /* ViewController.h */,
-				8295EC0C1DC4A8650049FB7D /* ViewController.m */,
 				8295EC111DC4A8650049FB7D /* Assets.xcassets */,
 				8295EC131DC4A8650049FB7D /* LaunchScreen.storyboard */,
 				8295EC161DC4A8650049FB7D /* Info.plist */,
@@ -2204,7 +2199,6 @@
 				8295EF681DC4B3440049FB7D /* RemoteGuiaDetalle.m in Sources */,
 				8295EF7F1DC4B3630049FB7D /* GenericResponse.m in Sources */,
 				8295EF941DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
-				8295EC0D1DC4A8650049FB7D /* ViewController.m in Sources */,
 				8295EF081DC4B0600049FB7D /* ListPoiViewController.m in Sources */,
 				8295EF0C1DC4B0600049FB7D /* ReferenciasViewController.m in Sources */,
 				8295EF971DC4B37C0049FB7D /* RemoteMenuVO.m in Sources */,
@@ -2641,13 +2635,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.evelb.Torres-Oeste";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.TorresOeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2660,13 +2654,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.evelb.Torres-Oeste";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.TorresOeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

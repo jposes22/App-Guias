@@ -1,18 +1,16 @@
 //
-//  CollectionController.m
-//  TorresDeOeste
+//  CollectionVisitaController.m
+//  Plantilla Guias Turisticas
 //
-//  Created by Evelb on 15/10/16.
+//  Created by Evelb on 29/10/16.
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "CollectionController.h"
-#import "CellGuiaCollectionView.h"
+#import "CollectionVisitaController.h"
+#import "CellVisitaCollectionView.h"
 #import "Guia+CoreDataProperties.h"
-#import "UtilsAppearance.h"
-
-@implementation CollectionController
-#pragma mark - Collection View Data Sources
+#import "StyleBorneiro.h"
+@implementation CollectionVisitaController
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -22,17 +20,15 @@
 // The cell that is returned must be retrieved from a call to - dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CellGuiaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellVisitaCollectionView" forIndexPath:indexPath];
-    cell.labelTitle.text =((Guia *)[_listOfGuides objectAtIndex:indexPath.row]).titulo;
-    [UtilsAppearance setStyleTextBold:cell.labelTitle];
-    cell.labelTitle.textColor = [UIColor whiteColor];
+    CellVisitaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellVisitaCollectionView" forIndexPath:indexPath];
+    cell.imageViewIndex.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagen_visita_%lu",indexPath.row]];
     if(_pageSelected == indexPath.row){
-        cell.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+        cell.backgroundColor = [StyleBorneiro getVerdeOscuroVisita];
         [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
-
+        
     }else{
-        cell.backgroundColor = [UtilsAppearance getPrimaryColor];
-
+        cell.imageViewIndex.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagen_visita_off"]];
+        
     }
     return cell;
 }
@@ -42,4 +38,5 @@
         
     }
 }
+
 @end

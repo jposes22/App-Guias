@@ -14,12 +14,12 @@
 #import "GuiaDAO.h"
 #import "UtilsAppearance.h"
 #import "GuiaList.h"
-#import "GuiaDetalleTableController.h"
-@interface RomeriaViewController ()<CommnicationMenu, CommunicationTableController>
+#import "DetalleVisitaTableController.h"
+@interface RomeriaViewController ()<CommnicationMenu, CommunicationVisitaTableController>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
-@property (nonatomic, strong) GuiaDetalleTableController * tableController;
+@property (nonatomic, strong) DetalleVisitaTableController * tableController;
 
 @end
 
@@ -41,7 +41,7 @@
     return UIStatusBarStyleLightContent;
 }
 -(void)loadController{
-    _tableController = [[GuiaDetalleTableController alloc] init];
+    _tableController = [[DetalleVisitaTableController alloc] init];
     _tableController.listOfDetalleGuia = _guia.listOfGuiaDetalle;
     _tableController.guia = _guia;
     _tableView.delegate = _tableController;

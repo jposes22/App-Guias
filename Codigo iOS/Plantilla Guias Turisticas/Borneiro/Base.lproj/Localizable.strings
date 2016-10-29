@@ -6,3 +6,15 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto español";
+//Menu
+"menu_como_llegar" = "Cómo llegar";
+"menu_visita" = "Visita";
+
+
+
+//Home
+"btn_home_comollegar" = "Cómo llegar";
+"btn_home_ciudad" = "A Cidá de Borneiro";
+"btn_home_visita" = "Comenzar visita";
+"btn_home_cultura" = "Cultura Castreña";
+"btn_home_sitios" = "Sitios de interés";

@@ -1,42 +1,70 @@
 //
-//  UtilsAppearance.m
-//  TorresDeOeste
+//  StyleBorneiro.m
+//  Plantilla Guias Turisticas
 //
-//  Created by Evelb on 8/10/16.
+//  Created by Evelb on 29/10/16.
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 
-@implementation UtilsAppearance
+@implementation StyleBorneiro
+
++(UIColor * )getVerdeClaroComoLlegar{
+    return [UIColor colorWithRed:194.0/255.0 green:221.0/255.0 blue:189.0/255.0 alpha:1.0];
+}
++(UIColor * )getVerdeOscuroComoLlegar{
+    return [UIColor colorWithRed:161.0/255.0 green:182.0/255.0 blue:156.0/255.0 alpha:1.0];
+}
++ (UIColor *) getVerdeClaroVisita{
+    return [UIColor colorWithRed:217.0/255.0 green:225.0/255.0 blue:164.0/255.0 alpha:1.0];
+}
++ (UIColor *) getVerdeOscuroVisita{
+    return [UIColor colorWithRed:181.0/255.0 green:186.0/255.0 blue:138.0/255.0 alpha:1.0];
+
+}
 +(UIColor * )getPrimaryColor{
     return [UIColor colorWithRed:20.0/255.0 green:151.0/255.0 blue:173.0/255.0 alpha:1.0];
 }
+
+
 +(UIColor * )getPrimaryDarkColor{
     return [UIColor colorWithRed:9.0/255.0 green:79.0/255.0 blue:107.0/255.0 alpha:1.0];
 }
-+(UIColor * )getSecondaryColor{
-    return [UIColor colorWithRed:41.0/255.0 green:91.0/255.0 blue:95.0/255.0 alpha:1.0];
+
+
++(UIColor * )getColorText{
+    return [UIColor colorWithRed:91.0/255.0 green:91.0/255.0 blue:91.0/255.0 alpha:1.0];
 }
 
 
-+ (void)setStyleTitle:(UILabel *) label{
+
++(void)setStyleTitle:(UILabel *)label{
+    
+}
+
++ (void)setStyleTitleComoLlegar:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
-    label.textColor = [UtilsAppearance getPrimaryColor];
+    label.textColor = [StyleBorneiro getVerdeClaroComoLlegar];
+    
+}
++ (void)setStyleTitleVisita:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
+    label.textColor = [StyleBorneiro getVerdeOscuroVisita];
     
 }
 + (void)setSytleSubtitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
-
+    
 }
 + (void)setStyleText:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:15]];
+    label.textColor = [StyleBorneiro getColorText];
 
-    
 }
 + (void)setStyleTextBold:(UILabel *) label{
-    [label setFont:[UIFont fontWithName:@"Giorgio" size:12]];
-
+    [label setFont:[UIFont fontWithName:@"OpenSans-Bold" size:12]];
+    
     
 }
 + (void)setStyleButtonText:(UIButton *) button{
@@ -44,17 +72,17 @@
 }
 + (void)setStyleTitleList:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:20]];
-    label.textColor = [UtilsAppearance getPrimaryColor];
-
+    label.textColor = [StyleBorneiro getPrimaryColor];
+    
 }
 + (void)setSytleSubtitleList:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:15]];
-
+    
     
 }
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:12]];
-
+    
     
 }
 
@@ -66,13 +94,13 @@
     view.layer.masksToBounds = NO;
     view.layer.shadowRadius = 1.0f;
 }
-+ (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
++ (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title backgroundColor:(UIColor *)background{
     navigationBar.translucent = NO;
     NSRange rangeText= NSMakeRange(0, title.length);
-    //navigationBar.barTintColor = [UIColor whiteColor];
+    navigationBar.barTintColor = background;
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
-    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];
-    [attString addAttribute:NSForegroundColorAttributeName value:[UtilsAppearance getPrimaryColor] range:rangeText];
+    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Giorgio" size:20] range:rangeText];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:rangeText];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(81, 11, 300, 44)];
     label.attributedText = attString;
     [label sizeToFit];

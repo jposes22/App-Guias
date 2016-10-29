@@ -9,7 +9,7 @@
 #import "HomeBorneiroViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 #import "Constants.h"
 @interface HomeBorneiroViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imagenBackground;
@@ -50,15 +50,32 @@
 #pragma mark - load data
 -(void)loadData{
     [_imagenBackground setContentMode:UIViewContentModeScaleAspectFill];
-
+    [_imagenBackground setImage:[UIImage imageNamed:@"fondo"]];
+    _labelComoLlegar.text = NSLocalizedString(@"btn_home_comollegar", nil);
+    _labelCiudad.text = NSLocalizedString(@"btn_home_ciudad", nil);
+    _labelVisita.text = NSLocalizedString(@"btn_home_visita", nil);
+    _labelCultura.text = NSLocalizedString(@"btn_home_cultura", nil);
+    _labelSitios.text = NSLocalizedString(@"btn_home_sitios", nil);
+    
    
 }
 -(void)loadStyle{
     self.labelComoLlegar.adjustsFontSizeToFitWidth = YES;
+    [StyleBorneiro setStyleSubtitleMoreInfo:_labelComoLlegar];
+    self.labelComoLlegar.textColor = [UIColor whiteColor];
     self.labelCiudad.adjustsFontSizeToFitWidth = YES;
+    [StyleBorneiro setStyleSubtitleMoreInfo:_labelCiudad];
+    self.labelCiudad.textColor = [UIColor whiteColor];
     self.labelSitios.adjustsFontSizeToFitWidth = YES;
+    [StyleBorneiro setStyleSubtitleMoreInfo:_labelSitios];
+    self.labelSitios.textColor = [UIColor whiteColor];
     self.labelVisita.adjustsFontSizeToFitWidth = YES;
+    [StyleBorneiro setStyleSubtitleMoreInfo:_labelVisita];
+    self.labelVisita.textColor = [UIColor whiteColor];
     self.labelCultura.adjustsFontSizeToFitWidth = YES;
+    [StyleBorneiro setStyleSubtitleMoreInfo:_labelCultura];
+    self.labelCultura.textColor = [UIColor whiteColor];
+    
     
     UITapGestureRecognizer * gestureComollegar =  [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapComoLlegar:)];
     gestureComollegar.numberOfTapsRequired = 1;

@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "ParametrosDAO.h"
 #import "ParametrosApp+CoreDataClass.h"
+#import "ConstantsURL.h"
 
 @implementation ParametrosRepositorio
 //function to save constantes in BD before do nothing in app

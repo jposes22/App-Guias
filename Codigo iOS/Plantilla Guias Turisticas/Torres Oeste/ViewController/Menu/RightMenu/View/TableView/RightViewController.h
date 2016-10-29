@@ -9,9 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 @protocol RightMenuComunication <NSObject>
-
-
-
 @optional
 -(void) changeCenterViewControllerWithMenu:(SideDrawerMenuItem) SideDrawerMenuSelected;
 

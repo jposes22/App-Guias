@@ -32,7 +32,6 @@ NSString *k_URL_UPDATE_SERVICE = @"URL_SERVICIO_ACTUALIZACION";
 
 ///URL
 
-NSString * const kURL_SERVICE = @"http://95.123.56.172:8080/TORRES_OESTE/rest";
 
 NSString *const kURL_GET_PARAMETROS = @"WSParametros/getParametros";
 NSString *const kURL_GET_MENU = @"WSMenu/getMenu";

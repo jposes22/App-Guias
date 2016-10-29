@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="customCellIdentify" rowHeight="63" id="KGk-i7-Jjw" customClass="CustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="533" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="533" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmC-ZR-GC2">
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iMK-Yr-CCe">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="Igl-zL-q7I"/>
+                            <constraint firstAttribute="height" constant="29" id="pdv-qB-wp3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LmC-ZR-GC2" firstAttribute="centerY" secondItem="iMK-Yr-CCe" secondAttribute="centerY" id="0l0-ee-GpU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LmC-ZR-GC2" secondAttribute="bottom" constant="13" id="4Qs-Iy-JlH"/>
+                    <constraint firstItem="iMK-Yr-CCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="6eX-nL-ga1"/>
+                    <constraint firstItem="LmC-ZR-GC2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="HWg-IZ-nsW"/>
+                    <constraint firstItem="iMK-Yr-CCe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="Iuv-qC-cUZ"/>
+                    <constraint firstItem="LmC-ZR-GC2" firstAttribute="leading" secondItem="iMK-Yr-CCe" secondAttribute="trailing" constant="8" id="KND-yl-HDX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iMK-Yr-CCe" secondAttribute="bottom" constant="11" id="SCP-pI-t8d"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="iMK-Yr-CCe" secondAttribute="leading" id="SIp-W1-aoB"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LmC-ZR-GC2" secondAttribute="trailing" id="euJ-2l-vOx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iMK-Yr-CCe" secondAttribute="bottom" constant="14" id="mdq-wC-92S"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iMK-Yr-CCe" secondAttribute="bottom" constant="9" id="nGV-eX-1Iv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iMK-Yr-CCe" secondAttribute="bottom" constant="2" id="pwg-Q6-mZZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iMK-Yr-CCe" secondAttribute="bottom" constant="20" id="xWp-2T-0lT"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Iuv-qC-cUZ"/>
+                        <exclude reference="SCP-pI-t8d"/>
+                        <exclude reference="mdq-wC-92S"/>
+                        <exclude reference="nGV-eX-1Iv"/>
+                        <exclude reference="pwg-Q6-mZZ"/>
+                        <exclude reference="xWp-2T-0lT"/>
+                        <exclude reference="0l0-ee-GpU"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageViewIcon" destination="iMK-Yr-CCe" id="hFB-TT-3de"/>
+                <outlet property="labelTitle" destination="LmC-ZR-GC2" id="c96-Gw-44A"/>
+            </connections>
+            <point key="canvasLocation" x="384.5" y="196.5"/>
+        </tableViewCell>
+    </objects>
+</document>

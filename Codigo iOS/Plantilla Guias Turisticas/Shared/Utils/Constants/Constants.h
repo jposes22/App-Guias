@@ -27,7 +27,6 @@ extern NSString * k_URL_UPDATE_SERVICE;
 
 //* URL*/
 
-extern NSString *const kURL_SERVICE;
 extern NSString *const kURL_GET_PARAMETROS;
 extern NSString *const kURL_GET_MENU;
 extern NSString *const kURL_GET_IDIOMA;

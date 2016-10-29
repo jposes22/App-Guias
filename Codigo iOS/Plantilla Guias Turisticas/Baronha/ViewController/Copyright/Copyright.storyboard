@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Copyright View Controller-->
+        <scene sceneID="HjT-e7-Egf">
+            <objects>
+                <viewController id="b5o-yp-lUb" customClass="CopyrightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="06F-SS-x5w"/>
+                        <viewControllerLayoutGuide type="bottom" id="lmB-tN-RF6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jzl-Xr-JY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lTs-5e-iuk">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lTs-5e-iuk" firstAttribute="leading" secondItem="Jzl-Xr-JY9" secondAttribute="leading" constant="20" id="Aaa-hj-1EU"/>
+                            <constraint firstItem="lTs-5e-iuk" firstAttribute="top" secondItem="06F-SS-x5w" secondAttribute="bottom" id="Ef1-pr-eIb"/>
+                            <constraint firstItem="lmB-tN-RF6" firstAttribute="top" secondItem="lTs-5e-iuk" secondAttribute="bottom" id="kD2-5W-nyx"/>
+                            <constraint firstAttribute="trailing" secondItem="lTs-5e-iuk" secondAttribute="trailing" constant="20" id="mLz-Oq-mCq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uuw-1r-beX">
+                        <barButtonItem key="rightBarButtonItem" image="btnMenu" id="Ujk-CQ-lwC">
+                            <color key="tintColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnMenuTouch:" destination="b5o-yp-lUb" id="pYk-Dn-WtT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="lTs-5e-iuk" id="M2a-6x-EyA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8X-mY-XYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1143.2" y="226.23688155922042"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kai-Gn-WGW">
+            <objects>
+                <navigationController storyboardIdentifier="CopyrightNC" automaticallyAdjustsScrollViewInsets="NO" id="S4a-D0-TgK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ON5-sP-lv4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b5o-yp-lUb" kind="relationship" relationship="rootViewController" id="JiZ-Fr-ZZH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FuV-mh-a2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="226.23688155922042"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnMenu" width="60" height="60"/>
+    </resources>
+</document>

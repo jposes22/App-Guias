@@ -30,6 +30,7 @@
     // Do any additional setup after loading the view.
     [self loadData];
     [self loadStyle];
+    NSString *aux = NSLocalizedString(@"aux", nil);
 }
 
 - (void)didReceiveMemoryWarning {

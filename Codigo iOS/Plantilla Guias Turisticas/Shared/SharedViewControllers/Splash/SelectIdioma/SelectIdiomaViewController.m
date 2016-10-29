@@ -13,6 +13,7 @@
 #import "UtilsAppearance.h"
 
 #import "IdiomaDAO.h"
+#import "NSBundle.h"
 
 @interface SelectIdiomaViewController ()<CommunicationControllerIdioma>
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
@@ -84,6 +85,7 @@
     //Guardamos el idioma seleccionado
     [[Settings sharedInstance] setIdioma: _idioma.codigoIdioma];
     [[Settings sharedInstance] saveSettings];
+    [NSBundle setLanguage:_idioma.codigoIdioma];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"NOTIFICATION_IDIOMA_ELEGIDO" object:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

@@ -131,7 +131,7 @@
 
 #pragma mark - UtilsAppearance
 -(void) loadAppearanceTableView{
-    self.tableView.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+    self.tableView.backgroundColor = [UtilsAppearance getPrimaryLightColor];
     /*self.view.backgroundColor = [UtilsAppearance getColorDarkApp];*/
     [self.tableView setShowsVerticalScrollIndicator:NO];
 }

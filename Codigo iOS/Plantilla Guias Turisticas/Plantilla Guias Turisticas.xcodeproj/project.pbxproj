@@ -471,6 +471,7 @@
 		8295F1B61DC4D6BA0049FB7D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1A91DC4D6BA0049FB7D /* OpenSans-Semibold.ttf */; };
 		8295F1B71DC4D6BA0049FB7D /* ConstantsURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1AD1DC4D6BA0049FB7D /* ConstantsURL.m */; };
 		8295F1B81DC4D6BA0049FB7D /* UtilsAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1B01DC4D6BA0049FB7D /* UtilsAppearance.m */; };
+		8295F1B91DC4EB5F0049FB7D /* UtilsAppearance.h in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1951DC4C1670049FB7D /* UtilsAppearance.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3592,6 +3593,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8295F1B91DC4EB5F0049FB7D /* UtilsAppearance.h in Sources */,
 				8295EF491DC4B3120049FB7D /* GuiaDetalleDAO.m in Sources */,
 				8295EF801DC4B3630049FB7D /* GenericResponse.m in Sources */,
 				8295EFE21DC4B3AE0049FB7D /* Idioma+CoreDataProperties.m in Sources */,
@@ -3970,6 +3972,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C2DFB5B655EA1E5B7132D33 /* Pods-Torres Oeste.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
@@ -3989,6 +3992,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8F331FC903374EC1D8BEF67 /* Pods-Torres Oeste.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
@@ -4008,6 +4012,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0A6EACF229557F2EE8832CE8 /* Pods-Baronha.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = Baronha/Info.plist;
@@ -4027,6 +4032,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 25DF257C251E887DDAF0CB8D /* Pods-Baronha.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = Baronha/Info.plist;
@@ -4046,6 +4052,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44F1CF3822CA23EAF81D1340 /* Pods-Borneiro.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = Borneiro/Info.plist;
@@ -4061,6 +4068,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BA4643B780218C3C6B554CD /* Pods-Borneiro.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VCX786VPWN;
 				INFOPLIST_FILE = Borneiro/Info.plist;

@@ -31,10 +31,10 @@
     _labelTitle.text = title;
     
     [_btnMenu setBackgroundImage:[UIImage imageNamed:@"btnMenu"] forState:UIControlStateNormal];
-    [_btnMenu setTintColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_btnMenu setTintColor:[UtilsAppearance getSecondaryColor]];
     _imageView.clipsToBounds = YES;
     [_imageView setImage:[UIImage imageNamed:@"triangulo_barra"]];
-    [_viewBottom setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewBottom setBackgroundColor:[UtilsAppearance getSecondaryColor]];
     
     
 }

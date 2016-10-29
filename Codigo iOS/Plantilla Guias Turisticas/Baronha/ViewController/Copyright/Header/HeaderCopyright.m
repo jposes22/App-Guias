@@ -18,7 +18,7 @@
 - (void) loadData:(NSString *)titulo{
     _labelTitulo.text = titulo;
     [UtilsAppearance setStyleTitle:_labelTitulo];
-    _labelTitulo.textColor = [UtilsAppearance getPrimaryDarkColor];
+    _labelTitulo.textColor = [UtilsAppearance getSecondaryColor];
 }
 
 /*

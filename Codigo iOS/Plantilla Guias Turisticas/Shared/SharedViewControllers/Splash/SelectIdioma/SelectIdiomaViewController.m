@@ -51,7 +51,7 @@
 - (void)loadStyle{
     [UtilsAppearance setStyleTextBold:_labelTitulo];
     [UtilsAppearance setStyleButtonText:_btnConfirmar];
-    [_btnConfirmar setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_btnConfirmar setBackgroundColor:[UtilsAppearance getSecondaryColor]];
     [_btnConfirmar.layer setCornerRadius:8.0];
 }
 - (void)loadController{

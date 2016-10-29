@@ -1,0 +1,134 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:lang="http://www.springframework.org/schema/lang"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<mvc:annotation-driven />
+	<mvc:default-servlet-handler/>
+	
+<!-- Paquete a partir del cual empeiza a escanear las anotaciones -->
+	<context:component-scan base-package="es.server.java.borneiro.*" />
+		
+	<!-- Datasources Configuration -->
+	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+		<!--<property name="jndiName" value="java:comp/env/jdbc/BARONHA" /> -->
+		  <property name="jndiName" value="java:comp/env/jdbc/BORNEIRO" />
+		<!--<property name="jndiName" value="java:comp/env/jdbc/TORRES_OESTE" /> -->
+		<property name="cache" value="false" />
+		<property name="proxyInterface" value="javax.sql.DataSource" />
+	</bean>
+	
+	<bean id="sessionFactoryBorneiro"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- Option autocreate disable to production -->
+				 <prop key="hibernate.hbm2ddl.auto">update</prop> 
+			<!--	<prop key="hibernate.hbm2ddl.auto">validate</prop> -->
+			</props>
+		</property>
+		<property name="packagesToScan" value="es.server.java.borneiro.model.vo" />	
+			
+		</bean>		
+			
+
+		<!-- bean con el session factory -->
+	
+	<bean id="TransactionManagerCiudadania" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+		<qualifier value="Ciudadania" />
+	</bean>
+	
+	<!-- Gestor de transsacionesS -->
+	
+		<tx:annotation-driven transaction-manager="TransactionManagerCiudadania" />
+	
+	<!-- Servicios -->
+	
+	<bean id="NovedadesService"
+		class="es.server.java.borneiro.service.novedades.impl.NovedadesServiceImpl">
+	</bean>
+	<bean id="ParametrosAPPService"
+		class="es.server.java.borneiro.service.parametros_app.impl.ParametrosAPPServiceImpl">
+	</bean>
+	<bean id="MenuService"
+		class="es.server.java.borneiro.service.menu.impl.MenuServiceImpl">
+	</bean>
+	<bean id="IdiomaAPPService"
+		class="es.server.java.borneiro.service.idioma_app.impl.IdiomaAPPServiceImpl">
+	</bean>
+	<bean id="POIService"
+		class="es.server.java.borneiro.service.poi.impl.POIServiceImpl">
+	</bean>
+	<bean id="GuiaService"
+		class="es.server.java.borneiro.service.guia.impl.GuiaServiceImpl">
+	</bean>
+	
+	
+
+	<!-- DAOS -->	
+	<bean id="NovedadesDAO"
+		class="es.server.java.borneiro.model.novedades.impl.NovedadesDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="ParametrosAPPDAO"
+		class="es.server.java.borneiro.model.parametros_app.impl.ParametrosAPPDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="MenuDAO"
+		class="es.server.java.borneiro.model.menu.impl.MenuDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="IdiomaAPPDAO"
+		class="es.server.java.borneiro.model.idioma_app.impl.IdiomaAPPDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="POIDAO"
+		class="es.server.java.borneiro.model.poi.impl.POIDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="GuiaDAO"
+		class="es.server.java.borneiro.model.guia.impl.GuiaDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="GuiaDetalleDAO"
+		class="es.server.java.borneiro.model.guia.impl.GuiaDetalleDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="GuiaSaberMasDAO"
+		class="es.server.java.borneiro.model.guia.impl.GuiaSaberMasDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+	<bean id="GuiaSaberMasDetalleDAO"
+		class="es.server.java.borneiro.model.guia.impl.GuiaSaberMasDetalleDAOImpl">
+		<property name="sessionFactory" ref="sessionFactoryBorneiro" />
+	</bean>
+
+	
+
+		
+<!-- Recursos -->
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/css/**" location="/css/" />
+
+</beans>

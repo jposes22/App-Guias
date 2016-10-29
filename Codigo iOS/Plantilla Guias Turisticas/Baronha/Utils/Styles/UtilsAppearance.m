@@ -7,6 +7,7 @@
 //
 
 #import "UtilsAppearance.h"
+#import "StylesBaronha.h"
 
 @implementation UtilsAppearance
 +(UIColor * )getPrimaryColor{
@@ -16,7 +17,7 @@
     return [UIColor colorWithRed:25.0/255.0 green:187.0/255.0 blue:216.0/255.0 alpha:1.0];
 }
 +(UIColor * )getSecondaryColor{
-    return [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
+    return [StylesBaronha getPrimaryLightColor];
 }
 
 +(UIColor * )getThirdColor{

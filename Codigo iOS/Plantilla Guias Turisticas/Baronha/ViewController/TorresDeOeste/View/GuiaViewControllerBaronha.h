@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GuiaViewController : UIViewController
+@interface GuiaViewControllerBaronha : UIViewController
 
 @end

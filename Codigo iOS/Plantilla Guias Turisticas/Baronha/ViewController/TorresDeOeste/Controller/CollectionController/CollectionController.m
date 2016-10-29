@@ -9,7 +9,7 @@
 #import "CollectionController.h"
 #import "CellGuiaCollectionView.h"
 #import "Guia+CoreDataProperties.h"
-#import "UtilsAppearance.h"
+#import "StylesBaronha.h"
 
 @implementation CollectionController
 #pragma mark - Collection View Data Sources
@@ -24,14 +24,15 @@
 {
     CellGuiaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellGuiaCollectionView" forIndexPath:indexPath];
     cell.labelTitle.text =((Guia *)[_listOfGuides objectAtIndex:indexPath.row]).titulo;
-    [UtilsAppearance setStyleTextBold:cell.labelTitle];
-    cell.labelTitle.textColor = [UIColor whiteColor];
+    [StylesBaronha setSytleSubtitle:cell.labelTitle];
+    cell.labelTitle.textColor = [StylesBaronha getPrimaryColor];
     if(_pageSelected == indexPath.row){
-        cell.backgroundColor = [UtilsAppearance getSecondaryColor];
+        cell.backgroundColor = [StylesBaronha getSecondaryColor];
         [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 
     }else{
-        cell.backgroundColor = [UtilsAppearance getPrimaryColor];
+        cell.backgroundColor = [UIColor whiteColor];
+        
 
     }
     return cell;

@@ -6,24 +6,28 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "HomeViewControllerBaronha.h"
 #import "UIViewController+MMDrawerController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
-#import "UtilsAppearance.h"
+#import "StylesBaronha.h"
 #import "Constants.h"
 
 
-@interface HomeViewController ()
+@interface HomeViewControllerBaronha ()
+
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblSubTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewMenu;
+
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (weak, nonatomic) IBOutlet UIButton *btnComoLlegar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTorresOeste;
-@property (weak, nonatomic) IBOutlet UIButton *btnRomeria;
 @property (weak, nonatomic) IBOutlet UIButton *btnLugaresInteres;
 
 
 @end
 
-@implementation HomeViewController
+@implementation HomeViewControllerBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,31 +56,29 @@
 //TODO: Cambiar ruta imagene background 
 #pragma mark - load data
 -(void)loadData{
-    [_backgroundImage setContentMode:UIViewContentModeScaleAspectFill];
-    NSArray * listOfImage =[[NSArray alloc] initWithObjects:[UIImage imageNamed:@"slide_image1"],[UIImage imageNamed:@"slide_image2"],[UIImage imageNamed:@"slide_image3"],[UIImage imageNamed:@"slide_image4"], nil];
-    [_backgroundImage setAnimationImages:listOfImage];
-    _backgroundImage.animationDuration = 15.0f;
-    _backgroundImage.animationRepeatCount = 0;
-    [_backgroundImage startAnimating];
-    [self.btnRomeria setTitle:@"Romeria" forState:UIControlStateNormal];
-    [self.btnComoLlegar setTitle:@"Cómo llegar" forState:UIControlStateNormal];
-    [self.btnTorresOeste setTitle:@"Torres de Oeste" forState:UIControlStateNormal];
-    [self.btnLugaresInteres setTitle:@"Lugares de interés" forState:UIControlStateNormal];
+
+    _lblTitle.text = NSLocalizedString(@"title_logo", nil);
+    _lblSubTitle.text = NSLocalizedString(@"sub_title_logo", nil);
+    [self.btnComoLlegar setTitle:NSLocalizedString(@"btn_como_llegar",nil) forState:UIControlStateNormal];
+    [self.btnTorresOeste setTitle:NSLocalizedString(@"btn_como_castro",nil) forState:UIControlStateNormal];
+    [self.btnLugaresInteres setTitle:NSLocalizedString(@"btn_como_lugares",nil) forState:UIControlStateNormal];
+    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openMenu:)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [_imageViewMenu addGestureRecognizer:tapGestureRecognizer];
 }
 -(void)loadStyle{
-    [UtilsAppearance setStyleButtonText:_btnRomeria];
-    [UtilsAppearance setStyleButtonText:_btnComoLlegar];
-    [UtilsAppearance setStyleButtonText:_btnTorresOeste];
-    [UtilsAppearance setStyleButtonText:_btnLugaresInteres];
-    self.btnRomeria.titleLabel.adjustsFontSizeToFitWidth = YES;
+    [StylesBaronha setStyleTitleWhite:_lblTitle];
+    [StylesBaronha setSytleSubtitle:_lblSubTitle];
+    [StylesBaronha setStyleButtonText:_btnComoLlegar];
+    [StylesBaronha setStyleButtonText:_btnTorresOeste];
+    [StylesBaronha setStyleButtonText:_btnLugaresInteres];
     self.btnTorresOeste.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.btnComoLlegar.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.btnLugaresInteres.titleLabel.adjustsFontSizeToFitWidth = YES;
-
-
-
     
 }
+
+
 #pragma mark - Menu
 - (IBAction)openMenu:(id)sender {
         [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

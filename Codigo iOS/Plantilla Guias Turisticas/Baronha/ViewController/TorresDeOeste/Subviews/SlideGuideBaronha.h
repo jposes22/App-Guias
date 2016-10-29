@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GuiaList.h"
 
-@interface SlideGuide : UIViewController
+@interface SlideGuideBaronha : UIViewController
 @property (nonatomic) NSInteger index;
 @property (nonatomic, strong) GuiaList * guiaList;
 

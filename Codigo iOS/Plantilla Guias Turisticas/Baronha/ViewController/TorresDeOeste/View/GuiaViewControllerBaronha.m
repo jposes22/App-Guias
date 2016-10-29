@@ -6,17 +6,17 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "GuiaViewController.h"
+#import "GuiaViewControllerBaronha.h"
 #import "UIViewController+MMDrawerController.h"
 #import "PageController.h"
 #import "GuiaDAO.h"
 #import "Constants.h"
 #import "CollectionController.h"
 #import "NavigationBar.h"
-#import "UtilsAppearance.h"
+#import "StylesBaronha.h"
 #import "AlbumViewController.h"
 
-@interface GuiaViewController ()<CommnicationMenu, ComunicationChangePage, CommunicationCollectionCell>
+@interface GuiaViewControllerBaronha ()<CommnicationMenu, ComunicationChangePage, CommunicationCollectionCell>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIView *viewSlide;
 @property (nonatomic, strong) PageController * pagerController;
@@ -25,11 +25,10 @@
 
 @end
 
-@implementation GuiaViewController
+@implementation GuiaViewControllerBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *aux = NSLocalizedString(@"aux", nil);
     // Do any additional setup after loading the view.
     [self setNavigationBar];
    // [self setStyleNavigationBar];
@@ -54,8 +53,9 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma mark - Load data
--(void)setNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Torres do Oeste"];
+-(void)setNavigationBar{/*Titles Nav*/
+
+    [StylesBaronha setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_castro",nil)];
 }
 
 #pragma mark - Style navigation bar

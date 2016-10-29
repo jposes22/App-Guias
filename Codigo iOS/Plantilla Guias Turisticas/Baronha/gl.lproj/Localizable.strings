@@ -7,3 +7,30 @@
 */
 "aux" = "Texto galego";
 
+/*Menu*/
+"menu_home" = "INICIO";
+"menu_como_llegar" = "COMO CHEGAR";
+"menu_castro" = "CASTRO DE BAROÑA";
+"menu_reconstrucion" = "RECONSTRUCIÓN 3D";
+"menu_lugares" = "LUGARES DE INTERESE";
+"menu_bibliografía" = "BIBLIOGRAFÍA";
+"menu_ajustes" = "AXUSTES";
+"menu_creditos" = "CRÉDITOS";
+
+/*Home*/
+
+"title_logo" = "CASTRO DE BAROÑA";
+"sub_title_logo" = "Comeza a visita";
+"btn_como_llegar" = "Como chegar";
+"btn_como_castro" = "Castro de Baroña";
+"btn_como_lugares" = "Lugares de interés";
+
+/*Titles Nav*/
+"title_home" = "Inicio";
+"title_como_llegar" = "Como Chegar";
+"title_castro" = "Castro de Baroña";
+"title_reconstrucion" = "Reconstrución 3D";
+"title_lugares" = "Lugares de interese";
+"title_bibliografía" = "Bibliografía";
+"title_ajustes" = "Axustes";
+"title_creditos" = "Créditos";

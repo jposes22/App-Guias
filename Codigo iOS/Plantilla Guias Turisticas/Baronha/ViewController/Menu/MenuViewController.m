@@ -7,11 +7,11 @@
 //
 
 #import "MenuViewController.h"
-#import "HomeViewController.h"
+#import "HomeViewControllerBaronha.h"
 #import "RightViewController.h"
 #import "Constants.h"
 
-@interface MenuViewController ()<RightMenuComunication>
+@interface MenuViewController()<RightMenuComunication>
 
 @end
 

@@ -56,8 +56,11 @@
     _poi = poi;
     _lblTitle.text = poi.titulo;
     _lblDescription.text = poi.descripcion;
-    [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
-    
+    if(poi.urlImagen){
+        [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+    }else{
+        _imgView.image = [UIImage imageNamed:@""];
+    }
     //validate buttons
     if([Validator validatePhone:poi.telefono]){
         _imgViewPhone.image = [UIImage imageNamed:@"bt_telefono_on"];

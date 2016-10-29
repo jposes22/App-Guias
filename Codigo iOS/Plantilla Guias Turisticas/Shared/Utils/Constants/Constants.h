@@ -67,6 +67,7 @@ typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
     SideDrawerMenuItemReferencias      = 7,
     SideDrawerMenuItemCopyright        = 8,
     SideDrawerMenuItemAjustes          = 9,
+    SideDrawerMenuReconstruccion3D     = 10,
     
 };
 

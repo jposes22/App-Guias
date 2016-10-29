@@ -36,7 +36,6 @@
 		8295EC151DC4A8650049FB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295EC131DC4A8650049FB7D /* LaunchScreen.storyboard */; };
 		8295EC221DC4A8710049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC211DC4A8710049FB7D /* main.m */; };
 		8295EC251DC4A8710049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC241DC4A8710049FB7D /* AppDelegate.m */; };
-		8295EC2D1DC4A8710049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295EC2C1DC4A8710049FB7D /* Assets.xcassets */; };
 		8295EC301DC4A8710049FB7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295EC2E1DC4A8710049FB7D /* LaunchScreen.storyboard */; };
 		8295EC3D1DC4A87D0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC3C1DC4A87D0049FB7D /* main.m */; };
 		8295EC401DC4A87D0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EC3F1DC4A87D0049FB7D /* AppDelegate.m */; };
@@ -384,7 +383,7 @@
 		8295F0961DC4BD6E0049FB7D /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0221DC4BD6E0049FB7D /* NavigationBar.m */; };
 		8295F0971DC4BD6E0049FB7D /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0231DC4BD6E0049FB7D /* NavigationBar.xib */; };
 		8295F0981DC4BD6E0049FB7D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0251DC4BD6E0049FB7D /* Home.storyboard */; };
-		8295F0991DC4BD6E0049FB7D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0271DC4BD6E0049FB7D /* HomeViewController.m */; };
+		8295F0991DC4BD6E0049FB7D /* HomeViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0271DC4BD6E0049FB7D /* HomeViewControllerBaronha.m */; };
 		8295F09A1DC4BD6E0049FB7D /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F02A1DC4BD6E0049FB7D /* MenuViewController.m */; };
 		8295F09B1DC4BD6E0049FB7D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F02F1DC4BD6E0049FB7D /* CustomTableViewCell.m */; };
 		8295F09C1DC4BD6E0049FB7D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0301DC4BD6E0049FB7D /* CustomTableViewCell.xib */; };
@@ -399,8 +398,6 @@
 		8295F0A51DC4BD6E0049FB7D /* PoiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0491DC4BD6E0049FB7D /* PoiViewController.m */; };
 		8295F0A61DC4BD6E0049FB7D /* Referencias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F04B1DC4BD6E0049FB7D /* Referencias.storyboard */; };
 		8295F0A71DC4BD6E0049FB7D /* ReferenciasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F04D1DC4BD6E0049FB7D /* ReferenciasViewController.m */; };
-		8295F0A81DC4BD6E0049FB7D /* MainRomeria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0501DC4BD6E0049FB7D /* MainRomeria.storyboard */; };
-		8295F0A91DC4BD6E0049FB7D /* RomeriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0521DC4BD6E0049FB7D /* RomeriaViewController.m */; };
 		8295F0AD1DC4BD6E0049FB7D /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0601DC4BD6E0049FB7D /* CollectionController.m */; };
 		8295F0AE1DC4BD6E0049FB7D /* GuiaDetalleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0631DC4BD6E0049FB7D /* GuiaDetalleTableController.m */; };
 		8295F0AF1DC4BD6E0049FB7D /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0661DC4BD6E0049FB7D /* PageController.m */; };
@@ -409,7 +406,7 @@
 		8295F0B21DC4BD6E0049FB7D /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F06E1DC4BD6E0049FB7D /* AlbumPagerController.m */; };
 		8295F0B31DC4BD6E0049FB7D /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0711DC4BD6E0049FB7D /* ViewImage.m */; };
 		8295F0B41DC4BD6E0049FB7D /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0721DC4BD6E0049FB7D /* ViewImage.xib */; };
-		8295F0B51DC4BD6E0049FB7D /* SlideGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0741DC4BD6E0049FB7D /* SlideGuide.m */; };
+		8295F0B51DC4BD6E0049FB7D /* SlideGuideBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */; };
 		8295F0B61DC4BD6E0049FB7D /* CellGuiaCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0791DC4BD6E0049FB7D /* CellGuiaCollectionView.m */; };
 		8295F0B71DC4BD6E0049FB7D /* CellGuiaCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F07A1DC4BD6E0049FB7D /* CellGuiaCollectionView.xib */; };
 		8295F0B81DC4BD6E0049FB7D /* CellGuiaDetalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F07C1DC4BD6E0049FB7D /* CellGuiaDetalle.m */; };
@@ -417,7 +414,7 @@
 		8295F0BE1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0841DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m */; };
 		8295F0BF1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0851DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.xib */; };
 		8295F0C01DC4BD6E0049FB7D /* Guias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0861DC4BD6E0049FB7D /* Guias.storyboard */; };
-		8295F0C11DC4BD6E0049FB7D /* GuiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0881DC4BD6E0049FB7D /* GuiaViewController.m */; };
+		8295F0C11DC4BD6E0049FB7D /* GuiaViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0881DC4BD6E0049FB7D /* GuiaViewControllerBaronha.m */; };
 		8295F0C21DC4BD6E0049FB7D /* HeaderGuia.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F08B1DC4BD6E0049FB7D /* HeaderGuia.m */; };
 		8295F0C31DC4BD6E0049FB7D /* HeaderGuia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F08C1DC4BD6E0049FB7D /* HeaderGuia.xib */; };
 		8295F1491DC4BD830049FB7D /* CopyrightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0CD1DC4BD820049FB7D /* CopyrightCell.m */; };
@@ -480,6 +477,8 @@
 		8295F1F81DC4F8650049FB7D /* NSBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1F41DC4F8410049FB7D /* NSBundle.m */; };
 		8295F1FC1DC4F9980049FB7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1FE1DC4F9980049FB7D /* Localizable.strings */; };
 		8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8295F2061DC4F9BE0049FB7D /* Localizable.strings */; };
+		8295F20C1DC50E5C0049FB7D /* StylesBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */; };
+		8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295F20D1DC529810049FB7D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -538,7 +537,6 @@
 		8295EC211DC4A8710049FB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8295EC231DC4A8710049FB7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8295EC241DC4A8710049FB7D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8295EC2C1DC4A8710049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8295EC311DC4A8710049FB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8295EC391DC4A87D0049FB7D /* Borneiro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borneiro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8295EC3C1DC4A87D0049FB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -789,8 +787,8 @@
 		8295F0221DC4BD6E0049FB7D /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 		8295F0231DC4BD6E0049FB7D /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
 		8295F0251DC4BD6E0049FB7D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		8295F0261DC4BD6E0049FB7D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		8295F0271DC4BD6E0049FB7D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8295F0261DC4BD6E0049FB7D /* HomeViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewControllerBaronha.h; sourceTree = "<group>"; };
+		8295F0271DC4BD6E0049FB7D /* HomeViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewControllerBaronha.m; sourceTree = "<group>"; };
 		8295F0291DC4BD6E0049FB7D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		8295F02A1DC4BD6E0049FB7D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		8295F02E1DC4BD6E0049FB7D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -813,9 +811,6 @@
 		8295F04B1DC4BD6E0049FB7D /* Referencias.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Referencias.storyboard; sourceTree = "<group>"; };
 		8295F04C1DC4BD6E0049FB7D /* ReferenciasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenciasViewController.h; sourceTree = "<group>"; };
 		8295F04D1DC4BD6E0049FB7D /* ReferenciasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenciasViewController.m; sourceTree = "<group>"; };
-		8295F0501DC4BD6E0049FB7D /* MainRomeria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainRomeria.storyboard; sourceTree = "<group>"; };
-		8295F0511DC4BD6E0049FB7D /* RomeriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomeriaViewController.h; sourceTree = "<group>"; };
-		8295F0521DC4BD6E0049FB7D /* RomeriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomeriaViewController.m; sourceTree = "<group>"; };
 		8295F05F1DC4BD6E0049FB7D /* CollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
 		8295F0601DC4BD6E0049FB7D /* CollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
 		8295F0621DC4BD6E0049FB7D /* GuiaDetalleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiaDetalleTableController.h; sourceTree = "<group>"; };
@@ -830,8 +825,8 @@
 		8295F0701DC4BD6E0049FB7D /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
 		8295F0711DC4BD6E0049FB7D /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
 		8295F0721DC4BD6E0049FB7D /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
-		8295F0731DC4BD6E0049FB7D /* SlideGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideGuide.h; sourceTree = "<group>"; };
-		8295F0741DC4BD6E0049FB7D /* SlideGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideGuide.m; sourceTree = "<group>"; };
+		8295F0731DC4BD6E0049FB7D /* SlideGuideBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideGuideBaronha.h; sourceTree = "<group>"; };
+		8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideGuideBaronha.m; sourceTree = "<group>"; };
 		8295F0781DC4BD6E0049FB7D /* CellGuiaCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaCollectionView.h; sourceTree = "<group>"; };
 		8295F0791DC4BD6E0049FB7D /* CellGuiaCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaCollectionView.m; sourceTree = "<group>"; };
 		8295F07A1DC4BD6E0049FB7D /* CellGuiaCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaCollectionView.xib; sourceTree = "<group>"; };
@@ -842,8 +837,8 @@
 		8295F0841DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaDetalleSinImagen.m; sourceTree = "<group>"; };
 		8295F0851DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaDetalleSinImagen.xib; sourceTree = "<group>"; };
 		8295F0861DC4BD6E0049FB7D /* Guias.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Guias.storyboard; sourceTree = "<group>"; };
-		8295F0871DC4BD6E0049FB7D /* GuiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiaViewController.h; sourceTree = "<group>"; };
-		8295F0881DC4BD6E0049FB7D /* GuiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaViewController.m; sourceTree = "<group>"; };
+		8295F0871DC4BD6E0049FB7D /* GuiaViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiaViewControllerBaronha.h; sourceTree = "<group>"; };
+		8295F0881DC4BD6E0049FB7D /* GuiaViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaViewControllerBaronha.m; sourceTree = "<group>"; };
 		8295F08A1DC4BD6E0049FB7D /* HeaderGuia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderGuia.h; sourceTree = "<group>"; };
 		8295F08B1DC4BD6E0049FB7D /* HeaderGuia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderGuia.m; sourceTree = "<group>"; };
 		8295F08C1DC4BD6E0049FB7D /* HeaderGuia.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderGuia.xib; sourceTree = "<group>"; };
@@ -944,6 +939,9 @@
 		8295F2071DC4F9C00049FB7D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8295F2081DC4F9C10049FB7D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8295F2091DC4F9C10049FB7D /* gl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gl; path = gl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8295F20A1DC50E5C0049FB7D /* StylesBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylesBaronha.h; sourceTree = "<group>"; };
+		8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylesBaronha.m; sourceTree = "<group>"; };
+		8295F20D1DC529810049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8F331FC903374EC1D8BEF67 /* Pods-Torres Oeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1059,12 +1057,12 @@
 		8295EC1F1DC4A8710049FB7D /* Baronha */ = {
 			isa = PBXGroup;
 			children = (
+				8295F20D1DC529810049FB7D /* Assets.xcassets */,
 				8295F1931DC4C1670049FB7D /* Utils */,
 				8295F1841DC4C1480049FB7D /* Fonts */,
 				8295F00A1DC4BD6E0049FB7D /* ViewController */,
 				8295EC231DC4A8710049FB7D /* AppDelegate.h */,
 				8295EC241DC4A8710049FB7D /* AppDelegate.m */,
-				8295EC2C1DC4A8710049FB7D /* Assets.xcassets */,
 				8295EC2E1DC4A8710049FB7D /* LaunchScreen.storyboard */,
 				8295EC311DC4A8710049FB7D /* Info.plist */,
 				8295EC201DC4A8710049FB7D /* Supporting Files */,
@@ -2071,7 +2069,6 @@
 				8295F0281DC4BD6E0049FB7D /* Menu */,
 				8295F0351DC4BD6E0049FB7D /* Poi */,
 				8295F04A1DC4BD6E0049FB7D /* Referencias */,
-				8295F04E1DC4BD6E0049FB7D /* Romeria */,
 				8295F0531DC4BD6E0049FB7D /* Splash */,
 				8295F05C1DC4BD6E0049FB7D /* TorresDeOeste */,
 			);
@@ -2160,8 +2157,8 @@
 			isa = PBXGroup;
 			children = (
 				8295F0251DC4BD6E0049FB7D /* Home.storyboard */,
-				8295F0261DC4BD6E0049FB7D /* HomeViewController.h */,
-				8295F0271DC4BD6E0049FB7D /* HomeViewController.m */,
+				8295F0261DC4BD6E0049FB7D /* HomeViewControllerBaronha.h */,
+				8295F0271DC4BD6E0049FB7D /* HomeViewControllerBaronha.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2305,24 +2302,6 @@
 			path = Referencias;
 			sourceTree = "<group>";
 		};
-		8295F04E1DC4BD6E0049FB7D /* Romeria */ = {
-			isa = PBXGroup;
-			children = (
-				8295F04F1DC4BD6E0049FB7D /* View */,
-			);
-			path = Romeria;
-			sourceTree = "<group>";
-		};
-		8295F04F1DC4BD6E0049FB7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8295F0501DC4BD6E0049FB7D /* MainRomeria.storyboard */,
-				8295F0511DC4BD6E0049FB7D /* RomeriaViewController.h */,
-				8295F0521DC4BD6E0049FB7D /* RomeriaViewController.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		8295F0531DC4BD6E0049FB7D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -2382,8 +2361,8 @@
 			isa = PBXGroup;
 			children = (
 				8295F0681DC4BD6E0049FB7D /* Album */,
-				8295F0731DC4BD6E0049FB7D /* SlideGuide.h */,
-				8295F0741DC4BD6E0049FB7D /* SlideGuide.m */,
+				8295F0731DC4BD6E0049FB7D /* SlideGuideBaronha.h */,
+				8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -2424,8 +2403,8 @@
 			children = (
 				8295F0761DC4BD6E0049FB7D /* Cell */,
 				8295F0861DC4BD6E0049FB7D /* Guias.storyboard */,
-				8295F0871DC4BD6E0049FB7D /* GuiaViewController.h */,
-				8295F0881DC4BD6E0049FB7D /* GuiaViewController.m */,
+				8295F0871DC4BD6E0049FB7D /* GuiaViewControllerBaronha.h */,
+				8295F0881DC4BD6E0049FB7D /* GuiaViewControllerBaronha.m */,
 				8295F0891DC4BD6E0049FB7D /* Header */,
 			);
 			path = View;
@@ -2944,6 +2923,8 @@
 			children = (
 				8295F1951DC4C1670049FB7D /* UtilsAppearance.h */,
 				8295F1961DC4C1670049FB7D /* UtilsAppearance.m */,
+				8295F20A1DC50E5C0049FB7D /* StylesBaronha.h */,
+				8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -3257,13 +3238,12 @@
 				8295F0981DC4BD6E0049FB7D /* Home.storyboard in Resources */,
 				8295F18D1DC4C1480049FB7D /* OpenSans-Italic.ttf in Resources */,
 				8295F08D1DC4BD6E0049FB7D /* ComoLlegar.storyboard in Resources */,
-				8295EC2D1DC4A8710049FB7D /* Assets.xcassets in Resources */,
 				8295F1831DC4BFA50049FB7D /* Splash.storyboard in Resources */,
 				8295F0B11DC4BD6E0049FB7D /* AlbumViewController.xib in Resources */,
 				8295F1901DC4C1480049FB7D /* OpenSans-Semibold.ttf in Resources */,
-				8295F0A81DC4BD6E0049FB7D /* MainRomeria.storyboard in Resources */,
 				8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */,
 				8295F18E1DC4C1480049FB7D /* OpenSans-Light.ttf in Resources */,
+				8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */,
 				8295F0A61DC4BD6E0049FB7D /* Referencias.storyboard in Resources */,
 				8295F1911DC4C1480049FB7D /* Santana-Bold.ttf in Resources */,
 				8295F1E71DC4F7440049FB7D /* Localizable.strings in Resources */,
@@ -3662,6 +3642,7 @@
 				8295EF951DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F0BE1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m in Sources */,
 				8295EF621DC4B3370049FB7D /* PoiDAO.m in Sources */,
+				8295F20C1DC50E5C0049FB7D /* StylesBaronha.m in Sources */,
 				8295EF701DC4B34B0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
 				8295EF3B1DC4B2BF0049FB7D /* Metodos.m in Sources */,
 				8295EFF41DC4B3BC0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
@@ -3672,7 +3653,7 @@
 				8295EFC51DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
 				8295EFF51DC4B3BC0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EF851DC4B36A0049FB7D /* RemoteDetalleGuiaVO.m in Sources */,
-				8295F0B51DC4BD6E0049FB7D /* SlideGuide.m in Sources */,
+				8295F0B51DC4BD6E0049FB7D /* SlideGuideBaronha.m in Sources */,
 				8295F08F1DC4BD6E0049FB7D /* CopyrightCell.m in Sources */,
 				8295EFB11DC4B3970049FB7D /* GuiaDetalleList.m in Sources */,
 				8295EFB21DC4B3970049FB7D /* GuiaList.m in Sources */,
@@ -3680,7 +3661,7 @@
 				8295EFAE1DC4B3970049FB7D /* GuiaDetalle+CoreDataProperties.m in Sources */,
 				8295F09B1DC4BD6E0049FB7D /* CustomTableViewCell.m in Sources */,
 				8295EF6F1DC4B34B0049FB7D /* RemoteGuiaSaberMas.m in Sources */,
-				8295F0C11DC4BD6E0049FB7D /* GuiaViewController.m in Sources */,
+				8295F0C11DC4BD6E0049FB7D /* GuiaViewControllerBaronha.m in Sources */,
 				8295EC251DC4A8710049FB7D /* AppDelegate.m in Sources */,
 				8295EFC41DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataProperties.m in Sources */,
 				8295EE5B1DC4AED30049FB7D /* Splash.m in Sources */,
@@ -3725,7 +3706,7 @@
 				8295EF521DC4B31C0049FB7D /* GuiaSaberMasDAO.m in Sources */,
 				8295F0A31DC4BD6E0049FB7D /* ListPoiViewController.m in Sources */,
 				8295EF441DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
-				8295F0991DC4BD6E0049FB7D /* HomeViewController.m in Sources */,
+				8295F0991DC4BD6E0049FB7D /* HomeViewControllerBaronha.m in Sources */,
 				8295EF5F1DC4B3310049FB7D /* ParametrosDAO.m in Sources */,
 				8295F0B61DC4BD6E0049FB7D /* CellGuiaCollectionView.m in Sources */,
 				8295EF5C1DC4B3280049FB7D /* MenuDAO.m in Sources */,
@@ -3742,7 +3723,6 @@
 				8295F0C21DC4BD6E0049FB7D /* HeaderGuia.m in Sources */,
 				8295EF651DC4B33C0049FB7D /* RemoteConstants.m in Sources */,
 				8295EFEA1DC4B3B50049FB7D /* Menu+CoreDataProperties.m in Sources */,
-				8295F0A91DC4BD6E0049FB7D /* RomeriaViewController.m in Sources */,
 				8295EC221DC4A8710049FB7D /* main.m in Sources */,
 				8295EF381DC4B2B90049FB7D /* Constants.m in Sources */,
 				8295F1971DC4C1670049FB7D /* UtilsAppearance.m in Sources */,

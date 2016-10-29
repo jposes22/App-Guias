@@ -6,7 +6,7 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "SlideGuide.h"
+#import "SlideGuideBaronha.h"
 #import "Guia+CoreDataClass.h"
 #import "UtilsAppearance.h"
 #import "GuiaDetalleTableController.h"
@@ -16,7 +16,7 @@
 
 
 
-@interface SlideGuide ()<CommunicationTableController>
+@interface SlideGuideBaronha ()<CommunicationTableController>
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 @property (weak, nonatomic) IBOutlet UIImageView *imageAudio;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -29,7 +29,7 @@
 
 @end
 
-@implementation SlideGuide
+@implementation SlideGuideBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];

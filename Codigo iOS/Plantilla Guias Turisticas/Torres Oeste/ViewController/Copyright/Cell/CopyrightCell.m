@@ -8,6 +8,7 @@
 
 #import "CopyrightCell.h"
 #import "Metodos.h"
+#import "UtilsAppearance.h"
 
 @interface CopyrightCell()
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
@@ -28,6 +29,7 @@
 }
 - (void) loadData:(NSString *)nombre texto:(NSString *)texto{
     _labelText.attributedText = [Metodos convertHTMLToString:texto];
+    [UtilsAppearance setStyleText:_labelText];
     
     
 }

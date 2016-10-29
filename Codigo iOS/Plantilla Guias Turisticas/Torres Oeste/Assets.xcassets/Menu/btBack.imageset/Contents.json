@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bt_audioguia_on0.png",
+      "filename" : "bt_atras.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bt_audioguia_on0@2x.png",
+      "filename" : "bt_atras@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bt_audioguia_on0@3x.png",
+      "filename" : "bt_atras@3x.png",
       "scale" : "3x"
     }
   ],

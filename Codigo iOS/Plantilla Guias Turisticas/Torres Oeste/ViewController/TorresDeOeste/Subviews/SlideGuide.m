@@ -106,6 +106,9 @@
             NSLog(@"%@", [error description]);
         }else{
             [_audioPlayer play];
+            [[AVAudioSession sharedInstance]
+             setCategory: AVAudioSessionCategoryPlayback
+             error: nil];
         }
     }
     

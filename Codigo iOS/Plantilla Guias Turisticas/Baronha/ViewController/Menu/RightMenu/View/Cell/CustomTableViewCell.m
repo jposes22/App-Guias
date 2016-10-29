@@ -36,7 +36,7 @@
 -(void) loadAppearance{
    // [UtilsAppearance setStyleCellBasic:_labelTitle];
     //  self.backgroundColor =  [UtilsAppearance  getColorDarkApp];
-    self.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+    self.backgroundColor = [UtilsAppearance getPrimaryLightColor];
     
     _labelTitle.textColor = [UIColor whiteColor];
 

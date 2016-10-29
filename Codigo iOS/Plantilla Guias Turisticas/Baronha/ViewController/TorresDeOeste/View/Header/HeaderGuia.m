@@ -38,7 +38,7 @@
     }
     _labelTitle.text = guia.titulo;
     [UtilsAppearance setStyleTitle:_labelTitle];
-    _labelTitle.textColor = [UtilsAppearance getPrimaryDarkColor];
+    _labelTitle.textColor = [UtilsAppearance getSecondaryColor];
 
     
 }

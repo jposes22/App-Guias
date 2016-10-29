@@ -11,7 +11,7 @@
 
 @interface UtilsAppearance : NSObject
 + (UIColor * )getPrimaryColor;
-+ (UIColor * )getPrimaryDarkColor;
++ (UIColor * )getPrimaryLightColor;
 + (UIColor * )getSecondaryColor;
 
 //Style Fonts and FontSize

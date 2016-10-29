@@ -29,6 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSString *aux = NSLocalizedString(@"aux", nil);
     // Do any additional setup after loading the view.
     [self setNavigationBar];
    // [self setStyleNavigationBar];

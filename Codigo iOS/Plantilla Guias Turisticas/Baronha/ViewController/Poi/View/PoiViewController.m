@@ -57,10 +57,10 @@
 
 
 -(void)loadStyle{
-    [_viewRecursos setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
-    [_viewAlojamiento setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
-    [_viewRestaurantes setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
-    [_viewTelefonosInteres setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewRecursos setBackgroundColor:[UtilsAppearance getSecondaryColor]];
+    [_viewAlojamiento setBackgroundColor:[UtilsAppearance getSecondaryColor]];
+    [_viewRestaurantes setBackgroundColor:[UtilsAppearance getSecondaryColor]];
+    [_viewTelefonosInteres setBackgroundColor:[UtilsAppearance getSecondaryColor]];
     
     [UtilsAppearance setStyleTextBold:_labelRecursos];
     [UtilsAppearance setStyleTextBold:_labelDirectorio];

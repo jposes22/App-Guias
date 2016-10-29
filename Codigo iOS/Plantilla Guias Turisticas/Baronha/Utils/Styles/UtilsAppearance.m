@@ -10,13 +10,17 @@
 
 @implementation UtilsAppearance
 +(UIColor * )getPrimaryColor{
-    return [UIColor colorWithRed:20.0/255.0 green:151.0/255.0 blue:173.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:51.0/255.0 green:157.0/255.0 blue:182.0/255.0 alpha:1.0];
 }
-+(UIColor * )getPrimaryDarkColor{
-    return [UIColor colorWithRed:9.0/255.0 green:79.0/255.0 blue:107.0/255.0 alpha:1.0];
++(UIColor * )getPrimaryLightColor{
+    return [UIColor colorWithRed:25.0/255.0 green:187.0/255.0 blue:216.0/255.0 alpha:1.0];
 }
 +(UIColor * )getSecondaryColor{
-    return [UIColor colorWithRed:41.0/255.0 green:91.0/255.0 blue:95.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1.0];
+}
+
++(UIColor * )getThirdColor{
+    return [UIColor colorWithRed:91.0/255.0 green:91.0/255.0 blue:95.0/255.0 alpha:1.0];
 }
 
 

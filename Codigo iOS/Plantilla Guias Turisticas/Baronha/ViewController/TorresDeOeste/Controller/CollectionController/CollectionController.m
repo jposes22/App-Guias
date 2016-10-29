@@ -27,7 +27,7 @@
     [UtilsAppearance setStyleTextBold:cell.labelTitle];
     cell.labelTitle.textColor = [UIColor whiteColor];
     if(_pageSelected == indexPath.row){
-        cell.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+        cell.backgroundColor = [UtilsAppearance getSecondaryColor];
         [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
 
     }else{

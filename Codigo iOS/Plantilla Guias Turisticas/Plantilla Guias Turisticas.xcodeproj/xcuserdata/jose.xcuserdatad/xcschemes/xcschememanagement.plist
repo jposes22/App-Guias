@@ -4,15 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Baronha.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Borneiro.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Plantilla Guias Turisticas.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Torres Oeste.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>8295EBA51DC4A4CC0049FB7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8295EC021DC4A8640049FB7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8295EC1D1DC4A8710049FB7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8295EC381DC4A87D0049FB7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

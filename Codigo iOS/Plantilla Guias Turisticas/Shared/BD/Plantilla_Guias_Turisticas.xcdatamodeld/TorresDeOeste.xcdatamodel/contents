@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Guia" representedClassName="Guia" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGuia" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orden" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tipoGuia" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlAudioGuia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detalleGuia" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GuiaDetalle" inverseName="guia" inverseEntity="GuiaDetalle" syncable="YES"/>
+    </entity>
+    <entity name="GuiaDetalle" representedClassName="GuiaDetalle" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGuia" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idGuiaDetalle" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orden" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="guia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Guia" inverseName="detalleGuia" inverseEntity="Guia" syncable="YES"/>
+        <relationship name="imagenesDetalle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GuiaDetalleImagen" inverseName="detalleGuia" inverseEntity="GuiaDetalleImagen" syncable="YES"/>
+        <relationship name="listGuiaSaberMas" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GuiaSaberMas" inverseName="guiaDetalle" inverseEntity="GuiaSaberMas" syncable="YES"/>
+    </entity>
+    <entity name="GuiaDetalleImagen" representedClassName="GuiaDetalleImagen" syncable="YES">
+        <attribute name="idGuiaDetalle" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idGuiaDetalleImagen" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="detalleGuia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuiaDetalle" inverseName="imagenesDetalle" inverseEntity="GuiaDetalle" syncable="YES"/>
+    </entity>
+    <entity name="GuiaSaberMas" representedClassName="GuiaSaberMas" syncable="YES">
+        <attribute name="idGuiaDetalle" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idGuiaSaberMas" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlAudioGuia" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="guiaDetalle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuiaDetalle" inverseName="listGuiaSaberMas" inverseEntity="GuiaDetalle" syncable="YES"/>
+        <relationship name="listGuiaSaberMasDetalle" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GuiaSaberMasDetalle" inverseName="guiaSaberMas" inverseEntity="GuiaSaberMasDetalle" syncable="YES"/>
+    </entity>
+    <entity name="GuiaSaberMasDetalle" representedClassName="GuiaSaberMasDetalle" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idGuiaSaberMas" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idGuiaSaberMasDetalle" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orden" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="guiaSaberMas" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuiaSaberMas" inverseName="listGuiaSaberMasDetalle" inverseEntity="GuiaSaberMas" syncable="YES"/>
+        <relationship name="guiaSaberMasDetalleImagen" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuiaSaberMasDetalleImagen" inverseName="guiaSaberMasDetalle" inverseEntity="GuiaSaberMasDetalleImagen" syncable="YES"/>
+    </entity>
+    <entity name="GuiaSaberMasDetalleImagen" representedClassName="GuiaSaberMasDetalleImagen" syncable="YES">
+        <attribute name="idGuiaSaberMasDetalle" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idGuiaSaberMAsDetalleImagen" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="guiaSaberMasDetalle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuiaSaberMasDetalle" inverseName="guiaSaberMasDetalleImagen" inverseEntity="GuiaSaberMasDetalle" syncable="YES"/>
+    </entity>
+    <entity name="Idioma" representedClassName="Idioma" syncable="YES">
+        <attribute name="codigoIdioma" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idIdioma" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nombreIdioma" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="codeMenu" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idMenu" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="orden" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="ParametrosApp" representedClassName="ParametrosApp" syncable="YES">
+        <attribute name="clave" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="valor" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Poi" representedClassName="Poi" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idPoi" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="isActivo" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipoPoi" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlCompartir" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlWeb" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="listImagen" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PoiImagen" inverseName="poi" inverseEntity="PoiImagen" syncable="YES"/>
+    </entity>
+    <entity name="PoiImagen" representedClassName="PoiImagen" syncable="YES">
+        <attribute name="idPoi" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="idPoiImagen" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlImagen" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="poi" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Poi" inverseName="listImagen" inverseEntity="Poi" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Guia" positionX="-54" positionY="18" width="128" height="30"/>
+        <element name="GuiaDetalle" positionX="-36" positionY="54" width="128" height="210"/>
+        <element name="GuiaDetalleImagen" positionX="-18" positionY="108" width="128" height="105"/>
+        <element name="GuiaSaberMas" positionX="-9" positionY="144" width="128" height="180"/>
+        <element name="GuiaSaberMasDetalle" positionX="0" positionY="153" width="128" height="195"/>
+        <element name="GuiaSaberMasDetalleImagen" positionX="9" positionY="162" width="128" height="105"/>
+        <element name="Idioma" positionX="-18" positionY="135" width="128" height="105"/>
+        <element name="Menu" positionX="0" positionY="126" width="128" height="105"/>
+        <element name="ParametrosApp" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Poi" positionX="18" positionY="135" width="128" height="240"/>
+        <element name="PoiImagen" positionX="-18" positionY="135" width="128" height="105"/>
+    </elements>
+</model>

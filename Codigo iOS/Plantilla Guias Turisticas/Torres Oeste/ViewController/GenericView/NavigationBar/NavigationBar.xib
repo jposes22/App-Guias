@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBar">
+            <rect key="frame" x="0.0" y="0.0" width="533" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OyM-1X-oD3">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="fD4-BF-qMZ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LG-sz-IgF">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaZ-Fy-rV7">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jaZ-Fy-rV7" secondAttribute="height" multiplier="1:1" id="1Rq-ms-tih"/>
+                    </constraints>
+                    <state key="normal" image="btnMenu"/>
+                    <connections>
+                        <action selector="btnMenuTouch" destination="iN0-l3-epB" eventType="touchUpInside" id="jas-VF-1Xu"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlj-OE-KjW">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KG3-Gv-bRs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hlj-OE-KjW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3fS-K3-ti9"/>
+                <constraint firstItem="OyM-1X-oD3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8hS-tW-ADE"/>
+                <constraint firstAttribute="trailing" secondItem="jaZ-Fy-rV7" secondAttribute="trailing" constant="5" id="ASS-Na-Kn2"/>
+                <constraint firstItem="jaZ-Fy-rV7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DgZ-vO-7nv"/>
+                <constraint firstAttribute="trailing" secondItem="Hlj-OE-KjW" secondAttribute="trailing" id="Ho2-Nf-R4C"/>
+                <constraint firstAttribute="trailing" secondItem="9LG-sz-IgF" secondAttribute="trailing" constant="50" id="Lof-s1-wcI"/>
+                <constraint firstAttribute="bottom" secondItem="jaZ-Fy-rV7" secondAttribute="bottom" id="WTk-od-AvO"/>
+                <constraint firstAttribute="bottom" secondItem="Hlj-OE-KjW" secondAttribute="bottom" id="gaQ-r8-Gmm"/>
+                <constraint firstAttribute="bottom" secondItem="OyM-1X-oD3" secondAttribute="bottom" id="gzz-9K-k7x"/>
+                <constraint firstItem="OyM-1X-oD3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qfm-6V-oGy"/>
+                <constraint firstItem="9LG-sz-IgF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="rja-ca-5ep"/>
+                <constraint firstItem="9LG-sz-IgF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vSg-to-4R1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnMenu" destination="jaZ-Fy-rV7" id="1FJ-vR-Mi0"/>
+                <outlet property="imageView" destination="OyM-1X-oD3" id="eB4-iS-GBr"/>
+                <outlet property="labelTitle" destination="9LG-sz-IgF" id="0QE-yK-WkK"/>
+                <outlet property="viewBottom" destination="Hlj-OE-KjW" id="tH5-Ti-ZJo"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="-253"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnMenu" width="43" height="43"/>
+    </resources>
+</document>

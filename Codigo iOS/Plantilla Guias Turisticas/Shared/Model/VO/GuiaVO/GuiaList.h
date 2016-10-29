@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) NSString * titulo;
 @property (nonatomic, strong) NSString * descripcion;
+@property (nonatomic) double latitud;
+@property (nonatomic) double longitud;
 @property (nonatomic, strong) NSMutableArray * listOfGuiaDetalle;
 @property (nonatomic, strong) NSString * urlAudioGuia;
 

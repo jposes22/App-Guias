@@ -36,8 +36,8 @@
 
 }
 -(void) setupDrawer {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"HomeNC"];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"HomeBorneiro" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"HomeBorneiroNC"];
     [self setCenterViewController:vc];
 }
 
@@ -60,12 +60,12 @@
     
     switch (sideDrawerMenuSelected) {
         case SideDrawerMenuItemHome:
-            sb = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"HomeNC"];
+            sb = [UIStoryboard storyboardWithName:@"HomeBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"HomeBorneiroNC"];
             break;
         case SideDrawerMenuItemTorres:
-            sb = [UIStoryboard storyboardWithName:@"Guias" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"GuiasNC"];
+            sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"GuiasBorneiroNC"];
             break;
         case SideDrawerMenuItemRomeria:
             sb = [UIStoryboard storyboardWithName:@"MainRomeria" bundle:nil];
@@ -99,8 +99,8 @@
             break;
             */
         case SideDrawerMenuItemComoLlegar:
-            sb = [UIStoryboard storyboardWithName:@"ComoLlegar" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarNC"];
+            sb = [UIStoryboard storyboardWithName:@"ComoLlegarBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarBorneiroNC"];
             break;
             /*
         case SideDrawerMenuItemHelps:

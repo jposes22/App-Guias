@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		063C2A12AF351967D988797A /* libPods-Borneiro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A0E2A5BB61093C6BDA83BB /* libPods-Borneiro.a */; };
+		2314F20F1DC4FE200048F9E4 /* HomeBorneiro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2314F20E1DC4FE200048F9E4 /* HomeBorneiro.storyboard */; };
+		2314F2121DC4FE980048F9E4 /* HomeBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314F2111DC4FE980048F9E4 /* HomeBorneiroViewController.m */; };
 		8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAA1DC4A4CC0049FB7D /* main.m */; };
 		8295EBAE1DC4A4CC0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAD1DC4A4CC0049FB7D /* AppDelegate.m */; };
 		8295EBB11DC4A4CC0049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBB01DC4A4CC0049FB7D /* ViewController.m */; };
@@ -415,8 +417,6 @@
 		8295F14F1DC4BD830049FB7D /* HeaderCopyright.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0D81DC4BD820049FB7D /* HeaderCopyright.xib */; };
 		8295F1501DC4BD830049FB7D /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0DC1DC4BD820049FB7D /* NavigationBar.m */; };
 		8295F1511DC4BD830049FB7D /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0DD1DC4BD820049FB7D /* NavigationBar.xib */; };
-		8295F1521DC4BD830049FB7D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0DF1DC4BD820049FB7D /* Home.storyboard */; };
-		8295F1531DC4BD830049FB7D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0E11DC4BD820049FB7D /* HomeViewController.m */; };
 		8295F1541DC4BD830049FB7D /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0E41DC4BD820049FB7D /* MenuViewController.m */; };
 		8295F1551DC4BD830049FB7D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0E91DC4BD820049FB7D /* CustomTableViewCell.m */; };
 		8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0EA1DC4BD820049FB7D /* CustomTableViewCell.xib */; };
@@ -476,6 +476,9 @@
 /* Begin PBXFileReference section */
 		0A6EACF229557F2EE8832CE8 /* Pods-Baronha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baronha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baronha/Pods-Baronha.debug.xcconfig"; sourceTree = "<group>"; };
 		1DA5F52DB4BE351CC86D1999 /* libPods-Baronha.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baronha.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2314F20E1DC4FE200048F9E4 /* HomeBorneiro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeBorneiro.storyboard; sourceTree = "<group>"; };
+		2314F2101DC4FE980048F9E4 /* HomeBorneiroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeBorneiroViewController.h; sourceTree = "<group>"; };
+		2314F2111DC4FE980048F9E4 /* HomeBorneiroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeBorneiroViewController.m; sourceTree = "<group>"; };
 		25DF257C251E887DDAF0CB8D /* Pods-Baronha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baronha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baronha/Pods-Baronha.release.xcconfig"; sourceTree = "<group>"; };
 		2F4423A020DCB1EAE149C9E3 /* libPods-Torres Oeste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Torres Oeste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2DFB5B655EA1E5B7132D33 /* Pods-Torres Oeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.debug.xcconfig"; sourceTree = "<group>"; };
@@ -830,9 +833,6 @@
 		8295F0DB1DC4BD820049FB7D /* NavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBar.h; sourceTree = "<group>"; };
 		8295F0DC1DC4BD820049FB7D /* NavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBar.m; sourceTree = "<group>"; };
 		8295F0DD1DC4BD820049FB7D /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
-		8295F0DF1DC4BD820049FB7D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		8295F0E01DC4BD820049FB7D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		8295F0E11DC4BD820049FB7D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		8295F0E31DC4BD820049FB7D /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		8295F0E41DC4BD820049FB7D /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		8295F0E81DC4BD820049FB7D /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -2536,9 +2536,9 @@
 		8295F0DE1DC4BD820049FB7D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				8295F0DF1DC4BD820049FB7D /* Home.storyboard */,
-				8295F0E01DC4BD820049FB7D /* HomeViewController.h */,
-				8295F0E11DC4BD820049FB7D /* HomeViewController.m */,
+				2314F20E1DC4FE200048F9E4 /* HomeBorneiro.storyboard */,
+				2314F2101DC4FE980048F9E4 /* HomeBorneiroViewController.h */,
+				2314F2111DC4FE980048F9E4 /* HomeBorneiroViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -3242,9 +3242,9 @@
 				8295EC4B1DC4A87D0049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295F1B31DC4D6BA0049FB7D /* OpenSans-Italic.ttf in Resources */,
 				8295F1581DC4BD830049FB7D /* RightViewController.xib in Resources */,
+				2314F20F1DC4FE200048F9E4 /* HomeBorneiro.storyboard in Resources */,
 				8295F1B61DC4D6BA0049FB7D /* OpenSans-Semibold.ttf in Resources */,
 				8295F15C1DC4BD830049FB7D /* PoiTableViewCell.xib in Resources */,
-				8295F1521DC4BD830049FB7D /* Home.storyboard in Resources */,
 				8295F1471DC4BD830049FB7D /* ComoLlegar.storyboard in Resources */,
 				8295EC481DC4A87D0049FB7D /* Assets.xcassets in Resources */,
 				8295F1B11DC4D6BA0049FB7D /* Giorgio-Thin.ttf in Resources */,
@@ -3779,7 +3779,6 @@
 				8295EF551DC4B31D0049FB7D /* GuiaSaberMasDAO.m in Sources */,
 				8295F15D1DC4BD830049FB7D /* ListPoiViewController.m in Sources */,
 				8295EF451DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
-				8295F1531DC4BD830049FB7D /* HomeViewController.m in Sources */,
 				8295EF601DC4B3310049FB7D /* ParametrosDAO.m in Sources */,
 				8295F1701DC4BD830049FB7D /* CellGuiaCollectionView.m in Sources */,
 				8295EF5D1DC4B3280049FB7D /* MenuDAO.m in Sources */,
@@ -3793,6 +3792,7 @@
 				8295F0051DC4B3C40049FB7D /* PoiImagen+CoreDataProperties.m in Sources */,
 				8295EF5A1DC4B3230049FB7D /* IdiomaDAO.m in Sources */,
 				8295F17C1DC4BD830049FB7D /* HeaderGuia.m in Sources */,
+				2314F2121DC4FE980048F9E4 /* HomeBorneiroViewController.m in Sources */,
 				8295EF661DC4B33C0049FB7D /* RemoteConstants.m in Sources */,
 				8295EFEE1DC4B3B60049FB7D /* Menu+CoreDataProperties.m in Sources */,
 				8295F1631DC4BD830049FB7D /* RomeriaViewController.m in Sources */,

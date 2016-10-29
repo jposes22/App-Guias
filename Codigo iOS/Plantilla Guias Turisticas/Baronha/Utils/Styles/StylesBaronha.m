@@ -37,7 +37,7 @@
     
 }
 + (void)setSytleSubtitle:(UILabel *) label{
-    [label setFont:[UIFont fontWithName:@"Santana" size:20]];
+    [label setFont:[UIFont fontWithName:@"Santana" size:15]];
     
 }
 + (void)setStyleText:(UILabel *) label{
@@ -82,7 +82,7 @@
     NSRange rangeText= NSMakeRange(0, title.length);
     //navigationBar.barTintColor = [UIColor whiteColor];
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
-    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];
+    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Santana" size:20] range:rangeText];
     [attString addAttribute:NSForegroundColorAttributeName value:[StylesBaronha getPrimaryColor] range:rangeText];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(81, 11, 300, 44)];
     label.attributedText = attString;

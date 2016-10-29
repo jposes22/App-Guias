@@ -24,3 +24,13 @@
 "btn_como_llegar" = "";
 "btn_como_castro" = "";
 "btn_como_lugares" = "";
+
+/*Titles Nav*/
+"title_home" = "";
+"title_como_llegar" = "";
+"title_castro" = "";
+"title_reconstrucion" = "";
+"title_lugares" = "";
+"title_bibliografía" = "";
+"title_ajustes" = "";
+"title_creditos" = "";

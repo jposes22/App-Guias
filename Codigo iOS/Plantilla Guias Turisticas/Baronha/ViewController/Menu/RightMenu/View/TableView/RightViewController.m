@@ -60,7 +60,7 @@
     MenuObject * reconstruccion3D = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_reconstrucion", nil)iconRow:nil idElementMenu:SideDrawerMenuReconstruccion3D];
     
     //creamos un dicionario provisional para buscar los elementos que vienen del servidor y enlazarlos si están activos y ponerlos en el menú si coinciden
-    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, poiMenu,comoLlegarMenu,referenciasMenu,copyrightMenu,ajustesMenu,reconstruccion3D] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemTorres),@(SideDrawerMenuItemPoi),@(SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes),@(SideDrawerMenuReconstruccion3D)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
+    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, poiMenu,comoLlegarMenu,referenciasMenu,copyrightMenu,ajustesMenu,reconstruccion3D] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemTorres),@(SideDrawerMenuItemPoi),@(SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes),@(SideDrawerMenuReconstruccion3D)]];
     NSArray *listItemsMenu = [MenuDAO getMenuItems];
     for (Menu *item in listItemsMenu) {
         if([dictionaryItemsMenu objectForKey:@(item.codeMenu)]){

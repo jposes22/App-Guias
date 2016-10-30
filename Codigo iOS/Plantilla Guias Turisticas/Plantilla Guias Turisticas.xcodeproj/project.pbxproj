@@ -419,11 +419,6 @@
 		8295F0AD1DC4BD6E0049FB7D /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0601DC4BD6E0049FB7D /* CollectionController.m */; };
 		8295F0AE1DC4BD6E0049FB7D /* GuiaDetalleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0631DC4BD6E0049FB7D /* GuiaDetalleTableController.m */; };
 		8295F0AF1DC4BD6E0049FB7D /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0661DC4BD6E0049FB7D /* PageController.m */; };
-		8295F0B01DC4BD6E0049FB7D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F06A1DC4BD6E0049FB7D /* AlbumViewController.m */; };
-		8295F0B11DC4BD6E0049FB7D /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F06B1DC4BD6E0049FB7D /* AlbumViewController.xib */; };
-		8295F0B21DC4BD6E0049FB7D /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F06E1DC4BD6E0049FB7D /* AlbumPagerController.m */; };
-		8295F0B31DC4BD6E0049FB7D /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0711DC4BD6E0049FB7D /* ViewImage.m */; };
-		8295F0B41DC4BD6E0049FB7D /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0721DC4BD6E0049FB7D /* ViewImage.xib */; };
 		8295F0B51DC4BD6E0049FB7D /* SlideGuideBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */; };
 		8295F0B61DC4BD6E0049FB7D /* CellGuiaCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0791DC4BD6E0049FB7D /* CellGuiaCollectionView.m */; };
 		8295F0B71DC4BD6E0049FB7D /* CellGuiaCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F07A1DC4BD6E0049FB7D /* CellGuiaCollectionView.xib */; };
@@ -503,6 +498,26 @@
 		82EE77E51DC64CF200C3A344 /* CreditosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77E31DC64CF200C3A344 /* CreditosViewController.m */; };
 		82EE77EA1DC6505C00C3A344 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77E71DC6505C00C3A344 /* Creditos.storyboard */; };
 		82EE77EB1DC6505C00C3A344 /* CreditosViewControllerBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77E91DC6505C00C3A344 /* CreditosViewControllerBorneiro.m */; };
+		82EE77F71DC6689C00C3A344 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */; };
+		82EE77F81DC6689C00C3A344 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */; };
+		82EE77F91DC6689C00C3A344 /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */; };
+		82EE77FA1DC6689C00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
+		82EE77FB1DC6689C00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
+		82EE77FC1DC668A300C3A344 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */; };
+		82EE77FD1DC668A300C3A344 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */; };
+		82EE77FE1DC668A300C3A344 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */; };
+		82EE77FF1DC668A300C3A344 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */; };
+		82EE78001DC668A400C3A344 /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */; };
+		82EE78011DC668A400C3A344 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */; };
+		82EE78021DC668A900C3A344 /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */; };
+		82EE78031DC668AA00C3A344 /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */; };
+		82EE78041DC668AA00C3A344 /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */; };
+		82EE78051DC668AE00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
+		82EE78061DC668AE00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
+		82EE78071DC668AF00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
+		82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
+		82EE78091DC668AF00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
+		82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -869,14 +884,6 @@
 		8295F0631DC4BD6E0049FB7D /* GuiaDetalleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaDetalleTableController.m; sourceTree = "<group>"; };
 		8295F0651DC4BD6E0049FB7D /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
 		8295F0661DC4BD6E0049FB7D /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
-		8295F0691DC4BD6E0049FB7D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		8295F06A1DC4BD6E0049FB7D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
-		8295F06B1DC4BD6E0049FB7D /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
-		8295F06D1DC4BD6E0049FB7D /* AlbumPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPagerController.h; sourceTree = "<group>"; };
-		8295F06E1DC4BD6E0049FB7D /* AlbumPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPagerController.m; sourceTree = "<group>"; };
-		8295F0701DC4BD6E0049FB7D /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
-		8295F0711DC4BD6E0049FB7D /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
-		8295F0721DC4BD6E0049FB7D /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
 		8295F0731DC4BD6E0049FB7D /* SlideGuideBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideGuideBaronha.h; sourceTree = "<group>"; };
 		8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideGuideBaronha.m; sourceTree = "<group>"; };
 		8295F0781DC4BD6E0049FB7D /* CellGuiaCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaCollectionView.h; sourceTree = "<group>"; };
@@ -1003,6 +1010,14 @@
 		82EE77E71DC6505C00C3A344 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
 		82EE77E81DC6505C00C3A344 /* CreditosViewControllerBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewControllerBorneiro.h; sourceTree = "<group>"; };
 		82EE77E91DC6505C00C3A344 /* CreditosViewControllerBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewControllerBorneiro.m; sourceTree = "<group>"; };
+		82EE77ED1DC6689C00C3A344 /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
+		82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
+		82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		82EE77F11DC6689C00C3A344 /* AlbumPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPagerController.h; sourceTree = "<group>"; };
+		82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPagerController.m; sourceTree = "<group>"; };
+		82EE77F41DC6689C00C3A344 /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
+		82EE77F51DC6689C00C3A344 /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
+		82EE77F61DC6689C00C3A344 /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
 		A8F331FC903374EC1D8BEF67 /* Pods-Torres Oeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1741,6 +1756,7 @@
 		8295EE471DC4AEB50049FB7D /* SharedViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				82EE77EC1DC6689C00C3A344 /* Album */,
 				8295EE481DC4AEB50049FB7D /* Splash */,
 			);
 			path = SharedViewControllers;
@@ -2546,42 +2562,10 @@
 		8295F0671DC4BD6E0049FB7D /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				8295F0681DC4BD6E0049FB7D /* Album */,
 				8295F0731DC4BD6E0049FB7D /* SlideGuideBaronha.h */,
 				8295F0741DC4BD6E0049FB7D /* SlideGuideBaronha.m */,
 			);
 			path = Subviews;
-			sourceTree = "<group>";
-		};
-		8295F0681DC4BD6E0049FB7D /* Album */ = {
-			isa = PBXGroup;
-			children = (
-				8295F0691DC4BD6E0049FB7D /* AlbumViewController.h */,
-				8295F06A1DC4BD6E0049FB7D /* AlbumViewController.m */,
-				8295F06B1DC4BD6E0049FB7D /* AlbumViewController.xib */,
-				8295F06C1DC4BD6E0049FB7D /* Controller */,
-				8295F06F1DC4BD6E0049FB7D /* ViewImage */,
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
-		8295F06C1DC4BD6E0049FB7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8295F06D1DC4BD6E0049FB7D /* AlbumPagerController.h */,
-				8295F06E1DC4BD6E0049FB7D /* AlbumPagerController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8295F06F1DC4BD6E0049FB7D /* ViewImage */ = {
-			isa = PBXGroup;
-			children = (
-				8295F0701DC4BD6E0049FB7D /* ViewImage.h */,
-				8295F0711DC4BD6E0049FB7D /* ViewImage.m */,
-				8295F0721DC4BD6E0049FB7D /* ViewImage.xib */,
-			);
-			path = ViewImage;
 			sourceTree = "<group>";
 		};
 		8295F0751DC4BD6E0049FB7D /* View */ = {
@@ -3233,6 +3217,37 @@
 			path = Creditos;
 			sourceTree = "<group>";
 		};
+		82EE77EC1DC6689C00C3A344 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				82EE77ED1DC6689C00C3A344 /* AlbumViewController.h */,
+				82EE77EE1DC6689C00C3A344 /* AlbumViewController.m */,
+				82EE77EF1DC6689C00C3A344 /* AlbumViewController.xib */,
+				82EE77F01DC6689C00C3A344 /* Controller */,
+				82EE77F31DC6689C00C3A344 /* ViewImage */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		82EE77F01DC6689C00C3A344 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82EE77F11DC6689C00C3A344 /* AlbumPagerController.h */,
+				82EE77F21DC6689C00C3A344 /* AlbumPagerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		82EE77F31DC6689C00C3A344 /* ViewImage */ = {
+			isa = PBXGroup;
+			children = (
+				82EE77F41DC6689C00C3A344 /* ViewImage.h */,
+				82EE77F51DC6689C00C3A344 /* ViewImage.m */,
+				82EE77F61DC6689C00C3A344 /* ViewImage.xib */,
+			);
+			path = ViewImage;
+			sourceTree = "<group>";
+		};
 		AB93E035B14DB0F2006039C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3398,6 +3413,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */,
+				82EE78011DC668A400C3A344 /* AlbumViewController.xib in Resources */,
 				8295EBBC1DC4A4CC0049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295EBB91DC4A4CC0049FB7D /* Assets.xcassets in Resources */,
 				8295EBB41DC4A4CC0049FB7D /* Main.storyboard in Resources */,
@@ -3425,6 +3442,7 @@
 				8295EF281DC4B0740049FB7D /* Splash.storyboard in Resources */,
 				8295EEF71DC4B0600049FB7D /* Copyright.storyboard in Resources */,
 				8295EF071DC4B0600049FB7D /* PoiTableViewCell.xib in Resources */,
+				82EE77FF1DC668A300C3A344 /* AlbumViewController.xib in Resources */,
 				8295EEFC1DC4B0600049FB7D /* NavigationBar.xib in Resources */,
 				8295EE691DC4AF5C0049FB7D /* CaviarDreams_Bold.ttf in Resources */,
 				8295EEFA1DC4B0600049FB7D /* HeaderCopyright.xib in Resources */,
@@ -3435,6 +3453,7 @@
 				8295EF031DC4B0600049FB7D /* RightViewController.xib in Resources */,
 				82EE77E41DC64CF200C3A344 /* Creditos.storyboard in Resources */,
 				8295EF011DC4B0600049FB7D /* CustomTableViewCell.xib in Resources */,
+				82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */,
 				8295EE6D1DC4AF5C0049FB7D /* OpenSans-Regular.ttf in Resources */,
 				8295EF1C1DC4B0600049FB7D /* CellGuiaDetalle.xib in Resources */,
 				8295EE6B1DC4AF5C0049FB7D /* OpenSans-Italic.ttf in Resources */,
@@ -3446,20 +3465,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				8295F0951DC4BD6E0049FB7D /* HeaderCopyright.xib in Resources */,
+				82EE78061DC668AE00C3A344 /* ViewImage.xib in Resources */,
 				8295F0BF1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.xib in Resources */,
 				8295F0C31DC4BD6E0049FB7D /* HeaderGuia.xib in Resources */,
-				8295F0B41DC4BD6E0049FB7D /* ViewImage.xib in Resources */,
 				8295F0B71DC4BD6E0049FB7D /* CellGuiaCollectionView.xib in Resources */,
 				8295F0C01DC4BD6E0049FB7D /* Guias.storyboard in Resources */,
 				8295F0921DC4BD6E0049FB7D /* Copyright.storyboard in Resources */,
 				8295EC301DC4A8710049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295F09E1DC4BD6E0049FB7D /* RightViewController.xib in Resources */,
+				82EE77FD1DC668A300C3A344 /* AlbumViewController.xib in Resources */,
 				8295F0A21DC4BD6E0049FB7D /* PoiTableViewCell.xib in Resources */,
 				8295F0981DC4BD6E0049FB7D /* Home.storyboard in Resources */,
 				8295F18D1DC4C1480049FB7D /* OpenSans-Italic.ttf in Resources */,
 				8295F08D1DC4BD6E0049FB7D /* ComoLlegar.storyboard in Resources */,
 				8295F1831DC4BFA50049FB7D /* Splash.storyboard in Resources */,
-				8295F0B11DC4BD6E0049FB7D /* AlbumViewController.xib in Resources */,
 				8295F1901DC4C1480049FB7D /* OpenSans-Semibold.ttf in Resources */,
 				8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */,
 				8295F18E1DC4C1480049FB7D /* OpenSans-Light.ttf in Resources */,
@@ -3501,6 +3520,7 @@
 				8295EC481DC4A87D0049FB7D /* Assets.xcassets in Resources */,
 				8295F1B11DC4D6BA0049FB7D /* Giorgio-Thin.ttf in Resources */,
 				23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */,
+				82EE77FB1DC6689C00C3A344 /* ViewImage.xib in Resources */,
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
@@ -3517,6 +3537,7 @@
 				2314F2171DC50CE70048F9E4 /* ComoLlegarBorneiro.storyboard in Resources */,
 				8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */,
 				8295F1511DC4BD830049FB7D /* NavigationBar.xib in Resources */,
+				82EE77F81DC6689C00C3A344 /* AlbumViewController.xib in Resources */,
 				23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */,
 				8295F1B21DC4D6BA0049FB7D /* Giorgio.ttf in Resources */,
 			);
@@ -3669,6 +3690,7 @@
 			files = (
 				8295EE521DC4AEB50049FB7D /* SelectIdiomaViewController.m in Sources */,
 				8295EE1A1DC4AAEE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
+				82EE78001DC668A400C3A344 /* AlbumViewController.m in Sources */,
 				8295EDE81DC4AAEE0049FB7D /* GuiaDetalleDAO.m in Sources */,
 				8295EE051DC4AAEE0049FB7D /* HttpRequest.m in Sources */,
 				8295EE001DC4AAEE0049FB7D /* RemoteImageDetalleVO.m in Sources */,
@@ -3693,6 +3715,7 @@
 				8295EE091DC4AAEE0049FB7D /* GuiaDetalle+CoreDataProperties.m in Sources */,
 				8295EDEC1DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagenDAO.m in Sources */,
 				8295F0091DC4B41D0049FB7D /* RemoteGuiaDetalle.m in Sources */,
+				82EE78091DC668AF00C3A344 /* ViewImage.m in Sources */,
 				8295EDFD1DC4AAEE0049FB7D /* RemoteGuiaSaberMasVO.m in Sources */,
 				8295EE241DC4AAEE0049FB7D /* Poi+CoreDataProperties.m in Sources */,
 				8295EE071DC4AAEE0049FB7D /* Guia+CoreDataProperties.m in Sources */,
@@ -3737,6 +3760,7 @@
 				8295EDF81DC4AAEE0049FB7D /* RemoteParametros.m in Sources */,
 				8295EE1C1DC4AAEE0049FB7D /* Menu+CoreDataClass.m in Sources */,
 				8295EE0E1DC4AAEE0049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
+				82EE78041DC668AA00C3A344 /* AlbumPagerController.m in Sources */,
 				8295EDFA1DC4AAEE0049FB7D /* GenericResponse.m in Sources */,
 				8295EE1E1DC4AAEE0049FB7D /* MenuHeader.m in Sources */,
 			);
@@ -3818,6 +3842,8 @@
 				8295EF121DC4B0600049FB7D /* PageController.m in Sources */,
 				8295EFA41DC4B3970049FB7D /* Guia+CoreDataProperties.m in Sources */,
 				8295EFE71DC4B3B50049FB7D /* MenuHeader.m in Sources */,
+				82EE78071DC668AF00C3A344 /* ViewImage.m in Sources */,
+				82EE77FE1DC668A300C3A344 /* AlbumViewController.m in Sources */,
 				8295EFBD1DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataClass.m in Sources */,
 				8295EF061DC4B0600049FB7D /* PoiTableViewCell.m in Sources */,
 				8295EF461DC4B30D0049FB7D /* GuiaDAO.m in Sources */,
@@ -3833,6 +3859,7 @@
 				8295EFE61DC4B3B50049FB7D /* Menu+CoreDataProperties.m in Sources */,
 				8295EF051DC4B0600049FB7D /* PoiTableController.m in Sources */,
 				8295EFBB1DC4B3A00049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
+				82EE78031DC668AA00C3A344 /* AlbumPagerController.m in Sources */,
 				8295EF841DC4B3690049FB7D /* RemoteImageDetalleVO.m in Sources */,
 				8295EEF81DC4B0600049FB7D /* CopyrightViewController.m in Sources */,
 				8295EF111DC4B0600049FB7D /* GuiaDetalleTableController.m in Sources */,
@@ -3865,7 +3892,6 @@
 				8295F0AF1DC4BD6E0049FB7D /* PageController.m in Sources */,
 				8295EFAC1DC4B3970049FB7D /* Guia+CoreDataProperties.m in Sources */,
 				8295EFC11DC4B3A00049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
-				8295F0B21DC4BD6E0049FB7D /* AlbumPagerController.m in Sources */,
 				8295EF531DC4B31C0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
 				8295EF6A1DC4B3440049FB7D /* RemoteGuiaDetalle.m in Sources */,
 				8295F0931DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m in Sources */,
@@ -3896,7 +3922,6 @@
 				8295EC251DC4A8710049FB7D /* AppDelegate.m in Sources */,
 				8295EFC41DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataProperties.m in Sources */,
 				8295EE5B1DC4AED30049FB7D /* Splash.m in Sources */,
-				8295F0B31DC4BD6E0049FB7D /* ViewImage.m in Sources */,
 				8295EFC61DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
 				8295F0A01DC4BD6E0049FB7D /* PoiTableController.m in Sources */,
 				8295F0AD1DC4BD6E0049FB7D /* CollectionController.m in Sources */,
@@ -3908,6 +3933,7 @@
 				8295EF8F1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleVO.m in Sources */,
 				8295EF9E1DC4B3850049FB7D /* RemotePoiVO.m in Sources */,
 				8295EFE91DC4B3B50049FB7D /* Menu+CoreDataClass.m in Sources */,
+				82EE78021DC668A900C3A344 /* AlbumPagerController.m in Sources */,
 				8295EF861DC4B36A0049FB7D /* RemoteGuiaVO.m in Sources */,
 				8295EFFE1DC4B3C30049FB7D /* Poi+CoreDataClass.m in Sources */,
 				8295EF411DC4B2C70049FB7D /* Validator.m in Sources */,
@@ -3938,8 +3964,10 @@
 				8295F0A31DC4BD6E0049FB7D /* ListPoiViewController.m in Sources */,
 				8295EF441DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
 				82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */,
+				82EE77FC1DC668A300C3A344 /* AlbumViewController.m in Sources */,
 				8295F0991DC4BD6E0049FB7D /* HomeViewControllerBaronha.m in Sources */,
 				8295EF5F1DC4B3310049FB7D /* ParametrosDAO.m in Sources */,
+				82EE78051DC668AE00C3A344 /* ViewImage.m in Sources */,
 				8295F0B61DC4BD6E0049FB7D /* CellGuiaCollectionView.m in Sources */,
 				8295EF5C1DC4B3280049FB7D /* MenuDAO.m in Sources */,
 				8295F0001DC4B3C30049FB7D /* PoiImagen+CoreDataClass.m in Sources */,
@@ -3958,7 +3986,6 @@
 				8295EC221DC4A8710049FB7D /* main.m in Sources */,
 				8295EF381DC4B2B90049FB7D /* Constants.m in Sources */,
 				8295F1971DC4C1670049FB7D /* UtilsAppearance.m in Sources */,
-				8295F0B01DC4BD6E0049FB7D /* AlbumViewController.m in Sources */,
 				8295EFE11DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3972,6 +3999,7 @@
 				8295EFE41DC4B3AE0049FB7D /* Idioma+CoreDataProperties.m in Sources */,
 				23A501641DC61D9700019783 /* CidaBorneiroTableController.m in Sources */,
 				8295F15B1DC4BD830049FB7D /* PoiTableViewCell.m in Sources */,
+				82EE77F91DC6689C00C3A344 /* AlbumPagerController.m in Sources */,
 				2314F21F1DC515710048F9E4 /* GuiaBorneiroViewController.m in Sources */,
 				8295EF931DC4B3710049FB7D /* RemoteGuiaSaberMasVO.m in Sources */,
 				2314F21A1DC50D3E0048F9E4 /* ComoLlegarBorneiroViewController.m in Sources */,
@@ -4050,6 +4078,7 @@
 				8295EFF91DC4B3BC0049FB7D /* ParametrosRepositorio.m in Sources */,
 				8295EFEF1DC4B3B60049FB7D /* MenuHeader.m in Sources */,
 				8295EE591DC4AED00049FB7D /* TableIdiomaController.m in Sources */,
+				82EE77FA1DC6689C00C3A344 /* ViewImage.m in Sources */,
 				8295EF9C1DC4B3810049FB7D /* RemoteParametrosVO.m in Sources */,
 				8295EE461DC4ACD90049FB7D /* Plantilla_Guias_Turisticas.xcdatamodeld in Sources */,
 				8295EF3F1DC4B2C30049FB7D /* OpenExternalApps.m in Sources */,
@@ -4078,6 +4107,7 @@
 				8295F1B81DC4D6BA0049FB7D /* UtilsAppearance.m in Sources */,
 				8295EC3D1DC4A87D0049FB7D /* main.m in Sources */,
 				8295EF391DC4B2BA0049FB7D /* Constants.m in Sources */,
+				82EE77F71DC6689C00C3A344 /* AlbumViewController.m in Sources */,
 				8295F16A1DC4BD830049FB7D /* AlbumViewController.m in Sources */,
 				23A501911DC6272500019783 /* HeaderCultura.m in Sources */,
 				8295EFE31DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,

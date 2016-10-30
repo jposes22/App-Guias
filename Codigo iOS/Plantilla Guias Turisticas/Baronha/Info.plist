@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>gl</string>
 	<key>CFBundleDisplayName</key>
-	<string>Baroña</string>
+	<string>Castro de Baroña</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

@@ -31,7 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void) loadData{
-    _labelTitulo.text = NSLocalizedString(@"title_creditos", nil);
+    _labelTitulo.text = NSLocalizedString(@"menu_creditos", nil);
     
 }
 - (IBAction)btnMenuTouch:(id)sender {
@@ -40,7 +40,7 @@
 
 - (void) loadStyle{
     [StyleBorneiro setStyleTitle:_labelTitulo];
-    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_creditos", nil) backgroundColor:[StyleBorneiro getPrimaryDarkColor]];
+    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_creditos", nil) backgroundColor:[StyleBorneiro getPrimaryDarkColor]];
 }
 
 /*

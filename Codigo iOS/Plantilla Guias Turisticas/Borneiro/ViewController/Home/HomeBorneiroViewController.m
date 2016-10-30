@@ -90,7 +90,7 @@
     [self.ViewVisita addGestureRecognizer:gestureVisita];
     UITapGestureRecognizer * gestureCultura =  [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapCultura:)];
     gestureCultura.numberOfTapsRequired = 1;
-    [self.viewCultura addGestureRecognizer:gestureVisita];
+    [self.viewCultura addGestureRecognizer:gestureCultura];
     UITapGestureRecognizer * gestureSitios =  [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapSitios:)];
     gestureSitios.numberOfTapsRequired = 1;
     [self.viewSitiosInteres addGestureRecognizer:gestureSitios];

@@ -17,13 +17,14 @@
                         <viewControllerLayoutGuide type="bottom" id="cjW-jh-vHi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l9y-YZ-LWx">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portada" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-va-6NX">
                                 <color key="backgroundColor" red="1" green="0.2383997887173599" blue="0.16465353556898477" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cY-uh-qYL">
+                                <color key="backgroundColor" red="0.05712892612" green="0.067925367089999994" blue="0.056884785489999999" alpha="0.57421875" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -32,6 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xms-N1-aaP">
+                                <color key="backgroundColor" red="0.05712892612" green="0.067925367089999994" blue="0.056884785489999999" alpha="0.57421875" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -40,6 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7R-mp-YhR">
+                                <color key="backgroundColor" red="0.05712892612" green="0.067925367089999994" blue="0.056884785489999999" alpha="0.57421875" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>

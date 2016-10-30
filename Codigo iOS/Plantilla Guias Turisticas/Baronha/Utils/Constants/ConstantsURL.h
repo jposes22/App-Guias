@@ -17,11 +17,9 @@ extern NSString *const kURL_SERVICE;
 typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
     SideDrawerMenuItemHome             = 0,
     SideDrawerMenuItemGuia             = 1,
-    SideDrawerMenuItemRomeria          = 2,
     SideDrawerMenuItemPoi              = 3,
     SideDrawerMenuItemComoLlegar       = 4,
     SideDrawerMenuItemGaleria          = 5,
-    SideDrawerMenuItemInformacion      = 6,
     SideDrawerMenuItemReferencias      = 7,
     SideDrawerMenuItemCopyright        = 8,
     SideDrawerMenuItemAjustes          = 9,
@@ -32,8 +30,7 @@ typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
 
 //TIPOS GUIA
 typedef NS_ENUM(NSInteger, kTipoGuia){
-    kTipoGuiaTorresOeste            = 0,
-    kTipoGuiaRomeria                = 1,
+    kTipoGuiaCastroBaronha          = 0,
     kTipoGuiaComoLlegar             = 2,
 };
 

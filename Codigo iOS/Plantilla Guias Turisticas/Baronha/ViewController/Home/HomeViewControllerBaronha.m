@@ -89,9 +89,7 @@
 - (IBAction)btnTorresOestoTouch {
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemGuia)];
 }
-- (IBAction)btnRomariaTouch {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemRomeria)];
-}
+
 - (IBAction)btnLugarInteresTouch {
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemPoi)];
 }

@@ -67,10 +67,6 @@
             sb = [UIStoryboard storyboardWithName:@"Guias" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"GuiasNC"];
             break;
-        case SideDrawerMenuItemRomeria:
-            sb = [UIStoryboard storyboardWithName:@"MainRomeria" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"RomeriaNC"];
-            break;
         case SideDrawerMenuItemPoi:
             sb = [UIStoryboard storyboardWithName:@"Poi" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"PoiNC"];

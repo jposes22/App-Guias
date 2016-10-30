@@ -22,7 +22,7 @@
 // The cell that is returned must be retrieved from a call to - dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    CellGuiaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellVisitaCollectionView" forIndexPath:indexPath];
+    CellGuiaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellGuiaCollectionView" forIndexPath:indexPath];
     cell.labelTitle.text =((Guia *)[_listOfGuides objectAtIndex:indexPath.row]).titulo;
     [UtilsAppearance setStyleTextBold:cell.labelTitle];
     cell.labelTitle.textColor = [UIColor whiteColor];

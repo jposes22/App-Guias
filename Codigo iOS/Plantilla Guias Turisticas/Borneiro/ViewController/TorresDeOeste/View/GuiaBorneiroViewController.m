@@ -66,7 +66,7 @@
 }
 -(void)loadCollection{
     _collectionController = [[CollectionVisitaController alloc] init];
-    [_collectionView registerNib:[UINib nibWithNibName:@"CellGuiaCollectionView" bundle:nil] forCellWithReuseIdentifier:@"CellGuiaCollectionView"];
+    [_collectionView registerNib:[UINib nibWithNibName:@"CellVisitaCollectionView" bundle:nil] forCellWithReuseIdentifier:@"CellVisitaCollectionView"];
     _collectionView.delegate = _collectionController;
     _collectionView.dataSource = _collectionController;
     _collectionController.pageSelected = 0;

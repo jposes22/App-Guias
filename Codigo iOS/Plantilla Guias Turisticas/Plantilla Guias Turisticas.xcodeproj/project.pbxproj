@@ -24,6 +24,24 @@
 		2314F2321DC51B540048F9E4 /* DetalleVisitaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314F2311DC51B540048F9E4 /* DetalleVisitaTableController.m */; };
 		2314F2361DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314F2341DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m */; };
 		2314F2371DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2314F2351DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib */; };
+		23A501531DC61B1100019783 /* ACidaBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501511DC61B1100019783 /* ACidaBorneiroViewController.m */; };
+		23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A501521DC61B1100019783 /* MainACidaBorneiro.storyboard */; };
+		23A501641DC61D9700019783 /* CidaBorneiroTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501631DC61D9700019783 /* CidaBorneiroTableController.m */; };
+		23A501711DC6200D00019783 /* CellCidaBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501671DC6200D00019783 /* CellCidaBorneiro.m */; };
+		23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A501681DC6200D00019783 /* CellCidaBorneiro.xib */; };
+		23A501731DC6200D00019783 /* CellCidaBorneiroSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5016B1DC6200D00019783 /* CellCidaBorneiroSinImagen.m */; };
+		23A501741DC6200D00019783 /* CellCidaBorneiroSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5016C1DC6200D00019783 /* CellCidaBorneiroSinImagen.xib */; };
+		23A501751DC6200D00019783 /* HeaderCida.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5016F1DC6200D00019783 /* HeaderCida.m */; };
+		23A501761DC6200D00019783 /* HeaderCida.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A501701DC6200D00019783 /* HeaderCida.xib */; };
+		23A5018B1DC6272500019783 /* CulturaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5017A1DC6272500019783 /* CulturaTableController.m */; };
+		23A5018C1DC6272500019783 /* CellCultura.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A5017E1DC6272500019783 /* CellCultura.m */; };
+		23A5018D1DC6272500019783 /* CellCultura.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A5017F1DC6272500019783 /* CellCultura.xib */; };
+		23A5018E1DC6272500019783 /* CellCulturaSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501821DC6272500019783 /* CellCulturaSinImagen.m */; };
+		23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A501831DC6272500019783 /* CellCulturaSinImagen.xib */; };
+		23A501901DC6272500019783 /* CulturaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501851DC6272500019783 /* CulturaViewController.m */; };
+		23A501911DC6272500019783 /* HeaderCultura.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501881DC6272500019783 /* HeaderCultura.m */; };
+		23A501921DC6272500019783 /* HeaderCultura.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A501891DC6272500019783 /* HeaderCultura.xib */; };
+		23A501931DC6272500019783 /* MainCultura.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A5018A1DC6272500019783 /* MainCultura.storyboard */; };
 		8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAA1DC4A4CC0049FB7D /* main.m */; };
 		8295EBAE1DC4A4CC0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAD1DC4A4CC0049FB7D /* AppDelegate.m */; };
 		8295EBB11DC4A4CC0049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBB01DC4A4CC0049FB7D /* ViewController.m */; };
@@ -512,6 +530,34 @@
 		2314F2331DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaBorneiroDetalle.h; sourceTree = "<group>"; };
 		2314F2341DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaBorneiroDetalle.m; sourceTree = "<group>"; };
 		2314F2351DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaBorneiroDetalle.xib; sourceTree = "<group>"; };
+		23A501501DC61B1100019783 /* ACidaBorneiroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACidaBorneiroViewController.h; sourceTree = "<group>"; };
+		23A501511DC61B1100019783 /* ACidaBorneiroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACidaBorneiroViewController.m; sourceTree = "<group>"; };
+		23A501521DC61B1100019783 /* MainACidaBorneiro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainACidaBorneiro.storyboard; sourceTree = "<group>"; };
+		23A501621DC61D9700019783 /* CidaBorneiroTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CidaBorneiroTableController.h; path = ACidaBorneiro/Controller/CidaBorneiroTableController.h; sourceTree = "<group>"; };
+		23A501631DC61D9700019783 /* CidaBorneiroTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CidaBorneiroTableController.m; path = ACidaBorneiro/Controller/CidaBorneiroTableController.m; sourceTree = "<group>"; };
+		23A501661DC6200D00019783 /* CellCidaBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellCidaBorneiro.h; sourceTree = "<group>"; };
+		23A501671DC6200D00019783 /* CellCidaBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellCidaBorneiro.m; sourceTree = "<group>"; };
+		23A501681DC6200D00019783 /* CellCidaBorneiro.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCidaBorneiro.xib; sourceTree = "<group>"; };
+		23A5016A1DC6200D00019783 /* CellCidaBorneiroSinImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellCidaBorneiroSinImagen.h; sourceTree = "<group>"; };
+		23A5016B1DC6200D00019783 /* CellCidaBorneiroSinImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellCidaBorneiroSinImagen.m; sourceTree = "<group>"; };
+		23A5016C1DC6200D00019783 /* CellCidaBorneiroSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCidaBorneiroSinImagen.xib; sourceTree = "<group>"; };
+		23A5016E1DC6200D00019783 /* HeaderCida.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCida.h; sourceTree = "<group>"; };
+		23A5016F1DC6200D00019783 /* HeaderCida.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCida.m; sourceTree = "<group>"; };
+		23A501701DC6200D00019783 /* HeaderCida.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCida.xib; sourceTree = "<group>"; };
+		23A501791DC6272500019783 /* CulturaTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CulturaTableController.h; sourceTree = "<group>"; };
+		23A5017A1DC6272500019783 /* CulturaTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CulturaTableController.m; sourceTree = "<group>"; };
+		23A5017D1DC6272500019783 /* CellCultura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellCultura.h; sourceTree = "<group>"; };
+		23A5017E1DC6272500019783 /* CellCultura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellCultura.m; sourceTree = "<group>"; };
+		23A5017F1DC6272500019783 /* CellCultura.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCultura.xib; sourceTree = "<group>"; };
+		23A501811DC6272500019783 /* CellCulturaSinImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellCulturaSinImagen.h; sourceTree = "<group>"; };
+		23A501821DC6272500019783 /* CellCulturaSinImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellCulturaSinImagen.m; sourceTree = "<group>"; };
+		23A501831DC6272500019783 /* CellCulturaSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellCulturaSinImagen.xib; sourceTree = "<group>"; };
+		23A501841DC6272500019783 /* CulturaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CulturaViewController.h; sourceTree = "<group>"; };
+		23A501851DC6272500019783 /* CulturaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CulturaViewController.m; sourceTree = "<group>"; };
+		23A501871DC6272500019783 /* HeaderCultura.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCultura.h; sourceTree = "<group>"; };
+		23A501881DC6272500019783 /* HeaderCultura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCultura.m; sourceTree = "<group>"; };
+		23A501891DC6272500019783 /* HeaderCultura.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCultura.xib; sourceTree = "<group>"; };
+		23A5018A1DC6272500019783 /* MainCultura.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainCultura.storyboard; sourceTree = "<group>"; };
 		25DF257C251E887DDAF0CB8D /* Pods-Baronha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baronha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baronha/Pods-Baronha.release.xcconfig"; sourceTree = "<group>"; };
 		2F4423A020DCB1EAE149C9E3 /* libPods-Torres Oeste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Torres Oeste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2DFB5B655EA1E5B7132D33 /* Pods-Torres Oeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.debug.xcconfig"; sourceTree = "<group>"; };
@@ -985,6 +1031,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A5014E1DC61A8A00019783 /* ACidaBorneiro */ = {
+			isa = PBXGroup;
+			children = (
+				23A501551DC61D1800019783 /* Controller */,
+				23A5014F1DC61B1100019783 /* View */,
+			);
+			name = ACidaBorneiro;
+			sourceTree = "<group>";
+		};
+		23A5014F1DC61B1100019783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23A501651DC6200D00019783 /* Cell */,
+				23A5016D1DC6200D00019783 /* Header */,
+				23A501501DC61B1100019783 /* ACidaBorneiroViewController.h */,
+				23A501511DC61B1100019783 /* ACidaBorneiroViewController.m */,
+				23A501521DC61B1100019783 /* MainACidaBorneiro.storyboard */,
+			);
+			name = View;
+			path = ACidaBorneiro/View;
+			sourceTree = "<group>";
+		};
+		23A501551DC61D1800019783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23A501621DC61D9700019783 /* CidaBorneiroTableController.h */,
+				23A501631DC61D9700019783 /* CidaBorneiroTableController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		23A501651DC6200D00019783 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23A501661DC6200D00019783 /* CellCidaBorneiro.h */,
+				23A501671DC6200D00019783 /* CellCidaBorneiro.m */,
+				23A501681DC6200D00019783 /* CellCidaBorneiro.xib */,
+				23A501691DC6200D00019783 /* CellSinImagen */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23A501691DC6200D00019783 /* CellSinImagen */ = {
+			isa = PBXGroup;
+			children = (
+				23A5016A1DC6200D00019783 /* CellCidaBorneiroSinImagen.h */,
+				23A5016B1DC6200D00019783 /* CellCidaBorneiroSinImagen.m */,
+				23A5016C1DC6200D00019783 /* CellCidaBorneiroSinImagen.xib */,
+			);
+			path = CellSinImagen;
+			sourceTree = "<group>";
+		};
+		23A5016D1DC6200D00019783 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				23A5016E1DC6200D00019783 /* HeaderCida.h */,
+				23A5016F1DC6200D00019783 /* HeaderCida.m */,
+				23A501701DC6200D00019783 /* HeaderCida.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		23A501771DC6272500019783 /* CulturaCastrenha */ = {
+			isa = PBXGroup;
+			children = (
+				23A501781DC6272500019783 /* Controller */,
+				23A5017B1DC6272500019783 /* View */,
+			);
+			path = CulturaCastrenha;
+			sourceTree = "<group>";
+		};
+		23A501781DC6272500019783 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23A501791DC6272500019783 /* CulturaTableController.h */,
+				23A5017A1DC6272500019783 /* CulturaTableController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23A5017B1DC6272500019783 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23A5017C1DC6272500019783 /* Cell */,
+				23A501841DC6272500019783 /* CulturaViewController.h */,
+				23A501851DC6272500019783 /* CulturaViewController.m */,
+				23A501861DC6272500019783 /* Header */,
+				23A5018A1DC6272500019783 /* MainCultura.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23A5017C1DC6272500019783 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23A5017D1DC6272500019783 /* CellCultura.h */,
+				23A5017E1DC6272500019783 /* CellCultura.m */,
+				23A5017F1DC6272500019783 /* CellCultura.xib */,
+				23A501801DC6272500019783 /* CellSinImagen */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23A501801DC6272500019783 /* CellSinImagen */ = {
+			isa = PBXGroup;
+			children = (
+				23A501811DC6272500019783 /* CellCulturaSinImagen.h */,
+				23A501821DC6272500019783 /* CellCulturaSinImagen.m */,
+				23A501831DC6272500019783 /* CellCulturaSinImagen.xib */,
+			);
+			path = CellSinImagen;
+			sourceTree = "<group>";
+		};
+		23A501861DC6272500019783 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				23A501871DC6272500019783 /* HeaderCultura.h */,
+				23A501881DC6272500019783 /* HeaderCultura.m */,
+				23A501891DC6272500019783 /* HeaderCultura.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		8295EB9D1DC4A4CC0049FB7D = {
 			isa = PBXGroup;
 			children = (
@@ -2461,6 +2630,8 @@
 		8295F0C41DC4BD820049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				23A501771DC6272500019783 /* CulturaCastrenha */,
+				23A5014E1DC61A8A00019783 /* ACidaBorneiro */,
 				8295F0C51DC4BD820049FB7D /* ComoLlegar */,
 				8295F0CA1DC4BD820049FB7D /* Copyright */,
 				8295F0D91DC4BD820049FB7D /* GenericView */,
@@ -3277,8 +3448,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A501931DC6272500019783 /* MainCultura.storyboard in Resources */,
 				8295F1B41DC4D6BA0049FB7D /* OpenSans-Light.ttf in Resources */,
 				8295F14F1DC4BD830049FB7D /* HeaderCopyright.xib in Resources */,
+				23A501761DC6200D00019783 /* HeaderCida.xib in Resources */,
 				2314F21C1DC515130048F9E4 /* GuiasBorneiro.storyboard in Resources */,
 				8295F1791DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib in Resources */,
 				8295F16E1DC4BD830049FB7D /* ViewImage.xib in Resources */,
@@ -3293,7 +3466,10 @@
 				2314F2211DC516350048F9E4 /* HeaderGuiaBorneiro.xib in Resources */,
 				8295EC481DC4A87D0049FB7D /* Assets.xcassets in Resources */,
 				8295F1B11DC4D6BA0049FB7D /* Giorgio-Thin.ttf in Resources */,
+				23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */,
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
+				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
+				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
 				8295F16B1DC4BD830049FB7D /* AlbumViewController.xib in Resources */,
 				8295F1621DC4BD830049FB7D /* MainRomeria.storyboard in Resources */,
 				8295F14A1DC4BD830049FB7D /* CopyrightCell.xib in Resources */,
@@ -3301,10 +3477,13 @@
 				2314F2371DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib in Resources */,
 				2314F22F1DC519950048F9E4 /* CellVisitaCollectionView.xib in Resources */,
 				8295F1601DC4BD830049FB7D /* Referencias.storyboard in Resources */,
+				23A5018D1DC6272500019783 /* CellCultura.xib in Resources */,
 				8295F15E1DC4BD830049FB7D /* Poi.storyboard in Resources */,
+				23A501741DC6200D00019783 /* CellCidaBorneiroSinImagen.xib in Resources */,
 				2314F2171DC50CE70048F9E4 /* ComoLlegarBorneiro.storyboard in Resources */,
 				8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */,
 				8295F1511DC4BD830049FB7D /* NavigationBar.xib in Resources */,
+				23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */,
 				8295F1B21DC4D6BA0049FB7D /* Giorgio.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3756,19 +3935,25 @@
 				8295EF4B1DC4B3130049FB7D /* GuiaDetalleDAO.m in Sources */,
 				8295EF811DC4B3640049FB7D /* GenericResponse.m in Sources */,
 				8295EFE41DC4B3AE0049FB7D /* Idioma+CoreDataProperties.m in Sources */,
+				23A501641DC61D9700019783 /* CidaBorneiroTableController.m in Sources */,
 				8295F15B1DC4BD830049FB7D /* PoiTableViewCell.m in Sources */,
 				2314F21F1DC515710048F9E4 /* GuiaBorneiroViewController.m in Sources */,
 				8295EF931DC4B3710049FB7D /* RemoteGuiaSaberMasVO.m in Sources */,
 				2314F21A1DC50D3E0048F9E4 /* ComoLlegarBorneiroViewController.m in Sources */,
 				8295F1691DC4BD830049FB7D /* PageControllerBorneiro.m in Sources */,
+				23A5018E1DC6272500019783 /* CellCulturaSinImagen.m in Sources */,
 				8295EFB41DC4B3980049FB7D /* Guia+CoreDataProperties.m in Sources */,
 				2314F2271DC518AE0048F9E4 /* SlideGuideBorneiro.m in Sources */,
 				8295EFC71DC4B3A00049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
 				8295F16C1DC4BD830049FB7D /* AlbumPagerController.m in Sources */,
 				8295EF561DC4B31D0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
+				23A501711DC6200D00019783 /* CellCidaBorneiro.m in Sources */,
 				8295EF6C1DC4B3450049FB7D /* RemoteGuiaDetalle.m in Sources */,
 				8295F14D1DC4BD830049FB7D /* CopyrightViewController.m in Sources */,
 				8295F1F71DC4F8650049FB7D /* NSBundle.m in Sources */,
+				23A501751DC6200D00019783 /* HeaderCida.m in Sources */,
+				23A5018B1DC6272500019783 /* CulturaTableController.m in Sources */,
+				23A5018C1DC6272500019783 /* CellCultura.m in Sources */,
 				8295EF911DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295EF961DC4B3770049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */,
@@ -3812,6 +3997,7 @@
 				8295F1611DC4BD830049FB7D /* ReferenciasViewController.m in Sources */,
 				8295EF751DC4B3500049FB7D /* RemoteIdioma.m in Sources */,
 				8295EF4E1DC4B3170049FB7D /* GuiaDetalleImagenDAO.m in Sources */,
+				23A501901DC6272500019783 /* CulturaViewController.m in Sources */,
 				8295F1541DC4BD830049FB7D /* MenuViewController.m in Sources */,
 				8295F1571DC4BD830049FB7D /* RightViewController.m in Sources */,
 				8295F15F1DC4BD830049FB7D /* PoiViewController.m in Sources */,
@@ -3839,9 +4025,11 @@
 				8295F0041DC4B3C40049FB7D /* PoiImagen+CoreDataClass.m in Sources */,
 				8295EF991DC4B37C0049FB7D /* RemoteMenuVO.m in Sources */,
 				8295EF7E1DC4B35F0049FB7D /* RemotePoi.m in Sources */,
+				23A501731DC6200D00019783 /* CellCidaBorneiroSinImagen.m in Sources */,
 				8295EF361DC4B2A10049FB7D /* Settings.m in Sources */,
 				8295EFB71DC4B3980049FB7D /* GuiaDetalleImagen+CoreDataClass.m in Sources */,
 				8295F1591DC4BD830049FB7D /* DetailPoiViewController.m in Sources */,
+				23A501531DC61B1100019783 /* ACidaBorneiroViewController.m in Sources */,
 				8295F14B1DC4BD830049FB7D /* CopyrightTableController.m in Sources */,
 				8295F0051DC4B3C40049FB7D /* PoiImagen+CoreDataProperties.m in Sources */,
 				8295EF5A1DC4B3230049FB7D /* IdiomaDAO.m in Sources */,
@@ -3855,6 +4043,7 @@
 				8295EC3D1DC4A87D0049FB7D /* main.m in Sources */,
 				8295EF391DC4B2BA0049FB7D /* Constants.m in Sources */,
 				8295F16A1DC4BD830049FB7D /* AlbumViewController.m in Sources */,
+				23A501911DC6272500019783 /* HeaderCultura.m in Sources */,
 				8295EFE31DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

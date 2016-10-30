@@ -34,8 +34,7 @@
         _guia = guia;
     }
     _labelTitle.text = guia.titulo;
-    [StyleBorneiro setStyleTitle:_labelTitle];    
-    
+    [StyleBorneiro setStyleTitleVisita:_labelTitle];
 }
 
 - (void)tapImageAudioGuia:(UITapGestureRecognizer *)tap

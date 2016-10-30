@@ -20,6 +20,11 @@
 + (UIColor *) getVerdeClaroVisita;
 + (UIColor *) getVerdeOscuroVisita;
 
++ (UIColor *) getVerdeClaroCida;
++ (UIColor *) getVerdeOscuroCida;
++ (UIColor *) getVerdeClaroCultura;
++ (UIColor *) getVerdeOscuroCultura;
+
 + (UIColor *) getColorText;
 
 //Style Fonts and FontSize
@@ -35,6 +40,12 @@
 
 + (void)setStyleTitleComoLlegar:(UILabel *) label;
 + (void)setStyleTitleVisita:(UILabel *) label;
++ (void)setStyleTitleCida:(UILabel *) label;
++ (void)setStyleTitleCultura:(UILabel *) label;
++ (void)setStyleSubTitleVisita:(UILabel *) label;
++ (void)setStyleSubTitleCida:(UILabel *) label;
++ (void)setStyleSubTitleCultura:(UILabel *) label;
+
 
 +(void)setCircleView:(UIView *) view;
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title backgroundColor:(UIColor *)background;

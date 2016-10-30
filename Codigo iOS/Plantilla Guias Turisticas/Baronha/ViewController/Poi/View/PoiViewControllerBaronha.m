@@ -6,7 +6,7 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "PoiViewController.h"
+#import "PoiViewControllerBaronha.h"
 
 #import "ConstantsURL.h"
 #import "Constants.h"
@@ -15,7 +15,7 @@
 #import "NavigationBar.h"
 #import "UtilsAppearance.h"
 
-@interface PoiViewController ()<CommnicationMenu>
+@interface PoiViewControllerBaronha ()<CommnicationMenu>
 @property (weak, nonatomic) IBOutlet NavigationBar *navigationBar;
 @property (weak, nonatomic) IBOutlet UIView *viewRecursos;
 @property (weak, nonatomic) IBOutlet UIView *viewAlojamiento;
@@ -28,7 +28,7 @@
 
 @end
 
-@implementation PoiViewController
+@implementation PoiViewControllerBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];

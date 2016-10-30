@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-33" y="161"/>
         </scene>
-        <!--Poi View Controller-->
+        <!--Poi View Controller Baronha-->
         <scene sceneID="UBg-7e-Y4k">
             <objects>
-                <viewController storyboardIdentifier="PoiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4ET-tn-Cb2" customClass="PoiViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PoiViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4ET-tn-Cb2" customClass="PoiViewControllerBaronha" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HTD-WC-GHu"/>
                         <viewControllerLayoutGuide type="bottom" id="LMb-46-3Po"/>

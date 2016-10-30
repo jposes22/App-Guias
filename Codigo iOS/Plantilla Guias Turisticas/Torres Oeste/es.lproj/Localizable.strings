@@ -6,3 +6,12 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto castellano";
+
+
+/*Titles Nav*/
+"title_home" = "Inicio";
+"title_como_llegar" = "Como Llegar";
+"title_lugares" = "Lugares de interese";
+"title_bibliografía" = "Bibliografía";
+"title_ajustes" = "Axustes";
+"title_creditos" = "Créditos";

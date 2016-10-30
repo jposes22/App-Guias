@@ -29,7 +29,7 @@
     [self loadTableController];
 }
 - (void) loadData {
-    _listData = [[NSArray alloc] initWithObjects:@"<span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 20px;'><br>La propiedad intelectual de esta App pertenece al Ayuntamiento de Catoira y fue realiza por Tictura.<br><br>Cualquier forma de reproducción distribución, comunicación pública o transformación de esta obra solo puede ser realizada con laautorización de sus titulares, salvo excepción prevista por la ley. Sí necesitas citarla, se recomienda hacerlo de la siguiente manera:<br>Torres de Oeste. Aplicación móvil desarrollada por el Ayuntamiento de Catoira.<br></span><br><br>", nil];
+    _listData = [[NSArray alloc] initWithObjects:@"<span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 20px;'><br>FALTA TEXTO<br></span><br><br>", nil];
 }
 -(void)loadStyle{
     [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Copyright"];

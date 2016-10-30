@@ -102,6 +102,10 @@
             sb = [UIStoryboard storyboardWithName:@"ComoLlegarBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarBorneiroNC"];
             break;
+        case SideDrawerMenuCreditos:
+            sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
+            break;
             /*
         case SideDrawerMenuItemHelps:
             controllerLoader = [[HelpMainViewController alloc] initWithNibName:@"HelpMainViewController" bundle:nil];

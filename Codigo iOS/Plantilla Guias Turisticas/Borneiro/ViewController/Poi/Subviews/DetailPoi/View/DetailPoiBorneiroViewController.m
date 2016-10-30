@@ -52,6 +52,8 @@
         }
     if(_poi.urlImagen){
         [_imageView sd_setImageWithURL:[[NSURL alloc] initWithString:_poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+    }else{
+        [_imageView removeFromSuperview];
     }
     }
 }

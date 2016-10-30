@@ -125,7 +125,8 @@
     [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
 }
 -(void)openHosteleria{
-     [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiHoteleria)];
+            NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiHoteleria),@"tipoPoi",NSLocalizedString(@"poi_guia_hosteleria", nil),@"title", nil];
+     [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
 }
 -(void)openTelefonosInteres{
     [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiDirectorio)];

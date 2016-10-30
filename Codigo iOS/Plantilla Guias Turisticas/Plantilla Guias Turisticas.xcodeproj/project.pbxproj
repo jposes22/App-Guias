@@ -24,6 +24,7 @@
 		2314F2321DC51B540048F9E4 /* DetalleVisitaTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314F2311DC51B540048F9E4 /* DetalleVisitaTableController.m */; };
 		2314F2361DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314F2341DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m */; };
 		2314F2371DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2314F2351DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib */; };
+		237F7B4C1DC68AD0007C84E6 /* PoiBorneiroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0FC1DC4BD830049FB7D /* PoiBorneiroTableViewCell.m */; };
 		23A501531DC61B1100019783 /* ACidaBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501511DC61B1100019783 /* ACidaBorneiroViewController.m */; };
 		23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A501521DC61B1100019783 /* MainACidaBorneiro.storyboard */; };
 		23A501641DC61D9700019783 /* CidaBorneiroTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501631DC61D9700019783 /* CidaBorneiroTableController.m */; };
@@ -4022,6 +4023,7 @@
 				23A501531DC61B1100019783 /* ACidaBorneiroViewController.m in Sources */,
 				8295F14B1DC4BD830049FB7D /* CopyrightBorneiroTableController.m in Sources */,
 				8295F0051DC4B3C40049FB7D /* PoiImagen+CoreDataProperties.m in Sources */,
+				237F7B4C1DC68AD0007C84E6 /* PoiBorneiroTableViewCell.m in Sources */,
 				8295EF5A1DC4B3230049FB7D /* IdiomaDAO.m in Sources */,
 				2314F2121DC4FE980048F9E4 /* HomeBorneiroViewController.m in Sources */,
 				2314F2321DC51B540048F9E4 /* DetalleVisitaTableController.m in Sources */,

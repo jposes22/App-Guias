@@ -24,8 +24,8 @@
     PoiTableViewCell * cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
     
     if (!cell){
-        [tableView registerNib:[UINib nibWithNibName:@"PoiBorneiroTableViewCell" bundle:nil] forCellReuseIdentifier:@"PoiBorneiroTableViewCell"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"PoiBorneiroTableViewCell"];
+        [tableView registerNib:[UINib nibWithNibName:identifier bundle:nil] forCellReuseIdentifier:identifier];
+        cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     }
 
     [cell loadData:(Poi *)[_listOfPois objectAtIndex:indexPath.row]];

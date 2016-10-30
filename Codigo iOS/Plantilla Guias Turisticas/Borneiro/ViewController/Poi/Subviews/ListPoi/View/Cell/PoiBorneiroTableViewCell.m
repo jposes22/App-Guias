@@ -11,7 +11,8 @@
 #import "Constants.h"
 #import "OpenExternalApps.h"
 #import "Validator.h"
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
+#import "Metodos.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface PoiBorneiroTableViewCell()
@@ -55,7 +56,7 @@
 -(void) loadData:(Poi*)poi{
     _poi = poi;
     _lblTitle.text = poi.titulo;
-    _lblDescription.text = poi.descripcion;
+    _lblDescription.attributedText = [Metodos convertHTMLToString:poi.descripcion];
     if(poi.urlImagen){
          [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
     }else{
@@ -112,8 +113,8 @@
 }
 
 -(void) loadStyle{
-    [UtilsAppearance setStyleTitleList:_lblTitle];
-    [UtilsAppearance setSytleSubtitleList:_lblDescription];
+    [StyleBorneiro setStyleSubTitlePoi:_lblTitle];
+    [StyleBorneiro setStyleText:_lblDescription];
 }
 
 @end

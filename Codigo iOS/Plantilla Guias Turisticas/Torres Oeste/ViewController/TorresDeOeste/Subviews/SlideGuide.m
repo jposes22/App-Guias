@@ -51,6 +51,14 @@
     [_tableView reloadData];
 
 }
+
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+    }
+    
+}
 - (void)loadStyle{
 
 }

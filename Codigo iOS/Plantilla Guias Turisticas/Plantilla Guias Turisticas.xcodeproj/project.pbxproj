@@ -390,7 +390,7 @@
 		8295F0051DC4B3C40049FB7D /* PoiImagen+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EDE01DC4AAEE0049FB7D /* PoiImagen+CoreDataProperties.m */; };
 		8295F0091DC4B41D0049FB7D /* RemoteGuiaDetalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295ED661DC4AAEE0049FB7D /* RemoteGuiaDetalle.m */; };
 		8295F08D1DC4BD6E0049FB7D /* ComoLlegar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F00D1DC4BD6E0049FB7D /* ComoLlegar.storyboard */; };
-		8295F08E1DC4BD6E0049FB7D /* ComoLlegarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewController.m */; };
+		8295F08E1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.m */; };
 		8295F08F1DC4BD6E0049FB7D /* CopyrightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0131DC4BD6E0049FB7D /* CopyrightCell.m */; };
 		8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0141DC4BD6E0049FB7D /* CopyrightCell.xib */; };
 		8295F0911DC4BD6E0049FB7D /* CopyrightTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0171DC4BD6E0049FB7D /* CopyrightTableController.m */; };
@@ -816,8 +816,8 @@
 		8295EF301DC4B25D0049FB7D /* libPods-Torres Oeste.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Torres Oeste.a"; path = "Pods/../build/Debug-iphoneos/libPods-Torres Oeste.a"; sourceTree = "<group>"; };
 		8295EF321DC4B26C0049FB7D /* libPods-Baronha.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Baronha.a"; path = "Pods/../build/Debug-iphoneos/libPods-Baronha.a"; sourceTree = "<group>"; };
 		8295F00D1DC4BD6E0049FB7D /* ComoLlegar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ComoLlegar.storyboard; sourceTree = "<group>"; };
-		8295F00E1DC4BD6E0049FB7D /* ComoLlegarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComoLlegarViewController.h; sourceTree = "<group>"; };
-		8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComoLlegarViewController.m; sourceTree = "<group>"; };
+		8295F00E1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComoLlegarViewControllerBaronha.h; sourceTree = "<group>"; };
+		8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComoLlegarViewControllerBaronha.m; sourceTree = "<group>"; };
 		8295F0121DC4BD6E0049FB7D /* CopyrightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightCell.h; sourceTree = "<group>"; };
 		8295F0131DC4BD6E0049FB7D /* CopyrightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightCell.m; sourceTree = "<group>"; };
 		8295F0141DC4BD6E0049FB7D /* CopyrightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CopyrightCell.xib; sourceTree = "<group>"; };
@@ -2256,8 +2256,8 @@
 			isa = PBXGroup;
 			children = (
 				8295F00D1DC4BD6E0049FB7D /* ComoLlegar.storyboard */,
-				8295F00E1DC4BD6E0049FB7D /* ComoLlegarViewController.h */,
-				8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewController.m */,
+				8295F00E1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.h */,
+				8295F00F1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3869,7 +3869,7 @@
 				8295EFC31DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataClass.m in Sources */,
 				8295EF691DC4B3440049FB7D /* RemoteGuia.m in Sources */,
 				8295EFAB1DC4B3970049FB7D /* Guia+CoreDataClass.m in Sources */,
-				8295F08E1DC4BD6E0049FB7D /* ComoLlegarViewController.m in Sources */,
+				8295F08E1DC4BD6E0049FB7D /* ComoLlegarViewControllerBaronha.m in Sources */,
 				8295F0961DC4BD6E0049FB7D /* NavigationBar.m in Sources */,
 				8295EFA11DC4B38A0049FB7D /* HttpRequest.m in Sources */,
 				8295F0941DC4BD6E0049FB7D /* HeaderCopyright.m in Sources */,

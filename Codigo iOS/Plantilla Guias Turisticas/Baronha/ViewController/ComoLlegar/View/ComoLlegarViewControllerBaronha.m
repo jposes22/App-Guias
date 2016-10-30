@@ -6,22 +6,25 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "ComoLlegarViewController.h"
+#import "ComoLlegarViewControllerBaronha.h"
 #import "UIViewController+MMDrawerController.h"
 #import "Constants.h"
 #import "Metodos.h"
 #import "GuiaDAO.h"
-#import "UtilsAppearance.h"
+#import "GuiaList.h"
+#import "StylesBaronha.h"
+#import "Validator.h"
+#import "OpenExternalApps.h"
 
-@interface ComoLlegarViewController ()
+@interface ComoLlegarViewControllerBaronha ()
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
-
+@property (nonatomic, strong) GuiaList *datosComoLlegar;
 
 @end
 
-@implementation ComoLlegarViewController
+@implementation ComoLlegarViewControllerBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,23 +40,37 @@
 }
 
 - (void)setNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Cómo llegar"];
-
+    [StylesBaronha setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Cómo llegar"];
 }
 -(void) loadData{
     NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaComoLlegar];
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){
-        Guia *datosComoLlegar = [listGUias firstObject];
-        _lblTitle.text = datosComoLlegar.titulo;
-        _lblDescripcion.attributedText = [Metodos convertHTMLToString:datosComoLlegar.descripcion];
+         _datosComoLlegar = [listGUias firstObject];
+        _lblTitle.text = _datosComoLlegar.titulo;
+        _lblDescripcion.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.descripcion];
+        if([Validator validatePositionGPS:_datosComoLlegar.latitud andLongitud:_datosComoLlegar.longitud]){
+            
+            UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapGoGPS)];
+            tapGestureRecognizer.numberOfTapsRequired = 1;
+            [_imgView addGestureRecognizer:tapGestureRecognizer];
+        }else{
+            [_imgView removeFromSuperview];
+        }
+    }else{
+        [_imgView removeFromSuperview];
     }
 }
 -(void) loadStyle{
-    [UtilsAppearance setStyleTitle:_lblTitle];
+    [StylesBaronha setStyleTitle:_lblTitle];
 }
 - (IBAction)btnMenu:(id)sender {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+}
+
+-(void) tapGoGPS{
+    [OpenExternalApps openGPSWithLatitud:_datosComoLlegar.latitud andLongitud:_datosComoLlegar.longitud];
+
 }
 
 

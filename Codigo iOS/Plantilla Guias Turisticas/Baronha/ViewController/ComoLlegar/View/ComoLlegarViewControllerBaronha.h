@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ComoLlegarViewController : UIViewController
+@interface ComoLlegarViewControllerBaronha : UIViewController
 
 @end

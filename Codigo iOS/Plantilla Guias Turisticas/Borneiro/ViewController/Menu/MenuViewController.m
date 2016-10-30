@@ -83,6 +83,7 @@
         case SideDrawerMenuItemReferencias:
              sb = [UIStoryboard storyboardWithName:@"ReferenciasBorneiro" bundle:nil];
              controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ReferenciasBorneiroNC"];
+            break;
         case SideDrawerMenuItemCopyright:
             sb = [UIStoryboard storyboardWithName:@"CopyrightBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CopyrightBorneiroNC"];
@@ -106,7 +107,7 @@
             sb = [UIStoryboard storyboardWithName:@"ComoLlegarBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarBorneiroNC"];
             break;
-        case SideDrawerMenuCreditos:
+        case SideDrawerMenuItemCreditos:
             sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;

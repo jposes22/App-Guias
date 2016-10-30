@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -27,10 +27,9 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d5e-YK-Do8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="concello_1" translatesAutoresizingMaskIntoConstraints="NO" id="d5e-YK-Do8">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="5pX-mW-Ea7"/>
-                                                    <constraint firstAttribute="height" constant="75" id="UeK-F4-DXf"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditos_galicia" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-ku-uXm">
@@ -127,7 +126,7 @@ http://www.turismo.gal/</string>
             <objects>
                 <navigationController storyboardIdentifier="CreditosNC" automaticallyAdjustsScrollViewInsets="NO" id="nDf-G4-PzP" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e7m-Ch-YM3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e7m-Ch-YM3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -143,6 +142,7 @@ http://www.turismo.gal/</string>
     </scenes>
     <resources>
         <image name="btnMenu_white" width="60" height="60"/>
+        <image name="concello_1" width="510" height="176"/>
         <image name="creditos_feader" width="334" height="75"/>
         <image name="creditos_galicia" width="334" height="75"/>
         <image name="creditos_ministerio_3" width="334" height="75"/>

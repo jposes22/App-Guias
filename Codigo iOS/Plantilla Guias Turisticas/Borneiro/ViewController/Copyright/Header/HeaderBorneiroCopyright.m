@@ -6,19 +6,18 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "HeaderCopyright.h"
-#import "UtilsAppearance.h"
-@interface HeaderCopyright()
+#import "HeaderBorneiroCopyright.h"
+#import "StyleBorneiro.h"
+@interface HeaderBorneiroCopyright()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 
 @end
 
-@implementation HeaderCopyright
+@implementation HeaderBorneiroCopyright
 
 - (void) loadData:(NSString *)titulo{
     _labelTitulo.text = titulo;
-    [UtilsAppearance setStyleTitle:_labelTitulo];
-    _labelTitulo.textColor = [UtilsAppearance getPrimaryDarkColor];
+    [StyleBorneiro setStyleTitle:_labelTitulo];
 }
 
 /*

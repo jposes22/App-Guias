@@ -11,6 +11,8 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "StyleBorneiro.h"
 #import "Constants.h"
+#import "ConstantsURL.h"
+
 @interface HomeBorneiroViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imagenBackground;
 @property (weak, nonatomic) IBOutlet UIButton *btnMenu;
@@ -109,18 +111,21 @@
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
 - (void)tapComoLlegar:(UITapGestureRecognizer *)tap{
-    
+     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemComoLlegar)];
 }
 - (void)tapCiudad:(UITapGestureRecognizer *)tap{
-    
+     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemCidaBorneiro)];
 }
 - (void)tapComenzar:(UITapGestureRecognizer *)tap{
+     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemGuia)];
     
 }
 - (void)tapCultura:(UITapGestureRecognizer *)tap{
+         [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemCulturaCastrenha)];
     
 }
 - (void)tapSitios:(UITapGestureRecognizer *)tap{
+         [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemPoi)];
     
 }
 @end

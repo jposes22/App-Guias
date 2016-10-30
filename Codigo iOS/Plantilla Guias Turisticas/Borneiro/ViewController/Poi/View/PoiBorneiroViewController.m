@@ -11,8 +11,9 @@
 #import "Constants.h"
 #import "ConstantsURL.h"
 #import "UIViewController+MMDrawerController.h"
-#import "ListPoiViewController.h"
+#import "ListPoiBorneiroViewController.h"
 #import "NavigationBar.h"
+#import "DetailPoiBorneiroViewController.h"
 #import "StyleBorneiro.h"
 
 @interface PoiBorneiroViewController ()<CommnicationMenu>
@@ -37,6 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self loadData];
     [self loadStyle];
     [self loadGestures];
     [self loadNavigationBar];
@@ -54,7 +56,7 @@
 }
 
 -(void)loadNavigationBar{
-    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"", nil) backgroundColor:[StyleBorneiro getVerdeOscuroPoi]];
+    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_sitios_interes", nil) backgroundColor:[StyleBorneiro getVerdeOscuroPoi]];
 }
 - (IBAction)btnOpenMenu:(id)sender {
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
@@ -79,11 +81,6 @@
     [StyleBorneiro setStyleSubTitlePoi:_labelHosteleria];
     [StyleBorneiro setStyleSubTitlePoi:_labelDirectorio];
     [StyleBorneiro setStyleSubTitlePoi:_labelPlayas];
-
-   
-
-
-
     
 }
 
@@ -101,24 +98,34 @@
     UITapGestureRecognizer *tapDirectorio = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openTelefonosInteres)];
     [self.viewDirectorio addGestureRecognizer:tapDirectorio];
     UITapGestureRecognizer *tapHosteleria = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openHosteleria)];
-    [self.viewPlayas addGestureRecognizer:tapHosteleria];
+    [self.viewHosteleria addGestureRecognizer:tapHosteleria];
 }
 
 
 -(void)openRecursosArqueologicos{
-   // [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRecursosPatrimoniales)];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"No disponible en estos momentos" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:ok];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
+   // [self performSegueWithIdentifier:kSEGUE_POI_ARQUELOGICO sender:@(kTipoPoiPatrimonioArqueologico)];
 }
 -(void)openRecursosHistoricos{
-  //  [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiAlojamientos)];
+    NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPatrimonioHistorico),@"tipoPoi",NSLocalizedString(@"poi_patrimonio_historico", nil),@"title", nil];
+   [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
 }
 -(void)openRutas{
-   // [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRestauracion)];
+        NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPoiRutasSenderismo),@"tipoPoi",NSLocalizedString(@"poi_rutas_senderismo", nil),@"title", nil];
+   [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
 }
 -(void)openPlayas{
-    // [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRestauracion)];
+    NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPlayas),@"tipoPoi",NSLocalizedString(@"poi_playas", nil),@"title", nil];
+
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
 }
 -(void)openHosteleria{
-    // [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRestauracion)];
+     [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiHoteleria)];
 }
 -(void)openTelefonosInteres{
     [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiDirectorio)];
@@ -135,10 +142,16 @@
         if ([[segue identifier] isEqualToString:kSEGUE_LIST_POI])
         {
             // Get reference to the destination view controller
-            ListPoiViewController *vc = [segue destinationViewController];
+            ListPoiBorneiroViewController *vc = [segue destinationViewController];
             
             // Pass any objects to the view controller here, like...
             [vc setCategoryPoi:[sender integerValue]];
+        }else if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL]){
+            DetailPoiBorneiroViewController *vc = [segue destinationViewController];
+            NSDictionary *dictionary = sender;
+            [vc setCategoryPoi:[[dictionary objectForKey:@"tipoPoi"] integerValue]];
+            [vc setTitleSection:[dictionary objectForKey:@"title"]];
+            
         }
 }
 

@@ -6,10 +6,10 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "PoiTableController.h"
+#import "PoiBorneiroTableController.h"
 #import "PoiTableViewCell.h"
 
-@implementation PoiTableController
+@implementation PoiBorneiroTableController
 
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -20,12 +20,12 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier = @"PoiTableViewCell";
+    static NSString *identifier = @"PoiBorneiroTableViewCell";
     PoiTableViewCell * cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
     
     if (!cell){
-        [tableView registerNib:[UINib nibWithNibName:@"PoiTableViewCell" bundle:nil] forCellReuseIdentifier:@"PoiTableViewCell"];
-        cell = [tableView dequeueReusableCellWithIdentifier:@"PoiTableViewCell"];
+        [tableView registerNib:[UINib nibWithNibName:@"PoiBorneiroTableViewCell" bundle:nil] forCellReuseIdentifier:@"PoiBorneiroTableViewCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"PoiBorneiroTableViewCell"];
     }
 
     [cell loadData:(Poi *)[_listOfPois objectAtIndex:indexPath.row]];

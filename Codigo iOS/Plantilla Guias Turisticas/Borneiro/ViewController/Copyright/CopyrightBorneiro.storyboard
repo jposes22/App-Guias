@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Copyright View Controller-->
+        <!--Copyright Borneiro View Controller-->
         <scene sceneID="HjT-e7-Egf">
             <objects>
-                <viewController id="b5o-yp-lUb" customClass="CopyrightViewController" sceneMemberID="viewController">
+                <viewController id="b5o-yp-lUb" customClass="CopyrightBorneiroViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="06F-SS-x5w"/>
                         <viewControllerLayoutGuide type="bottom" id="lmB-tN-RF6"/>
@@ -32,8 +32,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uuw-1r-beX">
-                        <barButtonItem key="rightBarButtonItem" image="btnMenu" id="Ujk-CQ-lwC">
-                            <color key="tintColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="rightBarButtonItem" image="btnMenu_white" id="Ujk-CQ-lwC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="btnMenuTouch:" destination="b5o-yp-lUb" id="pYk-Dn-WtT"/>
                             </connections>
@@ -50,7 +50,7 @@
         <!--Navigation Controller-->
         <scene sceneID="kai-Gn-WGW">
             <objects>
-                <navigationController storyboardIdentifier="CopyrightNC" automaticallyAdjustsScrollViewInsets="NO" id="S4a-D0-TgK" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CopyrightBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" id="S4a-D0-TgK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ON5-sP-lv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -67,6 +67,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnMenu" width="60" height="60"/>
+        <image name="btnMenu_white" width="60" height="60"/>
     </resources>
 </document>

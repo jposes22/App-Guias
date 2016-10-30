@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailPoiViewController : UIViewController
-
+@interface DetailPoiBorneiroViewController : UIViewController
+@property (nonatomic) NSInteger categoryPoi;
+@property (nonatomic, strong) NSString * titleSection;
 @end

@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol CommunicationControllerPoi<NSObject>
+@protocol CommunicationControllerPoiBorneiro<NSObject>
 @optional
 -(void)communicationPoiSelected:(NSInteger) index;
 @end
 
-@interface PoiTableController : NSObject<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, weak) id<CommunicationControllerPoi> delegatePoi;
+@interface PoiBorneiroTableController : NSObject<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic, weak) id<CommunicationControllerPoiBorneiro> delegatePoi;
 @property (nonatomic, strong) NSArray *listOfPois;
 @end

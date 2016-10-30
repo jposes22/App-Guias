@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HeaderCopyright : UIView
+@interface HeaderBorneiroCopyright : UIView
 - (void) loadData:(NSString *)titulo;
 @end

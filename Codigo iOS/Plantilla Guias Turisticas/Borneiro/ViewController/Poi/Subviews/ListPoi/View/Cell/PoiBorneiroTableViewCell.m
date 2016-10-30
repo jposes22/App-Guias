@@ -6,7 +6,7 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "PoiTableViewCell.h"
+#import "PoiBorneiroTableViewCell.h"
 
 #import "Constants.h"
 #import "OpenExternalApps.h"
@@ -14,7 +14,7 @@
 #import "UtilsAppearance.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
-@interface PoiTableViewCell()
+@interface PoiBorneiroTableViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescription;
@@ -27,7 +27,7 @@
 @property (nonatomic,strong) Poi *poi;
 @end
 
-@implementation PoiTableViewCell
+@implementation PoiBorneiroTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -56,7 +56,12 @@
     _poi = poi;
     _lblTitle.text = poi.titulo;
     _lblDescription.text = poi.descripcion;
-    [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+    if(poi.urlImagen){
+         [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+    }else{
+        [_imgView setImage:[UIImage imageNamed:@""]];
+    }
+   
     
     //validate buttons
     if([Validator validatePhone:poi.telefono]){

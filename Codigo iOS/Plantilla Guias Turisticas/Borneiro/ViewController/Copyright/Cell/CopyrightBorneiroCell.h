@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CopyrightCell : UITableViewCell
+@interface CopyrightBorneiroCell : UITableViewCell
 - (void) loadData:(NSString *)nombre texto:(NSString *)texto;
 @end

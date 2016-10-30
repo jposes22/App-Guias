@@ -41,9 +41,9 @@
 {
     _isPlaying = !_isPlaying;
     if(_isPlaying){
-        _imageGuia.image = [UIImage imageNamed:@"bt_audioguia_on"];
+        _imageGuia.image = [UIImage imageNamed:@"ic_audioguia_on"];
     }else{
-        _imageGuia.image = [UIImage imageNamed:@"bt_audioguia_off"];
+        _imageGuia.image = [UIImage imageNamed:@"ic_audioguia_off"];
         
     }
     if(_delegateAudioGuia && [_delegateAudioGuia respondsToSelector:@selector(playAudioGuia:)]){

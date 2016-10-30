@@ -1,5 +1,5 @@
 //
-//  PoiTableViewCell.h
+//  ListPoiViewController.h
 //  TorresDeOeste
 //
 //  Created by Jose Pose on 22/10/16.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Poi+CoreDataProperties.h"
-@interface PoiTableViewCell : UITableViewCell
 
--(void) loadData:(Poi*)poi;
+@interface ListPoiBorneiroViewController : UIViewController
+@property (nonatomic) NSInteger categoryPoi;
 @end

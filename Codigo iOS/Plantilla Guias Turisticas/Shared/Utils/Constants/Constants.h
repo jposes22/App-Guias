@@ -54,6 +54,8 @@ extern double const k_NUMBER_DOWNLOADS_CHARGE;
 extern NSString * const kSEGUE_HOME;
 extern NSString * const kSEGUE_POI;
 extern NSString * const kSEGUE_LIST_POI;
+extern NSString * const kSEGUE_POI_ARQUELOGICO;
+extern NSString * const kSEGUE_SHOW_DETAIL;
 
 
 @end

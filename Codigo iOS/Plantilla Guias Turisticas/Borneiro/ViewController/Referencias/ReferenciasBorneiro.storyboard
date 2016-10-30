@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Referencias View Controller-->
+        <!--Referencias Borneiro View Controller-->
         <scene sceneID="MPD-Vo-tHz">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yjS-tN-7uo" customClass="ReferenciasViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yjS-tN-7uo" customClass="ReferenciasBorneiroViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uHV-SX-Qfm"/>
                         <viewControllerLayoutGuide type="bottom" id="yDB-lD-mEn"/>
@@ -63,8 +63,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tyc-Zi-HL6">
-                        <barButtonItem key="rightBarButtonItem" image="btnMenu" id="gUd-lD-ZZZ">
-                            <color key="tintColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <barButtonItem key="rightBarButtonItem" image="btnMenu_white" id="gUd-lD-ZZZ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="btnMenuTouch:" destination="yjS-tN-7uo" id="IfN-Pb-70G"/>
                             </connections>
@@ -82,7 +82,7 @@
         <!--Navigation Controller-->
         <scene sceneID="K7g-ps-LhM">
             <objects>
-                <navigationController storyboardIdentifier="ReferenciasNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sg3-MB-HLa" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ReferenciasBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sg3-MB-HLa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="0cl-LI-48R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -99,6 +99,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnMenu" width="60" height="60"/>
+        <image name="btnMenu_white" width="60" height="60"/>
     </resources>
 </document>

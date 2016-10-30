@@ -6,15 +6,15 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "CopyrightCell.h"
+#import "CopyrightBorneiroCell.h"
 #import "Metodos.h"
 
-@interface CopyrightCell()
+@interface CopyrightBorneiroCell()
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
 
 @end
 
-@implementation CopyrightCell
+@implementation CopyrightBorneiroCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

@@ -6,26 +6,26 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "ListPoiViewController.h"
+#import "ListPoiBorneiroViewController.h"
 
 #import "UIViewController+MMDrawerController.h"
-#import "PoiTableController.h"
+#import "PoiBorneiroTableController.h"
 #import "NavigationBar.h"
 
 
 #import "PoiDAO.h"
 
-@interface ListPoiViewController ()<CommnicationMenu>
+@interface ListPoiBorneiroViewController ()<CommnicationMenu>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchBar;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-@property (nonatomic, strong) PoiTableController *poiTableController;
+@property (nonatomic, strong) PoiBorneiroTableController *poiTableController;
 
 @end
 
-@implementation ListPoiViewController
+@implementation ListPoiBorneiroViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,7 +44,7 @@
 
 
 -(void) loadController{
-    _poiTableController = [PoiTableController new];
+    _poiTableController = [PoiBorneiroTableController new];
     _tableView.delegate = _poiTableController;
     _tableView.dataSource = _poiTableController;
     _poiTableController.listOfPois = [PoiDAO getPoiByCategory:_categoryPoi];

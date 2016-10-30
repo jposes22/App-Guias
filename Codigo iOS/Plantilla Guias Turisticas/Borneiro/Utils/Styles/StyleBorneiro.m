@@ -41,13 +41,12 @@
     return [UIColor colorWithRed:171.0/255.0 green:183.0/255.0 blue:157.0/255.0 alpha:1.0];
 }
 +(UIColor * )getPrimaryColor{
-    return [UIColor colorWithRed:216.0/255.0 green:225.0/255.0 blue:1170.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:216.0/255.0 green:225.0/255.0 blue:170.0/255.0 alpha:1.0];
 
 }
 
-
 +(UIColor * )getPrimaryDarkColor{
-    return [UIColor colorWithRed:160.0/255.0 green:1182.0/255.0 blue:158.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:176.0/255.0 green:191.0/255.0 blue:174.0/255.0 alpha:1.0];
 
 }
 
@@ -59,6 +58,8 @@
 
 
 +(void)setStyleTitle:(UILabel *)label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
+    label.textColor = [StyleBorneiro getPrimaryDarkColor];
     
 }
 
@@ -92,7 +93,7 @@
 }
 + (void)setStyleSubTitlePoi:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
-    label.textColor = [StyleBorneiro getVerdeClaroPoi];
+    label.textColor = [StyleBorneiro getVerdeOscuroPoi];
 }
 
 + (void)setSytleSubtitle:(UILabel *) label{

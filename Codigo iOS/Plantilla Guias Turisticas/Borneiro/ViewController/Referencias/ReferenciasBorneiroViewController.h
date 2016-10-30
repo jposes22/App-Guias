@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ReferenciasViewController : UIViewController
+@interface ReferenciasBorneiroViewController : UIViewController
 
 @end

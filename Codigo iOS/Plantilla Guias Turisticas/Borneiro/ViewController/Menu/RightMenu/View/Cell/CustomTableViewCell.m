@@ -36,7 +36,7 @@
 -(void) loadAppearance{
    // [UtilsAppearance setStyleCellBasic:_labelTitle];
     //  self.backgroundColor =  [UtilsAppearance  getColorDarkApp];
-    self.backgroundColor = [StyleBorneiro getPrimaryColor];
+    self.backgroundColor = [StyleBorneiro getPrimaryDarkColor];
     
     _labelTitle.textColor = [UIColor whiteColor];
     _labelTitle.font = [UIFont fontWithName:@"Giorgio" size:15];

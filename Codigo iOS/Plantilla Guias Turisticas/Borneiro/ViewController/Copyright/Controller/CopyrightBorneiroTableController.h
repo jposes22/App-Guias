@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CopyrightTableController : NSObject<UITableViewDelegate, UITableViewDataSource>
+@interface CopyrightBorneiroTableController : NSObject<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray * listCopyRight;
 
 @end

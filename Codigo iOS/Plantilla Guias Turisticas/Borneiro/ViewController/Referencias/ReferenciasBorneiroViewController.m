@@ -6,18 +6,18 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "ReferenciasViewController.h"
-#import "UtilsAppearance.h"
+#import "ReferenciasBorneiroViewController.h"
+#import "StyleBorneiro.h"
 #import "UIViewController+MMDrawerController.h"
 
 
-@interface ReferenciasViewController ()
+@interface ReferenciasBorneiroViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 @property (weak, nonatomic) IBOutlet UILabel *labelTexto;
 
 @end
 
-@implementation ReferenciasViewController
+@implementation ReferenciasBorneiroViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void) loadData{
-    _labelTitulo.text = @"Referencias bibliográficas, ilustraciones y fotografías";
+    _labelTitulo.text = NSLocalizedString(@"menu_referencias", nil);
     
 }
 - (IBAction)btnMenuTouch:(id)sender {
@@ -39,7 +39,8 @@
 }
 
 - (void) loadStyle{
-    [UtilsAppearance setStyleTitle:_labelTitulo];
+    [StyleBorneiro setStyleTitle:_labelTitulo];
+    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_referencias", nil) backgroundColor:[StyleBorneiro getPrimaryDarkColor]];
 
     
 }

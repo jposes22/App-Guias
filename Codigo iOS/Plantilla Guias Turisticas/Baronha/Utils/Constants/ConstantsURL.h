@@ -39,10 +39,10 @@ typedef NS_ENUM(NSInteger, kTipoGuia){
 
 //TIPOS POI
 typedef NS_ENUM(NSInteger, kTipoPoi){
-    kTipoPoiRecursosPatrimoniales   = 0,
-    kTipoPoiAlojamientos            = 1,
-    kTipoPoiDirectorio              = 2,
-    kTipoPoiRestauracion            = 3,
+    kTipoPoiPetroglifos             = 0,
+    kTipoPoiCastroQueiruga          = 1,
+    kTipoPoiPraiaCoido              = 2,
+    kTipoPoiArealonga               = 3,
 };
 
 @end

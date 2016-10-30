@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailPoiViewController : UIViewController
-
+@interface DetailPoiViewControllerBaronha : UIViewController
+@property (nonatomic) NSInteger categoryPoi;
 @end

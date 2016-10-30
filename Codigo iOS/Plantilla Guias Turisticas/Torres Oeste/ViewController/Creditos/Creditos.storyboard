@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Creditos View Controller-->
+        <scene sceneID="6Wc-b5-KbN">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="J0x-Sj-OtQ" customClass="CreditosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bum-jn-tcU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pkF-9r-ZBf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HbZ-tU-pwY">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4b-U5-51Q">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyK-Ib-rxE">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLX-8f-KM2">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="concello_1" translatesAutoresizingMaskIntoConstraints="NO" id="d5e-YK-Do8">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="5pX-mW-Ea7"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditos_galicia" translatesAutoresizingMaskIntoConstraints="NO" id="NoJ-ku-uXm">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="QCf-GS-zgI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditos_xunta" translatesAutoresizingMaskIntoConstraints="NO" id="8kB-Bf-Mq0">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="VLn-hN-yqW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditos_ministerio_3" translatesAutoresizingMaskIntoConstraints="NO" id="WOc-6k-oQX">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="NxD-TY-zno"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditos_feader" translatesAutoresizingMaskIntoConstraints="NO" id="Xw7-8K-tvS">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="wLr-Pp-Yrw"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y8t-VS-4fb">
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="58" id="0D5-BA-QFz"/>
+                                                </constraints>
+                                                <string key="text">http://www.ec.europa.eu/agriculture/rural-development-2014-2020/
+http://www.turismo.gal/</string>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8kB-Bf-Mq0" firstAttribute="centerX" secondItem="wyK-Ib-rxE" secondAttribute="centerX" id="22T-CW-h5E"/>
+                                            <constraint firstItem="kLX-8f-KM2" firstAttribute="leading" secondItem="wyK-Ib-rxE" secondAttribute="leading" constant="8" id="4oI-tb-ZQH"/>
+                                            <constraint firstItem="8kB-Bf-Mq0" firstAttribute="top" secondItem="NoJ-ku-uXm" secondAttribute="bottom" constant="10" id="8h2-rp-Anb"/>
+                                            <constraint firstItem="WOc-6k-oQX" firstAttribute="top" secondItem="8kB-Bf-Mq0" secondAttribute="bottom" constant="10" id="BYC-1w-PQV"/>
+                                            <constraint firstItem="y8t-VS-4fb" firstAttribute="top" secondItem="Xw7-8K-tvS" secondAttribute="bottom" constant="10" id="EQr-8E-GRT"/>
+                                            <constraint firstItem="kLX-8f-KM2" firstAttribute="top" secondItem="wyK-Ib-rxE" secondAttribute="top" constant="8" id="FqK-my-L29"/>
+                                            <constraint firstAttribute="trailing" secondItem="kLX-8f-KM2" secondAttribute="trailing" constant="8" id="Lbn-2r-VB1"/>
+                                            <constraint firstItem="Xw7-8K-tvS" firstAttribute="top" secondItem="WOc-6k-oQX" secondAttribute="bottom" constant="10" id="LmQ-dA-3kJ"/>
+                                            <constraint firstItem="d5e-YK-Do8" firstAttribute="top" secondItem="kLX-8f-KM2" secondAttribute="bottom" constant="16" id="P9t-pX-Nbv"/>
+                                            <constraint firstAttribute="bottom" secondItem="y8t-VS-4fb" secondAttribute="bottom" id="RJC-S7-HfW"/>
+                                            <constraint firstItem="NoJ-ku-uXm" firstAttribute="top" secondItem="d5e-YK-Do8" secondAttribute="bottom" constant="10" id="S5K-bt-uCo"/>
+                                            <constraint firstItem="NoJ-ku-uXm" firstAttribute="centerX" secondItem="wyK-Ib-rxE" secondAttribute="centerX" id="ShN-Ao-sYV"/>
+                                            <constraint firstItem="y8t-VS-4fb" firstAttribute="leading" secondItem="wyK-Ib-rxE" secondAttribute="leading" constant="8" id="eMU-hZ-vPG"/>
+                                            <constraint firstItem="WOc-6k-oQX" firstAttribute="centerX" secondItem="wyK-Ib-rxE" secondAttribute="centerX" id="ejs-ka-fbq"/>
+                                            <constraint firstAttribute="trailing" secondItem="y8t-VS-4fb" secondAttribute="trailing" constant="8" id="gM9-SZ-fhh"/>
+                                            <constraint firstItem="Xw7-8K-tvS" firstAttribute="centerX" secondItem="wyK-Ib-rxE" secondAttribute="centerX" id="qP5-ro-N56"/>
+                                            <constraint firstItem="d5e-YK-Do8" firstAttribute="centerX" secondItem="wyK-Ib-rxE" secondAttribute="centerX" id="xYq-wH-OEj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wyK-Ib-rxE" secondAttribute="bottom" id="6Ft-iB-rAy"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyK-Ib-rxE" secondAttribute="trailing" id="HC6-h4-Mjv"/>
+                                    <constraint firstItem="wyK-Ib-rxE" firstAttribute="leading" secondItem="V4b-U5-51Q" secondAttribute="leading" id="aBH-vR-TGA"/>
+                                    <constraint firstItem="wyK-Ib-rxE" firstAttribute="top" secondItem="V4b-U5-51Q" secondAttribute="top" id="xxC-7K-LMx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="V4b-U5-51Q" secondAttribute="trailing" id="De7-PS-fXX"/>
+                            <constraint firstItem="wyK-Ib-rxE" firstAttribute="width" secondItem="HbZ-tU-pwY" secondAttribute="width" id="NMQ-gD-Xsd"/>
+                            <constraint firstItem="pkF-9r-ZBf" firstAttribute="top" secondItem="V4b-U5-51Q" secondAttribute="bottom" id="f6V-fO-Jy9"/>
+                            <constraint firstItem="V4b-U5-51Q" firstAttribute="leading" secondItem="HbZ-tU-pwY" secondAttribute="leading" id="jDh-1D-ZfM"/>
+                            <constraint firstItem="V4b-U5-51Q" firstAttribute="top" secondItem="bum-jn-tcU" secondAttribute="bottom" id="krP-gj-Ncu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AwD-yr-J4a">
+                        <barButtonItem key="rightBarButtonItem" image="btnMenu" id="ZdQ-Td-f4I">
+                            <color key="tintColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnMenuTouch:" destination="J0x-Sj-OtQ" id="uzq-Sm-djc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="667" height="800"/>
+                    <connections>
+                        <outlet property="labelTitulo" destination="kLX-8f-KM2" id="Len-k8-215"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZf-4E-dFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-49"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vxi-Kv-MUB">
+            <objects>
+                <navigationController storyboardIdentifier="CreditosNC" automaticallyAdjustsScrollViewInsets="NO" id="nDf-G4-PzP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e7m-Ch-YM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J0x-Sj-OtQ" kind="relationship" relationship="rootViewController" id="6rR-xJ-DtR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OS7-Fm-9h7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-503" y="-91"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btnMenu" width="60" height="60"/>
+        <image name="concello_1" width="510" height="176"/>
+        <image name="creditos_feader" width="334" height="75"/>
+        <image name="creditos_galicia" width="334" height="75"/>
+        <image name="creditos_ministerio_3" width="334" height="75"/>
+        <image name="creditos_xunta" width="334" height="75"/>
+    </resources>
+</document>

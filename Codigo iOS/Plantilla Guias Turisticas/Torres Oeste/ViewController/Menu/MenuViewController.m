@@ -84,24 +84,13 @@
             sb = [UIStoryboard storyboardWithName:@"Copyright" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CopyrightNC"];
             break;
-        /*case SideDrawerMenuItemGaleria:
-            controllerLoader = [[NewMainViewController alloc] initWithNibName:@"NewMainViewController" bundle:nil];
-            break;
-        case SideDrawerMenuItemForum:
-            controllerLoader = [[ForumViewController alloc] initWithNibName:@"ForumViewController" bundle:nil];
-            break;
-            
-        case SideDrawerMenuItemAjustes:
-            controllerLoader = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
-            break;
-            
-        case SideDrawerMenuItemInformacion:
-            controllerLoader = [[ExercicieMainViewController alloc] initWithNibName:@"ExercicieMainViewController" bundle:nil];
-            break;
-            */
         case SideDrawerMenuItemComoLlegar:
             sb = [UIStoryboard storyboardWithName:@"ComoLlegar" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarNC"];
+            break;
+        case SideDrawerMenuCreditos:
+            sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;
             /*
         case SideDrawerMenuItemHelps:

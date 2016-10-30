@@ -67,21 +67,26 @@
             sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"GuiasBorneiroNC"];
             break;
-        case SideDrawerMenuItemRomeria:
-            sb = [UIStoryboard storyboardWithName:@"MainRomeria" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"RomeriaNC"];
+        case SideDrawerMenuItemCidaBorneiro:
+            sb = [UIStoryboard storyboardWithName:@"MainACidaBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ACidaBorneiroNC"];
+            break;
+        case SideDrawerMenuItemCulturaCastrenha:
+            sb = [UIStoryboard storyboardWithName:@"MainCultura" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CulturaNC"];
             break;
         case SideDrawerMenuItemPoi:
-            sb = [UIStoryboard storyboardWithName:@"Poi" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"PoiNC"];
+            sb = [UIStoryboard storyboardWithName:@"PoiBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"PoiBorneiroNC"];
             break;
             
         case SideDrawerMenuItemReferencias:
-             sb = [UIStoryboard storyboardWithName:@"Referencias" bundle:nil];
-             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ReferenciasNC"];
+             sb = [UIStoryboard storyboardWithName:@"ReferenciasBorneiro" bundle:nil];
+             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ReferenciasBorneiroNC"];
+            break;
         case SideDrawerMenuItemCopyright:
-            sb = [UIStoryboard storyboardWithName:@"Copyright" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CopyrightNC"];
+            sb = [UIStoryboard storyboardWithName:@"CopyrightBorneiro" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CopyrightBorneiroNC"];
             break;
         /*case SideDrawerMenuItemGaleria:
             controllerLoader = [[NewMainViewController alloc] initWithNibName:@"NewMainViewController" bundle:nil];
@@ -102,7 +107,7 @@
             sb = [UIStoryboard storyboardWithName:@"ComoLlegarBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ComoLlegarBorneiroNC"];
             break;
-        case SideDrawerMenuCreditos:
+        case SideDrawerMenuItemCreditos:
             sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;

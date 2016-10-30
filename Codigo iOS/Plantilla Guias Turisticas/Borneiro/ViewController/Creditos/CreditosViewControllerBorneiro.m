@@ -7,7 +7,7 @@
 //
 
 #import "CreditosViewControllerBorneiro.h"
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 #import "UIViewController+MMDrawerController.h"
 
 
@@ -39,8 +39,8 @@
 }
 
 - (void) loadStyle{
-    [UtilsAppearance setStyleTitle:_labelTitulo];
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_creditos", nil)];
+    [StyleBorneiro setStyleTitle:_labelTitulo];
+    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_creditos", nil) backgroundColor:[StyleBorneiro getPrimaryDarkColor]];
 }
 
 /*

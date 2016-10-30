@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cida Borneiro View Controller-->
+        <!--Cultura View Controller-->
         <scene sceneID="Iif-Co-Ro1">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ey1-2p-q22" customClass="ACidaBorneiroViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ey1-2p-q22" customClass="CulturaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t5p-YC-4Mq"/>
                         <viewControllerLayoutGuide type="bottom" id="w10-0b-aIu"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4l8-tJ-y5W">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="4l8-tJ-y5W">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -50,7 +50,7 @@
         <!--Navigation Controller-->
         <scene sceneID="nKN-Hb-uLH">
             <objects>
-                <navigationController storyboardIdentifier="RomeriaNC" automaticallyAdjustsScrollViewInsets="NO" id="3hq-B5-eGC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CulturaNC" automaticallyAdjustsScrollViewInsets="NO" id="3hq-B5-eGC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="At0-tF-Mnx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

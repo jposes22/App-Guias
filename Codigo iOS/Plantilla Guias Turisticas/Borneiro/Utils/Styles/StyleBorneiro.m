@@ -34,14 +34,20 @@
 + (UIColor *) getVerdeOscuroCultura{
     return [UIColor colorWithRed:176.0/255.0 green:191.0/255.0 blue:174.0/255.0 alpha:1.0];
 }
-
++ (UIColor *) getVerdeClaroPoi{
+    return [UIColor colorWithRed:203.0/255.0 green:219.0/255.0 blue:189.0/215.0 alpha:1.0];
+}
++ (UIColor *) getVerdeOscuroPoi{
+    return [UIColor colorWithRed:171.0/255.0 green:183.0/255.0 blue:157.0/255.0 alpha:1.0];
+}
 +(UIColor * )getPrimaryColor{
-    return [UIColor colorWithRed:20.0/255.0 green:151.0/255.0 blue:173.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:216.0/255.0 green:225.0/255.0 blue:170.0/255.0 alpha:1.0];
+
 }
 
-
 +(UIColor * )getPrimaryDarkColor{
-    return [UIColor colorWithRed:9.0/255.0 green:79.0/255.0 blue:107.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:176.0/255.0 green:191.0/255.0 blue:174.0/255.0 alpha:1.0];
+
 }
 
 
@@ -52,6 +58,8 @@
 
 
 +(void)setStyleTitle:(UILabel *)label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
+    label.textColor = [StyleBorneiro getPrimaryDarkColor];
     
 }
 
@@ -83,6 +91,10 @@
     [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
     label.textColor = [StyleBorneiro getVerdeOscuroCultura];
 }
++ (void)setStyleSubTitlePoi:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
+    label.textColor = [StyleBorneiro getVerdeOscuroPoi];
+}
 
 + (void)setSytleSubtitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
@@ -91,8 +103,9 @@
 + (void)setStyleText:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Light" size:15]];
     label.textColor = [StyleBorneiro getColorText];
-
 }
+
+
 + (void)setStyleTextBold:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"OpenSans-Bold" size:12]];
     

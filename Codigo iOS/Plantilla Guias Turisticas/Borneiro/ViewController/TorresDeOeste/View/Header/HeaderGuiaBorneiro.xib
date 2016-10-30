@@ -17,7 +17,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-Po-i2A">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-Po-i2A">
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="UlD-sN-CDm"/>
                         <constraint firstAttribute="width" constant="100" id="Wzo-Oh-Pda"/>
@@ -41,6 +41,6 @@
         </view>
     </objects>
     <resources>
-        <image name="bt_audioguia_off" width="75" height="18"/>
+        <image name="ic_audioguia_off" width="75" height="18"/>
     </resources>
 </document>

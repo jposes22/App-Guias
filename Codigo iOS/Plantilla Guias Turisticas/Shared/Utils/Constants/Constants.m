@@ -62,6 +62,8 @@ double const k_NUMBER_DOWNLOADS_CHARGE = 5.0;
 NSString * const kSEGUE_HOME =  @"kSEGUE_HOME";
 NSString * const kSEGUE_POI =  @"kSEGUE_POI";
 NSString * const kSEGUE_LIST_POI = @"kSEGUE_LIST_POI";
+NSString * const kSEGUE_POI_ARQUELOGICO = @"kSEGUE_POI_ARQUELOGICO";
+NSString * const kSEGUE_SHOW_DETAIL = @"kSEGUE_SHOW_DETAIL";
 
 
 

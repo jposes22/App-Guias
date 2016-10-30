@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="lmB-tN-RF6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jzl-Xr-JY9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lTs-5e-iuk">
@@ -33,7 +33,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="uuw-1r-beX">
                         <barButtonItem key="rightBarButtonItem" image="btnMenu" id="Ujk-CQ-lwC">
-                            <color key="tintColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.20000000000000001" green="0.61568627450000002" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="btnMenuTouch:" destination="b5o-yp-lUb" id="pYk-Dn-WtT"/>
                             </connections>

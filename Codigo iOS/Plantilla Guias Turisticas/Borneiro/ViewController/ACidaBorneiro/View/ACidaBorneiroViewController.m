@@ -56,7 +56,7 @@
 
 -(void) loadData{
     [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_a_cida_borneiro", nil) backgroundColor:[StyleBorneiro getVerdeOscuroCida]];
-    NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaRomeria];
+    NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaCida];
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){
         _guia = [listGUias firstObject];

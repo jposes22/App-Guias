@@ -7,11 +7,17 @@
 */
 "aux" = "Texto español";
 //Menu
+"menu_home" = "Inicio";
 "menu_como_llegar" = "Cómo llegar";
-"menu_visita" = "Visita";
 "menu_a_cida_borneiro" = "A cidá Borneiro";
+"menu_visita" = "Comenzar visita";
 "menu_cultura_castrenha" = "Cultura Castreña";
-
+"menu_sitios_interes" = "Sitios de interés";
+"menu_copyright" = "Copyright";
+"menu_referencias" = "Referencias";
+"menu_ajustes" = "Ajustes";
+"menu_selfie" = "Selfie";
+"menu_creditos" = "Créditos";
 
 
 //Home
@@ -20,3 +26,11 @@
 "btn_home_visita" = "Comenzar visita";
 "btn_home_cultura" = "Cultura Castreña";
 "btn_home_sitios" = "Sitios de interés";
+
+//POI
+"poi_patrimonio_arqueologico" = "Patrimonio arqueológico";
+"poi_patrimonio_historico" = "Patrimonio histórico - artístico";
+"poi_rutas_senderismo" = "Rutas de senderismo";
+"poi_playas" = "Playas";
+"poi_directorio" = "Directorio";
+"poi_guia_hosteleria" = "Guía de hostelería";

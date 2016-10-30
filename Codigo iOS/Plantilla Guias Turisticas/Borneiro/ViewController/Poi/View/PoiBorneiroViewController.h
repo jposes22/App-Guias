@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MMDrawerController/MMDrawerController.h>
 
-@interface PoiViewController : UIViewController
+@interface PoiBorneiroViewController : UIViewController
 
 @end

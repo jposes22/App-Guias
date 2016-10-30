@@ -7,7 +7,7 @@
 //
 
 #import "CustomTableViewCell.h"
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 
 
 
@@ -36,9 +36,10 @@
 -(void) loadAppearance{
    // [UtilsAppearance setStyleCellBasic:_labelTitle];
     //  self.backgroundColor =  [UtilsAppearance  getColorDarkApp];
-    self.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+    self.backgroundColor = [StyleBorneiro getPrimaryColor];
     
     _labelTitle.textColor = [UIColor whiteColor];
+    _labelTitle.font = [UIFont fontWithName:@"Giorgio" size:15];
 
 }
 

@@ -18,7 +18,7 @@ extern NSString *const kURL_SERVICE;
 typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
     SideDrawerMenuItemHome             = 0,
     SideDrawerMenuItemGuia             = 1,
-    SideDrawerMenuItemRomeria          = 2,
+    SideDrawerMenuItemCidaBorneiro     = 13,
     SideDrawerMenuItemPoi              = 3,
     SideDrawerMenuItemComoLlegar       = 4,
     SideDrawerMenuItemGaleria          = 5,
@@ -26,24 +26,32 @@ typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
     SideDrawerMenuItemReferencias      = 7,
     SideDrawerMenuItemCopyright        = 8,
     SideDrawerMenuItemAjustes          = 9,
-    SideDrawerMenuReconstruccion3D     = 10,
-    SideDrawerMenuCreditos             = 11,
+    SideDrawerMenuItemCreditos             = 11,
+    SideDrawerMenuItemSelfie               = 12,
+    SideDrawerMenuItemCulturaCastrenha      = 14,
+
+
     
 };
 
 //TIPOS GUIA
 typedef NS_ENUM(NSInteger, kTipoGuia){
-    kTipoGuiaTorresOeste            = 0,
-    kTipoGuiaRomeria                = 1,
-    kTipoGuiaComoLlegar             = 2,
+    kTipoGuiaVisit          = 0,
+    kTipoGuiaCida           = 1,
+    kTipoGuiaComoLlegar     = 2,
+    kTipoGuiaCultura        = 3,
+
+    
 };
 
 //TIPOS POI
 typedef NS_ENUM(NSInteger, kTipoPoi){
-    kTipoPoiRecursosPatrimoniales   = 0,
-    kTipoPoiAlojamientos            = 1,
-    kTipoPoiDirectorio              = 2,
-    kTipoPoiRestauracion            = 3,
+    kTipoPoiPatrimonioArqueologico      = 0,
+    kTipoPoiPatrimonioHistorico         = 1,
+    kTipoPoiPoiRutasSenderismo          = 2,
+    kTipoPoiPlayas                      = 3,
+    kTipoPoiDirectorio                  = 4,
+    kTipoPoiHoteleria                   = 5,
 };
 
 @end

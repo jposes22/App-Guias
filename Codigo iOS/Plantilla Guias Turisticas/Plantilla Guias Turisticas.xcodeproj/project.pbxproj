@@ -454,12 +454,10 @@
 		8295F15B1DC4BD830049FB7D /* PoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0FC1DC4BD830049FB7D /* PoiTableViewCell.m */; };
 		8295F15C1DC4BD830049FB7D /* PoiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0FD1DC4BD830049FB7D /* PoiTableViewCell.xib */; };
 		8295F15D1DC4BD830049FB7D /* ListPoiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0FF1DC4BD830049FB7D /* ListPoiViewController.m */; };
-		8295F15E1DC4BD830049FB7D /* Poi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1011DC4BD830049FB7D /* Poi.storyboard */; };
-		8295F15F1DC4BD830049FB7D /* PoiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1031DC4BD830049FB7D /* PoiViewController.m */; };
+		8295F15E1DC4BD830049FB7D /* PoiBorneiro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1011DC4BD830049FB7D /* PoiBorneiro.storyboard */; };
+		8295F15F1DC4BD830049FB7D /* PoiBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1031DC4BD830049FB7D /* PoiBorneiroViewController.m */; };
 		8295F1601DC4BD830049FB7D /* Referencias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1051DC4BD830049FB7D /* Referencias.storyboard */; };
 		8295F1611DC4BD830049FB7D /* ReferenciasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1071DC4BD830049FB7D /* ReferenciasViewController.m */; };
-		8295F1621DC4BD830049FB7D /* MainRomeria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F10A1DC4BD830049FB7D /* MainRomeria.storyboard */; };
-		8295F1631DC4BD830049FB7D /* RomeriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F10C1DC4BD830049FB7D /* RomeriaViewController.m */; };
 		8295F1691DC4BD830049FB7D /* PageControllerBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1201DC4BD830049FB7D /* PageControllerBorneiro.m */; };
 		8295F16A1DC4BD830049FB7D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1241DC4BD830049FB7D /* AlbumViewController.m */; };
 		8295F16B1DC4BD830049FB7D /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1251DC4BD830049FB7D /* AlbumViewController.xib */; };
@@ -920,15 +918,12 @@
 		8295F0FD1DC4BD830049FB7D /* PoiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoiTableViewCell.xib; sourceTree = "<group>"; };
 		8295F0FE1DC4BD830049FB7D /* ListPoiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListPoiViewController.h; sourceTree = "<group>"; };
 		8295F0FF1DC4BD830049FB7D /* ListPoiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListPoiViewController.m; sourceTree = "<group>"; };
-		8295F1011DC4BD830049FB7D /* Poi.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Poi.storyboard; sourceTree = "<group>"; };
-		8295F1021DC4BD830049FB7D /* PoiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiViewController.h; sourceTree = "<group>"; };
-		8295F1031DC4BD830049FB7D /* PoiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiViewController.m; sourceTree = "<group>"; };
+		8295F1011DC4BD830049FB7D /* PoiBorneiro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PoiBorneiro.storyboard; sourceTree = "<group>"; };
+		8295F1021DC4BD830049FB7D /* PoiBorneiroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiBorneiroViewController.h; sourceTree = "<group>"; };
+		8295F1031DC4BD830049FB7D /* PoiBorneiroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiBorneiroViewController.m; sourceTree = "<group>"; };
 		8295F1051DC4BD830049FB7D /* Referencias.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Referencias.storyboard; sourceTree = "<group>"; };
 		8295F1061DC4BD830049FB7D /* ReferenciasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenciasViewController.h; sourceTree = "<group>"; };
 		8295F1071DC4BD830049FB7D /* ReferenciasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenciasViewController.m; sourceTree = "<group>"; };
-		8295F10A1DC4BD830049FB7D /* MainRomeria.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainRomeria.storyboard; sourceTree = "<group>"; };
-		8295F10B1DC4BD830049FB7D /* RomeriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RomeriaViewController.h; sourceTree = "<group>"; };
-		8295F10C1DC4BD830049FB7D /* RomeriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomeriaViewController.m; sourceTree = "<group>"; };
 		8295F11F1DC4BD830049FB7D /* PageControllerBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControllerBorneiro.h; sourceTree = "<group>"; };
 		8295F1201DC4BD830049FB7D /* PageControllerBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControllerBorneiro.m; sourceTree = "<group>"; };
 		8295F1231DC4BD830049FB7D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
@@ -2639,9 +2634,8 @@
 				8295F0E21DC4BD820049FB7D /* Menu */,
 				8295F0EF1DC4BD820049FB7D /* Poi */,
 				8295F1041DC4BD830049FB7D /* Referencias */,
-				8295F1081DC4BD830049FB7D /* Romeria */,
 				8295F10D1DC4BD830049FB7D /* Splash */,
-				8295F1161DC4BD830049FB7D /* TorresDeOeste */,
+				8295F1161DC4BD830049FB7D /* Guia */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2856,9 +2850,9 @@
 		8295F1001DC4BD830049FB7D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8295F1011DC4BD830049FB7D /* Poi.storyboard */,
-				8295F1021DC4BD830049FB7D /* PoiViewController.h */,
-				8295F1031DC4BD830049FB7D /* PoiViewController.m */,
+				8295F1011DC4BD830049FB7D /* PoiBorneiro.storyboard */,
+				8295F1021DC4BD830049FB7D /* PoiBorneiroViewController.h */,
+				8295F1031DC4BD830049FB7D /* PoiBorneiroViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2873,24 +2867,6 @@
 			path = Referencias;
 			sourceTree = "<group>";
 		};
-		8295F1081DC4BD830049FB7D /* Romeria */ = {
-			isa = PBXGroup;
-			children = (
-				8295F1091DC4BD830049FB7D /* View */,
-			);
-			path = Romeria;
-			sourceTree = "<group>";
-		};
-		8295F1091DC4BD830049FB7D /* View */ = {
-			isa = PBXGroup;
-			children = (
-				8295F10A1DC4BD830049FB7D /* MainRomeria.storyboard */,
-				8295F10B1DC4BD830049FB7D /* RomeriaViewController.h */,
-				8295F10C1DC4BD830049FB7D /* RomeriaViewController.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		8295F10D1DC4BD830049FB7D /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -2899,13 +2875,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		8295F1161DC4BD830049FB7D /* TorresDeOeste */ = {
+		8295F1161DC4BD830049FB7D /* Guia */ = {
 			isa = PBXGroup;
 			children = (
 				8295F1171DC4BD830049FB7D /* Controller */,
 				8295F1211DC4BD830049FB7D /* Subviews */,
 				8295F12F1DC4BD830049FB7D /* View */,
 			);
+			name = Guia;
 			path = TorresDeOeste;
 			sourceTree = "<group>";
 		};
@@ -3471,14 +3448,13 @@
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
 				8295F16B1DC4BD830049FB7D /* AlbumViewController.xib in Resources */,
-				8295F1621DC4BD830049FB7D /* MainRomeria.storyboard in Resources */,
 				8295F14A1DC4BD830049FB7D /* CopyrightCell.xib in Resources */,
 				8295F1FC1DC4F9980049FB7D /* Localizable.strings in Resources */,
 				2314F2371DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib in Resources */,
 				2314F22F1DC519950048F9E4 /* CellVisitaCollectionView.xib in Resources */,
 				8295F1601DC4BD830049FB7D /* Referencias.storyboard in Resources */,
 				23A5018D1DC6272500019783 /* CellCultura.xib in Resources */,
-				8295F15E1DC4BD830049FB7D /* Poi.storyboard in Resources */,
+				8295F15E1DC4BD830049FB7D /* PoiBorneiro.storyboard in Resources */,
 				23A501741DC6200D00019783 /* CellCidaBorneiroSinImagen.xib in Resources */,
 				2314F2171DC50CE70048F9E4 /* ComoLlegarBorneiro.storyboard in Resources */,
 				8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */,
@@ -4000,7 +3976,7 @@
 				23A501901DC6272500019783 /* CulturaViewController.m in Sources */,
 				8295F1541DC4BD830049FB7D /* MenuViewController.m in Sources */,
 				8295F1571DC4BD830049FB7D /* RightViewController.m in Sources */,
-				8295F15F1DC4BD830049FB7D /* PoiViewController.m in Sources */,
+				8295F15F1DC4BD830049FB7D /* PoiBorneiroViewController.m in Sources */,
 				8295EFC91DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataClass.m in Sources */,
 				8295EF6B1DC4B3450049FB7D /* RemoteGuia.m in Sources */,
 				8295EFB31DC4B3980049FB7D /* Guia+CoreDataClass.m in Sources */,
@@ -4037,7 +4013,6 @@
 				2314F2321DC51B540048F9E4 /* DetalleVisitaTableController.m in Sources */,
 				8295EF661DC4B33C0049FB7D /* RemoteConstants.m in Sources */,
 				8295EFEE1DC4B3B60049FB7D /* Menu+CoreDataProperties.m in Sources */,
-				8295F1631DC4BD830049FB7D /* RomeriaViewController.m in Sources */,
 				2314F22E1DC519950048F9E4 /* CellVisitaCollectionView.m in Sources */,
 				8295F1B81DC4D6BA0049FB7D /* UtilsAppearance.m in Sources */,
 				8295EC3D1DC4A87D0049FB7D /* main.m in Sources */,

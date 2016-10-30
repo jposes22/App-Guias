@@ -24,6 +24,8 @@
 + (UIColor *) getVerdeOscuroCida;
 + (UIColor *) getVerdeClaroCultura;
 + (UIColor *) getVerdeOscuroCultura;
++ (UIColor *) getVerdeClaroPoi;
++ (UIColor *) getVerdeOscuroPoi;
 
 + (UIColor *) getColorText;
 
@@ -45,6 +47,8 @@
 + (void)setStyleSubTitleVisita:(UILabel *) label;
 + (void)setStyleSubTitleCida:(UILabel *) label;
 + (void)setStyleSubTitleCultura:(UILabel *) label;
++ (void)setStyleSubTitlePoi:(UILabel *) label;
+
 
 
 +(void)setCircleView:(UIView *) view;

@@ -12,7 +12,7 @@
 #import "MenuHeader.h"
 #import "MenuDAO.h"
 #import "Menu+CoreDataProperties.h"
-#import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 #import "Constants.h"
 
 @interface RightViewController ()
@@ -48,19 +48,20 @@
 -(void) loadListElementsMenu{
     _listElementsMenu = [[NSMutableArray alloc] init];
     //cargamos el menú interior de la app
-    MenuObject * homeMenu = [[MenuObject alloc] initWithTitle:@"Home" iconRow:nil idElementMenu:SideDrawerMenuItemHome];
-    MenuObject * torresMenu = [[MenuObject alloc] initWithTitle:@"Torres do Oeste" iconRow:nil idElementMenu:SideDrawerMenuItemGuia];
-    MenuObject * romeriaMenu = [[MenuObject alloc] initWithTitle:@"Romería" iconRow:nil idElementMenu:SideDrawerMenuItemRomeria];
-    MenuObject * poiMenu = [[MenuObject alloc] initWithTitle:@"Lugares de interés" iconRow:nil idElementMenu:SideDrawerMenuItemPoi];
-    MenuObject * comoLlegarMenu = [[MenuObject alloc] initWithTitle:@"Como llegar" iconRow:nil idElementMenu:SideDrawerMenuItemComoLlegar];
-    MenuObject * galeriaMenu = [[MenuObject alloc] initWithTitle:@"Galeria" iconRow:nil idElementMenu:SideDrawerMenuItemGaleria];
-    MenuObject * informacionMenu = [[MenuObject alloc] initWithTitle:@"Información" iconRow:nil idElementMenu:SideDrawerMenuItemInformacion];
-    MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:@"Referencias bibliograficas" iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
-    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:@"Copyright" iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
-    MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:@"Ajustes" iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
+    MenuObject * homeMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_home", nil) iconRow:nil idElementMenu:SideDrawerMenuItemHome];
+        MenuObject * comoLlegarMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_como_llegar", nil) iconRow:nil idElementMenu:SideDrawerMenuItemComoLlegar];
+    MenuObject * aCidaMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_a_cida_borneiro", nil) iconRow:nil idElementMenu:SideDrawerMenuItemCidaBorneiro];
+    MenuObject * visitaMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_visita", nil) iconRow:nil idElementMenu:SideDrawerMenuItemGuia];
+    MenuObject * culturaMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_cultura_castrenha", nil) iconRow:nil idElementMenu:SideDrawerMenuItemCulturaCastrenha];
+    MenuObject * poiMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_sitios_interes", nil) iconRow:nil idElementMenu:SideDrawerMenuItemPoi];
+    MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_referencias", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
+    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_copyright", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
+    MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_ajustes", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
+       MenuObject * selfieMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_selfie", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemSelfie];
+
     
     //creamos un dicionario provisional para buscar los elementos que vienen del servidor y enlazarlos si están activos y ponerlos en el menú si coinciden
-    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, romeriaMenu, poiMenu,comoLlegarMenu,galeriaMenu,informacionMenu,referenciasMenu,copyrightMenu,ajustesMenu] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemGuia),@(SideDrawerMenuItemRomeria),@(SideDrawerMenuItemPoi),@(   SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemGaleria),@(SideDrawerMenuItemInformacion),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
+    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, comoLlegarMenu, aCidaMenu, visitaMenu,culturaMenu,poiMenu,copyrightMenu,referenciasMenu,ajustesMenu,selfieMenu] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemCidaBorneiro),@(SideDrawerMenuItemGuia),@(SideDrawerMenuItemCulturaCastrenha),@(SideDrawerMenuItemPoi),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemAjustes), @(SideDrawerMenuItemSelfie)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
     NSArray *listItemsMenu = [MenuDAO getMenuItems];
     for (Menu *item in listItemsMenu) {
     
@@ -132,7 +133,7 @@
 
 #pragma mark - UtilsAppearance
 -(void) loadAppearanceTableView{
-    self.tableView.backgroundColor = [UtilsAppearance getPrimaryDarkColor];
+    self.tableView.backgroundColor = [StyleBorneiro getPrimaryColor];
     /*self.view.backgroundColor = [UtilsAppearance getColorDarkApp];*/
     [self.tableView setShowsVerticalScrollIndicator:NO];
 }

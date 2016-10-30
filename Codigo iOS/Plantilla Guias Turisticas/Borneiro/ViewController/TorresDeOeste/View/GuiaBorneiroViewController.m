@@ -60,7 +60,7 @@
 
 #pragma mark - Notifications Methods
 -(void)loadSlide{
-    _listGuias = [[NSArray alloc]initWithArray:[GuiaDAO getGuiasByTipo:kTipoGuiaTorresOeste]];
+    _listGuias = [[NSArray alloc]initWithArray:[GuiaDAO getGuiasByTipo:kTipoGuiaVisit]];
     [self inicializarSlide];
     [self loadCollection];
 }

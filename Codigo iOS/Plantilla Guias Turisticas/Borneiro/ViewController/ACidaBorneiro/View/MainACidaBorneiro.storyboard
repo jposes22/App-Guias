@@ -50,9 +50,9 @@
         <!--Navigation Controller-->
         <scene sceneID="nKN-Hb-uLH">
             <objects>
-                <navigationController storyboardIdentifier="RomeriaNC" automaticallyAdjustsScrollViewInsets="NO" id="3hq-B5-eGC" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ACidaBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" id="3hq-B5-eGC" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="At0-tF-Mnx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="At0-tF-Mnx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

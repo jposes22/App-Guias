@@ -377,7 +377,7 @@
 		8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0141DC4BD6E0049FB7D /* CopyrightCell.xib */; };
 		8295F0911DC4BD6E0049FB7D /* CopyrightTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0171DC4BD6E0049FB7D /* CopyrightTableController.m */; };
 		8295F0921DC4BD6E0049FB7D /* Copyright.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0181DC4BD6E0049FB7D /* Copyright.storyboard */; };
-		8295F0931DC4BD6E0049FB7D /* CopyrightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F01A1DC4BD6E0049FB7D /* CopyrightViewController.m */; };
+		8295F0931DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F01A1DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m */; };
 		8295F0941DC4BD6E0049FB7D /* HeaderCopyright.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F01D1DC4BD6E0049FB7D /* HeaderCopyright.m */; };
 		8295F0951DC4BD6E0049FB7D /* HeaderCopyright.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F01E1DC4BD6E0049FB7D /* HeaderCopyright.xib */; };
 		8295F0961DC4BD6E0049FB7D /* NavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0221DC4BD6E0049FB7D /* NavigationBar.m */; };
@@ -479,6 +479,8 @@
 		8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8295F2061DC4F9BE0049FB7D /* Localizable.strings */; };
 		8295F20C1DC50E5C0049FB7D /* StylesBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */; };
 		8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295F20D1DC529810049FB7D /* Assets.xcassets */; };
+		82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */; };
+		82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E74B111DC6213D00ADB139 /* Creditos.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -778,8 +780,8 @@
 		8295F0161DC4BD6E0049FB7D /* CopyrightTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightTableController.h; sourceTree = "<group>"; };
 		8295F0171DC4BD6E0049FB7D /* CopyrightTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightTableController.m; sourceTree = "<group>"; };
 		8295F0181DC4BD6E0049FB7D /* Copyright.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Copyright.storyboard; sourceTree = "<group>"; };
-		8295F0191DC4BD6E0049FB7D /* CopyrightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightViewController.h; sourceTree = "<group>"; };
-		8295F01A1DC4BD6E0049FB7D /* CopyrightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightViewController.m; sourceTree = "<group>"; };
+		8295F0191DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CopyrightViewControllerBaronha.h; sourceTree = "<group>"; };
+		8295F01A1DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CopyrightViewControllerBaronha.m; sourceTree = "<group>"; };
 		8295F01C1DC4BD6E0049FB7D /* HeaderCopyright.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCopyright.h; sourceTree = "<group>"; };
 		8295F01D1DC4BD6E0049FB7D /* HeaderCopyright.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCopyright.m; sourceTree = "<group>"; };
 		8295F01E1DC4BD6E0049FB7D /* HeaderCopyright.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCopyright.xib; sourceTree = "<group>"; };
@@ -942,6 +944,9 @@
 		8295F20A1DC50E5C0049FB7D /* StylesBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylesBaronha.h; sourceTree = "<group>"; };
 		8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylesBaronha.m; sourceTree = "<group>"; };
 		8295F20D1DC529810049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82E74B0E1DC6213000ADB139 /* CreditosViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewControllerBaronha.h; sourceTree = "<group>"; };
+		82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewControllerBaronha.m; sourceTree = "<group>"; };
+		82E74B111DC6213D00ADB139 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
 		A8F331FC903374EC1D8BEF67 /* Pods-Torres Oeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -2062,6 +2067,7 @@
 		8295F00A1DC4BD6E0049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82E74B0D1DC6213000ADB139 /* Creditos */,
 				8295F00B1DC4BD6E0049FB7D /* ComoLlegar */,
 				8295F0101DC4BD6E0049FB7D /* Copyright */,
 				8295F01F1DC4BD6E0049FB7D /* GenericView */,
@@ -2099,8 +2105,8 @@
 				8295F0111DC4BD6E0049FB7D /* Cell */,
 				8295F0151DC4BD6E0049FB7D /* Controller */,
 				8295F0181DC4BD6E0049FB7D /* Copyright.storyboard */,
-				8295F0191DC4BD6E0049FB7D /* CopyrightViewController.h */,
-				8295F01A1DC4BD6E0049FB7D /* CopyrightViewController.m */,
+				8295F0191DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.h */,
+				8295F01A1DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m */,
 				8295F01B1DC4BD6E0049FB7D /* Header */,
 			);
 			path = Copyright;
@@ -3014,6 +3020,16 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		82E74B0D1DC6213000ADB139 /* Creditos */ = {
+			isa = PBXGroup;
+			children = (
+				82E74B0E1DC6213000ADB139 /* CreditosViewControllerBaronha.h */,
+				82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */,
+				82E74B111DC6213D00ADB139 /* Creditos.storyboard */,
+			);
+			path = Creditos;
+			sourceTree = "<group>";
+		};
 		AB93E035B14DB0F2006039C3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -3246,6 +3262,7 @@
 				8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */,
 				8295F0A61DC4BD6E0049FB7D /* Referencias.storyboard in Resources */,
 				8295F1911DC4C1480049FB7D /* Santana-Bold.ttf in Resources */,
+				82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */,
 				8295F1E71DC4F7440049FB7D /* Localizable.strings in Resources */,
 				8295F18F1DC4C1480049FB7D /* OpenSans-Regular.ttf in Resources */,
 				8295F0A41DC4BD6E0049FB7D /* Poi.storyboard in Resources */,
@@ -3637,7 +3654,7 @@
 				8295F0B21DC4BD6E0049FB7D /* AlbumPagerController.m in Sources */,
 				8295EF531DC4B31C0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
 				8295EF6A1DC4B3440049FB7D /* RemoteGuiaDetalle.m in Sources */,
-				8295F0931DC4BD6E0049FB7D /* CopyrightViewController.m in Sources */,
+				8295F0931DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m in Sources */,
 				8295EF8E1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295EF951DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F0BE1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m in Sources */,
@@ -3706,6 +3723,7 @@
 				8295EF521DC4B31C0049FB7D /* GuiaSaberMasDAO.m in Sources */,
 				8295F0A31DC4BD6E0049FB7D /* ListPoiViewController.m in Sources */,
 				8295EF441DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
+				82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */,
 				8295F0991DC4BD6E0049FB7D /* HomeViewControllerBaronha.m in Sources */,
 				8295EF5F1DC4B3310049FB7D /* ParametrosDAO.m in Sources */,
 				8295F0B61DC4BD6E0049FB7D /* CellGuiaCollectionView.m in Sources */,

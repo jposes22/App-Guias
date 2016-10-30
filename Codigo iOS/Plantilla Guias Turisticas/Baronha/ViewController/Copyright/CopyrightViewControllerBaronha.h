@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CopyrightViewController : UIViewController
+@interface CopyrightViewControllerBaronha : UIViewController
 
 @end

@@ -8,13 +8,14 @@
 
 #import "ComoLlegarViewControllerBaronha.h"
 #import "UIViewController+MMDrawerController.h"
-#import "Constants.h"
+#import "ConstantsURL.h"
 #import "Metodos.h"
 #import "GuiaDAO.h"
 #import "GuiaList.h"
 #import "StylesBaronha.h"
 #import "Validator.h"
 #import "OpenExternalApps.h"
+
 
 @interface ComoLlegarViewControllerBaronha ()
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
@@ -40,7 +41,7 @@
 }
 
 - (void)setNavigationBar{
-    [StylesBaronha setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Cómo llegar"];
+    [StylesBaronha setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_como_llegar", nil)];
 }
 -(void) loadData{
     NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaComoLlegar];

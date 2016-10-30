@@ -6,20 +6,20 @@
 //  Copyright © 2016 Evelb. All rights reserved.
 //
 
-#import "CopyrightViewController.h"
+#import "CopyrightViewControllerBaronha.h"
 #import "CopyrightTableController.h"
 #import "UIViewController+MMDrawerController.h"
 
 #import "UtilsAppearance.h"
 
-@interface CopyrightViewController ()
+@interface CopyrightViewControllerBaronha ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) CopyrightTableController * tableController;
 @property (nonatomic, strong) NSArray * listData;
 
 @end
 
-@implementation CopyrightViewController
+@implementation CopyrightViewControllerBaronha
 
 - (void)viewDidLoad {
     [super viewDidLoad];

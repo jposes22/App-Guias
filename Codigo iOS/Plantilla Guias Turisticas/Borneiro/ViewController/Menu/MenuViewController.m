@@ -63,7 +63,7 @@
             sb = [UIStoryboard storyboardWithName:@"HomeBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"HomeBorneiroNC"];
             break;
-        case SideDrawerMenuItemTorres:
+        case SideDrawerMenuItemGuia:
             sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"GuiasBorneiroNC"];
             break;

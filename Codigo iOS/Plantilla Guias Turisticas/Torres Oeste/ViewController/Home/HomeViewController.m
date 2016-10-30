@@ -11,7 +11,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UtilsAppearance.h"
 #import "Constants.h"
-
+#import "ConstantsURL.h"
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
@@ -86,7 +86,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemComoLlegar)];
 }
 - (IBAction)btnTorresOestoTouch {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemTorres)];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemGuia)];
 }
 - (IBAction)btnRomariaTouch {
     [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO object:@(SideDrawerMenuItemRomeria)];

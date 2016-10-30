@@ -10,7 +10,7 @@
 #import "UIViewController+MMDrawerController.h"
 #import "PageControllerBorneiro.h"
 #import "GuiaDAO.h"
-#import "Constants.h"
+#import "ConstantsURL.h"
 #import "CollectionVisitaController.h"
 #import "StyleBorneiro.h"
 #import "AlbumViewController.h"

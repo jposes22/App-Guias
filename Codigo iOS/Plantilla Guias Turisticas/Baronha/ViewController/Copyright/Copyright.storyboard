@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Copyright View Controller-->
+        <!--Copyright View Controller Baronha-->
         <scene sceneID="HjT-e7-Egf">
             <objects>
-                <viewController id="b5o-yp-lUb" customClass="CopyrightViewController" sceneMemberID="viewController">
+                <viewController id="b5o-yp-lUb" customClass="CopyrightViewControllerBaronha" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="06F-SS-x5w"/>
                         <viewControllerLayoutGuide type="bottom" id="lmB-tN-RF6"/>

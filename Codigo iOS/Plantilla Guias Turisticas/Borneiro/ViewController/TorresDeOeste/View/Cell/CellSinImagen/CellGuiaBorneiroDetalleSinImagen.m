@@ -55,7 +55,7 @@
     
 }
 -(void)loadStyle{
-    [StyleBorneiro setStyleTitleVisita:_labelTitle];
+    [StyleBorneiro setStyleSubTitleVisita:_labelTitle];
     [StyleBorneiro setStyleText:_labelDescripcion];
     
     

@@ -21,8 +21,20 @@
 }
 + (UIColor *) getVerdeOscuroVisita{
     return [UIColor colorWithRed:181.0/255.0 green:186.0/255.0 blue:138.0/255.0 alpha:1.0];
-
 }
++ (UIColor *) getVerdeClaroCida{
+    return [UIColor colorWithRed:217.0/255.0 green:231.0/255.0 blue:188.0/255.0 alpha:1.0];
+}
++ (UIColor *) getVerdeOscuroCida{
+    return [UIColor colorWithRed:181.0/255.0 green:192.0/255.0 blue:157.0/255.0 alpha:1.0];
+}
++ (UIColor *) getVerdeClaroCultura{
+    return [UIColor colorWithRed:215.0/255.0 green:244.0/255.0 blue:188.0/215.0 alpha:1.0];
+}
++ (UIColor *) getVerdeOscuroCultura{
+    return [UIColor colorWithRed:176.0/255.0 green:191.0/255.0 blue:174.0/255.0 alpha:1.0];
+}
+
 +(UIColor * )getPrimaryColor{
     return [UIColor colorWithRed:20.0/255.0 green:151.0/255.0 blue:173.0/255.0 alpha:1.0];
 }
@@ -46,13 +58,32 @@
 + (void)setStyleTitleComoLlegar:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
     label.textColor = [StyleBorneiro getVerdeClaroComoLlegar];
-    
 }
 + (void)setStyleTitleVisita:(UILabel *) label{
-    [label setFont:[UIFont fontWithName:@"Giorgio" size:30]];
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:25]];
     label.textColor = [StyleBorneiro getVerdeOscuroVisita];
-    
 }
++ (void)setStyleSubTitleVisita:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
+    label.textColor = [StyleBorneiro getVerdeOscuroVisita];
+}
++ (void)setStyleTitleCida:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:25]];
+    label.textColor = [StyleBorneiro getVerdeOscuroCida];
+}
++ (void)setStyleSubTitleCida:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
+    label.textColor = [StyleBorneiro getVerdeOscuroCida];
+}
++ (void)setStyleTitleCultura:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:25]];
+    label.textColor = [StyleBorneiro getVerdeOscuroCultura];
+}
++ (void)setStyleSubTitleCultura:(UILabel *) label{
+    [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
+    label.textColor = [StyleBorneiro getVerdeOscuroCultura];
+}
+
 + (void)setSytleSubtitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
     

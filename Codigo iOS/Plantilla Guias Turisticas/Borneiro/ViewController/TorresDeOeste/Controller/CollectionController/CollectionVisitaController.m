@@ -21,9 +21,8 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     CellVisitaCollectionView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CellVisitaCollectionView" forIndexPath:indexPath];
-    cell.imageViewIndex.image = [UIImage imageNamed:[NSString stringWithFormat:@"imagen_visita_%lu",indexPath.row]];
+    cell.imageViewIndex.image = [UIImage imageNamed:[NSString stringWithFormat:@"image_visita_%lu",indexPath.row+1]];
     if(_pageSelected == indexPath.row){
-        cell.backgroundColor = [StyleBorneiro getVerdeOscuroVisita];
         [collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
         
     }else{

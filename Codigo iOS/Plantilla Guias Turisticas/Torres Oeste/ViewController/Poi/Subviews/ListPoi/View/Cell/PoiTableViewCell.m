@@ -12,6 +12,7 @@
 #import "OpenExternalApps.h"
 #import "Validator.h"
 #import "UtilsAppearance.h"
+#import "Metodos.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 
 @interface PoiTableViewCell()
@@ -55,11 +56,11 @@
 -(void) loadData:(Poi*)poi{
     _poi = poi;
     _lblTitle.text = poi.titulo;
-    _lblDescription.text = poi.descripcion;
+    _lblDescription.attributedText = [Metodos convertHTMLToString:poi.descripcion];
     if(_poi.urlImagen){
-        [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+        [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
     }else{
-        _imgView.image = [UIImage imageNamed:@""];
+        _imgView.image = [UIImage imageNamed:@"iimageNone"];
     }
     //validate buttons
     if([Validator validatePhone:poi.telefono]){

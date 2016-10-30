@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Poi+CoreDataProperties.h"
 @interface DetailPoiViewController : UIViewController
-
+@property (nonatomic, strong) Poi *poiSelected;
 @end

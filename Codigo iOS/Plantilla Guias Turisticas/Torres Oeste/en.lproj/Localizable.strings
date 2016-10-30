@@ -6,3 +6,13 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto English";
+/*Titles Nav*/
+"title_home" = "";
+"title_como_torres" = "";
+"title_como_romeria" = "";
+"title_lugares" = "";
+"title_como_llegar" = "Como Chegar";
+"title_bibliografía" = "";
+"title_copyright" = "";
+"title_ajustes" = "";
+"title_creditos" = "";

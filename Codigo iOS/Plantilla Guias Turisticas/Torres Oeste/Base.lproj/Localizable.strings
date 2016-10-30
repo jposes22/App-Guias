@@ -10,8 +10,11 @@
 
 /*Titles Nav*/
 "title_home" = "Inicio";
-"title_como_llegar" = "Como Chegar";
+"title_como_torres" = "Torres do Oeste";
+"title_como_romeria" = "Romeraría";
 "title_lugares" = "Lugares de interese";
-"title_bibliografía" = "Bibliografía";
+"title_como_llegar" = "Como Chegar";
+"title_bibliografía" = "Referenzas bibliográficas";
+"title_copyright" = "Copyright";
 "title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";

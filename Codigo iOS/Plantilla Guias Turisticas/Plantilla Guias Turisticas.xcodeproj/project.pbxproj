@@ -176,11 +176,6 @@
 		8295EF101DC4B0600049FB7D /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EEC21DC4B0600049FB7D /* CollectionController.m */; };
 		8295EF111DC4B0600049FB7D /* GuiaDetalleTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EEC51DC4B0600049FB7D /* GuiaDetalleTableController.m */; };
 		8295EF121DC4B0600049FB7D /* PageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EEC81DC4B0600049FB7D /* PageController.m */; };
-		8295EF131DC4B0600049FB7D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EECC1DC4B0600049FB7D /* AlbumViewController.m */; };
-		8295EF141DC4B0600049FB7D /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295EECD1DC4B0600049FB7D /* AlbumViewController.xib */; };
-		8295EF151DC4B0600049FB7D /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EED01DC4B0600049FB7D /* AlbumPagerController.m */; };
-		8295EF161DC4B0600049FB7D /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EED31DC4B0600049FB7D /* ViewImage.m */; };
-		8295EF171DC4B0600049FB7D /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295EED41DC4B0600049FB7D /* ViewImage.xib */; };
 		8295EF181DC4B0600049FB7D /* SlideGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EED61DC4B0600049FB7D /* SlideGuide.m */; };
 		8295EF191DC4B0600049FB7D /* CellGuiaCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EEDB1DC4B0600049FB7D /* CellGuiaCollectionView.m */; };
 		8295EF1A1DC4B0600049FB7D /* CellGuiaCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295EEDC1DC4B0600049FB7D /* CellGuiaCollectionView.xib */; };
@@ -456,11 +451,6 @@
 		8295F1621DC4BD830049FB7D /* MainRomeria.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F10A1DC4BD830049FB7D /* MainRomeria.storyboard */; };
 		8295F1631DC4BD830049FB7D /* RomeriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F10C1DC4BD830049FB7D /* RomeriaViewController.m */; };
 		8295F1691DC4BD830049FB7D /* PageControllerBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1201DC4BD830049FB7D /* PageControllerBorneiro.m */; };
-		8295F16A1DC4BD830049FB7D /* AlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1241DC4BD830049FB7D /* AlbumViewController.m */; };
-		8295F16B1DC4BD830049FB7D /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F1251DC4BD830049FB7D /* AlbumViewController.xib */; };
-		8295F16C1DC4BD830049FB7D /* AlbumPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F1281DC4BD830049FB7D /* AlbumPagerController.m */; };
-		8295F16D1DC4BD830049FB7D /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F12B1DC4BD830049FB7D /* ViewImage.m */; };
-		8295F16E1DC4BD830049FB7D /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F12C1DC4BD830049FB7D /* ViewImage.xib */; };
 		8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F13E1DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m */; };
 		8295F1791DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F13F1DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib */; };
 		8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F17F1DC4BEFB0049FB7D /* Splash.storyboard */; };
@@ -805,14 +795,6 @@
 		8295EEC51DC4B0600049FB7D /* GuiaDetalleTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaDetalleTableController.m; sourceTree = "<group>"; };
 		8295EEC71DC4B0600049FB7D /* PageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageController.h; sourceTree = "<group>"; };
 		8295EEC81DC4B0600049FB7D /* PageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageController.m; sourceTree = "<group>"; };
-		8295EECB1DC4B0600049FB7D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		8295EECC1DC4B0600049FB7D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
-		8295EECD1DC4B0600049FB7D /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
-		8295EECF1DC4B0600049FB7D /* AlbumPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPagerController.h; sourceTree = "<group>"; };
-		8295EED01DC4B0600049FB7D /* AlbumPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPagerController.m; sourceTree = "<group>"; };
-		8295EED21DC4B0600049FB7D /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
-		8295EED31DC4B0600049FB7D /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
-		8295EED41DC4B0600049FB7D /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
 		8295EED51DC4B0600049FB7D /* SlideGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideGuide.h; sourceTree = "<group>"; };
 		8295EED61DC4B0600049FB7D /* SlideGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideGuide.m; sourceTree = "<group>"; };
 		8295EEDA1DC4B0600049FB7D /* CellGuiaCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaCollectionView.h; sourceTree = "<group>"; };
@@ -942,14 +924,6 @@
 		8295F10C1DC4BD830049FB7D /* RomeriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RomeriaViewController.m; sourceTree = "<group>"; };
 		8295F11F1DC4BD830049FB7D /* PageControllerBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControllerBorneiro.h; sourceTree = "<group>"; };
 		8295F1201DC4BD830049FB7D /* PageControllerBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControllerBorneiro.m; sourceTree = "<group>"; };
-		8295F1231DC4BD830049FB7D /* AlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumViewController.h; sourceTree = "<group>"; };
-		8295F1241DC4BD830049FB7D /* AlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumViewController.m; sourceTree = "<group>"; };
-		8295F1251DC4BD830049FB7D /* AlbumViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
-		8295F1271DC4BD830049FB7D /* AlbumPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumPagerController.h; sourceTree = "<group>"; };
-		8295F1281DC4BD830049FB7D /* AlbumPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumPagerController.m; sourceTree = "<group>"; };
-		8295F12A1DC4BD830049FB7D /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
-		8295F12B1DC4BD830049FB7D /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
-		8295F12C1DC4BD830049FB7D /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
 		8295F13D1DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaBorneiroDetalleSinImagen.h; sourceTree = "<group>"; };
 		8295F13E1DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaBorneiroDetalleSinImagen.m; sourceTree = "<group>"; };
 		8295F13F1DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaBorneiroDetalleSinImagen.xib; sourceTree = "<group>"; };
@@ -2150,42 +2124,10 @@
 		8295EEC91DC4B0600049FB7D /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				8295EECA1DC4B0600049FB7D /* Album */,
 				8295EED51DC4B0600049FB7D /* SlideGuide.h */,
 				8295EED61DC4B0600049FB7D /* SlideGuide.m */,
 			);
 			path = Subviews;
-			sourceTree = "<group>";
-		};
-		8295EECA1DC4B0600049FB7D /* Album */ = {
-			isa = PBXGroup;
-			children = (
-				8295EECB1DC4B0600049FB7D /* AlbumViewController.h */,
-				8295EECC1DC4B0600049FB7D /* AlbumViewController.m */,
-				8295EECD1DC4B0600049FB7D /* AlbumViewController.xib */,
-				8295EECE1DC4B0600049FB7D /* Controller */,
-				8295EED11DC4B0600049FB7D /* ViewImage */,
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
-		8295EECE1DC4B0600049FB7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8295EECF1DC4B0600049FB7D /* AlbumPagerController.h */,
-				8295EED01DC4B0600049FB7D /* AlbumPagerController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8295EED11DC4B0600049FB7D /* ViewImage */ = {
-			isa = PBXGroup;
-			children = (
-				8295EED21DC4B0600049FB7D /* ViewImage.h */,
-				8295EED31DC4B0600049FB7D /* ViewImage.m */,
-				8295EED41DC4B0600049FB7D /* ViewImage.xib */,
-			);
-			path = ViewImage;
 			sourceTree = "<group>";
 		};
 		8295EED71DC4B0600049FB7D /* View */ = {
@@ -2945,42 +2887,10 @@
 		8295F1211DC4BD830049FB7D /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				8295F1221DC4BD830049FB7D /* Album */,
 				2314F2251DC518AE0048F9E4 /* SlideGuideBorneiro.h */,
 				2314F2261DC518AE0048F9E4 /* SlideGuideBorneiro.m */,
 			);
 			path = Subviews;
-			sourceTree = "<group>";
-		};
-		8295F1221DC4BD830049FB7D /* Album */ = {
-			isa = PBXGroup;
-			children = (
-				8295F1231DC4BD830049FB7D /* AlbumViewController.h */,
-				8295F1241DC4BD830049FB7D /* AlbumViewController.m */,
-				8295F1251DC4BD830049FB7D /* AlbumViewController.xib */,
-				8295F1261DC4BD830049FB7D /* Controller */,
-				8295F1291DC4BD830049FB7D /* ViewImage */,
-			);
-			path = Album;
-			sourceTree = "<group>";
-		};
-		8295F1261DC4BD830049FB7D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				8295F1271DC4BD830049FB7D /* AlbumPagerController.h */,
-				8295F1281DC4BD830049FB7D /* AlbumPagerController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		8295F1291DC4BD830049FB7D /* ViewImage */ = {
-			isa = PBXGroup;
-			children = (
-				8295F12A1DC4BD830049FB7D /* ViewImage.h */,
-				8295F12B1DC4BD830049FB7D /* ViewImage.m */,
-				8295F12C1DC4BD830049FB7D /* ViewImage.xib */,
-			);
-			path = ViewImage;
 			sourceTree = "<group>";
 		};
 		8295F12F1DC4BD830049FB7D /* View */ = {
@@ -3425,13 +3335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8295EF171DC4B0600049FB7D /* ViewImage.xib in Resources */,
 				8295EF221DC4B0600049FB7D /* CellGuiaDetalleSinImagen.xib in Resources */,
 				8295EC151DC4A8650049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295EEF21DC4B0600049FB7D /* ComoLlegar.storyboard in Resources */,
 				8295EC121DC4A8650049FB7D /* Assets.xcassets in Resources */,
 				8295EE6C1DC4AF5C0049FB7D /* OpenSans-Light.ttf in Resources */,
-				8295EF141DC4B0600049FB7D /* AlbumViewController.xib in Resources */,
 				8295EF261DC4B0600049FB7D /* HeaderGuia.xib in Resources */,
 				8295EEFD1DC4B0600049FB7D /* Home.storyboard in Resources */,
 				8295EE6A1DC4AF5C0049FB7D /* OpenSans-Bold.ttf in Resources */,
@@ -3507,7 +3415,6 @@
 				23A501761DC6200D00019783 /* HeaderCida.xib in Resources */,
 				2314F21C1DC515130048F9E4 /* GuiasBorneiro.storyboard in Resources */,
 				8295F1791DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib in Resources */,
-				8295F16E1DC4BD830049FB7D /* ViewImage.xib in Resources */,
 				8295F1B51DC4D6BA0049FB7D /* OpenSans-Regular.ttf in Resources */,
 				8295F14C1DC4BD830049FB7D /* Copyright.storyboard in Resources */,
 				8295EC4B1DC4A87D0049FB7D /* LaunchScreen.storyboard in Resources */,
@@ -3524,7 +3431,6 @@
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
-				8295F16B1DC4BD830049FB7D /* AlbumViewController.xib in Resources */,
 				8295F1621DC4BD830049FB7D /* MainRomeria.storyboard in Resources */,
 				8295F14A1DC4BD830049FB7D /* CopyrightCell.xib in Resources */,
 				8295F1FC1DC4F9980049FB7D /* Localizable.strings in Resources */,
@@ -3788,7 +3694,6 @@
 				8295EEF41DC4B0600049FB7D /* CopyrightCell.m in Sources */,
 				8295EFBF1DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
 				8295EFE51DC4B3B50049FB7D /* Menu+CoreDataClass.m in Sources */,
-				8295EF151DC4B0600049FB7D /* AlbumPagerController.m in Sources */,
 				8295EEF31DC4B0600049FB7D /* ComoLlegarViewController.m in Sources */,
 				8295F19C1DC4C9190049FB7D /* ConstantsURL.m in Sources */,
 				8295EFDF1DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
@@ -3816,7 +3721,6 @@
 				8295EF211DC4B0600049FB7D /* CellGuiaDetalleSinImagen.m in Sources */,
 				8295EFA51DC4B3970049FB7D /* GuiaDetalle+CoreDataClass.m in Sources */,
 				8295EEFE1DC4B0600049FB7D /* HomeViewController.m in Sources */,
-				8295EF161DC4B0600049FB7D /* ViewImage.m in Sources */,
 				8295EF791DC4B3590049FB7D /* RemoteParametros.m in Sources */,
 				8295EF101DC4B0600049FB7D /* CollectionController.m in Sources */,
 				8295EF0A1DC4B0600049FB7D /* PoiViewController.m in Sources */,
@@ -3832,7 +3736,6 @@
 				8295EF1B1DC4B0600049FB7D /* CellGuiaDetalle.m in Sources */,
 				8295EFF11DC4B3BB0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
 				8295EF671DC4B3440049FB7D /* RemoteGuia.m in Sources */,
-				8295EF131DC4B0600049FB7D /* AlbumViewController.m in Sources */,
 				8295EF4A1DC4B3120049FB7D /* GuiaDetalleDAO.m in Sources */,
 				8295EFF21DC4B3BB0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EF761DC4B3550049FB7D /* RemoteMenu.m in Sources */,
@@ -4008,7 +3911,6 @@
 				8295EFB41DC4B3980049FB7D /* Guia+CoreDataProperties.m in Sources */,
 				2314F2271DC518AE0048F9E4 /* SlideGuideBorneiro.m in Sources */,
 				8295EFC71DC4B3A00049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
-				8295F16C1DC4BD830049FB7D /* AlbumPagerController.m in Sources */,
 				8295EF561DC4B31D0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
 				23A501711DC6200D00019783 /* CellCidaBorneiro.m in Sources */,
 				8295EF6C1DC4B3450049FB7D /* RemoteGuiaDetalle.m in Sources */,
@@ -4041,7 +3943,6 @@
 				8295EFCA1DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataProperties.m in Sources */,
 				8295EE5C1DC4AED30049FB7D /* Splash.m in Sources */,
 				2314F2361DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m in Sources */,
-				8295F16D1DC4BD830049FB7D /* ViewImage.m in Sources */,
 				8295EFCC1DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
 				8295F15A1DC4BD830049FB7D /* PoiTableController.m in Sources */,
 				8295EFB81DC4B3980049FB7D /* GuiaDetalleImagen+CoreDataProperties.m in Sources */,
@@ -4108,7 +4009,6 @@
 				8295EC3D1DC4A87D0049FB7D /* main.m in Sources */,
 				8295EF391DC4B2BA0049FB7D /* Constants.m in Sources */,
 				82EE77F71DC6689C00C3A344 /* AlbumViewController.m in Sources */,
-				8295F16A1DC4BD830049FB7D /* AlbumViewController.m in Sources */,
 				23A501911DC6272500019783 /* HeaderCultura.m in Sources */,
 				8295EFE31DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
 			);

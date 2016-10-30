@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cjW-jh-vHi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l9y-YZ-LWx">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-va-6NX">
@@ -56,8 +56,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vy8-a6-Dji">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="1FD-TR-mAA"/>
-                                    <constraint firstAttribute="height" constant="44" id="Wy3-lZ-I6W"/>
+                                    <constraint firstAttribute="width" constant="44" id="1FD-TR-mAA">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="44" id="Wy3-lZ-I6W">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="btnMenu_white"/>
@@ -72,7 +76,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="i7R-mp-YhR" secondAttribute="trailing" id="0R9-Lk-CbN"/>
                             <constraint firstItem="3cY-uh-qYL" firstAttribute="leading" secondItem="l9y-YZ-LWx" secondAttribute="leadingMargin" id="5ME-9X-vn9"/>
                             <constraint firstAttribute="trailing" secondItem="Vqa-va-6NX" secondAttribute="trailing" id="5bR-aR-BWj"/>
-                            <constraint firstItem="vy8-a6-Dji" firstAttribute="top" secondItem="l9y-YZ-LWx" secondAttribute="topMargin" constant="-5" id="6oh-ik-UFy"/>
+                            <constraint firstItem="vy8-a6-Dji" firstAttribute="top" secondItem="l9y-YZ-LWx" secondAttribute="topMargin" constant="-5" id="6oh-ik-UFy">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="vy8-a6-Dji" secondAttribute="trailing" constant="25" id="Dam-WT-q51"/>
                             <constraint firstItem="xms-N1-aaP" firstAttribute="leading" secondItem="3cY-uh-qYL" secondAttribute="trailing" constant="10" id="Joa-hh-iJv"/>
                             <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="3cY-uh-qYL" secondAttribute="bottom" id="LfG-Lf-ajk"/>
@@ -139,7 +145,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btnComoLlegar" width="154" height="32"/>
+        <image name="btnComoLlegar" width="100" height="100"/>
         <image name="btnLugarInteres" width="154" height="32"/>
         <image name="btnMenu_white" width="60" height="60"/>
         <image name="btnRomeria" width="154" height="32"/>

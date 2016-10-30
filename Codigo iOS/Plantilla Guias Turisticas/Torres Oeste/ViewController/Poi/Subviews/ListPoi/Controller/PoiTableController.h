@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Poi+CoreDataProperties.h"
 
 @protocol CommunicationControllerPoi<NSObject>
 @optional
--(void)communicationPoiSelected:(NSInteger) index;
+-(void)communicationPoiSelected:(Poi *) poiSelected;
 @end
 
 @interface PoiTableController : NSObject<UITableViewDelegate,UITableViewDataSource>

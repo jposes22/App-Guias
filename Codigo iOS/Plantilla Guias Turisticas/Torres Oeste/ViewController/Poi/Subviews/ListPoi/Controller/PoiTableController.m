@@ -36,7 +36,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if(_delegatePoi && [_delegatePoi respondsToSelector:@selector(communicationPoiSelected:)]){
-        [_delegatePoi communicationPoiSelected:indexPath.row];
+        [_delegatePoi communicationPoiSelected:(Poi *)[_listOfPois objectAtIndex:indexPath.row]];
     }
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

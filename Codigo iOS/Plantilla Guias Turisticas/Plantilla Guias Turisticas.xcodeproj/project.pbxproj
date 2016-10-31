@@ -3257,7 +3257,7 @@
 					};
 					8295EC021DC4A8640049FB7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = VCX786VPWN;
+						DevelopmentTeam = 7Z62CD9PPW;
 						ProvisioningStyle = Automatic;
 					};
 					8295EC1D1DC4A8710049FB7D = {
@@ -3267,7 +3267,7 @@
 					};
 					8295EC381DC4A87D0049FB7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = VCX786VPWN;
+						DevelopmentTeam = 7Z62CD9PPW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -4199,7 +4199,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VCX786VPWN;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4207,7 +4207,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.TorresOeste;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tictura.TorresOeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4219,7 +4219,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VCX786VPWN;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = "Torres Oeste/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4227,7 +4227,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.TorresOeste;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tictura.TorresOeste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4279,11 +4279,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VCX786VPWN;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.Borneiro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tictura.CastroBorneiro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4295,11 +4295,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VCX786VPWN;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.evelb.Borneiro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tictura.CastroBorneiro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

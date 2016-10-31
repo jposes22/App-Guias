@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SSJ-VU-xPm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xcs-Fo-5uc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARz-x5-eV8">
@@ -28,14 +28,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellIdioma" textLabel="YoH-EM-vX9" style="IBUITableViewCellStyleDefault" id="gmv-Ne-yGu">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="696" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gmv-Ne-yGu" id="iAx-X2-xw9">
-                                            <frame key="frameInset" width="343" height="43"/>
+                                            <frame key="frameInset" width="696" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YoH-EM-vX9">
-                                                    <frame key="frameInset" minX="15" width="313" height="43"/>
+                                                    <frame key="frameInset" minX="15" width="666" height="43.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -92,10 +92,14 @@
                         <viewControllerLayoutGuide type="bottom" id="t7K-6I-HPv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r6o-XY-P19">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Nl-DN-sJc"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_6" translatesAutoresizingMaskIntoConstraints="NO" id="Gz1-Zh-Laf">
+                                <variation key="heightClass=compact-widthClass=compact" image="iphone4s"/>
+                                <variation key="heightClass=compact-widthClass=regular" image="splash_6"/>
+                                <variation key="heightClass=regular-widthClass=regular" image="ipad_pro"/>
+                            </imageView>
                             <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="68t-Dt-LCs">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="KFP-h3-dSW"/>
@@ -106,24 +110,28 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="68t-Dt-LCs" firstAttribute="centerX" secondItem="r6o-XY-P19" secondAttribute="centerX" id="CG0-cC-Wvb"/>
-                            <constraint firstAttribute="trailing" secondItem="0Nl-DN-sJc" secondAttribute="trailing" id="DHr-9k-ocI"/>
                             <constraint firstItem="t7K-6I-HPv" firstAttribute="top" secondItem="68t-Dt-LCs" secondAttribute="bottom" constant="40" id="Dmc-jG-9Wb">
                                 <variation key="heightClass=regular-widthClass=regular" constant="80"/>
                             </constraint>
-                            <constraint firstItem="0Nl-DN-sJc" firstAttribute="top" secondItem="r6o-XY-P19" secondAttribute="top" id="JQs-lT-L1b"/>
-                            <constraint firstItem="t7K-6I-HPv" firstAttribute="top" secondItem="0Nl-DN-sJc" secondAttribute="bottom" id="mZe-CY-a3g"/>
-                            <constraint firstItem="0Nl-DN-sJc" firstAttribute="leading" secondItem="r6o-XY-P19" secondAttribute="leading" id="ozw-TH-ZVr"/>
+                            <constraint firstItem="Gz1-Zh-Laf" firstAttribute="leading" secondItem="r6o-XY-P19" secondAttribute="leading" id="Lka-HH-HdE"/>
+                            <constraint firstItem="t7K-6I-HPv" firstAttribute="top" secondItem="Gz1-Zh-Laf" secondAttribute="bottom" id="sEH-n8-3p0"/>
+                            <constraint firstItem="Gz1-Zh-Laf" firstAttribute="top" secondItem="r6o-XY-P19" secondAttribute="top" id="sxh-cq-BnS"/>
+                            <constraint firstAttribute="trailing" secondItem="Gz1-Zh-Laf" secondAttribute="trailing" id="ygo-mX-xzp"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageViewSplash" destination="0Nl-DN-sJc" id="Vcd-qK-M5k"/>
                         <outlet property="progressView" destination="68t-Dt-LCs" id="jNS-OM-qbU"/>
                         <segue destination="vJ3-ZK-Qr0" kind="show" identifier="showIdiomas" id="B9M-FS-NeM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TqC-pt-l7Z" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="109"/>
+            <point key="canvasLocation" x="-31.199999999999999" y="108.39580209895054"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ipad_pro" width="910" height="682"/>
+        <image name="iphone4s" width="960" height="640"/>
+        <image name="splash_6" width="667" height="375"/>
+    </resources>
 </document>

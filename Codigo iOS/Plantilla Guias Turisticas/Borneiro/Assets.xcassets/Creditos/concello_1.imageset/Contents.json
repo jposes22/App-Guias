@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "concello_1.jpg",
+      "filename" : "concello_1-2.jpg",
       "scale" : "1x"
     },
     {
@@ -12,7 +12,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "concello_1-2.jpg",
+      "filename" : "concello_1.jpg",
       "scale" : "3x"
     }
   ],

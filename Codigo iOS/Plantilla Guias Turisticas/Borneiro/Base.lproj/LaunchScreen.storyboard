@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +15,31 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_6" translatesAutoresizingMaskIntoConstraints="NO" id="3uW-cV-tVs">
+                                <variation key="heightClass=compact-widthClass=compact" image="iphone4s"/>
+                                <variation key="heightClass=regular-widthClass=regular" image="ipad_pro"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3uW-cV-tVs" secondAttribute="bottom" id="RN1-NY-Jrh"/>
+                            <constraint firstAttribute="trailing" secondItem="3uW-cV-tVs" secondAttribute="trailing" id="cF2-sc-uhI"/>
+                            <constraint firstItem="3uW-cV-tVs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="irn-Q1-JYB"/>
+                            <constraint firstItem="3uW-cV-tVs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ksd-K4-eiD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.623688155922046" y="373.60000000000002"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ipad_pro" width="1366" height="1024"/>
+        <image name="iphone4s" width="960" height="640"/>
+        <image name="splash_6" width="667" height="375"/>
+    </resources>
 </document>

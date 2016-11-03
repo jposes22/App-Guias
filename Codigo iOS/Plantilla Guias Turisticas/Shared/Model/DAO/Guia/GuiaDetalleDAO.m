@@ -18,7 +18,7 @@
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:@"GuiaDetalle" inManagedObjectContext:context];
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"idGuia == %d", idGuia];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"isActivo == YES AND idGuia == %d", idGuia];
      NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"orden" ascending:YES];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];

@@ -23,4 +23,14 @@ public class Generic {
 		}
 		return url;
 	}
+	
+	public static String checkNiceURL_AudioGuia(String url){
+		if(url != null){
+			if(!url.contains("http")){
+				url = ConstantesServer.URL_SERVER_AUDIO_GUIA + url;
+			}
+		}
+		return url;
+		
+	}
 }

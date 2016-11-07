@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "PARAMETROS_APP")
+@Table(name = "TO_PARAMETROS_APP")
 public class ParametroAPPVO extends GenericVO implements Serializable{
 
 	/**

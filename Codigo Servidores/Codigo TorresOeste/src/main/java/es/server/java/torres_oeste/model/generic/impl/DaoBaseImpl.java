@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
+import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.type.Type;
@@ -42,7 +43,7 @@ public class DaoBaseImpl<T extends Serializable> implements DaoBase<T> {
 	public List<T> findAllByFechaActualizacion(Class<T> clase, long fechaActualizacion) throws DAOException {
 		try {
 			Session session = getSessionFactory().getCurrentSession();
-			return session.createCriteria(clase).add(Restrictions.gt("fechaActualizacion", fechaActualizacion)).list();
+			return session.createCriteria(clase).add(Restrictions.gt("fechaActualizacion", fechaActualizacion)).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 			//return session.createCriteria(clase).list();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -65,7 +66,7 @@ public class DaoBaseImpl<T extends Serializable> implements DaoBase<T> {
 	public List<T> findAll(Class<T> clase) throws DAOException {
 		try {
 			Session session = getSessionFactory().getCurrentSession();
-			return session.createCriteria(clase).list();
+			return session.createCriteria(clase).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY).list();
 		} catch (Exception e) {
 			throw new DAOException(e);
 		}
@@ -114,7 +115,7 @@ public class DaoBaseImpl<T extends Serializable> implements DaoBase<T> {
 			throws DAOException {
 		try {
 			Session session = getSessionFactory().getCurrentSession();
-			return session.createSQLQuery(query).addEntity(prefijo, entity);
+			return session.createSQLQuery(query).addEntity(prefijo, entity).setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
 		} catch (Exception e) {
 			throw new DAOException(e);
 		}

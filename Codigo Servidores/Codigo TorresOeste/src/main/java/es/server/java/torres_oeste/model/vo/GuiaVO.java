@@ -13,7 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "GUIA")
+@Table(name = "TO_GUIA")
 public class GuiaVO extends GenericLanguageVO implements Serializable {
 
 	/**

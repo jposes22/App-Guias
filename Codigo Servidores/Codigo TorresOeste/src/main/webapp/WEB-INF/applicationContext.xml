@@ -28,8 +28,8 @@
 	<!-- Datasources Configuration -->
 	<bean id="dataSourceTorresOeste" class="org.springframework.jndi.JndiObjectFactoryBean">
 		<!--<property name="jndiName" value="java:comp/env/jdbc/BARONHA" /> -->
-		<property name="jndiName" value="java:comp/env/jdbc/BORNEIRO" /> 
-		<!--<property name="jndiName" value="java:comp/env/jdbc/TORRES_OESTE" /> -->
+		<!--  <property name="jndiName" value="java:comp/env/jdbc/BORNEIRO" /> --> 
+		<property name="jndiName" value="java:comp/env/jdbc/TORRES_OESTE" /> 
 		<property name="cache" value="false" />
 		<property name="proxyInterface" value="javax.sql.DataSource" />
 	</bean>

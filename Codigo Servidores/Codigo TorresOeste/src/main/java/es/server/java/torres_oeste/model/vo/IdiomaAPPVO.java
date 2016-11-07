@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "IDIOMA_APP")
+@Table(name = "TO_IDIOMA_APP")
 public class IdiomaAPPVO extends GenericVO implements Serializable{
 
 	@Id

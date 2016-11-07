@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import es.server.java.torres_oeste.view.dto.GenericDTO;
 
 @Entity
-@Table(name = "MENU")
+@Table(name = "TO_MENU")
 public class MenuVO extends GenericVO implements Serializable {
 
 	/**

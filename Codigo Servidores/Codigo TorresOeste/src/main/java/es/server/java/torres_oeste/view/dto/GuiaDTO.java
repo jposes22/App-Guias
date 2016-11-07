@@ -2,6 +2,8 @@ package es.server.java.torres_oeste.view.dto;
 
 import java.io.Serializable;
 
+import es.server.java.torres_oeste.utilidades.generic.Generic;
+
 
 
 public class GuiaDTO extends GenericLanguageDTO implements Serializable  {
@@ -37,7 +39,7 @@ public class GuiaDTO extends GenericLanguageDTO implements Serializable  {
 		this.orden = orden;
 	}
 	public String getUrlAudioGuia() {
-		return urlAudioGuia;
+		return Generic.checkNiceURL_AudioGuia(urlAudioGuia);
 	}
 	public void setUrlAudioGuia(String urlAudioGuia) {
 		this.urlAudioGuia = urlAudioGuia;

@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "POI_IMAGEN")
+@Table(name = "TO_POI_IMAGEN")
 public class POIImagenVO {
 	@Id
 	@GeneratedValue

@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "GUIA_DETALLE_IMAGENES")
+@Table(name = "TO_GUIA_DETALLE_IMAGENES")
 public class GuiaDetalleImagenVO implements Serializable {
 
 	/**

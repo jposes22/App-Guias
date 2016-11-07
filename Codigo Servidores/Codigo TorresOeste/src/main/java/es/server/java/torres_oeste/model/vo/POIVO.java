@@ -14,7 +14,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "POI")
+@Table(name = "TO_POI")
 public class POIVO extends GenericLanguageVO implements Serializable{
 
 	/**

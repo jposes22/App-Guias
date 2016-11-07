@@ -3,6 +3,8 @@ package es.server.java.torres_oeste.view.dto;
 import java.io.Serializable;
 import java.util.List;
 
+import es.server.java.torres_oeste.utilidades.generic.Generic;
+
 
 public class GuiaSaberMasDTO extends GenericLanguageDTO implements Serializable {
 
@@ -33,7 +35,7 @@ public class GuiaSaberMasDTO extends GenericLanguageDTO implements Serializable 
 		this.idGuiaDetalle = idGuiaDetalle;
 	}
 	public String getUrlAudioGuia() {
-		return urlAudioGuia;
+		return Generic.checkNiceURL_AudioGuia(urlAudioGuia);
 	}
 	public void setUrlAudioGuia(String urlAudioGuia) {
 		this.urlAudioGuia = urlAudioGuia;

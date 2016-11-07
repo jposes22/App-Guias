@@ -14,7 +14,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "GUIA_SABER_MAS")
+@Table(name = "TO_GUIA_SABER_MAS")
 public class GuiaSaberMasVO extends GenericLanguageVO implements Serializable {
 
 	/**

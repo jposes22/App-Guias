@@ -12,7 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity
-@Table(name = "GUIA_SABER_MAS_DETALLE")
+@Table(name = "TO_GUIA_SABER_MAS_DETALLE")
 public class GuiaSaberMasDetalleVO extends GenericLanguageVO implements Serializable{
 
 	/**

@@ -41,20 +41,29 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
         _contraintLabelTopHeight.constant = 0;
+        _labelTitle.hidden = YES;
     }else{
         _contraintLabelTopHeight.constant = 10;
+        _labelTitle.hidden = NO;
         _labelTitle.text = guiaDetalle.titulo;
     }
     if(!guiaDetalle.descripcion){
         _constraintTopHeight.constant = 0;
+        _labelDescripcion.hidden = YES;
+
     }else{
         _constraintTopHeight.constant = 10;
+        _labelDescripcion.hidden = NO;
+
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     if(!guiaDetalle.listOfGuiaDetalleImagen || guiaDetalle.listOfGuiaDetalleImagen.count == 0){
 		_constraintTopImagen.constant = 0;
+        _imageGuia.hidden= YES;
         //_imageGuia.image =[UIImage imageNamed:@"slide_image1"];
     }else{
+        _imageGuia.hidden = NO;
+        
         _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
         _imageGuia.userInteractionEnabled = YES;
 		_constraintTopImagen.constant = 10;
@@ -83,7 +92,7 @@
 -(void)loadStyle{
     [UtilsAppearance setStyleTitleList:_labelTitle];
     _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
-    [UtilsAppearance setStyleText:_labelDescripcion];
+    //[UtilsAppearance setStyleText:_labelDescripcion];
     
     
 }

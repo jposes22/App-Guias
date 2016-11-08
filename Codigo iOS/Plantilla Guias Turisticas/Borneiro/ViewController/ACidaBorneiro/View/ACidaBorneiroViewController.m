@@ -15,6 +15,7 @@
 #import "StyleBorneiro.h"
 #import "GuiaList.h"
 #import "CidaBorneiroTableController.h"
+#import "AlbumViewController.h"
 @interface ACidaBorneiroViewController ()<CommnicationMenu, CommunicationCidaTableController>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -52,6 +53,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [_tableView setNeedsLayout];
     [_tableView layoutIfNeeded];
+    [_tableView reloadData];
 }
 
 -(void) loadData{
@@ -61,6 +63,11 @@
     if(listGUias.count > 0){
         _guia = [listGUias firstObject];
     }
+}
+-(void)communicationImageSelected:(NSArray *)list{
+    AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
+    viewController.listfOfImage = list;
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 -(void) loadStyle{
 }

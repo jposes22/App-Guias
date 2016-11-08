@@ -67,9 +67,9 @@
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if(!_guia.urlAudioGuia){
-        return 50;
+        return 150;
     }
-    return 100;
+    return 200;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return UITableViewAutomaticDimension;

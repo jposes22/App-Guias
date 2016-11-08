@@ -18,11 +18,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imageGuia;
-@property (nonatomic, strong) GuiaDetalleImagen * guiaDetalleImagen;
 @property (nonatomic, strong) NSArray * listImagenesDetalle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
+@property (nonatomic, strong) GuiaDetalleList * guiaDetalle;
+
+
 @end
 
 @implementation CellGuiaDetalle
@@ -39,34 +41,41 @@
 }
 
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
-    if(!guiaDetalle.titulo){
-        _contraintLabelTopHeight.constant = 0;
-    }else{
-        _contraintLabelTopHeight.constant = 10;
-        _labelTitle.text = guiaDetalle.titulo;
+   
+        if(!guiaDetalle.titulo){
+            _contraintLabelTopHeight.constant = 0;
+            _labelTitle.hidden = YES;
+        }else{
+            _contraintLabelTopHeight.constant = 10;
+            _labelTitle.text = guiaDetalle.titulo;
+            _labelTitle.hidden = NO;
+        }
+        if(!guiaDetalle.descripcion){
+            _labelDescripcion.hidden = YES;
+            _constraintTopHeight.constant = 0;
+        }else{
+            _constraintTopHeight.constant = 10;
+            _labelDescripcion.hidden = NO;
+            _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
+        }
+        if(!guiaDetalle.listOfGuiaDetalleImagen || guiaDetalle.listOfGuiaDetalleImagen.count == 0){
+            _constraintTopImagen.constant = 0;
+            _imageGuia.hidden = YES;
+        }else{
+            _imageGuia.hidden = NO;
+            _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
+            _imageGuia.userInteractionEnabled = YES;
+            _constraintTopImagen.constant = 10;
+            NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+            path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
+            _imageGuia.image = [UIImage imageWithContentsOfFile:path ];
+            UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapImageGuia:)];
+            tapGestureRecognizer.numberOfTapsRequired = 1;
+            [_imageGuia addGestureRecognizer:tapGestureRecognizer];
+            
+
     }
-    if(!guiaDetalle.descripcion){
-        _constraintTopHeight.constant = 0;
-    }else{
-        _constraintTopHeight.constant = 10;
-        _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
-    }
-    if(!guiaDetalle.listOfGuiaDetalleImagen || guiaDetalle.listOfGuiaDetalleImagen.count == 0){
-		_constraintTopImagen.constant = 0;
-        //_imageGuia.image =[UIImage imageNamed:@"slide_image1"];
-    }else{
-        _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
-        _imageGuia.userInteractionEnabled = YES;
-		_constraintTopImagen.constant = 10;
-        NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-        path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
-        _imageGuia.image = [UIImage imageWithContentsOfFile:path ];
-        
-        UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapImageGuia:)];
-        tapGestureRecognizer.numberOfTapsRequired = 1;
-        [_imageGuia addGestureRecognizer:tapGestureRecognizer];
-        
-    }
+    
     
     [self loadStyle];
 
@@ -83,7 +92,7 @@
 -(void)loadStyle{
     [UtilsAppearance setStyleTitleList:_labelTitle];
     _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
-    [UtilsAppearance setStyleText:_labelDescripcion];
+   // [UtilsAppearance setStyleText:_labelDescripcion];
     
     
 }

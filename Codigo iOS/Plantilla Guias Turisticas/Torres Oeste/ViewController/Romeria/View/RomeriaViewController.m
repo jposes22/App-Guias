@@ -52,6 +52,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [_tableView setNeedsLayout];
     [_tableView layoutIfNeeded];
+    [_tableView reloadData];
 }
 
 -(void) loadData{

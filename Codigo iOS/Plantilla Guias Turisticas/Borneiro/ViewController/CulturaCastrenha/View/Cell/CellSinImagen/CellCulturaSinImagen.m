@@ -33,17 +33,20 @@
 }
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
+        _labelTitle.hidden = YES;
         _constraintTopTitle.constant = 0;
     }else{
+        _labelTitle.hidden = NO;
         _labelTitle.text = guiaDetalle.titulo;
         _constraintTopTitle.constant = 10;
 
     }
     if(!guiaDetalle.descripcion){
+        _labelDescripcion.hidden = YES;
         _constraintTopDescripcion.constant = 0;
     }else{
         _constraintTopDescripcion.constant = 10;
-
+        _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     
@@ -56,7 +59,7 @@
 }
 -(void)loadStyle{
     [StyleBorneiro setStyleSubTitleCultura:_labelTitle];
-    [StyleBorneiro setStyleText:_labelDescripcion];
+   // [StyleBorneiro setStyleText:_labelDescripcion];
     
     
 }

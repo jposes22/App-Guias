@@ -34,16 +34,19 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
         _constraintTopTitle.constant = 0;
+        _labelTitle.hidden = YES;
     }else{
         _labelTitle.text = guiaDetalle.titulo;
         _constraintTopTitle.constant = 10;
+        _labelTitle.hidden = NO;
 
     }
     if(!guiaDetalle.descripcion){
         _constraintTopDescripcion.constant = 0;
+        _labelDescripcion.hidden = YES;
     }else{
         _constraintTopDescripcion.constant = 10;
-
+        _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     
@@ -56,7 +59,7 @@
 }
 -(void)loadStyle{
     [StyleBorneiro setStyleSubTitleVisita:_labelTitle];
-    [StyleBorneiro setStyleText:_labelDescripcion];
+ //   [StyleBorneiro setStyleText:_labelDescripcion];
     
     
 }

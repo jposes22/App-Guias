@@ -39,7 +39,7 @@
     __block NSError *error;
     for(GuiaSaberMas *guiaSaberMas in items){
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"GuiaSaberMas"];
-        [request setPredicate:[NSPredicate predicateWithFormat:@"idGuiaSaberMas == %@", guiaSaberMas.idGuiaSaberMas]];
+        [request setPredicate:[NSPredicate predicateWithFormat:@"idGuiaSaberMas == %d", guiaSaberMas.idGuiaSaberMas]];
         [request setFetchLimit:1];
         NSUInteger count = [context countForFetchRequest:request error:&error];
         if (count == NSNotFound){
@@ -59,7 +59,7 @@
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSFetchRequest *req = [[NSFetchRequest alloc] initWithEntityName:@"GuiaSaberMas"];
-    [req setPredicate:[NSPredicate predicateWithFormat:@"guiaSaberMas == %@", guiaSaberMas.idGuiaSaberMas]];
+    [req setPredicate:[NSPredicate predicateWithFormat:@"guiaSaberMas == %d", guiaSaberMas.idGuiaSaberMas]];
     NSArray *array = [context executeFetchRequest:req error:&error];
     if(array != nil && array.count == 1){
         GuiaSaberMas * objectToModify = [array objectAtIndex:0];

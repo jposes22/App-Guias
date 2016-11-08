@@ -46,6 +46,7 @@
 }
 - (void)loadInitialData{
     _labelTitulo.text = @"Seleccione un idioma";
+    _btnConfirmar.enabled = NO;
     [_btnConfirmar setTitle:@"Seleccionar" forState:UIControlStateNormal];
     
 }
@@ -69,6 +70,7 @@
 #pragma mark - Communication Idioma selected
 - (void)communicationIdiomaSelected:(NSInteger)index{
     _idioma = [_listOfIdiomas objectAtIndex:index];
+    _btnConfirmar.enabled = YES;
 }
 
 /*

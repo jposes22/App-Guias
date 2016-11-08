@@ -38,6 +38,7 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+   //
     [_tableView reloadData];
     
 }
@@ -61,6 +62,7 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [_tableView setNeedsLayout];
     [_tableView layoutIfNeeded];
+    [_tableView reloadData];
 }
 -(void) communicationImageSelected:(NSArray *)list{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"OPEN_ALBUM" object:list userInfo:nil];

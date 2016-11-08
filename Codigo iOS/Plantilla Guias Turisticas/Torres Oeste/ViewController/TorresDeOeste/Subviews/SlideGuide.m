@@ -44,11 +44,11 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-   // [_tableView reloadData];
+  //  [_tableView reloadData];
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [_tableView reloadData];
+  //  [_tableView reloadData];
 
 }
 
@@ -79,13 +79,12 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     [_tableView setNeedsLayout];
     [_tableView layoutIfNeeded];
+    [_tableView reloadData];
 }
 -(void) communicationImageSelected:(NSArray *)list{
     [[NSNotificationCenter defaultCenter] postNotificationName:@"OPEN_ALBUM" object:list userInfo:nil];
 
-    /*AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
-    viewController.listfOfImage = list;
-    [self presentViewController:viewController animated:YES completion:nil];*/
+    
 }
 - (void) comunicationPlayAudioGuia:(Guia *)guia{
     if (_audioPlayer != nil){

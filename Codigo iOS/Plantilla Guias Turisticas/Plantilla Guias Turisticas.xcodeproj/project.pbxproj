@@ -427,7 +427,6 @@
 		8295F0C21DC4BD6E0049FB7D /* HeaderGuia.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F08B1DC4BD6E0049FB7D /* HeaderGuia.m */; };
 		8295F0C31DC4BD6E0049FB7D /* HeaderGuia.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F08C1DC4BD6E0049FB7D /* HeaderGuia.xib */; };
 		8295F1491DC4BD830049FB7D /* CopyrightBorneiroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0CD1DC4BD820049FB7D /* CopyrightBorneiroCell.m */; };
-		8295F14A1DC4BD830049FB7D /* CopyrightBorneiroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0CE1DC4BD820049FB7D /* CopyrightBorneiroCell.xib */; };
 		8295F14B1DC4BD830049FB7D /* CopyrightBorneiroTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0D11DC4BD820049FB7D /* CopyrightBorneiroTableController.m */; };
 		8295F14C1DC4BD830049FB7D /* CopyrightBorneiro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0D21DC4BD820049FB7D /* CopyrightBorneiro.storyboard */; };
 		8295F14D1DC4BD830049FB7D /* CopyrightBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F0D41DC4BD820049FB7D /* CopyrightBorneiroViewController.m */; };
@@ -480,6 +479,7 @@
 		8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8295F2061DC4F9BE0049FB7D /* Localizable.strings */; };
 		8295F20C1DC50E5C0049FB7D /* StylesBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */; };
 		8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295F20D1DC529810049FB7D /* Assets.xcassets */; };
+		829A8CC51DD2468D00D78A7A /* CopyrightBorneiroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0CE1DC4BD820049FB7D /* CopyrightBorneiroCell.xib */; };
 		82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */; };
 		82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E74B111DC6213D00ADB139 /* Creditos.storyboard */; };
 		82EE77E41DC64CF200C3A344 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77E11DC64CF200C3A344 /* Creditos.storyboard */; };
@@ -3247,7 +3247,7 @@
 		8295EB9E1DC4A4CC0049FB7D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Evelb;
 				TargetAttributes = {
 					8295EBA51DC4A4CC0049FB7D = {
@@ -3267,7 +3267,7 @@
 					};
 					8295EC381DC4A87D0049FB7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7Z62CD9PPW;
+						DevelopmentTeam = 946XCWF69B;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -3408,8 +3408,7 @@
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
-				8295F14A1DC4BD830049FB7D /* CopyrightBorneiroCell.xib in Resources */,
-				8295F14A1DC4BD830049FB7D /* CopyrightBorneiroCell.xib in Resources */,
+				829A8CC51DD2468D00D78A7A /* CopyrightBorneiroCell.xib in Resources */,
 				8295F1FC1DC4F9980049FB7D /* Localizable.strings in Resources */,
 				2314F2371DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.xib in Resources */,
 				2314F22F1DC519950048F9E4 /* CellVisitaCollectionView.xib in Resources */,
@@ -4094,6 +4093,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4143,6 +4143,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -4283,7 +4284,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7Z62CD9PPW;
+				DEVELOPMENT_TEAM = 946XCWF69B;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4299,7 +4300,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7Z62CD9PPW;
+				DEVELOPMENT_TEAM = 946XCWF69B;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -34,14 +34,18 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
         _constraintTopTitle.constant = 0;
+        _labelTitle.hidden = YES;
     }else{
+        _labelTitle.hidden = NO;
         _labelTitle.text = guiaDetalle.titulo;
         _constraintTopTitle.constant = 10;
 
     }
     if(!guiaDetalle.descripcion){
+        _labelDescripcion.hidden = YES;
         _constraintTopDescripcion.constant = 0;
     }else{
+        _labelDescripcion.hidden = NO;
         _constraintTopDescripcion.constant = 10;
 
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
@@ -57,7 +61,7 @@
 -(void)loadStyle{
     [UtilsAppearance setStyleTitleList:_labelTitle];
     _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
-    [UtilsAppearance setStyleText:_labelDescripcion];
+   // [UtilsAppearance setStyleText:_labelDescripcion];
     
     
 }

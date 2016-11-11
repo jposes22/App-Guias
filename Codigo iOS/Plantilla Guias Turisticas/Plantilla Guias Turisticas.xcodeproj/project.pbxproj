@@ -2209,7 +2209,7 @@
 				8295F0351DC4BD6E0049FB7D /* Poi */,
 				8295F04A1DC4BD6E0049FB7D /* Referencias */,
 				8295F0531DC4BD6E0049FB7D /* Splash */,
-				8295F05C1DC4BD6E0049FB7D /* TorresDeOeste */,
+				8295F05C1DC4BD6E0049FB7D /* Guias */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2449,13 +2449,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		8295F05C1DC4BD6E0049FB7D /* TorresDeOeste */ = {
+		8295F05C1DC4BD6E0049FB7D /* Guias */ = {
 			isa = PBXGroup;
 			children = (
 				8295F05D1DC4BD6E0049FB7D /* Controller */,
 				8295F0671DC4BD6E0049FB7D /* Subviews */,
 				8295F0751DC4BD6E0049FB7D /* View */,
 			);
+			name = Guias;
 			path = TorresDeOeste;
 			sourceTree = "<group>";
 		};

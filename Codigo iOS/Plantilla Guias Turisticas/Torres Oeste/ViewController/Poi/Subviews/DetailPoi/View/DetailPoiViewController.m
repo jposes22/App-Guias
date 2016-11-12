@@ -12,10 +12,15 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UtilsAppearance.h"
 
+#import "PoiDAO.h"
+
 @interface DetailPoiViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgViewListImages;
+
 
 @end
 
@@ -42,10 +47,19 @@
     [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_lugares", nil)];
 }
 -(void)loadData{
+    
+     NSArray *listOfPois = [PoiDAO getPoiByCategory:_categoryPoi];
+    if(listOfPois && [listOfPois count] > 0){
+        _poiSelected = listOfPois.firstObject;
+    
     _lblTitle.text = _poiSelected.titulo;
     _lblDescripcion.attributedText  = [Metodos convertHTMLToString:_poiSelected.descripcion];
-    if(_poiSelected.urlImagen){
-        [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:_poiSelected.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
+        if(_poiSelected.urlImagen){
+            [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:_poiSelected.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
+        }else{
+            _imgView.image = [UIImage imageNamed:@"iimageNone"];
+        }
+        
     }else{
         _imgView.image = [UIImage imageNamed:@"iimageNone"];
     }

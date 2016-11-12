@@ -178,7 +178,7 @@
             DetailPoiViewController *vc = [segue destinationViewController];
             
             // Pass any objects to the view controller here, like...
-            //[vc setCategoryPoi:[sender integerValue]];
+            [vc setCategoryPoi:[sender integerValue]];
         }
 }
 

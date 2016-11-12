@@ -8,6 +8,8 @@
 
 #import "Poi+CoreDataClass.h"
 #import "CoreDataUtil.h"
+#import "PoiImagen+CoreDataProperties.h"
+#import "PoiImagenDAO.h"
 
 @implementation Poi
 -(id)init:(NSManagedObjectContext *)context{
@@ -56,6 +58,23 @@
         if([json objectForKey:@"urlWeb"] != [NSNull null]){
             self.urlWeb = [json objectForKey:@"urlWeb"] ;
         }
+        if([json objectForKey:@"listPoiImagen"] != [NSNull null]){
+           // [[NSOperationQueue new] addOperationWithBlock:^{
+                NSMutableArray * listImage  = [NSMutableArray new];
+                for (id jsonImage in [json objectForKey:@"listPoiImagen"]) {
+                    PoiImagen * poiImagen = [[PoiImagen alloc] initPoiImagenWithJson:jsonImage];
+                    if(poiImagen){
+                        [listImage addObject:poiImagen];
+                    }
+                    
+                }
+                [PoiImagenDAO insertarPoiImagen:listImage];
+           // }];
+            
+            
+        }
+
+        
     }
     return self;
 }

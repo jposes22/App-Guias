@@ -8,8 +8,35 @@
 
 #import "PoiDAO.h"
 #import "CoreDataUtil.h"
-#import "Poi+CoreDataClass.h"
+
 @implementation PoiDAO
+
+
++(Poi *)getPoi:(NSInteger *)idPoi{
+    //Obtenemos la entidad correspondiente al modelo
+    NSError *error;
+    NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription
+                                              entityForName:@"Poi" inManagedObjectContext:context];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"idPoi == %d", idPoi];
+    //Creamos la consulta y le asociamos la entidad que acabamos de crear
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    [request setPredicate:predicate];
+    //Ejecutamos la consulta
+    NSArray *array = [context executeFetchRequest:request error:&error];
+    if (array == nil){
+        NSLog(@"Problem execute request: %@", [error localizedDescription]);
+    }else{
+        if(array.count > 0){
+            return [array objectAtIndex:0];
+        }
+        
+    }
+    return nil;
+}
+
+
 +(NSArray *)getPoiByCategory:(NSInteger )category{
     //Obtenemos la entidad correspondiente al modelo
     NSError *error;

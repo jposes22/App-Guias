@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="64" width="667" height="936"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-0E-FCg">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="277"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="547"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-d4-4I5">
                                                 <rect key="frame" x="0.0" y="0.0" width="667" height="200"/>
@@ -104,19 +104,29 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gid-Mp-lrY">
+                                                <rect key="frame" x="8" y="290" width="651" height="249"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="249" id="Foh-K8-TFg"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="gid-Mp-lrY" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="8" id="0Uh-5k-Qfe"/>
                                             <constraint firstItem="n6r-ga-8Os" firstAttribute="top" secondItem="SFu-d4-4I5" secondAttribute="bottom" constant="18" id="0or-lc-f2B"/>
                                             <constraint firstItem="n6r-ga-8Os" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="20" id="57c-CL-9vj"/>
                                             <constraint firstAttribute="trailing" secondItem="4u3-0y-mFI" secondAttribute="trailing" constant="20" id="CmP-AY-eJu"/>
+                                            <constraint firstItem="gid-Mp-lrY" firstAttribute="top" secondItem="4u3-0y-mFI" secondAttribute="bottom" constant="23" id="Cyn-2z-RNa"/>
                                             <constraint firstAttribute="trailing" secondItem="SFu-d4-4I5" secondAttribute="trailing" id="Iyv-RX-OvM"/>
                                             <constraint firstItem="SFu-d4-4I5" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" id="MWJ-1e-7nf"/>
                                             <constraint firstItem="4u3-0y-mFI" firstAttribute="top" secondItem="n6r-ga-8Os" secondAttribute="bottom" constant="8" id="Pba-vf-CO0"/>
                                             <constraint firstAttribute="trailing" secondItem="n6r-ga-8Os" secondAttribute="trailing" constant="20" id="dft-Le-7j1"/>
                                             <constraint firstItem="4u3-0y-mFI" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="20" id="hNx-Xq-OU7"/>
                                             <constraint firstItem="SFu-d4-4I5" firstAttribute="top" secondItem="g5I-0E-FCg" secondAttribute="top" id="mJX-dG-HRx"/>
-                                            <constraint firstAttribute="bottom" secondItem="4u3-0y-mFI" secondAttribute="bottom" constant="10" id="rDp-an-Whl"/>
+                                            <constraint firstAttribute="bottom" secondItem="4u3-0y-mFI" secondAttribute="bottom" priority="750" constant="10" id="rDp-an-Whl"/>
+                                            <constraint firstAttribute="bottom" secondItem="gid-Mp-lrY" secondAttribute="bottom" constant="8" id="xHP-B3-iYq"/>
+                                            <constraint firstAttribute="trailing" secondItem="gid-Mp-lrY" secondAttribute="trailing" constant="8" id="y3n-r3-mEG"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -147,13 +157,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="SFu-d4-4I5" id="1Ti-7w-DBB"/>
+                        <outlet property="imgViewListImages" destination="gid-Mp-lrY" id="Pmz-iN-8qS"/>
                         <outlet property="lblDescripcion" destination="4u3-0y-mFI" id="cPa-xf-1ko"/>
                         <outlet property="lblTitle" destination="n6r-ga-8Os" id="8Yh-i1-RgI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cj0-YG-SdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="2155"/>
+            <point key="canvasLocation" x="1451.4242878560722" y="2153.5999999999999"/>
         </scene>
         <!--Poi View Controller-->
         <scene sceneID="XhM-gS-Zji">

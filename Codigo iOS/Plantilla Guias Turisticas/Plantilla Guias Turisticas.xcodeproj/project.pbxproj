@@ -479,6 +479,10 @@
 		8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8295F2061DC4F9BE0049FB7D /* Localizable.strings */; };
 		8295F20C1DC50E5C0049FB7D /* StylesBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */; };
 		8295F20E1DC529810049FB7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8295F20D1DC529810049FB7D /* Assets.xcassets */; };
+		8298B8281DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
+		8298B8291DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
+		8298B82A1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
+		8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
 		829A8CC51DD2468D00D78A7A /* CopyrightBorneiroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0CE1DC4BD820049FB7D /* CopyrightBorneiroCell.xib */; };
 		82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */; };
 		82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E74B111DC6213D00ADB139 /* Creditos.storyboard */; };
@@ -970,6 +974,8 @@
 		8295F20A1DC50E5C0049FB7D /* StylesBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StylesBaronha.h; sourceTree = "<group>"; };
 		8295F20B1DC50E5C0049FB7D /* StylesBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StylesBaronha.m; sourceTree = "<group>"; };
 		8295F20D1DC529810049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8298B8261DD748F6005BE8E5 /* PoiImagenDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiImagenDAO.h; sourceTree = "<group>"; };
+		8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiImagenDAO.m; sourceTree = "<group>"; };
 		82E74B0E1DC6213000ADB139 /* CreditosViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewControllerBaronha.h; sourceTree = "<group>"; };
 		82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewControllerBaronha.m; sourceTree = "<group>"; };
 		82E74B111DC6213D00ADB139 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
@@ -1374,6 +1380,8 @@
 			children = (
 				8295ED5C1DC4AAEE0049FB7D /* PoiDAO.h */,
 				8295ED5D1DC4AAEE0049FB7D /* PoiDAO.m */,
+				8298B8261DD748F6005BE8E5 /* PoiImagenDAO.h */,
+				8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */,
 			);
 			path = Poi;
 			sourceTree = "<group>";
@@ -3633,6 +3641,7 @@
 				8295EE211DC4AAEE0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EDFE1DC4AAEE0049FB7D /* RemoteDetalleGuiaVO.m in Sources */,
 				8295EE021DC4AAEE0049FB7D /* RemoteMenuVO.m in Sources */,
+				8298B8281DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EE281DC4AAEE0049FB7D /* Settings.m in Sources */,
 				8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */,
 				8295EE421DC4ACD20049FB7D /* OpenExternalApps.m in Sources */,
@@ -3683,6 +3692,7 @@
 				82EE77E51DC64CF200C3A344 /* CreditosViewController.m in Sources */,
 				8295EF0E1DC4B0600049FB7D /* RomeriaViewController.m in Sources */,
 				8295EF611DC4B3360049FB7D /* PoiDAO.m in Sources */,
+				8298B8291DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EFA71DC4B3970049FB7D /* GuiaDetalleImagen+CoreDataClass.m in Sources */,
 				8295EF251DC4B0600049FB7D /* HeaderGuia.m in Sources */,
 				8295EFC01DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
@@ -3838,6 +3848,7 @@
 				8295EFEB1DC4B3B50049FB7D /* MenuHeader.m in Sources */,
 				8295EE581DC4AED00049FB7D /* TableIdiomaController.m in Sources */,
 				8295EF9B1DC4B3810049FB7D /* RemoteParametrosVO.m in Sources */,
+				8298B82A1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EE451DC4ACD80049FB7D /* Plantilla_Guias_Turisticas.xcdatamodeld in Sources */,
 				8295EF3E1DC4B2C30049FB7D /* OpenExternalApps.m in Sources */,
 				8295EF521DC4B31C0049FB7D /* GuiaSaberMasDAO.m in Sources */,
@@ -3898,6 +3909,7 @@
 				8295EF911DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295EF961DC4B3770049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */,
+				8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EF631DC4B3370049FB7D /* PoiDAO.m in Sources */,
 				8295EF721DC4B34B0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
 				8295EF3C1DC4B2BF0049FB7D /* Metodos.m in Sources */,

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Poi+CoreDataProperties.h"
 @interface DetailPoiViewController : UIViewController
+@property (nonatomic) NSInteger categoryPoi;
 @property (nonatomic, strong) Poi *poiSelected;
 @end

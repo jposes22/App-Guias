@@ -97,8 +97,17 @@
     _labelRestauracion.textColor = [UIColor whiteColor];
     _labelTelefonosInteres.textColor = [UIColor whiteColor];
 
-
-
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    _labelPetroglifos.text = NSLocalizedString(@"pois_petroglifo", nil);
+    _labelMolinos.text = NSLocalizedString(@"pois_molinos", nil);
+    _labelRutas.text = NSLocalizedString(@"pois_rutas", nil);
+    _labelLaguna.text = NSLocalizedString(@"pois_laguna", nil);
+    
+    _labelAlojamiento.text = NSLocalizedString(@"pois_alojamiento", nil);
+    _labelRestauracion.text = NSLocalizedString(@"pois_restaurante", nil);
+    _labelTelefonosInteres.text = NSLocalizedString(@"pois_telefonos", nil);
     
 }
 

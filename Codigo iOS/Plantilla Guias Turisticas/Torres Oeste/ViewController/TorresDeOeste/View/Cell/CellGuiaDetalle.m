@@ -47,7 +47,7 @@
             _labelTitle.hidden = YES;
         }else{
             _contraintLabelTopHeight.constant = 10;
-            _labelTitle.text = guiaDetalle.titulo;
+            _labelTitle.attributedText = [Metodos convertHTMLToString: guiaDetalle.titulo];
             _labelTitle.hidden = NO;
         }
         if(!guiaDetalle.descripcion){
@@ -73,7 +73,6 @@
             tapGestureRecognizer.numberOfTapsRequired = 1;
             [_imageGuia addGestureRecognizer:tapGestureRecognizer];
             
-
     }
     
     
@@ -90,8 +89,8 @@
     
 }
 -(void)loadStyle{
-    [UtilsAppearance setStyleTitleList:_labelTitle];
-    _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
+    //[UtilsAppearance setStyleTitleList:_labelTitle];
+   // _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
    // [UtilsAppearance setStyleText:_labelDescripcion];
     
     

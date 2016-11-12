@@ -55,7 +55,8 @@
 
 -(void) loadData:(Poi*)poi{
     _poi = poi;
-    _lblTitle.text = poi.titulo;
+    
+    _lblTitle.attributedText  = [Metodos convertHTMLToString:_poi.titulo];
     _lblDescription.attributedText = [Metodos convertHTMLToString:poi.descripcion];
     if(_poi.urlImagen){
         [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];

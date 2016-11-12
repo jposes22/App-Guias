@@ -29,6 +29,17 @@
 
         if([json objectForKey:@"urlImagen"] != [NSNull null]){
             self.urlImagen = [json objectForKey:@"urlImagen"] ;
+            
+            NSURL *url = [NSURL URLWithString:self.urlImagen];
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            if(data){
+                NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+                path = [path stringByAppendingString:[NSString stringWithFormat:@"/poi_%lld_%lld_Image.png",self.idPoi,self.idPoiImagen]];
+                [data writeToFile:path atomically:YES];
+                self.urlImagen = [NSString stringWithFormat:@"/poi_%lld_%lld_Image.png",self.idPoi,self.idPoiImagen];
+            }else{
+                return nil;
+            }
         }
     }
     return self;

@@ -13,6 +13,9 @@
 #import "UtilsAppearance.h"
 
 #import "PoiDAO.h"
+#import "PoiImagenDAO.h"
+
+#import "AlbumViewController.h"
 
 @interface DetailPoiViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
@@ -20,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewListImages;
+@property (strong, nonatomic) NSArray *listImages;
 
 
 @end
@@ -40,7 +44,8 @@
 }
 
 -(void) loadStyle{
-    [UtilsAppearance setStyleTitleList:_lblTitle];
+   // [UtilsAppearance setStyleTitleList:_lblTitle];
+    
 
 }
 -(void)loadNavigationBar{
@@ -52,18 +57,42 @@
     if(listOfPois && [listOfPois count] > 0){
         _poiSelected = listOfPois.firstObject;
     
-    _lblTitle.text = _poiSelected.titulo;
-    _lblDescripcion.attributedText  = [Metodos convertHTMLToString:_poiSelected.descripcion];
+        _lblTitle.attributedText  = [Metodos convertHTMLToString:_poiSelected.titulo];
+        _lblDescripcion.attributedText  = [Metodos convertHTMLToString:_poiSelected.descripcion];
         if(_poiSelected.urlImagen){
             [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:_poiSelected.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
         }else{
             _imgView.image = [UIImage imageNamed:@"iimageNone"];
         }
+        _listImages = [PoiImagenDAO getPoiImagenesByidPoi:_poiSelected.idPoi];
+        
+        
+
+        if(_listImages && _listImages.count > 0){
+            //////
+            NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+            path = [path stringByAppendingString:((PoiImagen *)[_listImages firstObject]).urlImagen];
+            _imgViewListImages.image = [UIImage imageWithContentsOfFile:path ];
+         
+            UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
+            [self.imgViewListImages addGestureRecognizer:tapListImages];
+            [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
+
+        }else{
+            [_imgViewListImages removeFromSuperview];
+        }
         
     }else{
         _imgView.image = [UIImage imageNamed:@"iimageNone"];
+        [_imgViewListImages removeFromSuperview];
     }
 
+}
+-(void) openAlbum{
+    AlbumViewController *album = [AlbumViewController new];
+    [album setListfOfImage:_listImages];
+    [self presentViewController:album animated:YES completion:nil];
+    
 }
 
 

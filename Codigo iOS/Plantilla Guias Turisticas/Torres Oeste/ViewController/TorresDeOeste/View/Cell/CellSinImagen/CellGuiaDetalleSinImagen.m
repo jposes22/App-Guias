@@ -37,7 +37,7 @@
         _labelTitle.hidden = YES;
     }else{
         _labelTitle.hidden = NO;
-        _labelTitle.text = guiaDetalle.titulo;
+        _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _constraintTopTitle.constant = 10;
 
     }
@@ -59,8 +59,8 @@
     
 }
 -(void)loadStyle{
-    [UtilsAppearance setStyleTitleList:_labelTitle];
-    _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
+    //[UtilsAppearance setStyleTitleList:_labelTitle];
+    //_labelTitle.textColor = [UtilsAppearance getPrimaryColor];
    // [UtilsAppearance setStyleText:_labelDescripcion];
     
     

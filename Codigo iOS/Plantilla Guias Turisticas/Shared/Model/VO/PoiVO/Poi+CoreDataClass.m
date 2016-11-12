@@ -59,7 +59,7 @@
             self.urlWeb = [json objectForKey:@"urlWeb"] ;
         }
         if([json objectForKey:@"listPoiImagen"] != [NSNull null]){
-           // [[NSOperationQueue new] addOperationWithBlock:^{
+            [[NSOperationQueue new] addOperationWithBlock:^{
                 NSMutableArray * listImage  = [NSMutableArray new];
                 for (id jsonImage in [json objectForKey:@"listPoiImagen"]) {
                     PoiImagen * poiImagen = [[PoiImagen alloc] initPoiImagenWithJson:jsonImage];
@@ -69,7 +69,7 @@
                     
                 }
                 [PoiImagenDAO insertarPoiImagen:listImage];
-           // }];
+            }];
             
             
         }

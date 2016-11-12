@@ -10,6 +10,7 @@
 #import "PoiImagen+CoreDataProperties.h"
 
 @interface PoiImagenDAO : NSObject
-+(PoiImagen *)getPoiImagen:(NSInteger *)idPoiImagen;
++(NSArray*) getPoiImagenesByidPoi:(NSInteger) idPoi;
++(PoiImagen *)getPoiImagen:(NSInteger )idPoiImagen;
 +(void)insertarPoiImagen:(NSArray *)items;
 @end

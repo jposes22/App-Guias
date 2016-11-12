@@ -11,8 +11,29 @@
 #import "CoreDataUtil.h"
 
 @implementation PoiImagenDAO
++(NSArray*) getPoiImagenesByidPoi:(NSInteger) idPoi{
+    NSError *error;
+    NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
+    NSEntityDescription *entityDescription = [NSEntityDescription
+                                              entityForName:@"PoiImagen" inManagedObjectContext:context];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"idPoi == %d", idPoi];
+    //Creamos la consulta y le asociamos la entidad que acabamos de crear
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    [request setPredicate:predicate];
+    //Ejecutamos la consulta
+    NSArray *array = [context executeFetchRequest:request error:&error];
+    if (array == nil){
+        NSLog(@"Problem execute request: %@", [error localizedDescription]);
+    }else{
+        return array;
+        
+    }
+    return nil;
 
-+(PoiImagen *)getPoiImagen:(NSInteger *)idPoiImagen{
+
+}
++(PoiImagen *)getPoiImagen:(NSInteger )idPoiImagen{
     //Obtenemos la entidad correspondiente al modelo
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
@@ -47,8 +68,13 @@
         if (count == NSNotFound){
             //Ocurrio algun error
         } else if (count == 0){ //No existe entonces creamos un objecto
-            //Obtenemos el poi asociada
-                      
+            Poi * poi = [PoiDAO getPoi:poiImagen.idPoi];
+            [context insertObject:poiImagen];
+            
+            if(poi){
+                [poiImagen setPoi:poi];
+                [poi addListImagenObject:poiImagen];
+            }
         }else{
             [self updatePoiImagen:poiImagen];
         }

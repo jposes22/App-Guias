@@ -104,7 +104,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gid-Mp-lrY">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gid-Mp-lrY">
                                                 <rect key="frame" x="8" y="290" width="651" height="249"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="249" id="Foh-K8-TFg"/>
@@ -431,6 +431,13 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="667" height="1000"/>
                     <connections>
+                        <outlet property="labelAlojamiento" destination="hml-3J-8y8" id="xkD-IN-2bb"/>
+                        <outlet property="labelLaguna" destination="0Q3-vo-Zn9" id="yie-2B-l5B"/>
+                        <outlet property="labelMolinos" destination="GxX-eA-PQs" id="Fke-3N-DpK"/>
+                        <outlet property="labelPetroglifos" destination="tLP-AX-WyY" id="pcs-L2-pnB"/>
+                        <outlet property="labelRestauracion" destination="fC1-4L-TUu" id="rdT-OL-b4i"/>
+                        <outlet property="labelRutas" destination="Ydg-SD-xxu" id="ook-tE-2Cu"/>
+                        <outlet property="labelTelefonosInteres" destination="7OS-T0-BvS" id="c63-eC-bTA"/>
                         <outlet property="viewAlojamiento" destination="UPv-eO-TQb" id="agN-oM-6Dl"/>
                         <outlet property="viewLaguna" destination="E6U-tN-dqc" id="FTQ-z9-7d0"/>
                         <outlet property="viewMolinos" destination="0Jn-4t-avx" id="sje-Eb-SMV"/>

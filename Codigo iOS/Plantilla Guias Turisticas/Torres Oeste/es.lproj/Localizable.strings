@@ -18,3 +18,25 @@
 "title_copyright" = "Copyright";
 "title_ajustes" = "Ajustes";
 "title_creditos" = "Créditos";
+
+
+/*Titles Menu*/
+"menu_home" = "Inicio";
+"menu_como_torres" = "Torres do Oeste";
+"menu_como_romeria" = "Romeraría";
+"menu_lugares" = "Lugares de interese";
+"menu_como_llegar" = "Como Chegar";
+"menu_bibliografía" = "Referecias bibliográficas";
+"menu_copyright" = "Copyright";
+"menu_ajustes" = "Axustes";
+"menu_creditos" = "Créditos";
+
+/* POIS 7 elements*/
+"pois_petroglifo" = "Petroglífos";
+"pois_molinos" = "Molinos tradicionales";
+"pois_rutas" = "Rutas de senderismo";
+"pois_laguna" = "La laguna de Pedras Miudas";
+
+"pois_alojamiento" = "Alojamientos";
+"pois_restaurante" = "Restaurantes";
+"pois_telefonos" = "Teléfonos de interés";

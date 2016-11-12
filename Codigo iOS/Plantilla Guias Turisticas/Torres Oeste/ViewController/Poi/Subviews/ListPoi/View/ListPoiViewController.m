@@ -63,7 +63,7 @@
 }
 
 -(void)communicationPoiSelected:(Poi *) poiSelected{
-    [self performSegueWithIdentifier:kSEGUE_POI sender:poiSelected];
+   // [self performSegueWithIdentifier:kSEGUE_POI sender:poiSelected];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

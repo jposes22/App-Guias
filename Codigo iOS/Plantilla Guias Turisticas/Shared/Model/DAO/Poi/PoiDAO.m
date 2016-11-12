@@ -70,7 +70,7 @@
             [objectToModify setValue:poi.descripcion forKey:@"descripcion"];
         }
         if(poi.urlImagen){
-            [objectToModify setValue:poi.urlImagen forKey:@"urlImage"];
+            [objectToModify setValue:poi.urlImagen forKey:@"urlImagen"];
         }
         if(poi.urlWeb){
             [objectToModify setValue:poi.urlWeb forKey:@"urlWeb"];
@@ -85,11 +85,8 @@
         if(poi.telefono){
             [objectToModify setValue:poi.telefono forKey:@"telefono"];
         }
-        //TODO: se puede modificar el tipo del po??
-        if(poi.tipoPoi){
-            [objectToModify setValue:[NSNumber numberWithBool:poi.tipoPoi] forKey:@"tipoPoi"];
-        }
-        
+       
+        [objectToModify setValue:[NSNumber numberWithInt:poi.tipoPoi] forKey:@"tipoPoi"];
         [objectToModify setValue:[NSNumber numberWithBool:poi.isActivo] forKey:@"isActivo"];
         [objectToModify setValue:[NSNumber numberWithDouble:poi.latitud] forKey:@"latitud"];
         [objectToModify setValue:[NSNumber numberWithDouble:poi.longitud] forKey:@"longitud"];

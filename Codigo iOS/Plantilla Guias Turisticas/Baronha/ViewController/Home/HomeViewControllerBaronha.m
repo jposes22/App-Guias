@@ -20,6 +20,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewMenu;
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+@property (weak, nonatomic) IBOutlet UIImageView *imgViewLogoHome;
+
+
 @property (weak, nonatomic) IBOutlet UIButton *btnComoLlegar;
 @property (weak, nonatomic) IBOutlet UIButton *btnTorresOeste;
 @property (weak, nonatomic) IBOutlet UIButton *btnLugaresInteres;
@@ -65,6 +68,11 @@
     UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openMenu:)];
     tapGestureRecognizer.numberOfTapsRequired = 1;
     [_imageViewMenu addGestureRecognizer:tapGestureRecognizer];
+    
+    UITapGestureRecognizer *tapGestureRecognizerGuia = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(btnTorresOestoTouch)];
+    tapGestureRecognizerGuia.numberOfTapsRequired = 1;
+    [_imgViewLogoHome addGestureRecognizer:tapGestureRecognizerGuia];
+    
 }
 -(void)loadStyle{
     [StylesBaronha setStyleTitleWhite:_lblTitle];

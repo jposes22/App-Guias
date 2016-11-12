@@ -12,19 +12,30 @@
 #import "Constants.h"
 #import "UIViewController+MMDrawerController.h"
 #import "ListPoiViewController.h"
+#import "DetailPoiViewController.h"
 #import "NavigationBar.h"
 #import "UtilsAppearance.h"
 
 @interface PoiViewController ()<CommnicationMenu>
 @property (weak, nonatomic) IBOutlet NavigationBar *navigationBar;
-@property (weak, nonatomic) IBOutlet UIView *viewRecursos;
+
+@property (weak, nonatomic) IBOutlet UIView *viewPetroglifos;
+@property (weak, nonatomic) IBOutlet UIView *viewMolinos;
+@property (weak, nonatomic) IBOutlet UIView *viewRutas;
+@property (weak, nonatomic) IBOutlet UIView *viewLaguna;
+
 @property (weak, nonatomic) IBOutlet UIView *viewAlojamiento;
 @property (weak, nonatomic) IBOutlet UIView *viewRestaurantes;
 @property (weak, nonatomic) IBOutlet UIView *viewTelefonosInteres;
-@property (weak, nonatomic) IBOutlet UILabel *labelRecursos;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelPetroglifos;
+@property (weak, nonatomic) IBOutlet UILabel *labelMolinos;
+@property (weak, nonatomic) IBOutlet UILabel *labelRutas;
+@property (weak, nonatomic) IBOutlet UILabel *labelLaguna;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelAlojamiento;
 @property (weak, nonatomic) IBOutlet UILabel *labelRestauracion;
-@property (weak, nonatomic) IBOutlet UILabel *labelDirectorio;
+@property (weak, nonatomic) IBOutlet UILabel *labelTelefonosInteres;
 
 @end
 
@@ -58,20 +69,33 @@
 
 
 -(void)loadStyle{
-    [_viewRecursos setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewPetroglifos setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewMolinos setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewRutas setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewLaguna setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    
     [_viewAlojamiento setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
     [_viewRestaurantes setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
     [_viewTelefonosInteres setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
     
-    [UtilsAppearance setStyleTextBold:_labelRecursos];
-    [UtilsAppearance setStyleTextBold:_labelDirectorio];
+    [UtilsAppearance setStyleTextBold:_labelPetroglifos];
+    [UtilsAppearance setStyleTextBold:_labelMolinos];
+    [UtilsAppearance setStyleTextBold:_labelRutas];
+    [UtilsAppearance setStyleTextBold:_labelLaguna];
+    
     [UtilsAppearance setStyleTextBold:_labelAlojamiento];
     [UtilsAppearance setStyleTextBold:_labelRestauracion];
-    _labelRecursos.textColor = [UIColor whiteColor];
-    _labelDirectorio.textColor = [UIColor whiteColor];
+    [UtilsAppearance setStyleTextBold:_labelTelefonosInteres];
+    
+    
+    _labelPetroglifos.textColor = [UIColor whiteColor];
+    _labelMolinos.textColor = [UIColor whiteColor];
+    _labelRutas.textColor = [UIColor whiteColor];
+    _labelLaguna.textColor = [UIColor whiteColor];
+
     _labelAlojamiento.textColor = [UIColor whiteColor];
     _labelRestauracion.textColor = [UIColor whiteColor];
-
+    _labelTelefonosInteres.textColor = [UIColor whiteColor];
 
 
 
@@ -79,28 +103,58 @@
 }
 
 -(void) loadGestures{
-    UITapGestureRecognizer *tapRecursos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openRecursos)];
-    [self.viewRecursos addGestureRecognizer:tapRecursos];
-    UITapGestureRecognizer *tapAlojamientos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlojamientos)];
-    [self.viewAlojamiento addGestureRecognizer:tapAlojamientos];
-    UITapGestureRecognizer *tapRestaurantes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openRestaurantes)];
-    [self.viewRestaurantes addGestureRecognizer:tapRestaurantes];
-    UITapGestureRecognizer *tapTelefonosInteres = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openTelefonosInteres)];
-    [self.viewTelefonosInteres addGestureRecognizer:tapTelefonosInteres];
+    UITapGestureRecognizer *tapPetroglifos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openPetroglifos)];
+    [self.viewPetroglifos addGestureRecognizer:tapPetroglifos];
+    
+    
+    UITapGestureRecognizer *tapMolinos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openMolinos)];
+    [self.viewMolinos addGestureRecognizer:tapMolinos];
+    
+    
+    UITapGestureRecognizer *tapRutas = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openRutas)];
+    [self.viewRutas addGestureRecognizer:tapRutas];
+    
+    
+    UITapGestureRecognizer *tapLagunas = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openLaguna)];
+    [self.viewLaguna addGestureRecognizer:tapLagunas];
+    
+    
+    UITapGestureRecognizer *tapAlojamiento = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlojamiento)];
+    [self.viewAlojamiento addGestureRecognizer:tapAlojamiento];
+    
+    
+    UITapGestureRecognizer *tapRestaurante = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openRestaurante)];
+    [self.viewRestaurantes addGestureRecognizer:tapRestaurante];
+    
+    
+    
+    UITapGestureRecognizer *tapTelefonos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openTelefonosInteres)];
+    [self.viewTelefonosInteres addGestureRecognizer:tapTelefonos];
+   
 }
 
 
--(void)openRecursos{
-    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRecursosPatrimoniales)];
+-(void)openPetroglifos{
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPetroglifos)];
 }
--(void)openAlojamientos{
-    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiAlojamientos)];
+-(void)openMolinos{
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoMolinos)];
 }
--(void)openRestaurantes{
-    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiRestauracion)];
+-(void)openRutas{
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoRutas)];
+}
+-(void)openLaguna{
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoLaguna)];
+}
+
+-(void)openAlojamiento{
+    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoALojamiento)];
+}
+-(void)openRestaurante{
+    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoRestaurante)];
 }
 -(void)openTelefonosInteres{
-    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiDirectorio)];
+    [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTIpoTelefonos)];
 }
 
 #pragma mark - Navigation
@@ -118,6 +172,13 @@
             
             // Pass any objects to the view controller here, like...
             [vc setCategoryPoi:[sender integerValue]];
+        }else if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL])
+        {
+            // Get reference to the destination view controller
+            DetailPoiViewController *vc = [segue destinationViewController];
+            
+            // Pass any objects to the view controller here, like...
+            //[vc setCategoryPoi:[sender integerValue]];
         }
 }
 

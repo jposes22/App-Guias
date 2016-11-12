@@ -103,13 +103,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Poi/Subviews/DetailPoi/View/DetailPoiViewController.m"
-            timestampString = "499549716.719566"
+            filePath = "Shared/Model/DAO/Poi/PoiDAO.m"
+            timestampString = "500644692.981492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-loadNavigationBar"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "+insertarPoi:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -41,3 +41,12 @@
 "pois_alojamiento" = "Alojamientos";
 "pois_restaurante" = "Restaurantes";
 "pois_telefonos" = "Teléfonos de interés";
+
+
+
+
+
+/* ERROR FIRST TIME*/
+"error_title_first_time" = "";
+"error_description_first_time" = "";
+"error_button_first_time"="";

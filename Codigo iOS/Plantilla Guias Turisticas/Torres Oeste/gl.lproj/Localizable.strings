@@ -39,3 +39,9 @@
 "pois_alojamiento" = "";
 "pois_restaurante" = "";
 "pois_telefonos" = "";
+
+
+/* ERROR FIRST TIME*/
+"error_title_first_time" = "";
+"error_description_first_time" = "";
+"error_button_first_time"="";

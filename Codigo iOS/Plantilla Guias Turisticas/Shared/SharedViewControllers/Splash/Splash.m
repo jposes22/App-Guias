@@ -81,8 +81,11 @@
         [[Settings sharedInstance] setWasStaredAppBefore:YES];
         [[Settings sharedInstance] saveSettings];
     }
-    MenuViewController * menu = [MenuViewController new];
-    [self presentViewController:menu animated:NO completion:nil];
+    [[NSOperationQueue new] addOperationWithBlock:^{
+
+        MenuViewController * menu = [MenuViewController new];
+        [self presentViewController:menu animated:NO completion:nil];
+    }];
 }
 //Descargamos los idiomas disponibles
 -(void)downloadIdioma{
@@ -184,11 +187,13 @@
         default:
             break;
     }
-    if(![[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil){
+    if(![[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil && self.downloadWithoutErrorIdioma){
             [self performSegueWithIdentifier:@"showIdiomas" sender:nil];
 
+    }else if([[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil && !self.downloadWithoutErrorIdioma){
+        [self showAlertViewRetry];
     }else{
-        [self downloadData];
+         [self downloadData];
     }
 }
 #pragma mark - Communication Menu
@@ -332,6 +337,24 @@
 
 
 }
+-(void) showAlertViewRetry{
+    UIAlertController * alert = [UIAlertController
+                                 alertControllerWithTitle:NSLocalizedString(@"error_title_first_time", nil)
+                                 message:NSLocalizedString(@"error_description_first_time", nil)
+                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:NSLocalizedString(@"error_button_first_time", nil)
+                                style:UIAlertActionStyleDefault
+                                handler:^(UIAlertAction * action) {
+                                    //Handle your yes please button action here
+                                    [self downloadParameters];
+                                }];
+    
+       [alert addAction:yesButton];
+    [self presentViewController:alert animated:YES completion:nil];
+
+}
 
 #pragma makr - Selectors
 -(void)idiomaElegido:(NSNotification *)notification{
@@ -350,24 +373,7 @@
         }else{
             NSLog(@"Error en la descarga: erorrEnguia %d, error en Poi : %d, error en Menu %d, error en idioma : %d, error en parametros: %d", _downloadWithoutErrorGuia, _downloadWithoutErrorPoi, _downloadWithoutErrorMenu, _downloadWithoutErrorIdioma, _downloadWithoutErrorParametos);
             //show error
-           /* UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"Error al descargar los datos" preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* ok = [UIAlertAction actionWithTitle:@"REINTENTAR" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-                
-                if(!self.downloadWithoutErrorParametos || self.downloadWithoutErrorIdioma){
-                    [self downloadParameters];
-                }else if(!self.downloadWithoutErrorMenu){
-                    [self downloadMenu];
-                }else{
-                    if(!self.downloadWithoutErrorGuia){
-                        [self downloadData];
-                    }
-                }
-                
-            }];
-            [alertController addAction:ok];
-            
-            [self presentViewController:alertController animated:YES completion:nil];*/
+            [self showAlertViewRetry];
         }
 
     }

@@ -12,12 +12,16 @@
 #import "Metodos.h"
 #import "GuiaDAO.h"
 #import "UtilsAppearance.h"
+#import "Validator.h"
+#import "OpenExternalApps.h"
 
 @interface ComoLlegarViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
+
+@property (nonatomic,strong) Guia *datosComoLlegar;
 
 @end
 
@@ -44,10 +48,24 @@
     NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaComoLlegar];
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){
-        Guia *datosComoLlegar = [listGUias firstObject];
-        _lblTitle.text = datosComoLlegar.titulo;
-        _lblDescripcion.attributedText = [Metodos convertHTMLToString:datosComoLlegar.descripcion];
+        _datosComoLlegar = [listGUias firstObject];
+        _lblTitle.text = _datosComoLlegar.titulo;
+        _lblDescripcion.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.descripcion];
+        if([Validator validatePositionGPS:_datosComoLlegar.latitud andLongitud:_datosComoLlegar.longitud]){
+            UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapGoGps)];
+            tapGestureRecognizer.numberOfTapsRequired = 1;
+            [_imgView addGestureRecognizer:tapGestureRecognizer];
+        }else{
+            [_imgView removeFromSuperview];
+        }
+    }else{
+        [_imgView removeFromSuperview];
     }
+}
+
+-(void) tapGoGps{
+    [OpenExternalApps openGPSWithLatitud:_datosComoLlegar.latitud andLongitud:_datosComoLlegar.longitud];
+
 }
 -(void) loadStyle{
     [UtilsAppearance setStyleTitle:_lblTitle];

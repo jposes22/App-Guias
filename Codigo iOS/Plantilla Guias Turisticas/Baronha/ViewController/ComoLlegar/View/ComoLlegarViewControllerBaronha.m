@@ -48,7 +48,7 @@
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){
          _datosComoLlegar = [listGUias firstObject];
-        _lblTitle.text = _datosComoLlegar.titulo;
+        _lblTitle.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.titulo];
         _lblDescripcion.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.descripcion];
         if([Validator validatePositionGPS:_datosComoLlegar.latitud andLongitud:_datosComoLlegar.longitud]){
             
@@ -63,7 +63,7 @@
     }
 }
 -(void) loadStyle{
-    [StylesBaronha setStyleTitle:_lblTitle];
+    //[StylesBaronha setStyleTitle:_lblTitle];
 }
 - (IBAction)btnMenu:(id)sender {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

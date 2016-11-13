@@ -81,11 +81,11 @@
         [[Settings sharedInstance] setWasStaredAppBefore:YES];
         [[Settings sharedInstance] saveSettings];
     }
-    [[NSOperationQueue new] addOperationWithBlock:^{
+   // [[NSOperationQueue new] addOperationWithBlock:^{
 
         MenuViewController * menu = [MenuViewController new];
         [self presentViewController:menu animated:NO completion:nil];
-    }];
+  //  }];
 }
 //Descargamos los idiomas disponibles
 -(void)downloadIdioma{
@@ -373,7 +373,7 @@
         }else{
             NSLog(@"Error en la descarga: erorrEnguia %d, error en Poi : %d, error en Menu %d, error en idioma : %d, error en parametros: %d", _downloadWithoutErrorGuia, _downloadWithoutErrorPoi, _downloadWithoutErrorMenu, _downloadWithoutErrorIdioma, _downloadWithoutErrorParametos);
             //show error
-            [self showAlertViewRetry];
+            //[self showAlertViewRetry];
         }
 
     }

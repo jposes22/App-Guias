@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GuiaSaberMasList.h"
 
 @interface SaberMasViewController : UIViewController
-@property (nonatomic) NSInteger idGuiaDetalle;
+@property (nonatomic, strong) GuiaSaberMasList * guia;
 @end

@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopDescripcion;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
+@property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
+@property (weak, nonatomic) IBOutlet UIImageView *imageSaberMas;
 @end
 @implementation CellGuiaSaberMasSinImagen
 

@@ -18,7 +18,7 @@
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:@"GuiaSaberMas" inManagedObjectContext:context];
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"isActivo == YES && idGuiaDetalle == %d", idGuiaDetalle];
-    NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"SELF.titulo" ascending:YES];
+    NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"titulo" ascending:YES];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     
@@ -64,7 +64,7 @@
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSFetchRequest *req = [[NSFetchRequest alloc] initWithEntityName:@"GuiaSaberMas"];
-    [req setPredicate:[NSPredicate predicateWithFormat:@"guiaSaberMas == %d", guiaSaberMas.idGuiaSaberMas]];
+    [req setPredicate:[NSPredicate predicateWithFormat:@"idGuiaSaberMas == %d", guiaSaberMas.idGuiaSaberMas]];
     NSArray *array = [context executeFetchRequest:req error:&error];
     if(array != nil && array.count == 1){
         GuiaSaberMas * objectToModify = [array objectAtIndex:0];

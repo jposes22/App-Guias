@@ -16,7 +16,7 @@
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
-                                              entityForName:@"GuiaDetalleImagen" inManagedObjectContext:context];
+                                              entityForName:@"GuiaSaberMasDetalleImagen" inManagedObjectContext:context];
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"idGuiaSaberMasDetalle == %d", idGuiaSaberMasDetalle];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];

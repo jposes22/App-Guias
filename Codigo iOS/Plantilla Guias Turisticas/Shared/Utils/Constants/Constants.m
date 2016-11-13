@@ -51,6 +51,8 @@ NSString *const kURL_GET_IMAGE = @"WSImages/getImage";
 //NSNotifications
 
 NSString * const kNOTIFICATION_GO_TO = @"kNOTIFICATION_GO_TO";
+NSString * const kNOTIFICATION_GO_TO_SABER_MAS = @"kNOTIFICATION_GO_TO_SABER_MAS";
+
 
 NSString * const kNOTIFICATION_UPDATE_MENU = @"kNOTIFICATION_UPDATE_MENU";
 

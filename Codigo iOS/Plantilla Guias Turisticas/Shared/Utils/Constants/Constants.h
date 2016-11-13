@@ -42,6 +42,8 @@ extern NSString *const kURL_GET_IMAGE;
 //NSNotifications
 
 extern NSString *const kNOTIFICATION_GO_TO;
+extern NSString *const kNOTIFICATION_GO_TO_SABER_MAS;
+
 
 extern NSString * const kNOTIFICATION_UPDATE_MENU;
 

@@ -18,7 +18,7 @@
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:@"GuiaSaberMasDetalle" inManagedObjectContext:context];
     NSPredicate * predicate = [NSPredicate predicateWithFormat:@"idGuiaSaberMas == %d", idGuiaSaberMas];
-    NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"SELF.orden" ascending:YES];
+    NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"orden" ascending:YES];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDescription];

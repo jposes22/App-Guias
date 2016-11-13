@@ -27,5 +27,6 @@
 
 +(void)setCircleView:(UIView *) view;
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title;
++ (void) setStyleNavigationBarSaberMas:(UINavigationBar *)navigationBar withTitle:(NSString *)title;
 
 @end

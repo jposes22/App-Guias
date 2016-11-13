@@ -13,6 +13,7 @@
 #import "GuiaDetalleImagen+CoreDataProperties.h"
 #import "GuiaDetalleImagenDAO.h"
 #import "GuiaDetalleImagen+CoreDataProperties.h"
+#import "Constants.h"
 
 @interface CellGuiaDetalle()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
@@ -23,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
 @property (nonatomic, strong) GuiaDetalleList * guiaDetalle;
+@property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
+@property (weak, nonatomic) IBOutlet UIImageView *imagenSaberMas;
+
 
 
 @end
@@ -41,7 +45,8 @@
 }
 
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
-   
+        _guiaDetalle = guiaDetalle;
+    
         if(!guiaDetalle.titulo){
             _contraintLabelTopHeight.constant = 0;
             _labelTitle.hidden = YES;
@@ -73,6 +78,22 @@
             tapGestureRecognizer.numberOfTapsRequired = 1;
             [_imageGuia addGestureRecognizer:tapGestureRecognizer];
             
+            if(guiaDetalle.saberMasList != nil){
+                _labelSaberMas.hidden = NO;
+                _imagenSaberMas.hidden = NO;
+                _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
+
+
+                UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
+                tapSaberMasGesture.numberOfTapsRequired = 1;
+                [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
+            }else{
+                _labelSaberMas.hidden = YES;
+                _imagenSaberMas.hidden = YES;
+            }
+            
+            
+            
     }
     
     
@@ -88,10 +109,16 @@
  
     
 }
+- (void)openSaberMas:(UITapGestureRecognizer *)tap
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO_SABER_MAS object:_guiaDetalle.saberMasList];
+    
+    
+}
 -(void)loadStyle{
-    //[UtilsAppearance setStyleTitleList:_labelTitle];
-   // _labelTitle.textColor = [UtilsAppearance getPrimaryColor];
-   // [UtilsAppearance setStyleText:_labelDescripcion];
+    [UtilsAppearance setStyleText:_labelSaberMas];
+    _labelSaberMas.backgroundColor = [UtilsAppearance getPrimaryColor];
+
     
     
 }

@@ -12,14 +12,17 @@
 #import "NavigationBar.h"
 #import "GuiaSaberMasDAO.h"
 #import "UtilsAppearance.h"
-#import "GuiaSaberMasList.h"
 #import "SaberMasTableController.h"
+#import <AVFoundation/AVFoundation.h>
+
 @interface SaberMasViewController ()<CommunicationSaberMasTableController>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *viewTop;
 @property (weak, nonatomic) IBOutlet UILabel *labelSubtitle;
-@property (nonatomic, strong) GuiaSaberMasList * guia;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (nonatomic, strong) SaberMasTableController * tableController;
+@property (nonatomic, strong) AVAudioPlayer * audioPlayer;
+
 @end
 
 @implementation SaberMasViewController
@@ -54,18 +57,52 @@
 }
 
 -(void) loadData{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_como_torres", nil)];
+    [UtilsAppearance setStyleNavigationBarSaberMas:self.navigationBar withTitle:NSLocalizedString(@"title_como_torres", nil)];
     _labelSubtitle.text = NSLocalizedString(@"subtitle_saber_mas", nil);
-    NSArray *listGuiasSaberMas = [GuiaSaberMasDAO getGuiasSaberMas:_idGuiaDetalle];
-    //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
-    if(listGuiasSaberMas.count > 0){
-        _guia = [listGuiasSaberMas firstObject];
-    }
 }
 -(void) loadStyle{
-    [_viewTop setBackgroundColor:[UtilsAppearance getPrimaryDarkColor]];
+    [_viewTop setBackgroundColor:[UtilsAppearance getPrimaryColor]];
     [UtilsAppearance setSytleSubtitle:_labelSubtitle];
     _labelSubtitle.textColor = [UIColor whiteColor];
+    [_navigationBar setBarTintColor:[UtilsAppearance getPrimaryColor]];
+}
+- (void) comunicationPlayAudioGuia:(GuiaSaberMas *)guia{
+    if (_audioPlayer != nil){
+        
+        if([_audioPlayer isPlaying]){
+            [_audioPlayer pause];
+            
+        }else{
+            [_audioPlayer play];
+            
+        }
+    }else{
+        [self playGuide:guia];
+    }
+}
+-(void)playGuide:(GuiaSaberMas *)guia{
+    NSError *error;
+    
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    if(guia.urlAudioGuia){
+        path = [path stringByAppendingPathComponent:guia.urlAudioGuia];
+        
+        NSURL *fileURL = [NSURL fileURLWithPath:path];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        if (_audioPlayer == nil){
+            NSLog(@"%@", [error description]);
+        }else{
+            [_audioPlayer play];
+            [[AVAudioSession sharedInstance]
+             setCategory: AVAudioSessionCategoryPlayback
+             error: nil];
+        }
+    }
+    
+}
+
+- (IBAction)btnClose:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

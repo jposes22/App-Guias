@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,50 +18,64 @@
                         <viewControllerLayoutGuide type="bottom" id="wNm-N7-goc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LLM-Xr-uYt">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6dJ-Ho-qAh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29f-FO-bl4">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3P-CG-DRg">
+                                                <rect key="frame" x="10" y="140" width="355" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8z6-Kb-uVP">
+                                                <rect key="frame" x="10" y="175.5" width="355" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2q8-Bz-KZV">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2q8-Bz-KZV">
+                                                <rect key="frame" x="137.5" y="204" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="100" id="SWw-69-hnQ"/>
                                                     <constraint firstAttribute="width" constant="100" id="yLZ-gn-c3Y"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagenComoLlegar" translatesAutoresizingMaskIntoConstraints="NO" id="nJL-Al-JqT">
+                                                <rect key="frame" x="137.5" y="20" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="7lv-J3-C5v"/>
                                                     <constraint firstAttribute="height" constant="100" id="era-SB-bjF"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX3-OS-rPN">
+                                                <rect key="frame" x="166" y="283" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="m3P-CG-DRg" firstAttribute="leading" secondItem="29f-FO-bl4" secondAttribute="leading" constant="10" id="7mk-r0-NUc"/>
+                                            <constraint firstItem="eX3-OS-rPN" firstAttribute="top" secondItem="2q8-Bz-KZV" secondAttribute="bottom" constant="-21" id="7nu-0U-y9H"/>
                                             <constraint firstItem="2q8-Bz-KZV" firstAttribute="top" secondItem="8z6-Kb-uVP" secondAttribute="bottom" constant="8" id="CBa-qL-Ln3"/>
                                             <constraint firstItem="m3P-CG-DRg" firstAttribute="top" secondItem="nJL-Al-JqT" secondAttribute="bottom" constant="20" id="Dai-Ea-PFF"/>
                                             <constraint firstItem="8z6-Kb-uVP" firstAttribute="leading" secondItem="29f-FO-bl4" secondAttribute="leading" constant="10" id="EF3-N7-I9j"/>
                                             <constraint firstAttribute="trailing" secondItem="m3P-CG-DRg" secondAttribute="trailing" constant="10" id="FuW-fg-aCD"/>
                                             <constraint firstItem="nJL-Al-JqT" firstAttribute="centerX" secondItem="29f-FO-bl4" secondAttribute="centerX" id="U6l-oM-Qna"/>
                                             <constraint firstAttribute="trailing" secondItem="8z6-Kb-uVP" secondAttribute="trailing" constant="10" id="WMp-ba-uXb"/>
-                                            <constraint firstAttribute="bottom" secondItem="2q8-Bz-KZV" secondAttribute="bottom" id="Ybj-3z-qba"/>
+                                            <constraint firstAttribute="bottom" secondItem="2q8-Bz-KZV" secondAttribute="bottom" constant="8" id="Ybj-3z-qba"/>
                                             <constraint firstItem="nJL-Al-JqT" firstAttribute="top" secondItem="29f-FO-bl4" secondAttribute="top" constant="20" id="fLa-uT-EqG"/>
                                             <constraint firstItem="8z6-Kb-uVP" firstAttribute="top" secondItem="m3P-CG-DRg" secondAttribute="bottom" constant="15" id="i5G-AX-Vjn"/>
                                             <constraint firstItem="2q8-Bz-KZV" firstAttribute="centerX" secondItem="29f-FO-bl4" secondAttribute="centerX" id="l1T-OW-30a"/>
                                             <constraint firstAttribute="bottom" secondItem="8z6-Kb-uVP" secondAttribute="bottom" priority="750" id="s6g-ah-tHi"/>
+                                            <constraint firstItem="eX3-OS-rPN" firstAttribute="centerX" secondItem="2q8-Bz-KZV" secondAttribute="centerX" id="tg8-Sy-m2P"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -89,6 +106,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="2q8-Bz-KZV" id="193-6m-46Z"/>
+                        <outlet property="lblComoLlegar" destination="eX3-OS-rPN" id="bg1-ca-0LF"/>
                         <outlet property="lblDescripcion" destination="8z6-Kb-uVP" id="ARh-W8-DE0"/>
                         <outlet property="lblTitle" destination="m3P-CG-DRg" id="lx9-Sv-RfR"/>
                     </connections>
@@ -102,7 +120,7 @@
             <objects>
                 <navigationController storyboardIdentifier="ComoLlegarBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" id="u18-Vr-jle" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bYt-Yw-y7q">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="bYt-Yw-y7q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

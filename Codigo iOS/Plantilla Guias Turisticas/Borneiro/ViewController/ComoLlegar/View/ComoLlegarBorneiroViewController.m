@@ -18,6 +18,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (nonatomic, strong) Guia * datosComoLlegar;
+@property (weak, nonatomic) IBOutlet UILabel *lblComoLlegar;
+
+
 @end
 
 @implementation ComoLlegarBorneiroViewController
@@ -44,21 +47,28 @@
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){
         _datosComoLlegar = [listGUias firstObject];
-        _lblTitle.text = _datosComoLlegar.titulo;
+        _lblTitle.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.titulo];
         _lblDescripcion.attributedText = [Metodos convertHTMLToString:_datosComoLlegar.descripcion];
         if(_datosComoLlegar.latitud > 0 && _datosComoLlegar.longitud > 0){
             _imgView.image = [UIImage imageNamed:@"btnAbrirMapa"];
             UITapGestureRecognizer * abrirEnMapa =  [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapVerEnMapa:)];
             abrirEnMapa.numberOfTapsRequired = 1;
             [self.imgView addGestureRecognizer:abrirEnMapa];
+            _lblComoLlegar.text = NSLocalizedString(@"como_llegar_ver_mapa", nil);
+            [StyleBorneiro setSytleSubtitle:_lblComoLlegar];
+            _lblComoLlegar.textColor = [StyleBorneiro getPrimaryDarkColor];
         }else{
             [_imgView removeFromSuperview];
+            [_lblComoLlegar removeFromSuperview];
         }
+    }else{
+        [_imgView removeFromSuperview];
+        [_lblComoLlegar removeFromSuperview];
     }
 }
 -(void) loadStyle{
-    [StyleBorneiro setStyleTitleComoLlegar:_lblTitle];
-    [StyleBorneiro setStyleText:_lblDescripcion];
+    //[StyleBorneiro setStyleTitleComoLlegar:_lblTitle];
+    //[StyleBorneiro setStyleText:_lblDescripcion];
 }
 - (IBAction)btnMenu:(id)sender {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

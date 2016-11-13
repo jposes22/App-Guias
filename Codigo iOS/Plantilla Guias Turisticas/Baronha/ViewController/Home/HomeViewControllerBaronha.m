@@ -76,7 +76,9 @@
 }
 -(void)loadStyle{
     [StylesBaronha setStyleTitleWhite:_lblTitle];
+    [_lblTitle setFont:[UIFont fontWithName:@"Santana" size:16]];
     [StylesBaronha setSytleSubtitle:_lblSubTitle];
+    [_lblSubTitle setFont:[UIFont fontWithName:@"Santana" size:12]];
     [StylesBaronha setStyleButtonText:_btnComoLlegar];
     [StylesBaronha setStyleButtonText:_btnTorresOeste];
     [StylesBaronha setStyleButtonText:_btnLugaresInteres];

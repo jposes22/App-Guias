@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2c-uq-UXV">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="284"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIT-4F-hRI">
                                                 <rect key="frame" x="10" y="20" width="355" height="20.5"/>
@@ -63,13 +63,21 @@
                                                     <constraint firstAttribute="height" constant="200" id="psq-Od-0nc"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv1-hf-Oc8">
+                                                <rect key="frame" x="166" y="255" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="Dv1-hf-Oc8" firstAttribute="top" secondItem="c0n-rB-GaV" secondAttribute="bottom" constant="-29" id="9mz-mz-hbZ"/>
                                             <constraint firstAttribute="trailing" secondItem="Q16-gT-NQc" secondAttribute="trailing" constant="10" id="J3M-GD-zv9"/>
                                             <constraint firstItem="qIT-4F-hRI" firstAttribute="top" secondItem="Z2c-uq-UXV" secondAttribute="top" constant="20" id="P1I-hf-eaN"/>
                                             <constraint firstItem="qIT-4F-hRI" firstAttribute="leading" secondItem="Z2c-uq-UXV" secondAttribute="leading" constant="10" id="WNA-gi-nGZ"/>
-                                            <constraint firstAttribute="bottom" secondItem="c0n-rB-GaV" secondAttribute="bottom" id="gWh-au-gRo"/>
+                                            <constraint firstItem="Dv1-hf-Oc8" firstAttribute="centerX" secondItem="c0n-rB-GaV" secondAttribute="centerX" id="aKf-n5-8W8"/>
+                                            <constraint firstAttribute="bottom" secondItem="c0n-rB-GaV" secondAttribute="bottom" constant="8" id="gWh-au-gRo"/>
                                             <constraint firstItem="c0n-rB-GaV" firstAttribute="top" secondItem="Q16-gT-NQc" secondAttribute="bottom" constant="8" id="hiu-si-NYY"/>
                                             <constraint firstItem="Q16-gT-NQc" firstAttribute="leading" secondItem="Z2c-uq-UXV" secondAttribute="leading" constant="10" id="hzJ-i7-Unx"/>
                                             <constraint firstItem="Q16-gT-NQc" firstAttribute="top" secondItem="qIT-4F-hRI" secondAttribute="bottom" constant="15" id="kcz-EE-tzn"/>
@@ -107,6 +115,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgView" destination="c0n-rB-GaV" id="E1r-u1-833"/>
+                        <outlet property="lblComoLlegar" destination="Dv1-hf-Oc8" id="DPh-18-b17"/>
                         <outlet property="lblDescripcion" destination="Q16-gT-NQc" id="WfT-XG-bcV"/>
                         <outlet property="lblTitle" destination="qIT-4F-hRI" id="ty6-IY-y6Q"/>
                     </connections>

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,15 +20,15 @@
                         <viewControllerLayoutGuide type="bottom" id="cjW-jh-vHi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l9y-YZ-LWx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portada" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-va-6NX">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <color key="backgroundColor" red="1" green="0.2383997887173599" blue="0.16465353556898477" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-aP-PND">
-                                <rect key="frame" x="-237.5" y="98" width="850" height="440"/>
+                                <rect key="frame" x="193" y="120" width="281" height="145"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="631" id="ADi-TT-ei6"/>
                                     <constraint firstAttribute="width" secondItem="Pkm-aP-PND" secondAttribute="height" multiplier="143:74" id="xTL-aQ-etP"/>
@@ -45,7 +46,7 @@
                                 </variation>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-9h-HyN">
-                                <rect key="frame" x="343" y="241.5" width="42" height="184"/>
+                                <rect key="frame" x="635" y="95.5" width="42" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="KW8-ev-L6n"/>
                                     <constraint firstAttribute="height" constant="184" id="cNj-Dt-oG1">
@@ -54,23 +55,31 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-Wh-rrf">
-                                <rect key="frame" x="172" y="518.5" width="31" height="14.5"/>
+                                <rect key="frame" x="318" y="245.5" width="31" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq2-Ge-RlV">
-                                <rect key="frame" x="166.5" y="495.5" width="42" height="20.5"/>
+                                <rect key="frame" x="312.5" y="222.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2_home" translatesAutoresizingMaskIntoConstraints="NO" id="Yd7-Dn-nso">
+                                <rect key="frame" x="40" y="10" width="127" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="cje-5i-p6k"/>
+                                    <constraint firstAttribute="height" constant="90" id="kik-o7-KZk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vqa-va-6NX" secondAttribute="trailing" id="5bR-aR-BWj"/>
+                            <constraint firstItem="Yd7-Dn-nso" firstAttribute="top" secondItem="f1H-GS-Lbu" secondAttribute="bottom" constant="-10" id="ErT-gz-egJ"/>
                             <constraint firstItem="jhj-9h-HyN" firstAttribute="centerY" secondItem="l9y-YZ-LWx" secondAttribute="centerY" id="OCl-UY-OXu"/>
-                            <constraint firstItem="Pkm-aP-PND" firstAttribute="top" secondItem="f1H-GS-Lbu" secondAttribute="bottom" constant="78" id="OEk-zG-ZGD"/>
+                            <constraint firstItem="Pkm-aP-PND" firstAttribute="top" secondItem="f1H-GS-Lbu" secondAttribute="bottom" constant="100" id="OEk-zG-ZGD"/>
                             <constraint firstItem="Vqa-va-6NX" firstAttribute="top" secondItem="l9y-YZ-LWx" secondAttribute="top" id="QwI-Jr-bWN"/>
                             <constraint firstItem="Vqa-va-6NX" firstAttribute="leading" secondItem="l9y-YZ-LWx" secondAttribute="leading" id="Xgh-BX-u8y"/>
                             <constraint firstItem="Jq2-Ge-RlV" firstAttribute="centerX" secondItem="1Qh-Wh-rrf" secondAttribute="centerX" id="bIH-xV-rpo"/>
@@ -81,7 +90,8 @@
                             <constraint firstItem="1Qh-Wh-rrf" firstAttribute="bottom" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="-5" id="e4t-cP-VAB"/>
                             <constraint firstItem="1Qh-Wh-rrf" firstAttribute="centerX" secondItem="Pkm-aP-PND" secondAttribute="centerX" id="fH0-9B-PcM"/>
                             <constraint firstItem="1Qh-Wh-rrf" firstAttribute="top" secondItem="Jq2-Ge-RlV" secondAttribute="bottom" constant="2.5" id="fv0-7T-r7S"/>
-                            <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="129" id="uRK-91-uG6"/>
+                            <constraint firstItem="Yd7-Dn-nso" firstAttribute="leading" secondItem="l9y-YZ-LWx" secondAttribute="leadingMargin" constant="20" id="ig1-sE-UIW"/>
+                            <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="110" id="uRK-91-uG6"/>
                             <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="Vqa-va-6NX" secondAttribute="bottom" id="voV-CU-Hrf"/>
                             <constraint firstItem="1Qh-Wh-rrf" firstAttribute="centerY" secondItem="Pkm-aP-PND" secondAttribute="centerY" constant="120" id="wd8-fd-hCB"/>
                         </constraints>
@@ -108,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZG-eD-tiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926.79355783308927" y="-4.6875"/>
+            <point key="canvasLocation" x="926.08695652173924" y="-5.5999999999999996"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UGp-yg-3Rh">
@@ -116,7 +126,7 @@
                 <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="BcW-kw-xcO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="C6c-yq-SI9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="C6c-yq-SI9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -134,6 +144,7 @@
     </scenes>
     <resources>
         <image name="btn_home_menu" width="42" height="280"/>
+        <image name="logo2_home" width="171" height="81"/>
         <image name="logo_home" width="275" height="150"/>
         <image name="portada" width="640" height="360"/>
     </resources>

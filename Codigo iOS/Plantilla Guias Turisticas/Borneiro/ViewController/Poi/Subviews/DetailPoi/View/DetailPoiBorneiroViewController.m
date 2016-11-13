@@ -87,45 +87,4 @@
 }
 
 
-/**
- 
- 
- 
- if(_listImages && _listImages.count > 0){
- //////
- NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
- path = [path stringByAppendingString:((PoiImagen *)[_listImages firstObject]).urlImagen];
- _imgViewListImages.image = [UIImage imageWithContentsOfFile:path ];
- 
- UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
- [self.imgViewListImages addGestureRecognizer:tapListImages];
- [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
- 
- }else{
- [_imgViewListImages removeFromSuperview];
- }
- 
- }else{
- _imgView.image = [UIImage imageNamed:@"iimageNone"];
- [_imgViewListImages removeFromSuperview];
- }
- 
- }
- -(void) openAlbum{
- AlbumViewController *album = [AlbumViewController new];
- [album setListfOfImage:_listImages];
- [self presentViewController:album animated:YES completion:nil];
- 
- }
- */
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

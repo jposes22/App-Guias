@@ -103,22 +103,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Poi/Subviews/DetailPoi/View/DetailPoiViewController.m"
-            timestampString = "500664702.162778"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "-openAlbum"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Torres Oeste/ViewController/TorresDeOeste/View/Cell/CellGuiaDetalle.m"
             timestampString = "500666909.682371"
             startingColumnNumber = "9223372036854775807"
@@ -142,22 +126,6 @@
             startingLineNumber = "40"
             endingLineNumber = "40"
             landmarkName = "-loadData:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shared/SharedViewControllers/Splash/Splash.m"
-            timestampString = "500669237.23969"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "318"
-            endingLineNumber = "318"
-            landmarkName = "-communicationUpdateGuiaSaberMasDetalle:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

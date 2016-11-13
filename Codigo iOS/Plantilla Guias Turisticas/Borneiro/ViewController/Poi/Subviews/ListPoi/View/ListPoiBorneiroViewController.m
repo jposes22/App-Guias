@@ -12,10 +12,13 @@
 #import "PoiBorneiroTableController.h"
 #import "NavigationBar.h"
 
+#import "Constants.h"
+#import "ConstantsURL.h"
+#import "DetailPoiBorneiroViewController.h"
 
 #import "PoiDAO.h"
 
-@interface ListPoiBorneiroViewController ()<CommnicationMenu>
+@interface ListPoiBorneiroViewController ()<CommnicationMenu,CommunicationControllerPoiBorneiro>
 
 @property (weak, nonatomic) IBOutlet UITableView *searchBar;
 
@@ -45,6 +48,8 @@
 
 -(void) loadController{
     _poiTableController = [PoiBorneiroTableController new];
+    _poiTableController.isSinglePoi = _isSinglePoi;
+    _poiTableController.delegatePoi = self;
     _tableView.delegate = _poiTableController;
     _tableView.dataSource = _poiTableController;
     _poiTableController.listOfPois = [PoiDAO getPoiByCategory:_categoryPoi];
@@ -52,15 +57,23 @@
 - (IBAction)btnOpenMenu:(id)sender {
    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
+-(void) communicationPoiSelected:(NSInteger)index{
+      [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPoiRutasSenderismo)];
 
-/*
-#pragma mark - Navigation
+}
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    // Make sure your segue name in storyboard is the same as this line
+
+    if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL]){
+        DetailPoiBorneiroViewController *vc = [segue destinationViewController];
+        [vc setCategoryPoi:[sender integerValue]];
+        
+    }
 }
-*/
+
 
 @end

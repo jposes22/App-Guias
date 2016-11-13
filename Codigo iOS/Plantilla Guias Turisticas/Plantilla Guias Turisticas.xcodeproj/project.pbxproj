@@ -486,6 +486,8 @@
 		829A8CC51DD2468D00D78A7A /* CopyrightBorneiroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0CE1DC4BD820049FB7D /* CopyrightBorneiroCell.xib */; };
 		82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */; };
 		82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E74B111DC6213D00ADB139 /* Creditos.storyboard */; };
+		82E832411DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E8323F1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m */; };
+		82E832421DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82E832401DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib */; };
 		82EE77E41DC64CF200C3A344 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77E11DC64CF200C3A344 /* Creditos.storyboard */; };
 		82EE77E51DC64CF200C3A344 /* CreditosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77E31DC64CF200C3A344 /* CreditosViewController.m */; };
 		82EE77EA1DC6505C00C3A344 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77E71DC6505C00C3A344 /* Creditos.storyboard */; };
@@ -979,6 +981,9 @@
 		82E74B0E1DC6213000ADB139 /* CreditosViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewControllerBaronha.h; sourceTree = "<group>"; };
 		82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewControllerBaronha.m; sourceTree = "<group>"; };
 		82E74B111DC6213D00ADB139 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
+		82E8323E1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiBorneiroSinglePoiTableViewCell.h; sourceTree = "<group>"; };
+		82E8323F1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiBorneiroSinglePoiTableViewCell.m; sourceTree = "<group>"; };
+		82E832401DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoiBorneiroSinglePoiTableViewCell.xib; sourceTree = "<group>"; };
 		82EE77E11DC64CF200C3A344 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
 		82EE77E21DC64CF200C3A344 /* CreditosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewController.h; sourceTree = "<group>"; };
 		82EE77E31DC64CF200C3A344 /* CreditosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewController.m; sourceTree = "<group>"; };
@@ -2777,6 +2782,7 @@
 		8295F0F91DC4BD820049FB7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82E8323D1DD8F57F00FCF070 /* CellSinglePoi */,
 				8295F0FA1DC4BD830049FB7D /* Cell */,
 				8295F0FE1DC4BD830049FB7D /* ListPoiBorneiroViewController.h */,
 				8295F0FF1DC4BD830049FB7D /* ListPoiBorneiroViewController.m */,
@@ -3091,6 +3097,16 @@
 				82E74B111DC6213D00ADB139 /* Creditos.storyboard */,
 			);
 			path = Creditos;
+			sourceTree = "<group>";
+		};
+		82E8323D1DD8F57F00FCF070 /* CellSinglePoi */ = {
+			isa = PBXGroup;
+			children = (
+				82E8323E1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.h */,
+				82E8323F1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m */,
+				82E832401DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib */,
+			);
+			path = CellSinglePoi;
 			sourceTree = "<group>";
 		};
 		82EE77E01DC64CF200C3A344 /* Creditos */ = {
@@ -3427,6 +3443,7 @@
 				23A501741DC6200D00019783 /* CellCidaBorneiroSinImagen.xib in Resources */,
 				2314F2171DC50CE70048F9E4 /* ComoLlegarBorneiro.storyboard in Resources */,
 				8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */,
+				82E832421DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib in Resources */,
 				8295F1511DC4BD830049FB7D /* NavigationBar.xib in Resources */,
 				82EE77F81DC6689C00C3A344 /* AlbumViewController.xib in Resources */,
 				23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */,
@@ -3970,6 +3987,7 @@
 				82EE77FA1DC6689C00C3A344 /* ViewImage.m in Sources */,
 				8295EF9C1DC4B3810049FB7D /* RemoteParametrosVO.m in Sources */,
 				8295EE461DC4ACD90049FB7D /* Plantilla_Guias_Turisticas.xcdatamodeld in Sources */,
+				82E832411DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m in Sources */,
 				8295EF3F1DC4B2C30049FB7D /* OpenExternalApps.m in Sources */,
 				8295EF551DC4B31D0049FB7D /* GuiaSaberMasDAO.m in Sources */,
 				8295F15D1DC4BD830049FB7D /* ListPoiBorneiroViewController.m in Sources */,

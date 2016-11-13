@@ -20,8 +20,15 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     static NSString *identifier = @"PoiBorneiroTableViewCell";
-    PoiTableViewCell * cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
+    id cell = nil;
+    if(_isSinglePoi){
+        identifier = @"PoiBorneiroSinglePoiTableViewCell";
+        cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
+    }else{
+        cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
+    }
     
     if (!cell){
         [tableView registerNib:[UINib nibWithNibName:identifier bundle:nil] forCellReuseIdentifier:identifier];
@@ -35,7 +42,8 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(_delegatePoi && [_delegatePoi respondsToSelector:@selector(communicationPoiSelected:)]){
+    
+    if(_delegatePoi && [_delegatePoi respondsToSelector:@selector(communicationPoiSelected:)] && _isSinglePoi){
         [_delegatePoi communicationPoiSelected:indexPath.row];
     }
 }

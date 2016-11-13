@@ -13,7 +13,8 @@
 #import "Metodos.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "StyleBorneiro.h"
-
+#import "PoiImagen+CoreDataProperties.h"
+#import "AlbumViewController.h"
 
 
 
@@ -21,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewList;
+
 @property (nonatomic, strong) Poi * poi;
 @end
 
@@ -50,20 +53,71 @@
         }else{
             [_labelTitle removeFromSuperview];
         }
-    if(_poi.urlImagen){
-        [_imageView sd_setImageWithURL:[[NSURL alloc] initWithString:_poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+        if(_poi.urlImagen){
+            [_imageView sd_setImageWithURL:[[NSURL alloc] initWithString:_poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+        }else{
+            [_imageView removeFromSuperview];
+        }
+        if(_poi.listImagen && _poi.listImagen.count > 0){
+            NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+            path = [path stringByAppendingString:((PoiImagen *)[_poi.listImagen anyObject]).urlImagen];
+            _imageViewList.image = [UIImage imageWithContentsOfFile:path ];
+            
+            UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
+            [_imageViewList addGestureRecognizer:tapListImages];
+           // [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
+        }else{
+            [_imageViewList removeFromSuperview];
+        }
     }else{
-        [_imageView removeFromSuperview];
-    }
+        [_imageViewList removeFromSuperview];
     }
 }
 
 - (void) loadStyle{
     [StyleBorneiro setStyleText:_labelText];
     [StyleBorneiro setStyleSubTitlePoi:_labelTitle];
-    [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:_titleSection backgroundColor:[StyleBorneiro getVerdeOscuroPoi]];
+    //[StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:_titleSection backgroundColor:[StyleBorneiro getVerdeOscuroPoi]];
+}
+-(void) openAlbum{
+    AlbumViewController *album = [AlbumViewController new];
+    [album setListfOfImage:[_poi.listImagen allObjects]];
+    [self presentViewController:album animated:YES completion:nil];
+    
 }
 
+
+/**
+ 
+ 
+ 
+ if(_listImages && _listImages.count > 0){
+ //////
+ NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+ path = [path stringByAppendingString:((PoiImagen *)[_listImages firstObject]).urlImagen];
+ _imgViewListImages.image = [UIImage imageWithContentsOfFile:path ];
+ 
+ UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
+ [self.imgViewListImages addGestureRecognizer:tapListImages];
+ [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
+ 
+ }else{
+ [_imgViewListImages removeFromSuperview];
+ }
+ 
+ }else{
+ _imgView.image = [UIImage imageNamed:@"iimageNone"];
+ [_imgViewListImages removeFromSuperview];
+ }
+ 
+ }
+ -(void) openAlbum{
+ AlbumViewController *album = [AlbumViewController new];
+ [album setListfOfImage:_listImages];
+ [self presentViewController:album animated:YES completion:nil];
+ 
+ }
+ */
 /*
 #pragma mark - Navigation
 

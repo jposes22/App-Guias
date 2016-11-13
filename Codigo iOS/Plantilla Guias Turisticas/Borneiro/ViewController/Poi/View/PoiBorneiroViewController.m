@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIView *viewPlayas;
 @property (weak, nonatomic) IBOutlet UIView *viewDirectorio;
 @property (weak, nonatomic) IBOutlet UIView *viewHosteleria;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *labelRecursosArqueologicos;
 @property (weak, nonatomic) IBOutlet UILabel *labelRecursosHistoricos;
 @property (weak, nonatomic) IBOutlet UILabel *labelRutasSenderismo;
@@ -81,6 +83,8 @@
     [StyleBorneiro setStyleSubTitlePoi:_labelHosteleria];
     [StyleBorneiro setStyleSubTitlePoi:_labelDirectorio];
     [StyleBorneiro setStyleSubTitlePoi:_labelPlayas];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
 }
 

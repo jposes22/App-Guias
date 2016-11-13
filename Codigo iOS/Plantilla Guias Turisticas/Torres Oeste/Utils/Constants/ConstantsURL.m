@@ -13,7 +13,7 @@
 
 ///URL
 
-NSString * const kURL_SERVICE = @"http://95.123.56.172:8080/TORRES_OESTE/rest";
+NSString * const kURL_SERVICE = @"http://evserver.ddns.net:8080/TORRES_OESTE/rest";
 
 
 

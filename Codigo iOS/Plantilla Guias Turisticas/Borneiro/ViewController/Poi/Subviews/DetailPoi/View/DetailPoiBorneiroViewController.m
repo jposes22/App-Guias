@@ -49,7 +49,7 @@
         _poi = [listPoi firstObject];
         _labelText.attributedText = [Metodos convertHTMLToString:_poi.descripcion];
         if(_poi.titulo){
-            _labelTitle.text = _poi.titulo;
+            _labelTitle.attributedText = [Metodos convertHTMLToString:_poi.titulo];
         }else{
             [_labelTitle removeFromSuperview];
         }
@@ -75,8 +75,8 @@
 }
 
 - (void) loadStyle{
-    [StyleBorneiro setStyleText:_labelText];
-    [StyleBorneiro setStyleSubTitlePoi:_labelTitle];
+    //[StyleBorneiro setStyleText:_labelText];
+   // [StyleBorneiro setStyleSubTitlePoi:_labelTitle];
     //[StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:_titleSection backgroundColor:[StyleBorneiro getVerdeOscuroPoi]];
 }
 -(void) openAlbum{

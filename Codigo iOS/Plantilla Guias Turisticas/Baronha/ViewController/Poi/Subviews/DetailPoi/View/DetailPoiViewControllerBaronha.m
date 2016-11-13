@@ -40,9 +40,8 @@
     NSArray *listPois =  [PoiDAO getPoiByCategory:_categoryPoi];
     if(listPois && listPois.count > 0){
         _poiDetail = listPois.firstObject;
-        _lblTitle.text = _poiDetail.titulo;
+        _lblTitle.attributedText = [Metodos convertHTMLToString:_poiDetail.titulo];
         _lblDescription.attributedText = [Metodos convertHTMLToString:_poiDetail.descripcion];
-        
     }
 
 }
@@ -52,7 +51,7 @@
 }
 
 -(void) loadStyle{
-    [StylesBaronha setStyleTitle:_lblTitle];
+    //[StylesBaronha setStyleTitle:_lblTitle];
 }
 -(void)loadNavigationBar{
     [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Lugares de Interés"];

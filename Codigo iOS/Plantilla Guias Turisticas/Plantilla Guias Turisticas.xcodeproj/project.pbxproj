@@ -43,6 +43,22 @@
 		23A501911DC6272500019783 /* HeaderCultura.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A501881DC6272500019783 /* HeaderCultura.m */; };
 		23A501921DC6272500019783 /* HeaderCultura.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A501891DC6272500019783 /* HeaderCultura.xib */; };
 		23A501931DC6272500019783 /* MainCultura.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A5018A1DC6272500019783 /* MainCultura.storyboard */; };
+		23A86F7D1DD8CF0300DBAA28 /* SaberMasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F7C1DD8CF0300DBAA28 /* SaberMasViewController.m */; };
+		23A86F811DD8D3DD00DBAA28 /* GuiaSaberMasList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */; };
+		23A86F841DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */; };
+		23A86F851DD8D77A00DBAA28 /* GuiaSaberMasList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */; };
+		23A86F861DD8D77B00DBAA28 /* GuiaSaberMasList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */; };
+		23A86F871DD8D77D00DBAA28 /* GuiaSaberMasList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */; };
+		23A86F881DD8D78100DBAA28 /* GuiaSaberMasDetalleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */; };
+		23A86F891DD8D78200DBAA28 /* GuiaSaberMasDetalleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */; };
+		23A86F8A1DD8D78300DBAA28 /* GuiaSaberMasDetalleList.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */; };
+		23A86F8F1DD8D8D800DBAA28 /* HeaderSaberMas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86F8E1DD8D8D800DBAA28 /* HeaderSaberMas.xib */; };
+		23A86F921DD8D8F100DBAA28 /* HeaderSaberMas.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F911DD8D8F100DBAA28 /* HeaderSaberMas.m */; };
+		23A86F961DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F941DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.m */; };
+		23A86F971DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86F951DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib */; };
+		23A86F9B1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F991DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m */; };
+		23A86F9C1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86F9A1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib */; };
+		23A86FA01DD8DE5B00DBAA28 /* SaberMasTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */; };
 		8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAA1DC4A4CC0049FB7D /* main.m */; };
 		8295EBAE1DC4A4CC0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAD1DC4A4CC0049FB7D /* AppDelegate.m */; };
 		8295EBB11DC4A4CC0049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBB01DC4A4CC0049FB7D /* ViewController.m */; };
@@ -569,6 +585,23 @@
 		23A501881DC6272500019783 /* HeaderCultura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCultura.m; sourceTree = "<group>"; };
 		23A501891DC6272500019783 /* HeaderCultura.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCultura.xib; sourceTree = "<group>"; };
 		23A5018A1DC6272500019783 /* MainCultura.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainCultura.storyboard; sourceTree = "<group>"; };
+		23A86F7B1DD8CF0300DBAA28 /* SaberMasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaberMasViewController.h; path = SaberMas/SaberMasViewController.h; sourceTree = "<group>"; };
+		23A86F7C1DD8CF0300DBAA28 /* SaberMasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaberMasViewController.m; path = SaberMas/SaberMasViewController.m; sourceTree = "<group>"; };
+		23A86F7F1DD8D3DD00DBAA28 /* GuiaSaberMasList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiaSaberMasList.h; sourceTree = "<group>"; };
+		23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaSaberMasList.m; sourceTree = "<group>"; };
+		23A86F821DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiaSaberMasDetalleList.h; sourceTree = "<group>"; };
+		23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuiaSaberMasDetalleList.m; sourceTree = "<group>"; };
+		23A86F8E1DD8D8D800DBAA28 /* HeaderSaberMas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HeaderSaberMas.xib; path = SaberMas/Hearder/HeaderSaberMas.xib; sourceTree = "<group>"; };
+		23A86F901DD8D8F100DBAA28 /* HeaderSaberMas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderSaberMas.h; path = SaberMas/Hearder/HeaderSaberMas.h; sourceTree = "<group>"; };
+		23A86F911DD8D8F100DBAA28 /* HeaderSaberMas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderSaberMas.m; path = SaberMas/Hearder/HeaderSaberMas.m; sourceTree = "<group>"; };
+		23A86F931DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellGuiaDetalleSaberMas.h; path = SaberMas/Cell/CellGuiaDetalleSaberMas.h; sourceTree = "<group>"; };
+		23A86F941DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellGuiaDetalleSaberMas.m; path = SaberMas/Cell/CellGuiaDetalleSaberMas.m; sourceTree = "<group>"; };
+		23A86F951DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellGuiaDetalleSaberMas.xib; path = SaberMas/Cell/CellGuiaDetalleSaberMas.xib; sourceTree = "<group>"; };
+		23A86F981DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellGuiaSaberMasSinImagen.h; path = SaberMas/Cell/CellGuiaSaberMasSinImagen.h; sourceTree = "<group>"; };
+		23A86F991DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellGuiaSaberMasSinImagen.m; path = SaberMas/Cell/CellGuiaSaberMasSinImagen.m; sourceTree = "<group>"; };
+		23A86F9A1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellGuiaSaberMasSinImagen.xib; path = SaberMas/Cell/CellGuiaSaberMasSinImagen.xib; sourceTree = "<group>"; };
+		23A86F9E1DD8DE5B00DBAA28 /* SaberMasTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaberMasTableController.h; path = SaberMasTableController/SaberMasTableController.h; sourceTree = "<group>"; };
+		23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaberMasTableController.m; path = SaberMasTableController/SaberMasTableController.m; sourceTree = "<group>"; };
 		25DF257C251E887DDAF0CB8D /* Pods-Baronha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baronha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baronha/Pods-Baronha.release.xcconfig"; sourceTree = "<group>"; };
 		2F4423A020DCB1EAE149C9E3 /* libPods-Torres Oeste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Torres Oeste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2DFB5B655EA1E5B7132D33 /* Pods-Torres Oeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1154,6 +1187,57 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		23A86F7E1DD8CF0D00DBAA28 /* Saber  Mas */ = {
+			isa = PBXGroup;
+			children = (
+				23A86F8D1DD8D89D00DBAA28 /* Header */,
+				23A86F8C1DD8D89400DBAA28 /* Cell */,
+				23A86F8B1DD8D88E00DBAA28 /* Controller */,
+				23A86F7B1DD8CF0300DBAA28 /* SaberMasViewController.h */,
+				23A86F7C1DD8CF0300DBAA28 /* SaberMasViewController.m */,
+			);
+			name = "Saber  Mas";
+			sourceTree = "<group>";
+		};
+		23A86F8B1DD8D88E00DBAA28 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		23A86F8C1DD8D89400DBAA28 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23A86F931DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.h */,
+				23A86F941DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.m */,
+				23A86F951DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib */,
+				23A86F981DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.h */,
+				23A86F991DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m */,
+				23A86F9A1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		23A86F8D1DD8D89D00DBAA28 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				23A86F8E1DD8D8D800DBAA28 /* HeaderSaberMas.xib */,
+				23A86F901DD8D8F100DBAA28 /* HeaderSaberMas.h */,
+				23A86F911DD8D8F100DBAA28 /* HeaderSaberMas.m */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		23A86F9D1DD8DE3400DBAA28 /* SaberMasTableController */ = {
+			isa = PBXGroup;
+			children = (
+				23A86F9E1DD8DE5B00DBAA28 /* SaberMasTableController.h */,
+				23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */,
+			);
+			name = SaberMasTableController;
+			sourceTree = "<group>";
+		};
 		8295EB9D1DC4A4CC0049FB7D = {
 			isa = PBXGroup;
 			children = (
@@ -1607,6 +1691,10 @@
 				8295EDB41DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m */,
 				8295EDB51DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.h */,
 				8295EDB61DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m */,
+				23A86F7F1DD8D3DD00DBAA28 /* GuiaSaberMasList.h */,
+				23A86F801DD8D3DD00DBAA28 /* GuiaSaberMasList.m */,
+				23A86F821DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.h */,
+				23A86F831DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m */,
 			);
 			path = GuiaSaberMAs;
 			sourceTree = "<group>";
@@ -2090,6 +2178,7 @@
 		8295EEBF1DC4B0600049FB7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23A86F9D1DD8DE3400DBAA28 /* SaberMasTableController */,
 				8295EEC01DC4B0600049FB7D /* CollectionController */,
 				8295EEC31DC4B0600049FB7D /* GuiaDetalleTableController */,
 				8295EEC61DC4B0600049FB7D /* PageController */,
@@ -2141,6 +2230,7 @@
 				8295EEE91DC4B0600049FB7D /* GuiaViewController.h */,
 				8295EEEA1DC4B0600049FB7D /* GuiaViewController.m */,
 				8295EEEB1DC4B0600049FB7D /* Header */,
+				23A86F7E1DD8CF0D00DBAA28 /* Saber  Mas */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3344,12 +3434,15 @@
 				8295EF091DC4B0600049FB7D /* Poi.storyboard in Resources */,
 				8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */,
 				8295EF1A1DC4B0600049FB7D /* CellGuiaCollectionView.xib in Resources */,
+				23A86F8F1DD8D8D800DBAA28 /* HeaderSaberMas.xib in Resources */,
 				8295EF031DC4B0600049FB7D /* RightViewController.xib in Resources */,
 				82EE77E41DC64CF200C3A344 /* Creditos.storyboard in Resources */,
 				8295EF011DC4B0600049FB7D /* CustomTableViewCell.xib in Resources */,
+				23A86F971DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib in Resources */,
 				82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */,
 				8295EE6D1DC4AF5C0049FB7D /* OpenSans-Regular.ttf in Resources */,
 				8295EF1C1DC4B0600049FB7D /* CellGuiaDetalle.xib in Resources */,
+				23A86F9C1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib in Resources */,
 				8295EE6B1DC4AF5C0049FB7D /* OpenSans-Italic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3612,6 +3705,7 @@
 				8295EE071DC4AAEE0049FB7D /* Guia+CoreDataProperties.m in Sources */,
 				8295EDE61DC4AAEE0049FB7D /* CoreDataUtil.m in Sources */,
 				8295EE1D1DC4AAEE0049FB7D /* Menu+CoreDataProperties.m in Sources */,
+				23A86F881DD8D78100DBAA28 /* GuiaSaberMasDetalleList.m in Sources */,
 				8295EDF51DC4AAEE0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
 				8295EE011DC4AAEE0049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295EE121DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
@@ -3623,6 +3717,7 @@
 				8295EE0C1DC4AAEE0049FB7D /* GuiaDetalleList.m in Sources */,
 				8295EDE71DC4AAEE0049FB7D /* GuiaDAO.m in Sources */,
 				8295EE131DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
+				23A86F871DD8D77D00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8295EDEF1DC4AAEE0049FB7D /* ParametrosDAO.m in Sources */,
 				8295EDEB1DC4AAEE0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
 				8295EDFC1DC4AAEE0049FB7D /* RemoteGuiaSaberMasDetalleVO.m in Sources */,
@@ -3668,6 +3763,7 @@
 				8295EF241DC4B0600049FB7D /* GuiaViewController.m in Sources */,
 				8295EF831DC4B3690049FB7D /* RemoteGuiaVO.m in Sources */,
 				8295EF681DC4B3440049FB7D /* RemoteGuiaDetalle.m in Sources */,
+				23A86F921DD8D8F100DBAA28 /* HeaderSaberMas.m in Sources */,
 				8295EF7F1DC4B3630049FB7D /* GenericResponse.m in Sources */,
 				8295EF941DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295EF081DC4B0600049FB7D /* ListPoiViewController.m in Sources */,
@@ -3676,6 +3772,7 @@
 				8295EF8B1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295F1F61DC4F8630049FB7D /* NSBundle.m in Sources */,
 				8295EF4F1DC4B31C0049FB7D /* GuiaSaberMasDAO.m in Sources */,
+				23A86F9B1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m in Sources */,
 				8295EFFD1DC4B3C30049FB7D /* PoiImagen+CoreDataProperties.m in Sources */,
 				8295EEF41DC4B0600049FB7D /* CopyrightCell.m in Sources */,
 				8295EFBF1DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
@@ -3687,6 +3784,8 @@
 				8295EC0A1DC4A8650049FB7D /* AppDelegate.m in Sources */,
 				8295EF5E1DC4B3300049FB7D /* ParametrosDAO.m in Sources */,
 				8295EFA61DC4B3970049FB7D /* GuiaDetalle+CoreDataProperties.m in Sources */,
+				23A86F841DD8D3F200DBAA28 /* GuiaSaberMasDetalleList.m in Sources */,
+				23A86FA01DD8DE5B00DBAA28 /* SaberMasTableController.m in Sources */,
 				8295EF181DC4B0600049FB7D /* SlideGuide.m in Sources */,
 				8295EEFF1DC4B0600049FB7D /* MenuViewController.m in Sources */,
 				82EE77E51DC64CF200C3A344 /* CreditosViewController.m in Sources */,
@@ -3701,6 +3800,7 @@
 				8295EFA31DC4B3970049FB7D /* Guia+CoreDataClass.m in Sources */,
 				8295EFFB1DC4B3C30049FB7D /* Poi+CoreDataProperties.m in Sources */,
 				8295EF431DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
+				23A86F811DD8D3DD00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8295EF581DC4B3220049FB7D /* IdiomaDAO.m in Sources */,
 				8295EF9D1DC4B3850049FB7D /* RemotePoiVO.m in Sources */,
 				8295EEF61DC4B0600049FB7D /* CopyrightTableController.m in Sources */,
@@ -3724,6 +3824,7 @@
 				8295EFF11DC4B3BB0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
 				8295EF671DC4B3440049FB7D /* RemoteGuia.m in Sources */,
 				8295EF4A1DC4B3120049FB7D /* GuiaDetalleDAO.m in Sources */,
+				23A86F961DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.m in Sources */,
 				8295EFF21DC4B3BB0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EF761DC4B3550049FB7D /* RemoteMenu.m in Sources */,
 				8295EE541DC4AEBD0049FB7D /* SelectIdiomaViewController.m in Sources */,
@@ -3757,6 +3858,7 @@
 				8295EF6D1DC4B34A0049FB7D /* RemoteGuiaSaberMas.m in Sources */,
 				8295EFA91DC4B3970049FB7D /* GuiaDetalleList.m in Sources */,
 				8295EEFB1DC4B0600049FB7D /* NavigationBar.m in Sources */,
+				23A86F7D1DD8CF0300DBAA28 /* SaberMasViewController.m in Sources */,
 				8295EFAA1DC4B3970049FB7D /* GuiaList.m in Sources */,
 				8295EF6E1DC4B34A0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
 				8295EE571DC4AED00049FB7D /* TableIdiomaController.m in Sources */,
@@ -3798,6 +3900,7 @@
 				8295EFC21DC4B3A00049FB7D /* GuiaSaberMas+CoreDataProperties.m in Sources */,
 				8295EF871DC4B36A0049FB7D /* RemoteImageDetalleVO.m in Sources */,
 				8295EFC51DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
+				23A86F891DD8D78200DBAA28 /* GuiaSaberMasDetalleList.m in Sources */,
 				8295EFF51DC4B3BC0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EF851DC4B36A0049FB7D /* RemoteDetalleGuiaVO.m in Sources */,
 				8295F0B51DC4BD6E0049FB7D /* SlideGuideBaronha.m in Sources */,
@@ -3812,6 +3915,7 @@
 				8295EC251DC4A8710049FB7D /* AppDelegate.m in Sources */,
 				8295EFC41DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataProperties.m in Sources */,
 				8295EE5B1DC4AED30049FB7D /* Splash.m in Sources */,
+				23A86F851DD8D77A00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8295EFC61DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
 				8295F0A01DC4BD6E0049FB7D /* PoiTableController.m in Sources */,
 				8295F0AD1DC4BD6E0049FB7D /* CollectionController.m in Sources */,
@@ -3909,6 +4013,7 @@
 				8295EF911DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295EF961DC4B3770049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */,
+				23A86F861DD8D77B00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EF631DC4B3370049FB7D /* PoiDAO.m in Sources */,
 				8295EF721DC4B34B0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
@@ -3927,6 +4032,7 @@
 				8295F1551DC4BD830049FB7D /* CustomTableViewCell.m in Sources */,
 				2314F2151DC505DF0048F9E4 /* StyleBorneiro.m in Sources */,
 				8295EF711DC4B34B0049FB7D /* RemoteGuiaSaberMas.m in Sources */,
+				23A86F8A1DD8D78300DBAA28 /* GuiaSaberMasDetalleList.m in Sources */,
 				8295EC401DC4A87D0049FB7D /* AppDelegate.m in Sources */,
 				8295EFCA1DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataProperties.m in Sources */,
 				8295EE5C1DC4AED30049FB7D /* Splash.m in Sources */,

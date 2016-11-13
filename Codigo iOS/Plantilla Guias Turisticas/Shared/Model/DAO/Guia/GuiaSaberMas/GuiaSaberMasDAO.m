@@ -8,15 +8,16 @@
 
 #import "GuiaSaberMasDAO.h"
 #import "CoreDataUtil.h"
+#import "GuiaSaberMasList.h"
 
 @implementation GuiaSaberMasDAO
-+(NSArray *)getGuiasSaberMas{
++(NSArray *)getGuiasSaberMas:(NSInteger)idGuiaDetalle{
     //Obtenemos la entidad correspondiente al modelo
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:@"GuiaSaberMas" inManagedObjectContext:context];
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"isActivo == YES"];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"isActivo == YES && idGuiaDetalle == %d", idGuiaDetalle];
     NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"SELF.titulo" ascending:YES];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -29,7 +30,11 @@
     if (array == nil){
         NSLog(@"Problem execute request: %@", [error localizedDescription]);
     }else{
-        return array;
+        NSMutableArray * listado = [[NSMutableArray alloc] init];
+        for (GuiaSaberMas * guia  in array) {
+            [listado addObject: [GuiaSaberMasList getGuiaListObject:guia]];
+        }
+        return listado;
     }
     return nil;
 

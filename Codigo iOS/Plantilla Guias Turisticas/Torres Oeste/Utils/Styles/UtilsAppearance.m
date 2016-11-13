@@ -79,5 +79,17 @@
     NSArray*items = navigationBar.items;
     [[items objectAtIndex:0] setTitleView:label];
 }
-
++ (void) setStyleNavigationBarSaberMas:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
+    navigationBar.translucent = NO;
+    [navigationBar setBackgroundColor:[UtilsAppearance getPrimaryColor]];
+    NSRange rangeText= NSMakeRange(0, title.length);
+    NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
+    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:rangeText];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(81, 11, 300, 44)];
+    label.attributedText = attString;
+    [label sizeToFit];
+    NSArray*items = navigationBar.items;
+    [[items objectAtIndex:0] setTitleView:label];
+}
 @end

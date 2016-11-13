@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -103,6 +103,81 @@
             </objects>
             <point key="canvasLocation" x="1828" y="167.76611694152925"/>
         </scene>
+        <!--Saber Mas View Controller-->
+        <scene sceneID="bXd-F1-V2L">
+            <objects>
+                <viewController storyboardIdentifier="SaberMasViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NXi-te-hk2" customClass="SaberMasViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ptT-RB-j91"/>
+                        <viewControllerLayoutGuide type="bottom" id="4eb-sk-HyC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vmv-2c-d7K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL5-Pc-F7o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="dl2-sq-DQA">
+                                        <barButtonItem key="rightBarButtonItem" image="bt_cerrar" id="A6D-Q6-F0G">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="btnClose:" destination="NXi-te-hk2" id="ooS-A9-w7l"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9L-ud-wWo">
+                                <rect key="frame" x="0.0" y="44" width="375" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82z-ZW-aGZ">
+                                        <rect key="frame" x="10" y="10" width="355" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="82z-ZW-aGZ" firstAttribute="leading" secondItem="M9L-ud-wWo" secondAttribute="leading" constant="10" id="GgP-aW-Lge"/>
+                                    <constraint firstAttribute="trailing" secondItem="82z-ZW-aGZ" secondAttribute="trailing" constant="10" id="bwh-OY-cDB"/>
+                                    <constraint firstItem="82z-ZW-aGZ" firstAttribute="centerY" secondItem="M9L-ud-wWo" secondAttribute="centerY" id="dOc-dK-sKs"/>
+                                    <constraint firstAttribute="height" constant="40" id="eIq-1Z-cTr"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-B4-oBR">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bL5-Pc-F7o" secondAttribute="trailing" id="GXh-HT-a8p"/>
+                            <constraint firstItem="bL5-Pc-F7o" firstAttribute="leading" secondItem="Vmv-2c-d7K" secondAttribute="leading" id="Ike-Be-B6l"/>
+                            <constraint firstItem="bL5-Pc-F7o" firstAttribute="top" secondItem="Vmv-2c-d7K" secondAttribute="top" id="Jst-jw-oJT"/>
+                            <constraint firstItem="M9L-ud-wWo" firstAttribute="leading" secondItem="Vmv-2c-d7K" secondAttribute="leading" id="O4p-ox-you"/>
+                            <constraint firstAttribute="trailing" secondItem="LFC-B4-oBR" secondAttribute="trailing" id="Vuh-Fs-ACc"/>
+                            <constraint firstAttribute="trailing" secondItem="M9L-ud-wWo" secondAttribute="trailing" id="XEH-2i-uW3"/>
+                            <constraint firstItem="LFC-B4-oBR" firstAttribute="top" secondItem="M9L-ud-wWo" secondAttribute="bottom" id="i3z-yM-j48"/>
+                            <constraint firstItem="LFC-B4-oBR" firstAttribute="leading" secondItem="Vmv-2c-d7K" secondAttribute="leading" id="mJL-ml-yvk"/>
+                            <constraint firstItem="M9L-ud-wWo" firstAttribute="top" secondItem="bL5-Pc-F7o" secondAttribute="bottom" id="rQn-oc-LRN"/>
+                            <constraint firstItem="4eb-sk-HyC" firstAttribute="top" secondItem="LFC-B4-oBR" secondAttribute="bottom" id="zR6-aa-yXH"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="labelSubtitle" destination="82z-ZW-aGZ" id="AP3-ey-VAe"/>
+                        <outlet property="navigationBar" destination="bL5-Pc-F7o" id="rTL-by-JqW"/>
+                        <outlet property="tableView" destination="LFC-B4-oBR" id="gMl-mY-7ie"/>
+                        <outlet property="viewTop" destination="M9L-ud-wWo" id="phO-v6-9bV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHl-4G-5bs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2568.8000000000002" y="167.76611694152925"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4HK-nJ-H5p">
             <objects>
@@ -123,6 +198,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bt_cerrar" width="33" height="33"/>
         <image name="btnMenu" width="60" height="60"/>
     </resources>
 </document>

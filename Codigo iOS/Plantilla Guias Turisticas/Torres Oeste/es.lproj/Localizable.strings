@@ -1,10 +1,10 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto castellano";
 
 
@@ -12,12 +12,14 @@
 "title_home" = "Inicio";
 "title_como_torres" = "Torres do Oeste";
 "title_como_romeria" = "Romería";
-"title_lugares" = "Lugares de interes";
-"title_como_llegar" = "Como Llegar";
-"title_bibliografía" = "Referencias bibliográficas";
+"title_lugares" = "Lugares de interese";
+"title_como_llegar" = "Como Chegar";
+"title_bibliografía" = "Referecias bibliográficas";
 "title_copyright" = "Copyright";
-"title_ajustes" = "Ajustes";
+"title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";
+"subtitle_saber_mas" = "Saber más...";
+"text_saber_mas" = "Saber más";
 
 
 /*Titles Menu*/
@@ -31,6 +33,7 @@
 "menu_ajustes" = "Axustes";
 "menu_creditos" = "Créditos";
 
+
 /* POIS 7 elements*/
 "pois_petroglifo" = "Petroglífos";
 "pois_molinos" = "Molinos tradicionales";
@@ -40,6 +43,8 @@
 "pois_alojamiento" = "Alojamientos";
 "pois_restaurante" = "Restaurantes";
 "pois_telefonos" = "Teléfonos de interés";
+
+
 
 
 

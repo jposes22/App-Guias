@@ -40,6 +40,8 @@
             self.descripcion = [json objectForKey:@"descripcion"] ;
         }
         if([json objectForKey:@"urlAudioGuia"] != [NSNull null]){
+            [[NSOperationQueue new] addOperationWithBlock:^{
+
             self.urlAudioGuia = [json objectForKey:@"urlAudioGuia"] ;
             NSURL *url = [NSURL URLWithString:self.urlAudioGuia];
             NSData *data = [NSData dataWithContentsOfURL:url];
@@ -51,6 +53,7 @@
             }else{
                 self.urlAudioGuia = nil;
             }
+            }];
         }
         if([json objectForKey:@"orden"] != [NSNull null]){
             self.orden = [[json objectForKey:@"orden"] integerValue];

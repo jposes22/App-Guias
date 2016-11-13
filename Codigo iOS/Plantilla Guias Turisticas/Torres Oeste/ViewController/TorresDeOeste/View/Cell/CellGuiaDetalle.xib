@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,27 +37,36 @@
                             <constraint firstAttribute="height" constant="250" id="I7c-qK-To9"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1V-Vd-HyR">
-                        <rect key="frame" x="10" y="297" width="447" height="20.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_saber_mas" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-th-310">
+                        <rect key="frame" x="18" y="297" width="85" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="YH2-qb-Fch"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text=" Saber mas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1V-Vd-HyR">
+                        <rect key="frame" x="43" y="297" width="86" height="20.5"/>
+                        <color key="backgroundColor" red="0.035294117649999998" green="0.30980392159999998" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20.5" id="ir0-zQ-Cyu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="w9W-bN-Sjb" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="8" id="0Kk-6b-UnF"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="j1V-Vd-HyR" secondAttribute="trailing" constant="2" id="JCT-Lg-yEa"/>
+                    <constraint firstItem="j1V-Vd-HyR" firstAttribute="bottom" secondItem="qqy-th-310" secondAttribute="bottom" id="BEN-Rl-CuM"/>
                     <constraint firstAttribute="trailingMargin" secondItem="9OP-qS-x1K" secondAttribute="trailing" constant="2" id="M08-Gv-VSA"/>
                     <constraint firstItem="w9W-bN-Sjb" firstAttribute="top" secondItem="NN0-56-Ye2" secondAttribute="bottom" constant="14" id="SmG-VE-lp6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="w9W-bN-Sjb" secondAttribute="trailing" constant="10" id="bi6-RB-jGB"/>
+                    <constraint firstItem="j1V-Vd-HyR" firstAttribute="top" secondItem="qqy-th-310" secondAttribute="top" id="d7Y-aY-WdA"/>
+                    <constraint firstItem="qqy-th-310" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="10" id="dL9-Kh-J6a"/>
                     <constraint firstItem="9OP-qS-x1K" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="2" id="eH5-gu-hNL"/>
                     <constraint firstAttribute="bottomMargin" secondItem="j1V-Vd-HyR" secondAttribute="bottom" constant="2" id="hxD-Ij-smc"/>
                     <constraint firstItem="9OP-qS-x1K" firstAttribute="top" secondItem="w9W-bN-Sjb" secondAttribute="bottom" constant="10" id="kdf-ax-i6H"/>
                     <constraint firstItem="NN0-56-Ye2" firstAttribute="top" secondItem="1yw-C8-xxI" secondAttribute="topMargin" constant="10" id="mL0-aZ-Jpz"/>
-                    <constraint firstItem="j1V-Vd-HyR" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="2" id="r4b-Ph-mpU"/>
+                    <constraint firstItem="j1V-Vd-HyR" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="35" id="r4b-Ph-mpU"/>
                     <constraint firstItem="j1V-Vd-HyR" firstAttribute="top" secondItem="9OP-qS-x1K" secondAttribute="bottom" constant="5" id="rhF-va-ndm"/>
                     <constraint firstItem="NN0-56-Ye2" firstAttribute="leading" secondItem="1yw-C8-xxI" secondAttribute="leadingMargin" constant="8" id="sOl-Zq-7dV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="NN0-56-Ye2" secondAttribute="trailing" constant="10" id="uJi-YI-nsD"/>
@@ -68,10 +77,15 @@
                 <outlet property="constraintTopImagen" destination="kdf-ax-i6H" id="2ac-ML-d6A"/>
                 <outlet property="contraintLabelTopHeight" destination="mL0-aZ-Jpz" id="56y-aW-mNE"/>
                 <outlet property="imageGuia" destination="9OP-qS-x1K" id="eXq-Jm-YMG"/>
+                <outlet property="imagenSaberMas" destination="qqy-th-310" id="nIK-dc-hOP"/>
                 <outlet property="labelDescripcion" destination="w9W-bN-Sjb" id="UXx-Fy-TS3"/>
+                <outlet property="labelSaberMas" destination="j1V-Vd-HyR" id="LIw-p0-ZPB"/>
                 <outlet property="labelTitle" destination="NN0-56-Ye2" id="5YR-3e-DXG"/>
             </connections>
             <point key="canvasLocation" x="8.5" y="157"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="bt_saber_mas" width="74" height="18"/>
+    </resources>
 </document>

@@ -56,7 +56,7 @@
 }
 
 -(void) loadData{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Romería"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_como_romeria", nil)];
     NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaRomeria];
     //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
     if(listGUias.count > 0){

@@ -14,7 +14,7 @@
         <scene sceneID="c9U-Lq-iTH">
             <objects>
                 <navigationController storyboardIdentifier="PoiBorneiroNC" id="Rbw-iV-eNf" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryD-g5-qHn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ryD-g5-qHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -45,7 +45,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="538"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lugar_interes" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-49-Ide">
-                                                <rect key="frame" x="137.5" y="10" width="100" height="100"/>
+                                                <rect key="frame" x="138" y="10" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="pgx-X7-tcn"/>
                                                     <constraint firstAttribute="height" constant="100" id="wHq-zw-mbh"/>
@@ -58,7 +58,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrimonio arque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-kB-mcV">
-                                                        <rect key="frame" x="10" y="101" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                                 <rect key="frame" x="192.5" y="120" width="172.5" height="129.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrimonio historico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-8N-fL1">
-                                                        <rect key="frame" x="10" y="101" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -105,7 +105,7 @@
                                                 <rect key="frame" x="10" y="259.5" width="172.5" height="129.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutas senderismo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwh-sS-zkz">
-                                                        <rect key="frame" x="10" y="101" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -130,7 +130,7 @@
                                                 <rect key="frame" x="192.5" y="259.5" width="172.5" height="129.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pez-54-QoZ">
-                                                        <rect key="frame" x="10" y="101" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -152,16 +152,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R6-4g-ptf">
-                                                <rect key="frame" x="10" y="399" width="172.5" height="129"/>
+                                                <rect key="frame" x="10" y="399" width="172.5" height="129.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU7-Y2-uSe">
-                                                        <rect key="frame" x="10" y="100" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_directorio" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-GC-LL3">
-                                                        <rect key="frame" x="0.0" y="0.5" width="172.5" height="92"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -180,7 +180,7 @@
                                                 <rect key="frame" x="192.5" y="399" width="172.5" height="129"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia hosteleria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-vh-Xg4">
-                                                        <rect key="frame" x="10" y="100" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -268,11 +268,12 @@
                         <outlet property="viewRutasSenderismo" destination="GCb-9F-eye" id="SHa-KU-XKj"/>
                         <segue destination="cfh-ZC-VOv" kind="show" identifier="kSEGUE_LIST_POI" id="7fz-qM-MsK"/>
                         <segue destination="VTV-QV-L4y" kind="show" identifier="kSEGUE_SHOW_DETAIL" id="3vF-lH-utg"/>
+                        <segue destination="cfh-ZC-VOv" kind="show" identifier="kSEGUE_LIST_POI_SINGLE" id="flk-VO-fbK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcP-cl-pzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.20000000000005" y="158.77061469265368"/>
+            <point key="canvasLocation" x="882" y="161"/>
         </scene>
         <!--List Poi Borneiro View Controller-->
         <scene sceneID="P6V-ba-G9O">
@@ -311,11 +312,12 @@
                     <connections>
                         <outlet property="searchBar" destination="rtu-kk-m0w" id="FjF-m8-7wK"/>
                         <outlet property="tableView" destination="rtu-kk-m0w" id="bDl-P1-fze"/>
+                        <segue destination="VTV-QV-L4y" kind="show" identifier="kSEGUE_SHOW_DETAIL" id="UHS-k6-gmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="scO-J4-Lxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1426" y="-100"/>
+            <point key="canvasLocation" x="1943" y="-107"/>
         </scene>
         <!--Detail Poi Borneiro View Controller-->
         <scene sceneID="U2j-6C-jrl">
@@ -333,9 +335,9 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5I-0E-FCg">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="364.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="619"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-d4-4I5">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SFu-d4-4I5">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="283.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="283.5" id="ttZ-vk-7VZ"/>
@@ -353,20 +355,30 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zFG-KS-39J">
+                                                <rect key="frame" x="8" y="362" width="359" height="249"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="249" id="wbl-1D-bkA"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="4u3-0y-mFI" secondAttribute="trailing" constant="20" id="5ex-an-083"/>
                                             <constraint firstAttribute="trailing" secondItem="SFu-d4-4I5" secondAttribute="trailing" id="7yZ-yE-VDH"/>
-                                            <constraint firstAttribute="bottom" secondItem="4u3-0y-mFI" secondAttribute="bottom" constant="10" id="GtR-9n-da8"/>
+                                            <constraint firstAttribute="bottom" secondItem="zFG-KS-39J" secondAttribute="bottom" constant="8" id="DYU-67-jar"/>
                                             <constraint firstAttribute="trailing" secondItem="zvb-K9-Qra" secondAttribute="trailing" constant="10" id="Q1G-Uu-WfJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="4u3-0y-mFI" secondAttribute="bottom" priority="750" constant="8" id="ScC-a4-BLn"/>
                                             <constraint firstItem="SFu-d4-4I5" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" id="ThH-rh-UZj"/>
                                             <constraint firstItem="zvb-K9-Qra" firstAttribute="top" secondItem="SFu-d4-4I5" secondAttribute="bottom" constant="20" id="Vj3-Rn-S43"/>
                                             <constraint firstItem="SFu-d4-4I5" firstAttribute="top" secondItem="g5I-0E-FCg" secondAttribute="top" id="Z9J-eh-eMl"/>
                                             <constraint firstItem="4u3-0y-mFI" firstAttribute="top" secondItem="SFu-d4-4I5" secondAttribute="bottom" priority="250" constant="10" id="b2Y-jM-4IS"/>
                                             <constraint firstItem="zvb-K9-Qra" firstAttribute="top" secondItem="g5I-0E-FCg" secondAttribute="top" priority="750" constant="10" id="dXL-ZF-E7B"/>
                                             <constraint firstItem="4u3-0y-mFI" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="20" id="ec9-dY-nqq"/>
+                                            <constraint firstItem="zFG-KS-39J" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="8" id="lAI-SK-voL"/>
+                                            <constraint firstAttribute="trailing" secondItem="zFG-KS-39J" secondAttribute="trailing" constant="8" id="llJ-xs-SDO"/>
                                             <constraint firstItem="4u3-0y-mFI" firstAttribute="top" secondItem="zvb-K9-Qra" secondAttribute="bottom" priority="750" constant="10" id="qhF-B5-uPm"/>
+                                            <constraint firstItem="zFG-KS-39J" firstAttribute="top" secondItem="4u3-0y-mFI" secondAttribute="bottom" constant="7.5" id="r7X-La-GMM"/>
                                             <constraint firstItem="zvb-K9-Qra" firstAttribute="leading" secondItem="g5I-0E-FCg" secondAttribute="leading" constant="20" id="tW1-FC-Cb9"/>
                                         </constraints>
                                     </view>
@@ -399,23 +411,28 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="SFu-d4-4I5" id="1eU-zU-r85"/>
+                        <outlet property="imageViewList" destination="zFG-KS-39J" id="Nk5-wS-3pb"/>
                         <outlet property="labelText" destination="4u3-0y-mFI" id="K8t-Kl-DU0"/>
                         <outlet property="labelTitle" destination="zvb-K9-Qra" id="jNQ-m0-biZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cj0-YG-SdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1711" y="887"/>
+            <point key="canvasLocation" x="1956" y="752"/>
         </scene>
     </scenes>
     <resources>
         <image name="btnMenu_white" width="60" height="60"/>
         <image name="ic_lugar_interes" width="67" height="67"/>
-        <image name="image_directorio" width="286" height="69"/>
-        <image name="image_hosteleria" width="286" height="69"/>
-        <image name="image_patrimonio_arqueologico" width="286" height="69"/>
-        <image name="image_patrimonio_historico" width="286" height="69"/>
-        <image name="image_playas" width="286" height="69"/>
-        <image name="image_rutas" width="286" height="69"/>
+        <image name="image_directorio" width="859" height="206"/>
+        <image name="image_hosteleria" width="859" height="206"/>
+        <image name="image_patrimonio_arqueologico" width="859" height="206"/>
+        <image name="image_patrimonio_historico" width="859" height="206"/>
+        <image name="image_playas" width="859" height="206"/>
+        <image name="image_rutas" width="859" height="206"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UHS-k6-gmr"/>
+        <segue reference="flk-VO-fbK"/>
+    </inferredMetricsTieBreakers>
 </document>

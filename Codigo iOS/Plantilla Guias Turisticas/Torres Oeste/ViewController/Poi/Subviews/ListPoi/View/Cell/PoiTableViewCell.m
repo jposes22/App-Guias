@@ -112,8 +112,8 @@
 }
 
 -(void) loadStyle{
-    [UtilsAppearance setStyleTitleList:_lblTitle];
-    [UtilsAppearance setSytleSubtitleList:_lblDescription];
+   // [UtilsAppearance setStyleTitleList:_lblTitle];
+   // [UtilsAppearance setSytleSubtitleList:_lblDescription];
 }
 
 @end

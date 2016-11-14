@@ -65,7 +65,6 @@
 }
 
 - (void) loadData{
-
     _labelPlayas.text = NSLocalizedString(@"poi_playas", nil);
     _labelDirectorio.text = NSLocalizedString(@"poi_directorio", nil);
     _labelHosteleria.text = NSLocalizedString(@"poi_guia_hosteleria", nil);
@@ -107,30 +106,19 @@
 
 
 -(void)openRecursosArqueologicos{
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"" message:@"No disponible en estos momentos" preferredStyle:UIAlertControllerStyleAlert];
-    
-    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    [alertController addAction:ok];
-    
-    [self presentViewController:alertController animated:YES completion:nil];
-   // [self performSegueWithIdentifier:kSEGUE_POI_ARQUELOGICO sender:@(kTipoPoiPatrimonioArqueologico)];
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPatrimonioArqueologico)];
 }
 -(void)openRecursosHistoricos{
-    NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPatrimonioHistorico),@"tipoPoi",NSLocalizedString(@"poi_patrimonio_historico", nil),@"title", nil];
-   [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
+   [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPatrimonioHistorico)];
 }
 -(void)openRutas{
-        NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPoiRutasSenderismo),@"tipoPoi",NSLocalizedString(@"poi_rutas_senderismo", nil),@"title", nil];
-   [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
+   [self performSegueWithIdentifier:kSEGUE_LIST_POI_SINGLE sender:@(kTipoPoiPoiRutasSenderismo)];
 }
 -(void)openPlayas{
-    NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiPlayas),@"tipoPoi",NSLocalizedString(@"poi_playas", nil),@"title", nil];
-
-    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPlayas)];
 }
 -(void)openHosteleria{
-            NSDictionary * dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:@(kTipoPoiHoteleria),@"tipoPoi",NSLocalizedString(@"poi_guia_hosteleria", nil),@"title", nil];
-     [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:dictionary];
+     [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiHoteleria)];
 }
 -(void)openTelefonosInteres{
     [self performSegueWithIdentifier:kSEGUE_LIST_POI sender:@(kTipoPoiDirectorio)];
@@ -148,15 +136,18 @@
         {
             // Get reference to the destination view controller
             ListPoiBorneiroViewController *vc = [segue destinationViewController];
-            
             // Pass any objects to the view controller here, like...
             [vc setCategoryPoi:[sender integerValue]];
+            [vc setIsSinglePoi:NO];
         }else if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL]){
             DetailPoiBorneiroViewController *vc = [segue destinationViewController];
-            NSDictionary *dictionary = sender;
-            [vc setCategoryPoi:[[dictionary objectForKey:@"tipoPoi"] integerValue]];
-            [vc setTitleSection:[dictionary objectForKey:@"title"]];
+            [vc setCategoryPoi:[sender integerValue]];
             
+        }else if([[segue identifier] isEqualToString:kSEGUE_LIST_POI_SINGLE]){
+            ListPoiBorneiroViewController *vc = [segue destinationViewController];
+            // Pass any objects to the view controller here, like...
+            [vc setCategoryPoi:[sender integerValue]];
+            [vc setIsSinglePoi:YES];
         }
 }
 

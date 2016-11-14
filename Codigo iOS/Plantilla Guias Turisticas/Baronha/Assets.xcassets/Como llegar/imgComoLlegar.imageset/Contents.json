@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "bt_mapa-2.png",
+      "filename" : "unspecified.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bt_mapa-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "bt_mapa.png",
       "scale" : "3x"
     }
   ],

@@ -57,7 +57,7 @@ public class RestWSController {
 	private static final String URL_GET_GUIAS_SABER_MAS_DETALLE = "WSGuias/getGuiasSaberMasDetalle/{fechaActualizacion}/{lang}";
 	
 	private static final String URL_GET_IMAGES = "WSImages/getImage/{idImagen:.+}";
-	private static final String URL_GET_AUDIO_GUIAS = "WSImages/getImage/{idAudioGuia:.+}";
+	private static final String URL_GET_AUDIO_GUIAS = "WSAudioGuia/getAudio/{idAudioGuia:.+}";
 	
 	private static final Logger LOGGER = Logger
 			.getLogger(RestWSController.class.getName());

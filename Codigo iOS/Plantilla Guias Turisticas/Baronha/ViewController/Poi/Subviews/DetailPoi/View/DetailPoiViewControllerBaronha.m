@@ -13,11 +13,16 @@
 #import "Metodos.h"
 #import "UtilsAppearance.h"
 #import "StylesBaronha.h"
+#import "PoiImagen+CoreDataProperties.h"
+#import "AlbumViewController.h"
 
 @interface DetailPoiViewControllerBaronha ()
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewDetail;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescription;
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageViewList;
+
 
 
 @property (nonatomic, strong) Poi *poiDetail;
@@ -40,11 +45,24 @@
     NSArray *listPois =  [PoiDAO getPoiByCategory:_categoryPoi];
     if(listPois && listPois.count > 0){
         _poiDetail = listPois.firstObject;
-        _lblTitle.text = _poiDetail.titulo;
+        _lblTitle.attributedText = [Metodos convertHTMLToString:_poiDetail.titulo];
         _lblDescription.attributedText = [Metodos convertHTMLToString:_poiDetail.descripcion];
         
-    }
+        if(_poiDetail.listImagen && _poiDetail.listImagen.count > 0){
+            NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+            path = [path stringByAppendingString:((PoiImagen *)[_poiDetail.listImagen anyObject]).urlImagen];
+            _imageViewList.image = [UIImage imageWithContentsOfFile:path ];
+            
+            UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
+            [_imageViewList addGestureRecognizer:tapListImages];
 
+        }else{
+            [_imgViewDetail removeFromSuperview];
+        }
+
+    }else{
+        [_imgViewDetail removeFromSuperview];
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,7 +70,7 @@
 }
 
 -(void) loadStyle{
-    [StylesBaronha setStyleTitle:_lblTitle];
+    //[StylesBaronha setStyleTitle:_lblTitle];
 }
 -(void)loadNavigationBar{
     [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Lugares de Interés"];
@@ -61,14 +79,11 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) openAlbum{
+    AlbumViewController *album = [AlbumViewController new];
+    [album setListfOfImage:[_poiDetail.listImagen allObjects]];
+    [self presentViewController:album animated:YES completion:nil];
+    
 }
-*/
 
 @end

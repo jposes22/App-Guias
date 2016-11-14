@@ -34,7 +34,19 @@
 "title_creditos" = "Créditos";
 
 
+/* POIS 4 elements*/
+"pois_petroglifo" = "Petroglífos";
+"pois_castro_queiruga" = "Queiruga ";
+"pois_praia_coido" = "Praia coido";
+"pois_arealonga" = "Arealonga";
+
+
+
 /* ERROR FIRST TIME*/
 "error_title_first_time" = "";
 "error_description_first_time" = "";
 "error_button_first_time"="";
+
+/*Como llegar*/
+
+"como_llegar_ver_mapa"="Ver en mapa";

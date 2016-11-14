@@ -52,7 +52,7 @@
 }
 
 -(void)loadNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Lugares de Interés"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_lugares", nil)];
 }
 - (IBAction)btnOpenMenu:(id)sender {
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
@@ -62,30 +62,27 @@
 
 }
 
--(void)loadStyle{/*
-    [_viewRecursos setBackgroundColor:[UtilsAppearance getSecondaryColor]];
-    [_viewAlojamiento setBackgroundColor:[UtilsAppearance getSecondaryColor]];
-    [_viewRestaurantes setBackgroundColor:[UtilsAppearance getSecondaryColor]];
-    [_viewTelefonosInteres setBackgroundColor:[UtilsAppearance getSecondaryColor]];
+-(void)loadStyle{
+
+    [UtilsAppearance setStyleTextBold:_labelPetroglifos];
+    [UtilsAppearance setStyleTextBold:_labelCastroQueiruga];
+    [UtilsAppearance setStyleTextBold:_labelPraiaCoido];
+    [UtilsAppearance setStyleTextBold:_labelPraiaArealonga];
+    _labelPetroglifos.textColor = [UtilsAppearance getPrimaryColor];
+    _labelCastroQueiruga.textColor =   [UtilsAppearance getPrimaryColor];
+    _labelPraiaCoido.textColor =  [UtilsAppearance getPrimaryColor];
+    _labelPraiaArealonga.textColor =  [UtilsAppearance getPrimaryColor];
     
-    [UtilsAppearance setStyleTextBold:_labelRecursos];
-    [UtilsAppearance setStyleTextBold:_labelDirectorio];
-    [UtilsAppearance setStyleTextBold:_labelAlojamiento];
-    [UtilsAppearance setStyleTextBold:_labelRestauracion];
-    _labelRecursos.textColor = [UIColor whiteColor];
-    _labelDirectorio.textColor = [UIColor whiteColor];
-    _labelAlojamiento.textColor = [UIColor whiteColor];
-    _labelRestauracion.textColor = [UIColor whiteColor];
-
-*/
-
-
+    _labelPetroglifos.text = NSLocalizedString(@"pois_petroglifo", nil);
+    _labelCastroQueiruga.text = NSLocalizedString(@"pois_castro_queiruga", nil);
+    _labelPraiaCoido.text = NSLocalizedString(@"pois_praia_coido", nil);
+    _labelPraiaArealonga.text = NSLocalizedString(@"pois_arealonga", nil);
     
+  self.navigationController.navigationBar.tintColor =  [UtilsAppearance getPrimaryColor];
 }
 
 -(void) loadGestures{
     
- 
     UITapGestureRecognizer *tapRecursos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openPetroglifos)];
     [self.viewPetroglifos addGestureRecognizer:tapRecursos];
     UITapGestureRecognizer *tapAlojamientos = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openQueiroga)];

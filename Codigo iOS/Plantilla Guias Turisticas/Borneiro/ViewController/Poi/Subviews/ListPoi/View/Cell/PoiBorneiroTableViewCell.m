@@ -55,12 +55,12 @@
 
 -(void) loadData:(Poi*)poi{
     _poi = poi;
-    _lblTitle.text = poi.titulo;
+    _lblTitle.attributedText = [Metodos convertHTMLToString:poi.titulo];
     _lblDescription.attributedText = [Metodos convertHTMLToString:poi.descripcion];
     if(poi.urlImagen){
-         [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"" ]];
+         [_imgView sd_setImageWithURL:[[NSURL alloc] initWithString:poi.urlImagen] placeholderImage:[UIImage imageNamed:@"image_none" ]];
     }else{
-        [_imgView setImage:[UIImage imageNamed:@""]];
+        [_imgView setImage:[UIImage imageNamed:@"image_none"]];
     }
    
     
@@ -113,8 +113,8 @@
 }
 
 -(void) loadStyle{
-    [StyleBorneiro setStyleSubTitlePoi:_lblTitle];
-    [StyleBorneiro setStyleText:_lblDescription];
+    //[StyleBorneiro setStyleSubTitlePoi:_lblTitle];
+    //[StyleBorneiro setStyleText:_lblDescription];
 }
 
 @end

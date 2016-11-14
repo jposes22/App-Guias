@@ -138,6 +138,7 @@
             ListPoiBorneiroViewController *vc = [segue destinationViewController];
             // Pass any objects to the view controller here, like...
             [vc setCategoryPoi:[sender integerValue]];
+            [vc setIsSinglePoi:NO];
         }else if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL]){
             DetailPoiBorneiroViewController *vc = [segue destinationViewController];
             [vc setCategoryPoi:[sender integerValue]];

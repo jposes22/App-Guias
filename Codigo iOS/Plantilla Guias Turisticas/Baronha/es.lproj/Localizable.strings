@@ -44,3 +44,7 @@
 "error_title_first_time" = "";
 "error_description_first_time" = "";
 "error_button_first_time"="";
+
+/*Como llegar*/
+
+"como_llegar_ver_mapa"="Ver en mapa";

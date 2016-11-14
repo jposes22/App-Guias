@@ -27,6 +27,7 @@
         identifier = @"PoiBorneiroSinglePoiTableViewCell";
         cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
     }else{
+        identifier =  @"PoiBorneiroTableViewCell";
         cell = [tableView  dequeueReusableCellWithIdentifier:identifier];
     }
     

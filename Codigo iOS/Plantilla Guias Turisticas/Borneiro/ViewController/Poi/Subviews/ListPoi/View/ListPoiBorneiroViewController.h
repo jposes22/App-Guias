@@ -10,5 +10,5 @@
 
 @interface ListPoiBorneiroViewController : UIViewController
 @property (nonatomic) NSInteger categoryPoi;
-@property (nonatomic) Boolean isSinglePoi;
+@property (nonatomic) BOOL isSinglePoi;
 @end

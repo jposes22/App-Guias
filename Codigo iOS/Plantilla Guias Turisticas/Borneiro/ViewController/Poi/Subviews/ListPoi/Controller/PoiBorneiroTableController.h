@@ -17,5 +17,5 @@
 @interface PoiBorneiroTableController : NSObject<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, weak) id<CommunicationControllerPoiBorneiro> delegatePoi;
 @property (nonatomic, strong) NSArray *listOfPois;
-@property (nonatomic) Boolean isSinglePoi;
+@property (nonatomic) BOOL isSinglePoi;
 @end

@@ -15,6 +15,7 @@
 #import "StylesBaronha.h"
 #import "Validator.h"
 #import "OpenExternalApps.h"
+#import "UtilsAppearance.h"
 
 
 @interface ComoLlegarViewControllerBaronha ()
@@ -22,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lblDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 @property (nonatomic, strong) GuiaList *datosComoLlegar;
+@property (weak, nonatomic) IBOutlet UILabel *lblComoLlegar;
 
 @end
 
@@ -55,11 +57,17 @@
             UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapGoGPS)];
             tapGestureRecognizer.numberOfTapsRequired = 1;
             [_imgView addGestureRecognizer:tapGestureRecognizer];
+            [UtilsAppearance setStyleText:_lblComoLlegar];
+            _lblComoLlegar.textColor = [UtilsAppearance getPrimaryColor];
+            [_lblComoLlegar setFont:[UIFont fontWithName:@"Santana" size:15]];
+            _lblComoLlegar.text = NSLocalizedString(@"como_llegar_ver_mapa",nil);
         }else{
             [_imgView removeFromSuperview];
+            [_lblComoLlegar removeFromSuperview];
         }
     }else{
         [_imgView removeFromSuperview];
+        [_lblComoLlegar removeFromSuperview];
     }
 }
 -(void) loadStyle{

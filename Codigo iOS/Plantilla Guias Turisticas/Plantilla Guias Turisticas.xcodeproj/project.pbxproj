@@ -59,6 +59,14 @@
 		23A86F9B1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F991DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.m */; };
 		23A86F9C1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86F9A1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib */; };
 		23A86FA01DD8DE5B00DBAA28 /* SaberMasTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */; };
+		23A86FAF1DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FA41DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.m */; };
+		23A86FB01DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86FA51DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.xib */; };
+		23A86FB11DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FA71DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.m */; };
+		23A86FB21DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86FA81DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.xib */; };
+		23A86FB31DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FAB1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.m */; };
+		23A86FB41DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86FAC1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib */; };
+		23A86FB51DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FAE1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m */; };
+		23A86FB91DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FB81DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m */; };
 		8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAA1DC4A4CC0049FB7D /* main.m */; };
 		8295EBAE1DC4A4CC0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAD1DC4A4CC0049FB7D /* AppDelegate.m */; };
 		8295EBB11DC4A4CC0049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBB01DC4A4CC0049FB7D /* ViewController.m */; };
@@ -620,6 +628,19 @@
 		23A86F9A1DD8DCFF00DBAA28 /* CellGuiaSaberMasSinImagen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellGuiaSaberMasSinImagen.xib; path = SaberMas/Cell/CellGuiaSaberMasSinImagen.xib; sourceTree = "<group>"; };
 		23A86F9E1DD8DE5B00DBAA28 /* SaberMasTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SaberMasTableController.h; path = SaberMasTableController/SaberMasTableController.h; sourceTree = "<group>"; };
 		23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SaberMasTableController.m; path = SaberMasTableController/SaberMasTableController.m; sourceTree = "<group>"; };
+		23A86FA31DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaDetalleSaberMasBorneiro.h; sourceTree = "<group>"; };
+		23A86FA41DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaDetalleSaberMasBorneiro.m; sourceTree = "<group>"; };
+		23A86FA51DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaDetalleSaberMasBorneiro.xib; sourceTree = "<group>"; };
+		23A86FA61DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellGuiaSaberMasSinImagenBorneiro.h; sourceTree = "<group>"; };
+		23A86FA71DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellGuiaSaberMasSinImagenBorneiro.m; sourceTree = "<group>"; };
+		23A86FA81DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellGuiaSaberMasSinImagenBorneiro.xib; sourceTree = "<group>"; };
+		23A86FAA1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderSaberMasBorneiro.h; sourceTree = "<group>"; };
+		23A86FAB1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderSaberMasBorneiro.m; sourceTree = "<group>"; };
+		23A86FAC1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderSaberMasBorneiro.xib; sourceTree = "<group>"; };
+		23A86FAD1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaberMasBorneiroViewController.h; sourceTree = "<group>"; };
+		23A86FAE1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaberMasBorneiroViewController.m; sourceTree = "<group>"; };
+		23A86FB71DD8FD0700DBAA28 /* SaberMasBorneiroTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaberMasBorneiroTableController.h; sourceTree = "<group>"; };
+		23A86FB81DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaberMasBorneiroTableController.m; sourceTree = "<group>"; };
 		25DF257C251E887DDAF0CB8D /* Pods-Baronha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baronha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baronha/Pods-Baronha.release.xcconfig"; sourceTree = "<group>"; };
 		2F4423A020DCB1EAE149C9E3 /* libPods-Torres Oeste.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Torres Oeste.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2DFB5B655EA1E5B7132D33 /* Pods-Torres Oeste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1264,6 +1285,49 @@
 				23A86F9F1DD8DE5B00DBAA28 /* SaberMasTableController.m */,
 			);
 			name = SaberMasTableController;
+			sourceTree = "<group>";
+		};
+		23A86FA11DD8FCFD00DBAA28 /* SaberMas */ = {
+			isa = PBXGroup;
+			children = (
+				23A86FA21DD8FCFD00DBAA28 /* Cell */,
+				23A86FA91DD8FCFD00DBAA28 /* Hearder */,
+				23A86FAD1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.h */,
+				23A86FAE1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m */,
+			);
+			path = SaberMas;
+			sourceTree = "<group>";
+		};
+		23A86FA21DD8FCFD00DBAA28 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23A86FA31DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.h */,
+				23A86FA41DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.m */,
+				23A86FA51DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.xib */,
+				23A86FA61DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.h */,
+				23A86FA71DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.m */,
+				23A86FA81DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23A86FA91DD8FCFD00DBAA28 /* Hearder */ = {
+			isa = PBXGroup;
+			children = (
+				23A86FAA1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.h */,
+				23A86FAB1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.m */,
+				23A86FAC1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib */,
+			);
+			path = Hearder;
+			sourceTree = "<group>";
+		};
+		23A86FB61DD8FD0700DBAA28 /* SaberMasTableController */ = {
+			isa = PBXGroup;
+			children = (
+				23A86FB71DD8FD0700DBAA28 /* SaberMasBorneiroTableController.h */,
+				23A86FB81DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m */,
+			);
+			path = SaberMasTableController;
 			sourceTree = "<group>";
 		};
 		8295EB9D1DC4A4CC0049FB7D = {
@@ -2957,6 +3021,7 @@
 		8295F1171DC4BD830049FB7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				23A86FB61DD8FD0700DBAA28 /* SaberMasTableController */,
 				8295F1181DC4BD830049FB7D /* CollectionController */,
 				8295F11B1DC4BD830049FB7D /* GuiaDetalleTableController */,
 				8295F11E1DC4BD830049FB7D /* PageController */,
@@ -3003,6 +3068,7 @@
 		8295F12F1DC4BD830049FB7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23A86FA11DD8FCFD00DBAA28 /* SaberMas */,
 				8295F1301DC4BD830049FB7D /* Cell */,
 				8295F1431DC4BD830049FB7D /* Header */,
 				2314F21B1DC515130048F9E4 /* GuiasBorneiro.storyboard */,
@@ -3586,6 +3652,7 @@
 				2314F2211DC516350048F9E4 /* HeaderGuiaBorneiro.xib in Resources */,
 				8295EC481DC4A87D0049FB7D /* Assets.xcassets in Resources */,
 				8295F1B11DC4D6BA0049FB7D /* Giorgio-Thin.ttf in Resources */,
+				23A86FB41DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib in Resources */,
 				23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */,
 				82EE77FB1DC6689C00C3A344 /* ViewImage.xib in Resources */,
 				82F8AD211DDA4193007D9845 /* AjustesViewController.xib in Resources */,
@@ -3601,10 +3668,12 @@
 				8295F15E1DC4BD830049FB7D /* PoiBorneiro.storyboard in Resources */,
 				23A501741DC6200D00019783 /* CellCidaBorneiroSinImagen.xib in Resources */,
 				2314F2171DC50CE70048F9E4 /* ComoLlegarBorneiro.storyboard in Resources */,
+				23A86FB21DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.xib in Resources */,
 				8295F1561DC4BD830049FB7D /* CustomTableViewCell.xib in Resources */,
 				82E832421DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.xib in Resources */,
 				8295F1511DC4BD830049FB7D /* NavigationBar.xib in Resources */,
 				82EE77F81DC6689C00C3A344 /* AlbumViewController.xib in Resources */,
+				23A86FB01DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.xib in Resources */,
 				23A501541DC61B1100019783 /* MainACidaBorneiro.storyboard in Resources */,
 				8295F1B21DC4D6BA0049FB7D /* Giorgio.ttf in Resources */,
 			);
@@ -4107,6 +4176,7 @@
 				82F8AD191DDA4193007D9845 /* LanguagePickerController.m in Sources */,
 				8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */,
 				23A86F861DD8D77B00DBAA28 /* GuiaSaberMasList.m in Sources */,
+				23A86FAF1DD8FCFD00DBAA28 /* CellGuiaDetalleSaberMasBorneiro.m in Sources */,
 				8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
 				8295EF631DC4B3370049FB7D /* PoiDAO.m in Sources */,
 				8295EF721DC4B34B0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
@@ -4133,6 +4203,7 @@
 				8295EE5C1DC4AED30049FB7D /* Splash.m in Sources */,
 				2314F2361DC51C0B0048F9E4 /* CellGuiaBorneiroDetalle.m in Sources */,
 				8295EFCC1DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
+				23A86FB31DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.m in Sources */,
 				8295F15A1DC4BD830049FB7D /* PoiBorneiroTableController.m in Sources */,
 				8295EFB81DC4B3980049FB7D /* GuiaDetalleImagen+CoreDataProperties.m in Sources */,
 				8295EF781DC4B3560049FB7D /* RemoteMenu.m in Sources */,
@@ -4140,6 +4211,7 @@
 				82EE77EB1DC6505C00C3A344 /* CreditosViewControllerBorneiro.m in Sources */,
 				8295EFB51DC4B3980049FB7D /* GuiaDetalle+CoreDataClass.m in Sources */,
 				8295F0031DC4B3C40049FB7D /* Poi+CoreDataProperties.m in Sources */,
+				23A86FB91DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m in Sources */,
 				8295EF921DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleVO.m in Sources */,
 				8295EF9F1DC4B3860049FB7D /* RemotePoiVO.m in Sources */,
 				2314F2241DC5164C0048F9E4 /* HeaderGuiaBorneiro.m in Sources */,
@@ -4154,6 +4226,7 @@
 				23A501901DC6272500019783 /* CulturaViewController.m in Sources */,
 				8295F1541DC4BD830049FB7D /* MenuViewController.m in Sources */,
 				8295F1571DC4BD830049FB7D /* RightViewController.m in Sources */,
+				23A86FB51DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m in Sources */,
 				8295F15F1DC4BD830049FB7D /* PoiBorneiroViewController.m in Sources */,
 				8295EFC91DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataClass.m in Sources */,
 				8295EF6B1DC4B3450049FB7D /* RemoteGuia.m in Sources */,
@@ -4191,6 +4264,7 @@
 				237F7B4C1DC68AD0007C84E6 /* PoiBorneiroTableViewCell.m in Sources */,
 				8295EF5A1DC4B3230049FB7D /* IdiomaDAO.m in Sources */,
 				2314F2121DC4FE980048F9E4 /* HomeBorneiroViewController.m in Sources */,
+				23A86FB11DD8FCFD00DBAA28 /* CellGuiaSaberMasSinImagenBorneiro.m in Sources */,
 				2314F2321DC51B540048F9E4 /* DetalleVisitaTableController.m in Sources */,
 				8295EF661DC4B33C0049FB7D /* RemoteConstants.m in Sources */,
 				8295EFEE1DC4B3B60049FB7D /* Menu+CoreDataProperties.m in Sources */,

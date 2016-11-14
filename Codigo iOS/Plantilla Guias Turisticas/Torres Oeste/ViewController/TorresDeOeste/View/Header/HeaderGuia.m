@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageGuia;
 @property (nonatomic, strong ) GuiaList * guia;
 @property (nonatomic) BOOL isPlaying;
+@property (weak, nonatomic) IBOutlet UILabel *labelAudioGuia;
 
 @end
 
@@ -29,17 +30,33 @@
 
 - (void)loadData:(GuiaList *)guia{
     if(!guia.urlAudioGuia){
-        [_imageGuia removeFromSuperview];
+        [_imageGuia setHidden:YES];
+        [_labelAudioGuia setHidden:YES];
     }else{
         UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapImageAudioGuia:)];
         tapGestureRecognizer.numberOfTapsRequired = 1;
         [_imageGuia addGestureRecognizer:tapGestureRecognizer];
         _guia = guia;
+        if(_isPlaying){
+            _imageGuia.image = [UIImage imageNamed:@"bt_audioguia_on"];
+            _labelAudioGuia.textColor = [UIColor whiteColor];
+
+        }else{
+            _imageGuia.image = [UIImage imageNamed:@"bt_audioguia_off"];
+            _labelAudioGuia.textColor = [UtilsAppearance getPrimaryDarkColor];
+
+        }
+        [_imageGuia setHidden:NO];
+        [_labelAudioGuia setHidden:NO];
+        _labelAudioGuia.text = NSLocalizedString(@"text_audio_guia", nil);
+        [UtilsAppearance setStyleSubtitleMoreInfo:_labelAudioGuia];
+
+
+
     }
     _labelTitle.text = guia.titulo;
     [UtilsAppearance setStyleTitle:_labelTitle];
-    _labelTitle.textColor = [UtilsAppearance getPrimaryDarkColor];
-
+   
     
 }
 

@@ -64,10 +64,18 @@
         UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
         tapSaberMasGesture.numberOfTapsRequired = 1;
         [_labelSaberMAs addGestureRecognizer:tapSaberMasGesture];
+        [self loadStyle];
     }else{
         _labelSaberMAs.hidden = YES;
         _imagenSaberMas.hidden = YES;
     }
+    
+}
+-(void)loadStyle{
+    [UtilsAppearance setStyleText:_labelSaberMAs];
+    _labelSaberMAs.backgroundColor = [UtilsAppearance getPrimaryColor];
+    
+    
     
 }
 - (void)openSaberMas:(UITapGestureRecognizer *)tap

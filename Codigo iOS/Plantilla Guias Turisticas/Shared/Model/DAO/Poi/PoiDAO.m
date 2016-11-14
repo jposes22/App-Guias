@@ -12,7 +12,7 @@
 @implementation PoiDAO
 
 
-+(Poi *)getPoi:(NSInteger *)idPoi{
++(Poi *)getPoi:(NSInteger)idPoi{
     //Obtenemos la entidad correspondiente al modelo
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];

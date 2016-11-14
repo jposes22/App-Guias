@@ -34,7 +34,6 @@
         guiaDetalleList.saberMasList = [listSaberMas firstObject];
 
     }
-
     NSArray *listObject = [GuiaDetalleImagenDAO getGuiaDetalleImagen:guiaDetalle.idGuiaDetalle];
     guiaDetalleList.listOfGuiaDetalleImagen = listObject;
     

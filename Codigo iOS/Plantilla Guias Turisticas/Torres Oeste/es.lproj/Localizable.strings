@@ -19,8 +19,9 @@
 "title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";
 "subtitle_saber_mas" = "Saber más...";
-"text_saber_mas" = "Saber más";
+"text_saber_mas" = "Saber más  ";
 
+"text_audio_guia" = "Audioguia";
 
 /*Titles Menu*/
 "menu_home" = "Inicio";

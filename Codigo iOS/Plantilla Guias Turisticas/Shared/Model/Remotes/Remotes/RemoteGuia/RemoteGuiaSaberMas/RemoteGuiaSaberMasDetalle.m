@@ -27,7 +27,7 @@
             RemoteGuiaSaberMasDetalleVO * guiaDetalleRemote = [[RemoteGuiaSaberMasDetalleVO alloc] initGuiaSaberMasDetalle:responseObject];
             [GuiaSaberMasDetalleDAO insertarGuiaSaberMasDetalle:guiaDetalleRemote.answere];
             if(_delegateGuiaSaberMasDetalle && [_delegateGuiaSaberMasDetalle respondsToSelector:@selector(communicationUpdateGuiaSaberMasDetalle:)]){
-                [[Settings sharedInstance] setLastUpdateGuiaDetalle:guiaDetalleRemote.dateTo];
+                [[Settings sharedInstance] setLastUpdateGuiaSaberMasDetalle:guiaDetalleRemote.dateTo];
                 [[Settings sharedInstance] saveSettings];
                 if([[guiaDetalleRemote answere] count] >0 ){
                     [_delegateGuiaSaberMasDetalle communicationUpdateGuiaSaberMasDetalle:kDAO_RESPONSE_OK_WITH_DATA];

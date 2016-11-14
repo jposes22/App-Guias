@@ -13,6 +13,8 @@
 #import "GuiaSaberMasDAO.h"
 #import "UtilsAppearance.h"
 #import "SaberMasTableController.h"
+#import "AlbumViewController.h"
+#import "Settings.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface SaberMasViewController ()<CommunicationSaberMasTableController>
@@ -33,7 +35,15 @@
     [self loadController];
     [self loadStyle];
 }
-
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -71,9 +81,12 @@
         
         if([_audioPlayer isPlaying]){
             [_audioPlayer pause];
+            [[Settings sharedInstance] setIsPlaying:NO];
+
             
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
             
         }
     }else{
@@ -93,11 +106,20 @@
             NSLog(@"%@", [error description]);
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+
             [[AVAudioSession sharedInstance]
              setCategory: AVAudioSessionCategoryPlayback
              error: nil];
         }
     }
+    
+}
+-(void) communicationImageSelected:(NSArray *)list{
+    AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
+    viewController.listfOfImage =list;
+    [self presentViewController:viewController animated:YES completion:nil];
+    
     
 }
 

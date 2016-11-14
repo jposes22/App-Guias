@@ -83,13 +83,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/TorresDeOeste/View/SaberMas/Hearder/HeaderSaberMas.m"
-            timestampString = "500758846.070953"
+            filePath = "Shared/Model/DAO/Guia/GuiaDetalleImagenDAO.m"
+            timestampString = "500836688.18632"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "-loadData:"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "+updateGuiaDetalleImagen:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -99,12 +99,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/TorresDeOeste/View/SaberMas/Hearder/HeaderSaberMas.m"
-            timestampString = "500758985.615024"
+            filePath = "Borneiro/ViewController/ACidaBorneiro/View/Cell/CellCidaBorneiro.m"
+            timestampString = "500848843.374783"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-openSaberMas:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Borneiro/ViewController/TorresDeOeste/View/SaberMas/Hearder/HeaderSaberMasBorneiro.m"
+            timestampString = "500850255.516418"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "-tapImageAudioGuia:"
             landmarkType = "7">
          </BreakpointContent>
@@ -115,13 +131,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/TorresDeOeste/Controller/SaberMasTableController/SaberMasTableController.m"
-            timestampString = "500759011.469633"
+            filePath = "Borneiro/ViewController/ACidaBorneiro/View/Header/HeaderCida.m"
+            timestampString = "500850286.028095"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "-playAudioGuia:"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-tapImageAudioGuia:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -131,12 +147,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/TorresDeOeste/View/SaberMas/SaberMasViewController.m"
-            timestampString = "500759377.719061"
+            filePath = "Borneiro/ViewController/ACidaBorneiro/View/ACidaBorneiroViewController.m"
+            timestampString = "500850480.294865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "-comunicationPlayAudioGuia:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Borneiro/ViewController/TorresDeOeste/View/SaberMas/SaberMasBorneiroViewController.m"
+            timestampString = "500850516.420501"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "-comunicationPlayAudioGuia:"
             landmarkType = "7">
          </BreakpointContent>

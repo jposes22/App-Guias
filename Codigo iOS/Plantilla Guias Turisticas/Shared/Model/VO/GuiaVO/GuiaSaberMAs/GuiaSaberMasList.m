@@ -25,6 +25,7 @@
 
 +(GuiaSaberMasList *)getGuiaListObject:(GuiaSaberMas *)guia{
     GuiaSaberMasList * guiaList = [[GuiaSaberMasList alloc] initWithTitulo:guia.titulo andUrlAudioguia:guia.urlAudioGuia latitud:guia.latitud longitud:guia.longitud];
+    
     NSArray *  listOfGuiaDetalle = [GuiaSaberMasDetalleDAO getPGuiaSaberMAsDetalle:guia.idGuiaSaberMas];
     for (GuiaSaberMasDetalle * guiaDetalle in listOfGuiaDetalle) {
         [ guiaList.listOfGuiaDetalle addObject:[ GuiaSaberMasDetalleList getGuiaSaberMasDetalleData:guiaDetalle]];

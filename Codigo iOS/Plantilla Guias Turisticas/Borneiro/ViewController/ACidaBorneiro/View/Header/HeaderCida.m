@@ -8,6 +8,8 @@
 
 #import "HeaderCida.h"
 #import "StyleBorneiro.h"
+#import "Settings.h"
+
 
 @interface HeaderCida()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
@@ -15,6 +17,7 @@
 @property (nonatomic, strong ) GuiaList * guia;
 @property (nonatomic) BOOL isPlaying;
 @property (weak, nonatomic) IBOutlet UIImageView *imageSection;
+@property (weak, nonatomic) IBOutlet UILabel *labelAudioGuia;
 
 @end
 
@@ -30,12 +33,24 @@
 
 - (void)loadData:(GuiaList *)guia{
     if(!guia.urlAudioGuia){
-        [_imageGuia removeFromSuperview];
+        [_imageGuia setHidden:YES];
+        [_labelAudioGuia setHidden:YES];
     }else{
-        UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapImageAudioGuia:)];
+        UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(tapImageAudioGuiaCida:)];
         tapGestureRecognizer.numberOfTapsRequired = 1;
         [_imageGuia addGestureRecognizer:tapGestureRecognizer];
         _guia = guia;
+        _isPlaying = [[Settings sharedInstance] isPlaying];
+        if(_isPlaying){
+            _imageGuia.image = [UIImage imageNamed:@"ic_audioguia_on"];
+        }else{
+            _imageGuia.image = [UIImage imageNamed:@"ic_audioguia_off"];
+        }
+        [_imageGuia setHidden:NO];
+        [_labelAudioGuia setHidden:NO];
+        _labelAudioGuia.text = NSLocalizedString(@"text_audio_guia", nil);
+        [StyleBorneiro setStyleSubtitleMoreInfo:_labelAudioGuia];
+        _labelAudioGuia.textColor = [StyleBorneiro getPrimaryDarkColor];
     }
     _labelTitle.text = guia.titulo;
     [StyleBorneiro setStyleTitleCida:_labelTitle];
@@ -43,7 +58,7 @@
     
 }
 
-- (void)tapImageAudioGuia:(UITapGestureRecognizer *)tap
+- (void)tapImageAudioGuiaCida:(UITapGestureRecognizer *)tap
 {
     _isPlaying = !_isPlaying;
     if(_isPlaying){

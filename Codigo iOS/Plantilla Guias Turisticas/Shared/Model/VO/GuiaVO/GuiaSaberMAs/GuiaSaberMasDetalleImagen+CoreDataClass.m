@@ -29,8 +29,22 @@
         }
         
         if([json objectForKey:@"urlImagen"] != [NSNull null]){
+            //
+            
             self.urlImagen = [json objectForKey:@"urlImagen"] ;
+            
+            NSURL *url = [NSURL URLWithString:self.urlImagen];
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            if(data){
+                NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+                path = [path stringByAppendingString:[NSString stringWithFormat:@"/%lld_%lld_SaberMas_Image.png",self.idGuiaSaberMasDetalle,self.idGuiaSaberMAsDetalleImagen]];
+                [data writeToFile:path atomically:YES];
+                self.urlImagen = [NSString stringWithFormat:@"/%lld_%lld_SaberMas_Image.png",self.idGuiaSaberMasDetalle,self.idGuiaSaberMAsDetalleImagen];
+            }else{
+                return nil;
+            }
         }
+
     }
     return self;
 }

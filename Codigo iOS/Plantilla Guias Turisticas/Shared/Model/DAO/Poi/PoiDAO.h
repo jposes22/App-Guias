@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Poi+CoreDataClass.h"
 @interface PoiDAO : NSObject
-+(Poi *)getPoi:(NSInteger *)idPoi;
++(Poi *)getPoi:(NSInteger)idPoi;
 +(NSArray *)getPoiByCategory:(NSInteger )category;
 +(void)insertarPoi:(NSArray *)items;
 @end

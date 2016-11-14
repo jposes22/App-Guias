@@ -12,6 +12,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "GuiaDetalleImagenDAO.h"
 #import "GuiaDetalleImagen+CoreDataProperties.h"
+#import "Constants.h"
 @interface CellGuiaBorneiroDetalle()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
@@ -20,7 +21,11 @@
 @property (nonatomic, strong) NSArray * listImagenesDetalle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
+@property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
+@property (weak, nonatomic) IBOutlet UIImageView *imagenSaberMas;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
+@property (nonatomic, strong) GuiaDetalleList * guiaDetalle;
+
 @end
 
 @implementation CellGuiaBorneiroDetalle
@@ -37,12 +42,13 @@
 }
 
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
+    _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
         _contraintLabelTopHeight.constant = 0;
         _labelTitle.hidden = YES;
     }else{
         _contraintLabelTopHeight.constant = 10;
-        _labelTitle.text = guiaDetalle.titulo;
+        _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
     if(!guiaDetalle.descripcion){
@@ -70,7 +76,20 @@
         [_imageGuia addGestureRecognizer:tapGestureRecognizer];
         
     }
-    
+    if(guiaDetalle.saberMasList != nil){
+        _labelSaberMas.hidden = NO;
+        _imagenSaberMas.hidden = NO;
+        _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
+        
+        
+        UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
+        tapSaberMasGesture.numberOfTapsRequired = 1;
+        [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
+    }else{
+        _labelSaberMas.hidden = YES;
+        _imagenSaberMas.hidden = YES;
+    }
+
     [self loadStyle];
     
     
@@ -83,11 +102,16 @@
     
     
 }
+- (void)openSaberMas:(UITapGestureRecognizer *)tap
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO_SABER_MAS object:_guiaDetalle.saberMasList];
+    
+    
+}
 -(void)loadStyle{
-    [StyleBorneiro setStyleSubTitleVisita:_labelTitle];
-   // [StyleBorneiro setStyleText:_labelDescripcion];
-    
-    
+     [StyleBorneiro setStyleText:_labelSaberMas];
+    _labelSaberMas.textColor = [UIColor whiteColor];
+
 }
 
 

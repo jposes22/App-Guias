@@ -8,6 +8,7 @@
 
 #import "GuiaSaberMas+CoreDataClass.h"
 #import "CoreDataUtil.h"
+#import "GuiaSaberMasDAO.h"
 
 @implementation GuiaSaberMas
 -(id)init:(NSManagedObjectContext *)context{
@@ -40,8 +41,6 @@
             self.titulo = [json objectForKey:@"titulo"] ;
         }
         if([json objectForKey:@"urlAudioGuia"] != [NSNull null]){
-            [[NSOperationQueue new] addOperationWithBlock:^{
-
             self.urlAudioGuia = [json objectForKey:@"urlAudioGuia"] ;
             NSURL *url = [NSURL URLWithString:self.urlAudioGuia];
             NSData *data = [NSData dataWithContentsOfURL:url];
@@ -50,10 +49,10 @@
                 path = [path stringByAppendingString:[NSString stringWithFormat:@"/%lld_audioguia_saber_mas.mp3",self.idGuiaSaberMas]];
                 [data writeToFile:path atomically:YES];
                 self.urlAudioGuia = [NSString stringWithFormat:@"/%lld_audioguia_saber_mas.mp3",self.idGuiaSaberMas];
+                
             }else{
                 self.urlAudioGuia = nil;
             }
-            }];
         }
 
     }

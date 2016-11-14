@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ParametrosApp : NSManagedObject
 -(id)initTOParametrosWithJson:(id)json;
 -(id)initParametros;
--(id)initWithKey:(NSString *)key value:(NSString*)value;
 -(id)initWithKey:(NSString *)key value:(NSString*)value activo:(BOOL)activo;
 @end
 

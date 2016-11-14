@@ -28,18 +28,28 @@
                         <constraint firstAttribute="width" constant="100" id="icc-Tb-4CN"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audioguia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="onN-k6-rwq">
+                    <rect key="frame" x="50.5" y="41" width="64.5" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="onN-k6-rwq" firstAttribute="trailing" secondItem="Y1Q-ui-ElR" secondAttribute="trailing" constant="-5" id="8MH-sB-oLC"/>
+                <constraint firstItem="onN-k6-rwq" firstAttribute="bottom" secondItem="Y1Q-ui-ElR" secondAttribute="bottom" id="BfT-is-2vy"/>
                 <constraint firstItem="Y1Q-ui-ElR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="HUN-74-2RD"/>
                 <constraint firstItem="yCh-mv-0Tk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="IQg-IF-uvB"/>
                 <constraint firstItem="yCh-mv-0Tk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Iqj-14-hQ1"/>
                 <constraint firstItem="Y1Q-ui-ElR" firstAttribute="top" secondItem="yCh-mv-0Tk" secondAttribute="bottom" constant="10" id="UaF-6X-MeU"/>
+                <constraint firstItem="onN-k6-rwq" firstAttribute="top" secondItem="Y1Q-ui-ElR" secondAttribute="top" id="vxd-Pr-w2f"/>
                 <constraint firstAttribute="trailing" secondItem="yCh-mv-0Tk" secondAttribute="trailing" constant="20" id="w1i-lZ-bAs"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageGuia" destination="Y1Q-ui-ElR" id="sOA-0X-JK7"/>
+                <outlet property="labelAudioGuia" destination="onN-k6-rwq" id="cHB-Yd-Dg9"/>
                 <outlet property="labelTitle" destination="yCh-mv-0Tk" id="9cf-Ci-Oph"/>
             </connections>
             <point key="canvasLocation" x="-42" y="-76"/>

@@ -50,13 +50,13 @@
             NSLog(@"error al insertar el detalle de la guia %@", error);
         } else if (count == 0){ //No existe entonces creamos un objecto
             //Obtenemos la guia asociada
-            Guia * guia = [GuiaDAO getGuiaById:guiaDetalle.idGuia];
+           // Guia * guia = [GuiaDAO getGuiaById:guiaDetalle.idGuia];
             [context insertObject:guiaDetalle];
            
-            if(guia){
+           /* if(guia){
                 [guiaDetalle setGuia:guia];
                 [guia addDetalleGuiaObject:guiaDetalle];
-            }
+            }*/
         }else{
             [self updateGuiaDetalle:guiaDetalle];
         }

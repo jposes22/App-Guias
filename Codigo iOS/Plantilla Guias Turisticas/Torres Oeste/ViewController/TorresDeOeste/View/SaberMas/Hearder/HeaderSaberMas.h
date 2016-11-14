@@ -12,7 +12,7 @@
 @optional
 - (void) playAudioGuia:(GuiaSaberMasList *)guia;
 @end
-@interface HeaderSaberMas : UIView
+@interface HeaderSaberMas : UITableViewHeaderFooterView
 
 - (void)loadData:(GuiaSaberMasList *)guia;
 @property (nonatomic, weak) id<ComunicationAudioGuiaSaberMas> delegateAudioGuiaSaberMas;

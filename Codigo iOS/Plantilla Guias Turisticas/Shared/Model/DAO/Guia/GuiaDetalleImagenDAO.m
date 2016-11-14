@@ -44,13 +44,13 @@
             //Ocurrio algun error
         } else if (count == 0){ //No existe entonces creamos un objecto
             //Obtenemos la guia asociada
-            GuiaDetalle * guiaDetalle = [GuiaDetalleDAO getGuiaDetalleById:guiaDetalleImagen.idGuiaDetalle];
+            //GuiaDetalle * guiaDetalle = [GuiaDetalleDAO getGuiaDetalleById:guiaDetalleImagen.idGuiaDetalle];
             [context insertObject:guiaDetalleImagen];
             
-            if(guiaDetalle){
+            /*if(guiaDetalle){
                 [guiaDetalleImagen setDetalleGuia:guiaDetalle];
                 [guiaDetalle addImagenesDetalleObject:guiaDetalleImagen];
-            }
+            }*/
             
         }else{
             [self updateGuiaDetalleImagen:guiaDetalleImagen];
@@ -72,6 +72,9 @@
         if(guiaDetalleImagen.urlImagen){
             [objectToModify setValue:guiaDetalleImagen.urlImagen forKey:@"urlImagen"];
         }
+        [objectToModify setValue:[NSNumber numberWithInteger:guiaDetalleImagen.idGuiaDetalle] forKey:@"idGuiaDetalle"];
+        [objectToModify setValue:[NSNumber numberWithInteger:guiaDetalleImagen.idGuiaDetalleImagen] forKey:@"idGuiaDetalleImagen"];
+
     }
 }
 

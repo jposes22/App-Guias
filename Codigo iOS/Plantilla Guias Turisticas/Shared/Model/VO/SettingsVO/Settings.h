@@ -21,6 +21,7 @@
 @property (nullable, atomic, strong) NSNumber *lastUpdateGuiaSaberMas;
 @property (nullable, atomic, strong) NSNumber *lastUpdateGuiaSaberMasDetalle;
 @property (nullable, atomic, strong) NSNumber *lastUpdateGuiaDetalleSaberMasImagen;
+@property (nonatomic) BOOL isPlaying;
 
 
 @property (nullable, atomic, strong) NSString * idioma;

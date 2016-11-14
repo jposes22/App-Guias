@@ -13,6 +13,7 @@
 #import "GuiaDetalleDAO.h"
 #import "AlbumViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Settings.h"
 
 
 
@@ -56,6 +57,8 @@
     [super viewWillDisappear:animated];
     if(_audioPlayer && [_audioPlayer isPlaying]){
         [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+
     }
     
 }
@@ -91,9 +94,13 @@
         
         if([_audioPlayer isPlaying]){
             [_audioPlayer pause];
+            [[Settings sharedInstance] setIsPlaying:NO];
+
             
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+
             
         }
     }else{
@@ -113,6 +120,8 @@
             NSLog(@"%@", [error description]);
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+
             [[AVAudioSession sharedInstance]
              setCategory: AVAudioSessionCategoryPlayback
              error: nil];

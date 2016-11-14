@@ -15,6 +15,7 @@
 @property (nonatomic, strong ) GuiaList * guia;
 @property (nonatomic) BOOL isPlaying;
 
+
 @end
 
 @implementation HeaderGuia

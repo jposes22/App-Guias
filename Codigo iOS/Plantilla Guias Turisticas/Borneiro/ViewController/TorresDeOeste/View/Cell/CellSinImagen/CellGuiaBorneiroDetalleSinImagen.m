@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopDescripcion;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopTitle;
+@property (weak, nonatomic) IBOutlet UILabel *labelSaberMAs;
+@property (weak, nonatomic) IBOutlet UIImageView *imageSaberMas;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
 @end
 @implementation CellGuiaBorneiroDetalleSinImagen
@@ -36,7 +38,7 @@
         _constraintTopTitle.constant = 0;
         _labelTitle.hidden = YES;
     }else{
-        _labelTitle.text = guiaDetalle.titulo;
+        _labelTitle.text = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _constraintTopTitle.constant = 10;
         _labelTitle.hidden = NO;
 
@@ -49,6 +51,20 @@
         _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
+    if(guiaDetalle.saberMasList != nil){
+        _labelSaberMas.hidden = NO;
+        _imagenSaberMas.hidden = NO;
+        _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
+        
+        
+        UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
+        tapSaberMasGesture.numberOfTapsRequired = 1;
+        [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
+    }else{
+        _labelSaberMas.hidden = YES;
+        _imagenSaberMas.hidden = YES;
+    }
+
     
     [self loadStyle];
     
@@ -57,12 +73,17 @@
 {
     
 }
--(void)loadStyle{
-    [StyleBorneiro setStyleSubTitleVisita:_labelTitle];
- //   [StyleBorneiro setStyleText:_labelDescripcion];
+- (void)openSaberMas:(UITapGestureRecognizer *)tap
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_GO_TO_SABER_MAS object:_guiaDetalle.saberMasList];
     
     
 }
+-(void)loadStyle{
+    [StyleBorneiro setStyleText:_labelSaberMas];
+    
+}
+
 
 
 @end

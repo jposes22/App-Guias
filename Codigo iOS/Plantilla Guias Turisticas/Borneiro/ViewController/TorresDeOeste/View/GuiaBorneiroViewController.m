@@ -15,6 +15,8 @@
 #import "StyleBorneiro.h"
 #import "AlbumViewController.h"
 #import "NavigationBar.h"
+#import "SaberMasBorneiroViewController.h"
+#import "Constants.h"
 
 @interface GuiaBorneiroViewController ()<CommnicationMenu, ComunicationChangePage, CommunicationCollectionVisitaCell>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -36,6 +38,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openAlbum:) name:@"OPEN_ALBUM" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openSaberMas:) name:kNOTIFICATION_GO_TO_SABER_MAS object:nil];
 }
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -109,6 +112,18 @@
     AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
     viewController.listfOfImage = notification.object;
     [self presentViewController:viewController animated:YES completion:nil];
+}
+
+#pragma mark - Notification methods
+- (void) openSaberMas:(NSNotification *)notification{
+    if([notification.name isEqualToString:kNOTIFICATION_GO_TO_SABER_MAS]){
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SaberMasBorneiroViewController"];
+        ((SaberMasBorneiroViewController *)vc).guia = notification.object;
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+        
+    }
+    
 }
 
 /*

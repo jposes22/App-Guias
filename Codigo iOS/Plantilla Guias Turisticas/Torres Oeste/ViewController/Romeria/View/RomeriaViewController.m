@@ -15,11 +15,17 @@
 #import "UtilsAppearance.h"
 #import "GuiaList.h"
 #import "GuiaDetalleTableController.h"
+#import "AlbumViewController.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Settings.h"
+
 @interface RomeriaViewController ()<CommnicationMenu, CommunicationTableController>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
 @property (nonatomic, strong) GuiaDetalleTableController * tableController;
+@property (nonatomic, strong) AVAudioPlayer * audioPlayer;
+
 
 @end
 
@@ -32,7 +38,15 @@
     [self loadController];
     [self loadStyle];
 }
-
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -68,7 +82,52 @@
 - (IBAction)btnOpenMenu:(id)sender {
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
-
+- (void) comunicationPlayAudioGuia:(Guia *)guia{
+    if (_audioPlayer != nil){
+        
+        if([_audioPlayer isPlaying]){
+            [_audioPlayer pause];
+            [[Settings sharedInstance] setIsPlaying:NO];
+            
+            
+        }else{
+            [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+            
+        }
+    }else{
+        [self playGuide:guia];
+    }
+}
+-(void)playGuide:(Guia *)guia{
+    NSError *error;
+    
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    if(guia.urlAudioGuia){
+        path = [path stringByAppendingPathComponent:guia.urlAudioGuia];
+        
+        NSURL *fileURL = [NSURL fileURLWithPath:path];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        if (_audioPlayer == nil){
+            NSLog(@"%@", [error description]);
+        }else{
+            [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+            
+            [[AVAudioSession sharedInstance]
+             setCategory: AVAudioSessionCategoryPlayback
+             error: nil];
+        }
+    }
+    
+}
+-(void) communicationImageSelected:(NSArray *)list{
+    AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
+    viewController.listfOfImage =list;
+    [self presentViewController:viewController animated:YES completion:nil];
+    
+    
+}
 /*
 #pragma mark - Navigation
 

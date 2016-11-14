@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "GuiaSaberMasDetalleImagen+CoreDataProperties.h"
 @interface GuiaSaberMasDetalleImagenDAO : NSObject
-+(NSArray *)getGuiaSaberMasDetalleImagen:(NSInteger *)idGuiaSaberMasDetalle;
++(NSArray *)getGuiaSaberMasDetalleImagen:(NSInteger)idGuiaSaberMasDetalle;
 +(void)insertarGuiaSaberMasDetalleImagen:(NSArray *)items;
 @end

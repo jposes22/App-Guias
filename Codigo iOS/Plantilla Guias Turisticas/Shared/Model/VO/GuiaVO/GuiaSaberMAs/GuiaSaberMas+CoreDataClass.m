@@ -8,6 +8,7 @@
 
 #import "GuiaSaberMas+CoreDataClass.h"
 #import "CoreDataUtil.h"
+#import "GuiaSaberMasDAO.h"
 
 @implementation GuiaSaberMas
 -(id)init:(NSManagedObjectContext *)context{
@@ -50,6 +51,7 @@
                 path = [path stringByAppendingString:[NSString stringWithFormat:@"/%lld_audioguia_saber_mas.mp3",self.idGuiaSaberMas]];
                 [data writeToFile:path atomically:YES];
                 self.urlAudioGuia = [NSString stringWithFormat:@"/%lld_audioguia_saber_mas.mp3",self.idGuiaSaberMas];
+                
             }else{
                 self.urlAudioGuia = nil;
             }

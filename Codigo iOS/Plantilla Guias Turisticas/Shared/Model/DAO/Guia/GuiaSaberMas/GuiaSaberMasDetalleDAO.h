@@ -10,7 +10,7 @@
 #import "GuiaSaberMasDetalle+CoreDataProperties.h"
 
 @interface GuiaSaberMasDetalleDAO : NSObject
-+(NSArray *)getPGuiaSaberMAsDetalle:(NSInteger *)idGuia;
++(NSArray *)getPGuiaSaberMAsDetalle:(NSInteger)idGuia;
 +(void)insertarGuiaSaberMasDetalle:(NSArray *)items;
 + (GuiaSaberMasDetalle *)getGuiaSaberMasDetalleById:(NSInteger) idGuiaSaberMas;
 @end

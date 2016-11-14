@@ -13,7 +13,6 @@
 - (void) playAudioGuia:(GuiaList *)guia;
 @end
 @interface HeaderGuia : UIView
-
 - (void)loadData:(GuiaList *)guia;
 @property (nonatomic, weak) id<ComunicationAudioGuia> delegateAudioGuia;
 @end

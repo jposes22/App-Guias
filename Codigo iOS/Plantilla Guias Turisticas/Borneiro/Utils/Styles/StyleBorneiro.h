@@ -53,5 +53,7 @@
 
 +(void)setCircleView:(UIView *) view;
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title backgroundColor:(UIColor *)background;
++ (void) setStyleNavigationBarSaberMas:(UINavigationBar *)navigationBar withTitle:(NSString *)title;
+
 
 @end

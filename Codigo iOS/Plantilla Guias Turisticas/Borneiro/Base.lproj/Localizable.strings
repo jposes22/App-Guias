@@ -19,7 +19,8 @@
 "menu_selfie" = "Selfie";
 "menu_creditos" = "Créditos";
 
-
+//Saber mas
+"subtitle_saber_mas" = "Saber más...";
 //Home
 "btn_home_comollegar" = "Cómo llegar";
 "btn_home_ciudad" = "A Cidá de Borneiro";

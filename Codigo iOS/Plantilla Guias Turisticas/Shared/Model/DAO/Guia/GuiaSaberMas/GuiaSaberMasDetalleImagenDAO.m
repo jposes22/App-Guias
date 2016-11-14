@@ -11,7 +11,7 @@
 #import "GuiaSaberMasDetalleDAO.h"
 
 @implementation GuiaSaberMasDetalleImagenDAO
-+(NSArray *)getGuiaSaberMasDetalleImagen:(NSInteger *)idGuiaSaberMasDetalle{
++(NSArray *)getGuiaSaberMasDetalleImagen:(NSInteger)idGuiaSaberMasDetalle{
     //Obtenemos la entidad correspondiente al modelo
     NSError *error;
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
@@ -46,14 +46,14 @@
             //Ocurrio algun error
         } else if (count == 0){ //No existe entonces creamos un objecto
             //Obtenemos la guia asociada
-            GuiaSaberMasDetalle * guiaSaberMasDetalle = [GuiaSaberMasDetalleDAO getGuiaSaberMasDetalleById:guiaSaberMasDetalleImagen.idGuiaSaberMasDetalle];
+           // GuiaSaberMasDetalle * guiaSaberMasDetalle = [GuiaSaberMasDetalleDAO getGuiaSaberMasDetalleById:guiaSaberMasDetalleImagen.idGuiaSaberMasDetalle];
             [context insertObject:guiaSaberMasDetalleImagen];
             
-            if(guiaSaberMasDetalle){
+           /* if(guiaSaberMasDetalle){
                 [guiaSaberMasDetalleImagen setGuiaSaberMasDetalle:guiaSaberMasDetalle];
                 [guiaSaberMasDetalle setGuiaSaberMasDetalleImagen:guiaSaberMasDetalleImagen];
                 
-            }
+            }*/
             
         }else{
             [self updateGuiaSaberMasDetalleImagen:guiaSaberMasDetalleImagen];

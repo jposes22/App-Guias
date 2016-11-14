@@ -16,30 +16,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQq-A8-m6t">
-                    <rect key="frame" x="20" y="10" width="335" height="20.5"/>
+                    <rect key="frame" x="20" y="10" width="335" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="l8g-yS-24Z">
-                    <rect key="frame" x="20" y="40.5" width="100" height="44"/>
+                    <rect key="frame" x="20" y="41" width="100" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="Cby-yz-boR"/>
                         <constraint firstAttribute="height" constant="44" id="iw4-Jl-dib"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7s-CE-MGh">
+                    <rect key="frame" x="73" y="41" width="42" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="lQq-A8-m6t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4NV-H4-UNJ"/>
+                <constraint firstItem="v7s-CE-MGh" firstAttribute="bottom" secondItem="l8g-yS-24Z" secondAttribute="bottom" id="J1w-XQ-nsr"/>
                 <constraint firstAttribute="trailing" secondItem="lQq-A8-m6t" secondAttribute="trailing" constant="20" id="VEs-9c-ooL"/>
                 <constraint firstItem="l8g-yS-24Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="f6Q-He-wfv"/>
                 <constraint firstItem="lQq-A8-m6t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="kmu-x1-25l"/>
                 <constraint firstItem="l8g-yS-24Z" firstAttribute="top" secondItem="lQq-A8-m6t" secondAttribute="bottom" constant="10" id="lUP-7r-ZC6"/>
+                <constraint firstItem="v7s-CE-MGh" firstAttribute="top" secondItem="l8g-yS-24Z" secondAttribute="top" id="o6Y-qc-NnX"/>
+                <constraint firstItem="v7s-CE-MGh" firstAttribute="trailing" secondItem="l8g-yS-24Z" secondAttribute="trailing" constant="-5" id="tRe-3U-akS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageGuia" destination="l8g-yS-24Z" id="iN9-5V-GdM"/>
+                <outlet property="labelAudioGuia" destination="v7s-CE-MGh" id="BOn-KN-PFX"/>
                 <outlet property="labelTitle" destination="lQq-A8-m6t" id="sdc-3t-6jS"/>
             </connections>
         </view>

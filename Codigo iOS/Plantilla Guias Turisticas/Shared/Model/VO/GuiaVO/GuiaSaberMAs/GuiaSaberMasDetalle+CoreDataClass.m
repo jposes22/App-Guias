@@ -8,6 +8,9 @@
 
 #import "GuiaSaberMasDetalle+CoreDataClass.h"
 #import "CoreDataUtil.h"
+#import "GuiaSaberMasDetalleImagen+CoreDataProperties.h"
+#import "GuiaSaberMasDetalleImagenDAO.h"
+
 @implementation GuiaSaberMasDetalle
 -(id)init:(NSManagedObjectContext *)context{
     
@@ -44,6 +47,22 @@
         if([json objectForKey:@"descripcion"] != [NSNull null]){
             self.descripcion = [json objectForKey:@"descripcion"] ;
         }
+        if([json objectForKey:@"listGuiaSaberMasDetalleImagen"] != [NSNull null]){
+            [[NSOperationQueue new] addOperationWithBlock:^{
+                NSMutableArray * listImage  = [NSMutableArray new];
+                for (id jsonImage in [json objectForKey:@"listGuiaSaberMasDetalleImagen"]) {
+                    GuiaSaberMasDetalleImagen * guiaImagenDetalle = [[GuiaSaberMasDetalleImagen alloc] initGuiaDetalleImagenWithJson:jsonImage];
+                    if(guiaImagenDetalle){
+                        [listImage addObject:guiaImagenDetalle];
+                    }
+                    
+                }
+                [GuiaSaberMasDetalleImagenDAO insertarGuiaSaberMasDetalleImagen:listImage];
+            }];
+            
+            
+        }
+
     }
     return self;
     

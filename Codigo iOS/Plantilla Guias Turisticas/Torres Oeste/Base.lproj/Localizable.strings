@@ -58,3 +58,12 @@
 /*Como llegar*/
 
 "como_llegar_ver_mapa"="Ver en mapa";
+
+
+
+/*Ajustes*/
+
+"ajustes_title_change_language"="Cambio de idioma";
+"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma?";
+"ajustes_ok_language"="Ok";
+"ajustes_cancel_language"="Cancelar";

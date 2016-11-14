@@ -17,6 +17,6 @@
 
 - (void)saveContext;
 
-
+- (void)deleteAllEntities:(NSString *)nameEntity;
 @end
 

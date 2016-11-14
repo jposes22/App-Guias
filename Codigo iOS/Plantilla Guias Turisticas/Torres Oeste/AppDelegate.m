@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "NSBundle.h"
 
+#import "CoreDataUtil.h"
+
 @interface AppDelegate ()
 
 @end
@@ -100,5 +102,25 @@
         abort();
     }
 }
+
+- (void)deleteAllEntities:(NSString *)nameEntity
+{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:nameEntity];
+    [fetchRequest setIncludesPropertyValues:NO]; //only fetch the managedObjectID
+    NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
+    NSError *error;
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&error];
+    for (NSManagedObject *object in fetchedObjects)
+    {
+        [context deleteObject:object];
+    }
+    
+    error = nil;
+    [context save:&error];
+}
+/**
+ * Will remove the persistent store
+ */
+
 
 @end

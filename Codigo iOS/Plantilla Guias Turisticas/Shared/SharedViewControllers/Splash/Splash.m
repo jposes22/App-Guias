@@ -13,6 +13,7 @@
 #import "RemoteConstants.h"
 #import "SelectIdiomaViewController.h"
 #import "ParametrosRepositorio.h"
+#import "AppDelegate.h"
 
 //Remotes
 #import "RemoteParametros.h"
@@ -47,6 +48,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(idiomaElegido:) name:@"NOTIFICATION_IDIOMA_ELEGIDO" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteAllData) name:@"CHANGE_LANGUAGE" object:nil];
+    
     if(![[Settings sharedInstance] wasStaredAppBefore]){
         _progressView.hidden = NO;
         [self insertParametros];
@@ -55,9 +58,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-   
 
-   
    
 }
 -(void)viewDidAppear:(BOOL)animated{
@@ -67,6 +68,8 @@
     }
 
 }
+
+
 - (void) insertParametros{
     [ParametrosRepositorio saveParametersInBD];
     
@@ -388,5 +391,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+-(void) deleteAllData{
+   id appDelegte=  [[UIApplication sharedApplication] delegate];
+    NSArray *listClasses = [[NSArray alloc] initWithObjects:@"Poi",@"Menu",@"PoiImagen",@"Guia",@"GuiaDetalle",@"GuiaDetalleImagen",@"GuiaSaberMas",@"GuiaSaberMasDetalle",@"GuiaSaberMasDetalleImagen", nil];
+    for (NSString *keyEntity in listClasses) {
+        [appDelegte deleteAllEntities:keyEntity];
+    }
+    
+    [[Settings sharedInstance] resetSettings];
+     [_progressView setProgress:0 animated:YES];
+    [self downloadData];
+}
+
 
 @end

@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "HomeViewController.h"
 #import "RightViewController.h"
+#import "AjustesViewController.h"
 #import "Constants.h"
 
 @interface MenuViewController ()<RightMenuComunication>
@@ -24,6 +25,8 @@
     [self setupRightDrawer];
     [self loadGesturesAllowed];
     [self loadNotificationCenter];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeViewController) name:@"CHANGE_LANGUAGE" object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -92,11 +95,12 @@
             sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;
-            /*
-        case SideDrawerMenuItemHelps:
-            controllerLoader = [[HelpMainViewController alloc] initWithNibName:@"HelpMainViewController" bundle:nil];
-            ((HelpMainViewController *)controllerLoader).index = 0;
+    
+        case SideDrawerMenuItemAjustes:
+            controllerLoader = [[AjustesViewController alloc] initWithNibName:@"AjustesViewController" bundle:nil];
+            
             break;
+            /*
         case SideDrawerMenuItemAdherencia:
             controllerLoader = [[AdherenciaViewController alloc] initWithNibName:@"AdherenciaViewController" bundle:nil];
             break;*/
@@ -126,7 +130,9 @@
     
 }
 
-
+-(void) removeViewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 /*
 #pragma mark - Navigation
 

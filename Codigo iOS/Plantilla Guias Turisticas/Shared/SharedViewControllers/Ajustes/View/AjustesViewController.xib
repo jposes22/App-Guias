@@ -22,9 +22,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ve-ZT-6ea">
-                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <items>
-                        <navigationItem title="Title" id="09P-MK-Oen"/>
+                        <navigationItem title="Title" id="09P-MK-Oen">
+                            <barButtonItem key="rightBarButtonItem" image="btnMenu" id="xE4-xp-Enh">
+                                <connections>
+                                    <action selector="openMenu:" destination="-1" id="9jq-Bd-8Nc"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
                     </items>
                 </navigationBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-Yp-scX">
@@ -45,7 +51,9 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="4Ve-ZT-6ea" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="DGw-jx-A6e"/>
+                <constraint firstItem="4Ve-ZT-6ea" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DGw-jx-A6e">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
                 <constraint firstItem="xOh-22-P0V" firstAttribute="top" secondItem="zZc-Yp-scX" secondAttribute="bottom" constant="8" id="EFx-FN-isp"/>
                 <constraint firstItem="4Ve-ZT-6ea" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hld-2i-b1W"/>
                 <constraint firstItem="zZc-Yp-scX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jal-xt-hNn"/>
@@ -56,4 +64,7 @@
             <point key="canvasLocation" x="33.5" y="57.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="btnMenu" width="60" height="60"/>
+    </resources>
 </document>

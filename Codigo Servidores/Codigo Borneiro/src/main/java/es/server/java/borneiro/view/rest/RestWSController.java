@@ -249,7 +249,7 @@ public class RestWSController {
     	 try{
     		 //TODO: change in production
     		 @SuppressWarnings("resource")
-			RandomAccessFile inputStrean = new RandomAccessFile(ConstantesServer.URL_SERVER_AUDIO_GUIA+ idAudioGuia , "r");
+			RandomAccessFile inputStrean = new RandomAccessFile(ConstantesServer.URL_IMAGES_APP_LOCAL+ idAudioGuia , "r");
     		 byte[] document = new byte[(int) inputStrean.length()];
         	 inputStrean.readFully(document);
             // Create a byte array output stream.

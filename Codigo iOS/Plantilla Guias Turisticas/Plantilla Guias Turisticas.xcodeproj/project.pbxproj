@@ -500,6 +500,10 @@
 		8298B82A1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
 		8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */; };
 		829A8CC51DD2468D00D78A7A /* CopyrightBorneiroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8295F0CE1DC4BD820049FB7D /* CopyrightBorneiroCell.xib */; };
+		829B13111DDA4A4B004B21F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B13101DDA4A4B004B21F1 /* Reachability.m */; };
+		829B13121DDA4B19004B21F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B13101DDA4A4B004B21F1 /* Reachability.m */; };
+		829B13131DDA4B1A004B21F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B13101DDA4A4B004B21F1 /* Reachability.m */; };
+		829B13141DDA4B1A004B21F1 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B13101DDA4A4B004B21F1 /* Reachability.m */; };
 		82E74B101DC6213000ADB139 /* CreditosViewControllerBaronha.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */; };
 		82E74B121DC6213D00ADB139 /* Creditos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E74B111DC6213D00ADB139 /* Creditos.storyboard */; };
 		82E832411DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E8323F1DD8F5A100FCF070 /* PoiBorneiroSinglePoiTableViewCell.m */; };
@@ -528,14 +532,18 @@
 		82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
 		82EE78091DC668AF00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
 		82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
-		82F8AD061DDA31FF007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD041DDA31FF007D9845 /* AjustesViewController.m */; };
-		82F8AD071DDA31FF007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD041DDA31FF007D9845 /* AjustesViewController.m */; };
-		82F8AD081DDA31FF007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD041DDA31FF007D9845 /* AjustesViewController.m */; };
-		82F8AD091DDA31FF007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD041DDA31FF007D9845 /* AjustesViewController.m */; };
-		82F8AD0A1DDA31FF007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */; };
-		82F8AD0B1DDA31FF007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */; };
-		82F8AD0C1DDA31FF007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */; };
-		82F8AD0D1DDA31FF007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */; };
+		82F8AD161DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
+		82F8AD171DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
+		82F8AD181DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
+		82F8AD191DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
+		82F8AD1A1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
+		82F8AD1B1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
+		82F8AD1C1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
+		82F8AD1D1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
+		82F8AD1E1DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
+		82F8AD1F1DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
+		82F8AD201DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
+		82F8AD211DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1019,6 +1027,8 @@
 		8295F20D1DC529810049FB7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8298B8261DD748F6005BE8E5 /* PoiImagenDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiImagenDAO.h; sourceTree = "<group>"; };
 		8298B8271DD748F6005BE8E5 /* PoiImagenDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiImagenDAO.m; sourceTree = "<group>"; };
+		829B130F1DDA4A4B004B21F1 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Reachability/Reachability.h; sourceTree = "<group>"; };
+		829B13101DDA4A4B004B21F1 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Reachability/Reachability.m; sourceTree = "<group>"; };
 		82E74B0E1DC6213000ADB139 /* CreditosViewControllerBaronha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditosViewControllerBaronha.h; sourceTree = "<group>"; };
 		82E74B0F1DC6213000ADB139 /* CreditosViewControllerBaronha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditosViewControllerBaronha.m; sourceTree = "<group>"; };
 		82E74B111DC6213D00ADB139 /* Creditos.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Creditos.storyboard; sourceTree = "<group>"; };
@@ -1039,9 +1049,11 @@
 		82EE77F41DC6689C00C3A344 /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
 		82EE77F51DC6689C00C3A344 /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
 		82EE77F61DC6689C00C3A344 /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
-		82F8AD031DDA31FF007D9845 /* AjustesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AjustesViewController.h; path = Ajustes/AjustesViewController.h; sourceTree = "<group>"; };
-		82F8AD041DDA31FF007D9845 /* AjustesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AjustesViewController.m; path = Ajustes/AjustesViewController.m; sourceTree = "<group>"; };
-		82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AjustesViewController.xib; path = Ajustes/AjustesViewController.xib; sourceTree = "<group>"; };
+		82F8AD101DDA4193007D9845 /* LanguagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguagePickerController.h; sourceTree = "<group>"; };
+		82F8AD111DDA4193007D9845 /* LanguagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguagePickerController.m; sourceTree = "<group>"; };
+		82F8AD131DDA4193007D9845 /* AjustesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AjustesViewController.h; sourceTree = "<group>"; };
+		82F8AD141DDA4193007D9845 /* AjustesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AjustesViewController.m; sourceTree = "<group>"; };
+		82F8AD151DDA4193007D9845 /* AjustesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AjustesViewController.xib; sourceTree = "<group>"; };
 		A8F331FC903374EC1D8BEF67 /* Pods-Torres Oeste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Torres Oeste.release.xcconfig"; path = "Pods/Target Support Files/Pods-Torres Oeste/Pods-Torres Oeste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1789,6 +1801,7 @@
 		8295EE321DC4ACD20049FB7D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				829B130E1DDA4A2B004B21F1 /* Reachability */,
 				8295F1F21DC4F8410049FB7D /* Language */,
 				8295EE331DC4ACD20049FB7D /* Constants */,
 				8295EE361DC4ACD20049FB7D /* Metodos */,
@@ -1837,7 +1850,7 @@
 		8295EE471DC4AEB50049FB7D /* SharedViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				82F8AD021DDA31D3007D9845 /* Ajustes */,
+				82F8AD0E1DDA4193007D9845 /* Ajustes */,
 				82EE77EC1DC6689C00C3A344 /* Album */,
 				8295EE481DC4AEB50049FB7D /* Splash */,
 			);
@@ -3191,6 +3204,15 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		829B130E1DDA4A2B004B21F1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				829B130F1DDA4A4B004B21F1 /* Reachability.h */,
+				829B13101DDA4A4B004B21F1 /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		82E74B0D1DC6213000ADB139 /* Creditos */ = {
 			isa = PBXGroup;
 			children = (
@@ -3262,14 +3284,32 @@
 			path = ViewImage;
 			sourceTree = "<group>";
 		};
-		82F8AD021DDA31D3007D9845 /* Ajustes */ = {
+		82F8AD0E1DDA4193007D9845 /* Ajustes */ = {
 			isa = PBXGroup;
 			children = (
-				82F8AD031DDA31FF007D9845 /* AjustesViewController.h */,
-				82F8AD041DDA31FF007D9845 /* AjustesViewController.m */,
-				82F8AD051DDA31FF007D9845 /* AjustesViewController.xib */,
+				82F8AD0F1DDA4193007D9845 /* Controller */,
+				82F8AD121DDA4193007D9845 /* View */,
 			);
-			name = Ajustes;
+			path = Ajustes;
+			sourceTree = "<group>";
+		};
+		82F8AD0F1DDA4193007D9845 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82F8AD101DDA4193007D9845 /* LanguagePickerController.h */,
+				82F8AD111DDA4193007D9845 /* LanguagePickerController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		82F8AD121DDA4193007D9845 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82F8AD131DDA4193007D9845 /* AjustesViewController.h */,
+				82F8AD141DDA4193007D9845 /* AjustesViewController.m */,
+				82F8AD151DDA4193007D9845 /* AjustesViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		AB93E035B14DB0F2006039C3 /* Pods */ = {
@@ -3439,7 +3479,7 @@
 			files = (
 				82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */,
 				82EE78011DC668A400C3A344 /* AlbumViewController.xib in Resources */,
-				82F8AD0A1DDA31FF007D9845 /* AjustesViewController.xib in Resources */,
+				82F8AD1E1DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295EBBC1DC4A4CC0049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295EBB91DC4A4CC0049FB7D /* Assets.xcassets in Resources */,
 				8295EBB41DC4A4CC0049FB7D /* Main.storyboard in Resources */,
@@ -3472,7 +3512,7 @@
 				8295EE681DC4AF5C0049FB7D /* CaviarDreams.ttf in Resources */,
 				8295EF091DC4B0600049FB7D /* Poi.storyboard in Resources */,
 				8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */,
-				82F8AD0B1DDA31FF007D9845 /* AjustesViewController.xib in Resources */,
+				82F8AD1F1DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295EF1A1DC4B0600049FB7D /* CellGuiaCollectionView.xib in Resources */,
 				23A86F8F1DD8D8D800DBAA28 /* HeaderSaberMas.xib in Resources */,
 				8295EF031DC4B0600049FB7D /* RightViewController.xib in Resources */,
@@ -3505,7 +3545,7 @@
 				8295F0981DC4BD6E0049FB7D /* Home.storyboard in Resources */,
 				8295F18D1DC4C1480049FB7D /* OpenSans-Italic.ttf in Resources */,
 				8295F08D1DC4BD6E0049FB7D /* ComoLlegar.storyboard in Resources */,
-				82F8AD0C1DDA31FF007D9845 /* AjustesViewController.xib in Resources */,
+				82F8AD201DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295F1831DC4BFA50049FB7D /* Splash.storyboard in Resources */,
 				8295F1901DC4C1480049FB7D /* OpenSans-Semibold.ttf in Resources */,
 				8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */,
@@ -3548,7 +3588,7 @@
 				8295F1B11DC4D6BA0049FB7D /* Giorgio-Thin.ttf in Resources */,
 				23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */,
 				82EE77FB1DC6689C00C3A344 /* ViewImage.xib in Resources */,
-				82F8AD0D1DDA31FF007D9845 /* AjustesViewController.xib in Resources */,
+				82F8AD211DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,
@@ -3755,6 +3795,7 @@
 				8295EE401DC4ACD20049FB7D /* Constants.m in Sources */,
 				8295EDFF1DC4AAEE0049FB7D /* RemoteGuiaVO.m in Sources */,
 				8295EE411DC4ACD20049FB7D /* Metodos.m in Sources */,
+				82F8AD161DDA4193007D9845 /* LanguagePickerController.m in Sources */,
 				8295EE3F1DC4ACD20049FB7D /* Plantilla_Guias_Turisticas.xcdatamodeld in Sources */,
 				8295EE201DC4AAEE0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
 				8295EE0C1DC4AAEE0049FB7D /* GuiaDetalleList.m in Sources */,
@@ -3762,14 +3803,15 @@
 				8295EE131DC4AAEE0049FB7D /* GuiaSaberMasDetalleImagen+CoreDataProperties.m in Sources */,
 				23A86F871DD8D77D00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8295EDEF1DC4AAEE0049FB7D /* ParametrosDAO.m in Sources */,
+				82F8AD1A1DDA4193007D9845 /* AjustesViewController.m in Sources */,
 				8295EDEB1DC4AAEE0049FB7D /* GuiaSaberMasDetalleDAO.m in Sources */,
 				8295EDFC1DC4AAEE0049FB7D /* RemoteGuiaSaberMasDetalleVO.m in Sources */,
 				8295EDEA1DC4AAEE0049FB7D /* GuiaSaberMasDAO.m in Sources */,
+				829B13111DDA4A4B004B21F1 /* Reachability.m in Sources */,
 				8295EE221DC4AAEE0049FB7D /* ParametrosRepositorio.m in Sources */,
 				8295EE0A1DC4AAEE0049FB7D /* GuiaDetalleImagen+CoreDataClass.m in Sources */,
 				8295F1F81DC4F8650049FB7D /* NSBundle.m in Sources */,
 				8295EE531DC4AEB50049FB7D /* Splash.m in Sources */,
-				82F8AD061DDA31FF007D9845 /* AjustesViewController.m in Sources */,
 				8295EDF41DC4AAEE0049FB7D /* RemoteGuiaSaberMas.m in Sources */,
 				8295EE0B1DC4AAEE0049FB7D /* GuiaDetalleImagen+CoreDataProperties.m in Sources */,
 				8295EE431DC4ACD20049FB7D /* Validator.m in Sources */,
@@ -3811,6 +3853,7 @@
 				8295EF7F1DC4B3630049FB7D /* GenericResponse.m in Sources */,
 				8295EF941DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295EF081DC4B0600049FB7D /* ListPoiViewController.m in Sources */,
+				829B13121DDA4B19004B21F1 /* Reachability.m in Sources */,
 				8295EF0C1DC4B0600049FB7D /* ReferenciasViewController.m in Sources */,
 				8295EF971DC4B37C0049FB7D /* RemoteMenuVO.m in Sources */,
 				8295EF8B1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
@@ -3844,6 +3887,7 @@
 				8295EFA31DC4B3970049FB7D /* Guia+CoreDataClass.m in Sources */,
 				8295EFFB1DC4B3C30049FB7D /* Poi+CoreDataProperties.m in Sources */,
 				8295EF431DC4B2D90049FB7D /* CoreDataUtil.m in Sources */,
+				82F8AD171DDA4193007D9845 /* LanguagePickerController.m in Sources */,
 				23A86F811DD8D3DD00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8295EF581DC4B3220049FB7D /* IdiomaDAO.m in Sources */,
 				8295EF9D1DC4B3850049FB7D /* RemotePoiVO.m in Sources */,
@@ -3897,7 +3941,6 @@
 				82EE78031DC668AA00C3A344 /* AlbumPagerController.m in Sources */,
 				8295EF841DC4B3690049FB7D /* RemoteImageDetalleVO.m in Sources */,
 				8295EEF81DC4B0600049FB7D /* CopyrightViewController.m in Sources */,
-				82F8AD071DDA31FF007D9845 /* AjustesViewController.m in Sources */,
 				8295EF111DC4B0600049FB7D /* GuiaDetalleTableController.m in Sources */,
 				8295EF8C1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleVO.m in Sources */,
 				8295EF6D1DC4B34A0049FB7D /* RemoteGuiaSaberMas.m in Sources */,
@@ -3909,6 +3952,7 @@
 				8295EE571DC4AED00049FB7D /* TableIdiomaController.m in Sources */,
 				8295EF8D1DC4B3710049FB7D /* RemoteGuiaSaberMasVO.m in Sources */,
 				8295EE441DC4ACD80049FB7D /* Plantilla_Guias_Turisticas.xcdatamodeld in Sources */,
+				82F8AD1B1DDA4193007D9845 /* AjustesViewController.m in Sources */,
 				8295EF001DC4B0600049FB7D /* CustomTableViewCell.m in Sources */,
 				8295EF9A1DC4B3800049FB7D /* RemoteParametrosVO.m in Sources */,
 				8295EFA81DC4B3970049FB7D /* GuiaDetalleImagen+CoreDataProperties.m in Sources */,
@@ -3922,6 +3966,7 @@
 			files = (
 				8295F1B91DC4EB5F0049FB7D /* UtilsAppearance.h in Sources */,
 				8295EF491DC4B3120049FB7D /* GuiaDetalleDAO.m in Sources */,
+				82F8AD1C1DDA4193007D9845 /* AjustesViewController.m in Sources */,
 				8295EF801DC4B3630049FB7D /* GenericResponse.m in Sources */,
 				8295EFE21DC4B3AE0049FB7D /* Idioma+CoreDataProperties.m in Sources */,
 				8295F0A11DC4BD6E0049FB7D /* PoiTableViewCell.m in Sources */,
@@ -3933,6 +3978,7 @@
 				8295EF6A1DC4B3440049FB7D /* RemoteGuiaDetalle.m in Sources */,
 				8295F0931DC4BD6E0049FB7D /* CopyrightViewControllerBaronha.m in Sources */,
 				8295EF8E1DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
+				829B13131DDA4B1A004B21F1 /* Reachability.m in Sources */,
 				8295EF951DC4B3760049FB7D /* RemoteIdiomaVO.m in Sources */,
 				8295F0BE1DC4BD6E0049FB7D /* CellGuiaDetalleSinImagen.m in Sources */,
 				8295EF621DC4B3370049FB7D /* PoiDAO.m in Sources */,
@@ -3940,7 +3986,6 @@
 				8295EF701DC4B34B0049FB7D /* RemoteGuiaSaberMasDetalle.m in Sources */,
 				8295EF3B1DC4B2BF0049FB7D /* Metodos.m in Sources */,
 				8295EFF41DC4B3BC0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
-				82F8AD081DDA31FF007D9845 /* AjustesViewController.m in Sources */,
 				8295F1A01DC4C9B40049FB7D /* ConstantsURL.m in Sources */,
 				8295F0B81DC4BD6E0049FB7D /* CellGuiaDetalle.m in Sources */,
 				8295EFC21DC4B3A00049FB7D /* GuiaSaberMas+CoreDataProperties.m in Sources */,
@@ -4024,6 +4069,7 @@
 				8295F0C21DC4BD6E0049FB7D /* HeaderGuia.m in Sources */,
 				8295EF651DC4B33C0049FB7D /* RemoteConstants.m in Sources */,
 				8295EFEA1DC4B3B50049FB7D /* Menu+CoreDataProperties.m in Sources */,
+				82F8AD181DDA4193007D9845 /* LanguagePickerController.m in Sources */,
 				8295EC221DC4A8710049FB7D /* main.m in Sources */,
 				8295EF381DC4B2B90049FB7D /* Constants.m in Sources */,
 				8295F1971DC4C1670049FB7D /* UtilsAppearance.m in Sources */,
@@ -4058,6 +4104,7 @@
 				23A5018C1DC6272500019783 /* CellCultura.m in Sources */,
 				8295EF911DC4B3710049FB7D /* RemoteGuiaSaberMasDetalleImagenVO.m in Sources */,
 				8295EF961DC4B3770049FB7D /* RemoteIdiomaVO.m in Sources */,
+				82F8AD191DDA4193007D9845 /* LanguagePickerController.m in Sources */,
 				8295F1781DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.m in Sources */,
 				23A86F861DD8D77B00DBAA28 /* GuiaSaberMasList.m in Sources */,
 				8298B82B1DD748F6005BE8E5 /* PoiImagenDAO.m in Sources */,
@@ -4067,6 +4114,8 @@
 				8295EFF71DC4B3BC0049FB7D /* ParametrosApp+CoreDataClass.m in Sources */,
 				8295EFC81DC4B3A00049FB7D /* GuiaSaberMas+CoreDataProperties.m in Sources */,
 				8295EF8A1DC4B36A0049FB7D /* RemoteImageDetalleVO.m in Sources */,
+				82F8AD1D1DDA4193007D9845 /* AjustesViewController.m in Sources */,
+				829B13141DDA4B1A004B21F1 /* Reachability.m in Sources */,
 				8295EFCB1DC4B3A00049FB7D /* GuiaSaberMasDetalleImagen+CoreDataClass.m in Sources */,
 				8295EFF81DC4B3BC0049FB7D /* ParametrosApp+CoreDataProperties.m in Sources */,
 				8295EF881DC4B36A0049FB7D /* RemoteDetalleGuiaVO.m in Sources */,
@@ -4109,7 +4158,6 @@
 				8295EFC91DC4B3A00049FB7D /* GuiaSaberMasDetalle+CoreDataClass.m in Sources */,
 				8295EF6B1DC4B3450049FB7D /* RemoteGuia.m in Sources */,
 				8295EFB31DC4B3980049FB7D /* Guia+CoreDataClass.m in Sources */,
-				82F8AD091DDA31FF007D9845 /* AjustesViewController.m in Sources */,
 				8295F1B71DC4D6BA0049FB7D /* ConstantsURL.m in Sources */,
 				8295F1501DC4BD830049FB7D /* NavigationBar.m in Sources */,
 				8295EFA21DC4B38B0049FB7D /* HttpRequest.m in Sources */,

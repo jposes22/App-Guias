@@ -13,8 +13,9 @@
 #import "GuiaSaberMasDAO.h"
 #import "StyleBorneiro.h"
 #import "SaberMasBorneiroTableController.h"
+#import "AlbumViewController.h"
+#import "Settings.h"
 #import <AVFoundation/AVFoundation.h>
-
 @interface SaberMasBorneiroViewController ()<CommunicationSaberMasBorneiroTableController>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *viewTop;
@@ -32,6 +33,14 @@
     [self loadData];
     [self loadController];
     [self loadStyle];
+}
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,7 +66,7 @@
 }
 
 -(void) loadData{
-    [StyleBorneiro setStyleNavigationBarSaberMas:self.navigationBar withTitle:NSLocalizedString(@"menu_visita", nil)];
+    [StyleBorneiro setStyleNavigationBarSaberMas:self.navigationBar withTitle:_titleSection];
     _labelSubtitle.text = NSLocalizedString(@"subtitle_saber_mas", nil);
 }
 -(void) loadStyle{
@@ -71,9 +80,12 @@
         
         if([_audioPlayer isPlaying]){
             [_audioPlayer pause];
+            [[Settings sharedInstance] setIsPlaying:NO];
+            
             
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
             
         }
     }else{
@@ -93,11 +105,20 @@
             NSLog(@"%@", [error description]);
         }else{
             [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+            
             [[AVAudioSession sharedInstance]
              setCategory: AVAudioSessionCategoryPlayback
              error: nil];
         }
     }
+    
+}
+-(void) communicationImageSelected:(NSArray *)list{
+    AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];
+    viewController.listfOfImage =list;
+    [self presentViewController:viewController animated:YES completion:nil];
+    
     
 }
 
@@ -106,13 +127,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

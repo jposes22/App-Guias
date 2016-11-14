@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,16 +16,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTf-st-UHR">
+                    <rect key="frame" x="10" y="11" width="334" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-Po-i2A">
+                    <rect key="frame" x="10" y="42" width="100" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="UlD-sN-CDm"/>
                         <constraint firstAttribute="width" constant="100" id="Wzo-Oh-Pda"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJL-zL-AdG">
+                    <rect key="frame" x="63" y="42" width="42" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -31,16 +42,20 @@
                 <constraint firstItem="pTf-st-UHR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="FTW-F3-tEO"/>
                 <constraint firstItem="pTf-st-UHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="SGE-0D-PJ7"/>
                 <constraint firstAttribute="trailing" secondItem="pTf-st-UHR" secondAttribute="trailing" constant="10" id="Z7z-fT-CvT"/>
+                <constraint firstItem="IJL-zL-AdG" firstAttribute="trailing" secondItem="L2Q-Po-i2A" secondAttribute="trailing" constant="-5" id="aRL-Ua-sVW"/>
+                <constraint firstItem="IJL-zL-AdG" firstAttribute="bottom" secondItem="L2Q-Po-i2A" secondAttribute="bottom" id="cKN-Wp-8Hj"/>
+                <constraint firstItem="IJL-zL-AdG" firstAttribute="top" secondItem="L2Q-Po-i2A" secondAttribute="top" id="tOH-sH-y5l"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageGuia" destination="L2Q-Po-i2A" id="KeM-JX-6Fr"/>
+                <outlet property="labelAudioGuia" destination="IJL-zL-AdG" id="2Di-W6-cKm"/>
                 <outlet property="labelTitle" destination="pTf-st-UHR" id="71V-gu-eML"/>
             </connections>
             <point key="canvasLocation" x="23" y="-224"/>
         </view>
     </objects>
     <resources>
-        <image name="ic_audioguia_off" width="75" height="18"/>
+        <image name="ic_audioguia_off" width="82" height="18"/>
     </resources>
 </document>

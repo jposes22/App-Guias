@@ -16,11 +16,17 @@
 #import "GuiaList.h"
 #import "CidaBorneiroTableController.h"
 #import "AlbumViewController.h"
+#import "Settings.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Constants.h"
+#import "SaberMasBorneiroViewController.h"
 @interface ACidaBorneiroViewController ()<CommnicationMenu, CommunicationCidaTableController>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
 @property (nonatomic, strong) CidaBorneiroTableController * tableController;
+@property (nonatomic, strong) AVAudioPlayer * audioPlayer;
+
 
 @end
 
@@ -31,7 +37,22 @@
     // Do any additional setup after loading the view.
     [self loadData];
     [self loadController];
-    [self loadStyle];
+    
+}
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openSaberMas:) name:kNOTIFICATION_GO_TO_SABER_MAS object:nil];
+}
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,7 +90,57 @@
     viewController.listfOfImage = list;
     [self presentViewController:viewController animated:YES completion:nil];
 }
--(void) loadStyle{
+- (void) comunicationPlayAudioGuia:(Guia *)guia{
+    if (_audioPlayer != nil){
+        
+        if([_audioPlayer isPlaying]){
+            [_audioPlayer pause];
+            [[Settings sharedInstance] setIsPlaying:NO];
+            
+            
+        }else{
+            [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+            
+        }
+    }else{
+        [self playGuide:guia];
+    }
+}
+-(void)playGuide:(Guia *)guia{
+    NSError *error;
+    
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    if(guia.urlAudioGuia){
+        path = [path stringByAppendingPathComponent:guia.urlAudioGuia];
+        
+        NSURL *fileURL = [NSURL fileURLWithPath:path];
+        _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        if (_audioPlayer == nil){
+            NSLog(@"%@", [error description]);
+        }else{
+            [_audioPlayer play];
+            [[Settings sharedInstance] setIsPlaying:YES];
+            
+            [[AVAudioSession sharedInstance]
+             setCategory: AVAudioSessionCategoryPlayback
+             error: nil];
+        }
+    }
+    
+}
+#pragma mark - Notification methods
+- (void) openSaberMas:(NSNotification *)notification{
+    if([notification.name isEqualToString:kNOTIFICATION_GO_TO_SABER_MAS]){
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SaberMasBorneiroViewController"];
+        ((SaberMasBorneiroViewController *)vc).guia = notification.object;
+        ((SaberMasBorneiroViewController *)vc).titleSection = NSLocalizedString(@"menu_a_cida_borneiro", nil);
+
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+        
+    }
+    
 }
 - (IBAction)btnOpenMenu:(id)sender {
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

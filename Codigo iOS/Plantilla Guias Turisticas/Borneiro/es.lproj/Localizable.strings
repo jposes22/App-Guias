@@ -24,6 +24,9 @@
 
 //Saber mas
 "subtitle_saber_mas" = "Saber más...";
+"text_saber_mas" = "Saber más  ";
+"text_audio_guia" = "Audioguia";
+
 //Home
 "btn_home_comollegar" = "Cómo llegar";
 "btn_home_ciudad" = "A Cidá de Borneiro";

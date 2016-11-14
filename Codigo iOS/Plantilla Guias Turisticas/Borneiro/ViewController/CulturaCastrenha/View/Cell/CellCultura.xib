@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,14 +31,17 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_saber_mas_cutura" translatesAutoresizingMaskIntoConstraints="NO" id="uNa-fd-N5o">
+                        <rect key="frame" x="8" y="336" width="445" height="20.5"/>
+                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-7D-GyQ">
                         <rect key="frame" x="10" y="81" width="441" height="250"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="km8-RA-gF5"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci1-PX-vLh">
-                        <rect key="frame" x="10" y="336" width="441" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" Saber más" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci1-PX-vLh">
+                        <rect key="frame" x="53" y="336" width="398" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20.5" id="v2F-Oa-obu"/>
                         </constraints>
@@ -51,16 +54,20 @@
                 <constraints>
                     <constraint firstItem="VaK-3H-CcJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="1dD-Em-SSs"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VaK-3H-CcJ" secondAttribute="trailing" constant="10" id="8SZ-zW-AFy"/>
-                    <constraint firstItem="ci1-PX-vLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Aex-mF-pBw"/>
+                    <constraint firstItem="ci1-PX-vLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="45" id="Aex-mF-pBw"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ci1-PX-vLh" secondAttribute="trailing" constant="2" id="BA7-PA-hJ1"/>
+                    <constraint firstAttribute="trailing" secondItem="uNa-fd-N5o" secondAttribute="trailing" constant="8" id="H1W-sI-cp5"/>
                     <constraint firstItem="fnk-7D-GyQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Pwa-GR-mdu"/>
                     <constraint firstItem="fnk-7D-GyQ" firstAttribute="top" secondItem="x12-9d-oWr" secondAttribute="bottom" constant="10" id="UY9-tU-WEw"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ci1-PX-vLh" secondAttribute="bottom" constant="2" id="WkS-np-x85"/>
                     <constraint firstItem="ci1-PX-vLh" firstAttribute="top" secondItem="fnk-7D-GyQ" secondAttribute="bottom" constant="5" id="bcc-KN-Tzb"/>
                     <constraint firstItem="x12-9d-oWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="eT4-cv-qjE"/>
                     <constraint firstAttribute="trailingMargin" secondItem="x12-9d-oWr" secondAttribute="trailing" constant="10" id="hSz-Zg-sC0"/>
+                    <constraint firstItem="ci1-PX-vLh" firstAttribute="bottom" secondItem="uNa-fd-N5o" secondAttribute="bottom" id="jgr-bK-jnr"/>
                     <constraint firstAttribute="trailingMargin" secondItem="fnk-7D-GyQ" secondAttribute="trailing" constant="2" id="lBx-9v-uVM"/>
                     <constraint firstItem="VaK-3H-CcJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="nNZ-cM-IiU"/>
+                    <constraint firstItem="ci1-PX-vLh" firstAttribute="top" secondItem="uNa-fd-N5o" secondAttribute="top" id="oGU-uA-J9X"/>
+                    <constraint firstItem="uNa-fd-N5o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="sHC-b8-wyP"/>
                     <constraint firstItem="x12-9d-oWr" firstAttribute="top" secondItem="VaK-3H-CcJ" secondAttribute="bottom" constant="14" id="vuY-S1-ACx"/>
                 </constraints>
             </tableViewCellContentView>
@@ -70,10 +77,15 @@
                 <outlet property="constraintTopImagen" destination="UY9-tU-WEw" id="hcX-1Q-ai4"/>
                 <outlet property="contraintLabelTopHeight" destination="1dD-Em-SSs" id="5YR-c8-Q6b"/>
                 <outlet property="imageGuia" destination="fnk-7D-GyQ" id="liq-sG-8Rv"/>
+                <outlet property="imageSaberMas" destination="uNa-fd-N5o" id="KoF-8i-jAs"/>
                 <outlet property="labelDescripcion" destination="x12-9d-oWr" id="iHe-ox-g1K"/>
+                <outlet property="labelSaberMas" destination="ci1-PX-vLh" id="cWK-4I-4bm"/>
                 <outlet property="labelTitle" destination="VaK-3H-CcJ" id="k5d-g8-qbx"/>
             </connections>
             <point key="canvasLocation" x="17.5" y="-8.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="btn_saber_mas_cutura" width="579" height="35"/>
+    </resources>
 </document>

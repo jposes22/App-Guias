@@ -11,4 +11,5 @@
 
 @interface SaberMasBorneiroViewController : UIViewController
 @property (nonatomic, strong) GuiaSaberMasList * guia;
+@property (nonatomic, strong) NSString * titleSection;
 @end

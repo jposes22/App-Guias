@@ -28,18 +28,28 @@
                         <constraint firstAttribute="height" constant="44" id="iw4-Jl-dib"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-EE-DhF">
+                    <rect key="frame" x="73" y="40.5" width="42" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="lQq-A8-m6t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="4NV-H4-UNJ"/>
+                <constraint firstItem="aTx-EE-DhF" firstAttribute="top" secondItem="l8g-yS-24Z" secondAttribute="top" id="TGQ-Ct-iXx"/>
                 <constraint firstAttribute="trailing" secondItem="lQq-A8-m6t" secondAttribute="trailing" constant="20" id="VEs-9c-ooL"/>
                 <constraint firstItem="l8g-yS-24Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="f6Q-He-wfv"/>
                 <constraint firstItem="lQq-A8-m6t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="kmu-x1-25l"/>
                 <constraint firstItem="l8g-yS-24Z" firstAttribute="top" secondItem="lQq-A8-m6t" secondAttribute="bottom" constant="10" id="lUP-7r-ZC6"/>
+                <constraint firstItem="aTx-EE-DhF" firstAttribute="bottom" secondItem="l8g-yS-24Z" secondAttribute="bottom" id="pZQ-GU-uRb"/>
+                <constraint firstItem="aTx-EE-DhF" firstAttribute="trailing" secondItem="l8g-yS-24Z" secondAttribute="trailing" constant="-5" id="uff-y0-AMR"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="imageGuia" destination="l8g-yS-24Z" id="iN9-5V-GdM"/>
+                <outlet property="labelAudioGuia" destination="aTx-EE-DhF" id="pLP-xS-c2c"/>
                 <outlet property="labelTitle" destination="lQq-A8-m6t" id="sdc-3t-6jS"/>
             </connections>
         </view>

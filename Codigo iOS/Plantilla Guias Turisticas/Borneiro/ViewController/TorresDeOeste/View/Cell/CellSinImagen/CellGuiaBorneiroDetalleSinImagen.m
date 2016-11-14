@@ -8,6 +8,7 @@
 
 #import "CellGuiaBorneiroDetalleSinImagen.h"
 #import "StyleBorneiro.h"
+#import "Constants.h"
 #import "Metodos.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "GuiaDetalleImagen+CoreDataProperties.h"
@@ -20,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMAs;
 @property (weak, nonatomic) IBOutlet UIImageView *imageSaberMas;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
+@property (nonatomic, strong) GuiaDetalleList * guiaDetalle;
+
 @end
 @implementation CellGuiaBorneiroDetalleSinImagen
 
@@ -34,11 +37,12 @@
     // Configure the view for the selected state
 }
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
+    _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
         _constraintTopTitle.constant = 0;
         _labelTitle.hidden = YES;
     }else{
-        _labelTitle.text = [Metodos convertHTMLToString:guiaDetalle.titulo];
+        _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _constraintTopTitle.constant = 10;
         _labelTitle.hidden = NO;
 
@@ -52,17 +56,17 @@
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     if(guiaDetalle.saberMasList != nil){
-        _labelSaberMas.hidden = NO;
-        _imagenSaberMas.hidden = NO;
-        _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
+        _labelSaberMAs.hidden = NO;
+        _imageSaberMas.hidden = NO;
+        _labelSaberMAs.text = NSLocalizedString(@"text_saber_mas", nil);
         
         
         UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
         tapSaberMasGesture.numberOfTapsRequired = 1;
-        [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
+        [_labelSaberMAs addGestureRecognizer:tapSaberMasGesture];
     }else{
-        _labelSaberMas.hidden = YES;
-        _imagenSaberMas.hidden = YES;
+        _labelSaberMAs.hidden = YES;
+        _imageSaberMas.hidden = YES;
     }
 
     
@@ -80,8 +84,9 @@
     
 }
 -(void)loadStyle{
-    [StyleBorneiro setStyleText:_labelSaberMas];
-    
+    [StyleBorneiro setStyleText:_labelSaberMAs];
+    _labelSaberMAs.textColor = [UIColor whiteColor];
+
 }
 
 

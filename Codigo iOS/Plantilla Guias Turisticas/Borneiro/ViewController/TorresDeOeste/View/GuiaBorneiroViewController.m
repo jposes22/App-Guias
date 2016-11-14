@@ -120,6 +120,7 @@
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"GuiasBorneiro" bundle:nil];
         UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SaberMasBorneiroViewController"];
         ((SaberMasBorneiroViewController *)vc).guia = notification.object;
+        ((SaberMasBorneiroViewController *)vc).titleSection = NSLocalizedString(@"menu_visita", nil);
         [self.navigationController presentViewController:vc animated:YES completion:nil];
         
     }

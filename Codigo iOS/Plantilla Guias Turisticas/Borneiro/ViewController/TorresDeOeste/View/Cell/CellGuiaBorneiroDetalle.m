@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
 @property (weak, nonatomic) IBOutlet UIImageView *imagenSaberMas;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
+@property (nonatomic, strong) GuiaDetalleList * guiaDetalle;
+
 @end
 
 @implementation CellGuiaBorneiroDetalle
@@ -40,12 +42,13 @@
 }
 
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
+    _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
         _contraintLabelTopHeight.constant = 0;
         _labelTitle.hidden = YES;
     }else{
         _contraintLabelTopHeight.constant = 10;
-        _labelTitle.text = [Metodos convertHTMLToString:guiaDetalle.titulo];
+        _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
     if(!guiaDetalle.descripcion){
@@ -107,7 +110,8 @@
 }
 -(void)loadStyle{
      [StyleBorneiro setStyleText:_labelSaberMas];
-    
+    _labelSaberMas.textColor = [UIColor whiteColor];
+
 }
 
 

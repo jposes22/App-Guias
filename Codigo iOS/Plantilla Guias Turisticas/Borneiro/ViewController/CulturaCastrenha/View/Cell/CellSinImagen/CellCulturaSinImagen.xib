@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,15 +16,26 @@
             <rect key="frame" x="0.0" y="0.0" width="367" height="83"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="367" height="82"/>
+                <rect key="frame" x="0.0" y="0.0" width="367" height="82"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg1-pU-rHO">
+                        <rect key="frame" x="18" y="18" width="331" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35e-dG-pHm">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35e-dG-pHm">
+                        <rect key="frame" x="18" y="28" width="331" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_saber_mas_cutura" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-Kn-jf6">
+                        <rect key="frame" x="8" y="36" width="343" height="21"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-E9-ZDr">
+                        <rect key="frame" x="53" y="36" width="291" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -29,22 +43,34 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="EaW-E9-ZDr" secondAttribute="bottom" constant="17" id="1FO-4H-8Cd"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="PdT-Kn-jf6" secondAttribute="leading" id="1rc-VX-IyN"/>
+                    <constraint firstItem="EaW-E9-ZDr" firstAttribute="top" secondItem="35e-dG-pHm" secondAttribute="bottom" constant="8" id="M4h-b8-Xvg"/>
                     <constraint firstItem="qg1-pU-rHO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Qkh-GQ-b3d"/>
                     <constraint firstItem="qg1-pU-rHO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="RDJ-EJ-e0W"/>
                     <constraint firstItem="35e-dG-pHm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Y50-RY-hT2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="35e-dG-pHm" secondAttribute="trailing" constant="10" id="e9d-8T-pEh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="EaW-E9-ZDr" secondAttribute="trailing" constant="15" id="hOr-Zk-OL6"/>
+                    <constraint firstItem="EaW-E9-ZDr" firstAttribute="bottom" secondItem="PdT-Kn-jf6" secondAttribute="bottom" id="hoj-BP-gHA"/>
+                    <constraint firstItem="EaW-E9-ZDr" firstAttribute="top" secondItem="PdT-Kn-jf6" secondAttribute="top" id="jL7-CR-WB1"/>
+                    <constraint firstItem="EaW-E9-ZDr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="45" id="ovH-HZ-fQD"/>
                     <constraint firstAttribute="trailingMargin" secondItem="qg1-pU-rHO" secondAttribute="trailing" constant="10" id="qhe-vU-Qqu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PdT-Kn-jf6" secondAttribute="trailing" constant="8" id="rRu-QF-U36"/>
                     <constraint firstItem="35e-dG-pHm" firstAttribute="top" secondItem="qg1-pU-rHO" secondAttribute="bottom" constant="10" id="xmG-54-odI"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="35e-dG-pHm" secondAttribute="bottom" constant="5.5" id="yZM-Ob-j17"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="constraintTopDescripcion" destination="xmG-54-odI" id="fBR-nU-OHi"/>
                 <outlet property="constraintTopTitle" destination="Qkh-GQ-b3d" id="dZg-kH-Lxa"/>
+                <outlet property="imageSaberMas" destination="PdT-Kn-jf6" id="Pq4-IE-UNf"/>
                 <outlet property="labelDescripcion" destination="35e-dG-pHm" id="oQ9-O7-idO"/>
+                <outlet property="labelSaberMas" destination="EaW-E9-ZDr" id="GHy-FO-99g"/>
                 <outlet property="labelTitle" destination="qg1-pU-rHO" id="QMb-SS-w77"/>
             </connections>
             <point key="canvasLocation" x="57.5" y="73.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="btn_saber_mas_cutura" width="579" height="35"/>
+    </resources>
 </document>

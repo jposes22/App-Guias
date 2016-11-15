@@ -25,6 +25,7 @@
 @property (nonatomic, strong) LanguagePickerController *pickerController;
 @property (strong, nonatomic) UIToolbar *pickerToolbar;
 
+@property (unsafe_unretained, nonatomic) IBOutlet UINavigationBar *navigationBar;
 
 @property (nonatomic,strong) NSArray *listIdiomas;
 @end
@@ -43,6 +44,7 @@
 }
 
 -(void)initPicker{
+        [UtilsAppearance setStyleNavigationBar:_navigationBar withTitle:NSLocalizedString(@"title_ajustes", nil)];
     _lblTitle.text = NSLocalizedString(@"ajustes_idioma", nil);
     //_topics = [ProceduresCategoryDAO getProceduresCategories];
     _pickerView = [[UIPickerView alloc] init];

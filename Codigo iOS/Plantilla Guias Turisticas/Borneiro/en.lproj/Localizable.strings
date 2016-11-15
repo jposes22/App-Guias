@@ -33,6 +33,8 @@
 "nav_selfie" = "Selfie";
 "nav_creditos" = "Créditos";
 
+"title_ajustes" ="Settings";
+
 //Saber mas
 "subtitle_saber_mas" = "Saber más...";
 "text_audio_guia" = "Audioguia";

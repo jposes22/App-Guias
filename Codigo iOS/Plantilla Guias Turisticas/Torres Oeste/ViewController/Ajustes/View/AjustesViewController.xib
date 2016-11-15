@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="fieldLanguage" destination="xOh-22-P0V" id="l69-r2-YJw"/>
                 <outlet property="lblTitle" destination="zZc-Yp-scX" id="WvT-II-TWn"/>
+                <outlet property="navigationBar" destination="4Ve-ZT-6ea" id="A0U-dW-0KZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +36,7 @@
                     </items>
                 </navigationBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-Yp-scX">
-                    <rect key="frame" x="161.5" y="104" width="52" height="21"/>
+                    <rect key="frame" x="162" y="104" width="52" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

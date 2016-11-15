@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +12,7 @@
             <connections>
                 <outlet property="fieldLanguage" destination="xOh-22-P0V" id="l69-r2-YJw"/>
                 <outlet property="lblTitle" destination="zZc-Yp-scX" id="WvT-II-TWn"/>
+                <outlet property="navigationBar" destination="4Ve-ZT-6ea" id="wQD-EV-obf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,13 +34,13 @@
                     </items>
                 </navigationBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-Yp-scX">
-                    <rect key="frame" x="161.5" y="104" width="52" height="21"/>
+                    <rect key="frame" x="162" y="104" width="52" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOh-22-P0V">
-                    <rect key="frame" x="115" y="133" width="145" height="30"/>
+                    <rect key="frame" x="116" y="133" width="145" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="145" id="19y-Mm-fbf"/>
                     </constraints>

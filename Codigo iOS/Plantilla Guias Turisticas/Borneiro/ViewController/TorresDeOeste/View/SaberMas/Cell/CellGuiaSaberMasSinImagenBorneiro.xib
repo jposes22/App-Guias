@@ -20,13 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLA-Gq-E6C">
-                        <rect key="frame" x="8" y="18" width="328" height="0.0"/>
+                        <rect key="frame" x="10" y="18" width="324" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zph-bV-HfX">
-                        <rect key="frame" x="8" y="28" width="328" height="23"/>
+                        <rect key="frame" x="10" y="28" width="324" height="23"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,11 +35,11 @@
                 <constraints>
                     <constraint firstAttribute="bottomMargin" secondItem="zph-bV-HfX" secondAttribute="bottom" constant="5" id="E0L-zH-C5x"/>
                     <constraint firstItem="kLA-Gq-E6C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="INo-5k-iJB"/>
-                    <constraint firstAttribute="trailing" secondItem="kLA-Gq-E6C" secondAttribute="trailing" constant="8" id="U0S-Tk-34J"/>
-                    <constraint firstItem="kLA-Gq-E6C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="VG3-AS-kcX"/>
+                    <constraint firstAttribute="trailing" secondItem="kLA-Gq-E6C" secondAttribute="trailing" constant="10" id="U0S-Tk-34J"/>
+                    <constraint firstItem="kLA-Gq-E6C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VG3-AS-kcX"/>
                     <constraint firstItem="zph-bV-HfX" firstAttribute="top" secondItem="kLA-Gq-E6C" secondAttribute="bottom" constant="10" id="ZXh-b5-oAA"/>
-                    <constraint firstAttribute="trailing" secondItem="zph-bV-HfX" secondAttribute="trailing" constant="8" id="pgx-us-JPb"/>
-                    <constraint firstItem="zph-bV-HfX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="xz0-AF-hrS"/>
+                    <constraint firstAttribute="trailing" secondItem="zph-bV-HfX" secondAttribute="trailing" constant="10" id="pgx-us-JPb"/>
+                    <constraint firstItem="zph-bV-HfX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xz0-AF-hrS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

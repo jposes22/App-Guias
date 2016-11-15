@@ -22,7 +22,7 @@
                         <constraint firstAttribute="height" constant="100" id="cDc-ZA-POA"/>
                     </constraints>
                 </imageView>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bt_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Q-ui-ElR">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Q-ui-ElR">
                     <rect key="frame" x="20" y="145.5" width="100" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="6tH-oe-qbE"/>
@@ -36,7 +36,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-KW-y7u">
-                    <rect key="frame" x="73" y="145.5" width="42" height="44"/>
+                    <rect key="frame" x="73" y="157.5" width="42" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -44,15 +44,14 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Y1Q-ui-ElR" firstAttribute="top" secondItem="yCh-mv-0Tk" secondAttribute="bottom" constant="5" id="3eR-KI-naj"/>
-                <constraint firstItem="e1e-KW-y7u" firstAttribute="top" secondItem="Y1Q-ui-ElR" secondAttribute="top" id="7Xi-fa-Ead"/>
+                <constraint firstItem="Y1Q-ui-ElR" firstAttribute="top" secondItem="yCh-mv-0Tk" secondAttribute="bottom" constant="5" id="3Sr-wf-bbc"/>
                 <constraint firstItem="Y1Q-ui-ElR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="HUN-74-2RD"/>
                 <constraint firstItem="yCh-mv-0Tk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="10" id="IQg-IF-uvB"/>
                 <constraint firstItem="yCh-mv-0Tk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Iqj-14-hQ1"/>
                 <constraint firstItem="rZn-Rs-YbD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P9w-yG-Zvn"/>
-                <constraint firstItem="e1e-KW-y7u" firstAttribute="trailing" secondItem="Y1Q-ui-ElR" secondAttribute="trailing" constant="-5" id="Vyg-Rc-GAB"/>
+                <constraint firstItem="e1e-KW-y7u" firstAttribute="centerY" secondItem="Y1Q-ui-ElR" secondAttribute="centerY" id="TSU-X1-ojC"/>
                 <constraint firstItem="yCh-mv-0Tk" firstAttribute="top" secondItem="rZn-Rs-YbD" secondAttribute="bottom" priority="750" constant="10" id="eQQ-Uh-jYR"/>
-                <constraint firstItem="e1e-KW-y7u" firstAttribute="bottom" secondItem="Y1Q-ui-ElR" secondAttribute="bottom" id="lKH-ja-gIJ"/>
+                <constraint firstItem="e1e-KW-y7u" firstAttribute="trailing" secondItem="Y1Q-ui-ElR" secondAttribute="trailing" constant="-5" id="gm9-fg-dcs"/>
                 <constraint firstItem="rZn-Rs-YbD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="ssq-JE-g3e"/>
                 <constraint firstAttribute="trailing" secondItem="yCh-mv-0Tk" secondAttribute="trailing" constant="20" id="w1i-lZ-bAs"/>
             </constraints>
@@ -67,7 +66,7 @@
         </view>
     </objects>
     <resources>
-        <image name="bt_audioguia_off" width="75" height="18"/>
+        <image name="ic_audioguia_off" width="82" height="18"/>
         <image name="ic_cultura_castrenha" width="67" height="67"/>
     </resources>
 </document>

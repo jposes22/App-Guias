@@ -50,14 +50,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //init variables
-    _downloadWithoutErrorParametos=0;
-    _downloadWithoutErrorIdioma =0;
-    _downloadWithoutErrorMenu = 0;
-    _downloadWithoutErrorPoi = 0;
-    _downloadWithoutErrorGuia = 0;
-    _downloadWithoutErrorGuiaDetalle = 0;
-    _downloadWithoutErrorGuiaSaberMas = 0;
-    _downloadWithoutErrorGuiaSaberMasDetalle = 0;
+    [self resetDownloadVar];
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(idiomaElegido:) name:@"NOTIFICATION_IDIOMA_ELEGIDO" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteAllData) name:@"CHANGE_LANGUAGE" object:nil];
@@ -67,6 +60,17 @@
         [self insertParametros];
     }
     [self downloadParameters];
+}
+
+-(void) resetDownloadVar{
+    _downloadWithoutErrorParametos=0;
+    _downloadWithoutErrorIdioma =0;
+    _downloadWithoutErrorMenu = 0;
+    _downloadWithoutErrorPoi = 0;
+    _downloadWithoutErrorGuia = 0;
+    _downloadWithoutErrorGuiaDetalle = 0;
+    _downloadWithoutErrorGuiaSaberMas = 0;
+    _downloadWithoutErrorGuiaSaberMasDetalle = 0;
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -96,11 +100,9 @@
         [[Settings sharedInstance] setWasStaredAppBefore:YES];
         [[Settings sharedInstance] saveSettings];
     }
-   // [[NSOperationQueue new] addOperationWithBlock:^{
-
         MenuViewController * menu = [MenuViewController new];
         [self presentViewController:menu animated:NO completion:nil];
-  //  }];
+
 }
 //Descargamos los idiomas disponibles
 -(void)downloadIdioma{
@@ -175,21 +177,24 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
+            [self downloadIdioma];
             self.downloadWithoutErrorParametos = 1;
             break;
         case kDAO_RESPONSE_FAIL:
             self.downloadWithoutErrorParametos = 2;
+            [self showAlertViewRetry];
             //show error
             break;
         case kDAO_RESPONSE_TIMEOUT:
             self.downloadWithoutErrorParametos = 2;
+            [self showAlertViewRetry];
             break;
             //show error
         default:
             self.downloadWithoutErrorParametos = 2;
             break;
     }
-    [self downloadIdioma];
+    
 
 }
 #pragma mark - Communication Idioma
@@ -390,6 +395,7 @@
                                 style:UIAlertActionStyleDefault
                                 handler:^(UIAlertAction * action) {
                                     //Handle your yes please button action here
+                                    [self resetDownloadVar];
                                     [self downloadParameters];
                                 }];
     
@@ -442,6 +448,7 @@
     }
     
     [[Settings sharedInstance] resetSettings];
+    [self resetDownloadVar];
      [_progressView setProgress:0 animated:YES];
     [self downloadData];
 }

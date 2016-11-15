@@ -50,7 +50,7 @@
         [_labelAudioGuia setHidden:NO];
         _labelAudioGuia.text = NSLocalizedString(@"text_audio_guia", nil);
         [StyleBorneiro setStyleSubtitleMoreInfo:_labelAudioGuia];
-        _labelAudioGuia.textColor = [StyleBorneiro getPrimaryDarkColor];
+        _labelAudioGuia.textColor = [UIColor whiteColor];
 
     }
     _labelTitle.text = guia.titulo;

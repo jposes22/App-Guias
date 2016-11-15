@@ -29,8 +29,12 @@ public class GuiaSaberMasVO extends GenericLanguageVO implements Serializable {
 	@Column(name = "id_guia_detalle")
 	private int idGuiaDetalle;
 
-	@Column(name="url_audio_guia")
-	private String urlAudioGuia;
+	@Column(name = "url_audio_guia_gl")
+	private String urlAudioGuiaGl;
+	@Column(name = "url_audio_guia_es")
+	private String urlAudioGuiaEs;
+	@Column(name = "url_audio_guia_en")
+	private String urlAudioGuiaEn;
 	
 	@Column(name="longitud")
 	private double longitud;
@@ -54,12 +58,6 @@ public class GuiaSaberMasVO extends GenericLanguageVO implements Serializable {
 	public void setIdGuiaDetalle(int idGuiaDetalle) {
 		this.idGuiaDetalle = idGuiaDetalle;
 	}
-	public String getUrlAudioGuia() {
-		return urlAudioGuia;
-	}
-	public void setUrlAudioGuia(String urlAudioGuia) {
-		this.urlAudioGuia = urlAudioGuia;
-	}
 	public double getLongitud() {
 		return longitud;
 	}
@@ -78,6 +76,25 @@ public class GuiaSaberMasVO extends GenericLanguageVO implements Serializable {
 	public void setListGuiaSaberDetalleMas(List<GuiaSaberMasDetalleVO> listGuiaSaberDetalleMas) {
 		this.listGuiaSaberDetalleMas = listGuiaSaberDetalleMas;
 	}
+	public String getUrlAudioGuiaGl() {
+		return urlAudioGuiaGl;
+	}
+	public void setUrlAudioGuiaGl(String urlAudioGuiaGl) {
+		this.urlAudioGuiaGl = urlAudioGuiaGl;
+	}
+	public String getUrlAudioGuiaEs() {
+		return urlAudioGuiaEs;
+	}
+	public void setUrlAudioGuiaEs(String urlAudioGuiaEs) {
+		this.urlAudioGuiaEs = urlAudioGuiaEs;
+	}
+	public String getUrlAudioGuiaEn() {
+		return urlAudioGuiaEn;
+	}
+	public void setUrlAudioGuiaEn(String urlAudioGuiaEn) {
+		this.urlAudioGuiaEn = urlAudioGuiaEn;
+	}
+	
 	
 	
 	

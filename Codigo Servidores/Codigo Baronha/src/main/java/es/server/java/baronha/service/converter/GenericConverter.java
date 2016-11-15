@@ -101,6 +101,7 @@ public class GenericConverter {
      * @param lang String del idioma a convertir
      * @return Resultado de la conversi&oacute;n
      */
+    //Quitamos reflect.Field; reflection y ponemos esta ñapa para poder tener audio guías rápidamente en varios idiomas queda listo en esta app no se pone audio guías así ya no hay que testear pero dejamos listo para que sea sencillo el cambio 
     public static <T> T toDtoLanguage(Object entity, Class<T> clazz, String lang) {
     	
     	if (entity == null) {

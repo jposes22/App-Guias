@@ -11,6 +11,10 @@ import org.dozer.DozerBeanMapperSingletonWrapper;
 
 import es.server.java.borneiro.model.vo.GenericLanguageVO;
 import es.server.java.borneiro.view.dto.GenericLanguageDTO;
+import es.server.java.borneiro.model.vo.GuiaSaberMasVO;
+import es.server.java.borneiro.model.vo.GuiaVO;
+import es.server.java.borneiro.view.dto.GuiaDTO;
+import es.server.java.borneiro.view.dto.GuiaSaberMasDTO;
 
 
 /**
@@ -101,6 +105,7 @@ public class GenericConverter {
      * @param lang String del idioma a convertir
      * @return Resultado de la conversi&oacute;n
      */
+    //Quitamos reflect.Field; reflection y ponemos esta ñapa para poder tener audio guías rápidamente en varios idiomas
     public static <T> T toDtoLanguage(Object entity, Class<T> clazz, String lang) {
     	
     	if (entity == null) {
@@ -123,8 +128,37 @@ public class GenericConverter {
 				((GenericLanguageDTO)aux).setTitulo(((GenericLanguageVO)entity).getTituloEn());
 			default:
 				break;
-			}	
+			}  	
         }
+    	if(entity == GuiaVO.class || GuiaVO.class.isAssignableFrom(entity.getClass()) ){
+          	 switch (lang){
+          	case "es":
+				((GuiaDTO)aux).setUrlAudioGuia(((GuiaVO)entity).getUrlAudioGuiaEs());
+				break;
+			case "gl":
+				((GuiaDTO)aux).setUrlAudioGuia(((GuiaVO)entity).getUrlAudioGuiaGl());
+				break;
+			case "en":
+				((GuiaDTO)aux).setUrlAudioGuia(((GuiaVO)entity).getUrlAudioGuiaEn());
+				break;
+          	 }
+         }
+    	
+    	if(entity == GuiaSaberMasVO.class || GuiaSaberMasVO.class.isAssignableFrom(entity.getClass()) ){
+         	 switch (lang){
+         	case "es":
+				((GuiaSaberMasDTO)aux).setUrlAudioGuia(((GuiaSaberMasVO)entity).getUrlAudioGuiaEs());
+				break;
+			case "gl":
+				((GuiaSaberMasDTO)aux).setUrlAudioGuia(((GuiaSaberMasVO)entity).getUrlAudioGuiaGl());
+				break;
+			case "en":
+				((GuiaSaberMasDTO)aux).setUrlAudioGuia(((GuiaSaberMasVO)entity).getUrlAudioGuiaEn());
+				break;
+         	 }
+        }
+   	
+    	
         return aux;
     }
     

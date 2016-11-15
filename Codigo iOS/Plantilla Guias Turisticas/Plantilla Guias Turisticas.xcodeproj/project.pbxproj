@@ -540,6 +540,9 @@
 		82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
 		82EE78091DC668AF00C3A344 /* ViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EE77F51DC6689C00C3A344 /* ViewImage.m */; };
 		82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82EE77F61DC6689C00C3A344 /* ViewImage.xib */; };
+		82F16FFC1DDB62DE000806E4 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F16FFB1DDB62DE000806E4 /* AjustesViewController.xib */; };
+		82F170001DDB65D9000806E4 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F16FFF1DDB65D9000806E4 /* AjustesViewController.xib */; };
+		82F170041DDB6609000806E4 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F170031DDB6609000806E4 /* AjustesViewController.xib */; };
 		82F8AD161DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
 		82F8AD171DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
 		82F8AD181DDA4193007D9845 /* LanguagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD111DDA4193007D9845 /* LanguagePickerController.m */; };
@@ -548,10 +551,6 @@
 		82F8AD1B1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
 		82F8AD1C1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
 		82F8AD1D1DDA4193007D9845 /* AjustesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F8AD141DDA4193007D9845 /* AjustesViewController.m */; };
-		82F8AD1E1DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
-		82F8AD1F1DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
-		82F8AD201DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
-		82F8AD211DDA4193007D9845 /* AjustesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82F8AD151DDA4193007D9845 /* AjustesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1070,6 +1069,9 @@
 		82EE77F41DC6689C00C3A344 /* ViewImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewImage.h; sourceTree = "<group>"; };
 		82EE77F51DC6689C00C3A344 /* ViewImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewImage.m; sourceTree = "<group>"; };
 		82EE77F61DC6689C00C3A344 /* ViewImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewImage.xib; sourceTree = "<group>"; };
+		82F16FFB1DDB62DE000806E4 /* AjustesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AjustesViewController.xib; sourceTree = "<group>"; };
+		82F16FFF1DDB65D9000806E4 /* AjustesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AjustesViewController.xib; sourceTree = "<group>"; };
+		82F170031DDB6609000806E4 /* AjustesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AjustesViewController.xib; sourceTree = "<group>"; };
 		82F8AD101DDA4193007D9845 /* LanguagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguagePickerController.h; sourceTree = "<group>"; };
 		82F8AD111DDA4193007D9845 /* LanguagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguagePickerController.m; sourceTree = "<group>"; };
 		82F8AD131DDA4193007D9845 /* AjustesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AjustesViewController.h; sourceTree = "<group>"; };
@@ -1982,6 +1984,7 @@
 		8295EE671DC4AF5C0049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82F16FF91DDB62DE000806E4 /* Ajustes */,
 				82EE77E01DC64CF200C3A344 /* Creditos */,
 				8295EE731DC4B0600049FB7D /* ComoLlegar */,
 				8295EE781DC4B0600049FB7D /* Copyright */,
@@ -2392,6 +2395,7 @@
 		8295F00A1DC4BD6E0049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82F16FFD1DDB65D9000806E4 /* Ajustes */,
 				82E74B0D1DC6213000ADB139 /* Creditos */,
 				8295F00B1DC4BD6E0049FB7D /* ComoLlegar */,
 				8295F0101DC4BD6E0049FB7D /* Copyright */,
@@ -2755,6 +2759,7 @@
 		8295F0C41DC4BD820049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				82F170011DDB6609000806E4 /* Ajustes */,
 				82EE77E61DC6505C00C3A344 /* Creditos */,
 				23A501771DC6272500019783 /* CulturaCastrenha */,
 				23A5014E1DC61A8A00019783 /* ACidaBorneiro */,
@@ -3350,6 +3355,54 @@
 			path = ViewImage;
 			sourceTree = "<group>";
 		};
+		82F16FF91DDB62DE000806E4 /* Ajustes */ = {
+			isa = PBXGroup;
+			children = (
+				82F16FFA1DDB62DE000806E4 /* View */,
+			);
+			path = Ajustes;
+			sourceTree = "<group>";
+		};
+		82F16FFA1DDB62DE000806E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82F16FFB1DDB62DE000806E4 /* AjustesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82F16FFD1DDB65D9000806E4 /* Ajustes */ = {
+			isa = PBXGroup;
+			children = (
+				82F16FFE1DDB65D9000806E4 /* View */,
+			);
+			path = Ajustes;
+			sourceTree = "<group>";
+		};
+		82F16FFE1DDB65D9000806E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82F16FFF1DDB65D9000806E4 /* AjustesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82F170011DDB6609000806E4 /* Ajustes */ = {
+			isa = PBXGroup;
+			children = (
+				82F170021DDB6609000806E4 /* View */,
+			);
+			path = Ajustes;
+			sourceTree = "<group>";
+		};
+		82F170021DDB6609000806E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82F170031DDB6609000806E4 /* AjustesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		82F8AD0E1DDA4193007D9845 /* Ajustes */ = {
 			isa = PBXGroup;
 			children = (
@@ -3545,7 +3598,6 @@
 			files = (
 				82EE780A1DC668AF00C3A344 /* ViewImage.xib in Resources */,
 				82EE78011DC668A400C3A344 /* AlbumViewController.xib in Resources */,
-				82F8AD1E1DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295EBBC1DC4A4CC0049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295EBB91DC4A4CC0049FB7D /* Assets.xcassets in Resources */,
 				8295EBB41DC4A4CC0049FB7D /* Main.storyboard in Resources */,
@@ -3578,13 +3630,13 @@
 				8295EE681DC4AF5C0049FB7D /* CaviarDreams.ttf in Resources */,
 				8295EF091DC4B0600049FB7D /* Poi.storyboard in Resources */,
 				8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */,
-				82F8AD1F1DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295EF1A1DC4B0600049FB7D /* CellGuiaCollectionView.xib in Resources */,
 				23A86F8F1DD8D8D800DBAA28 /* HeaderSaberMas.xib in Resources */,
 				8295EF031DC4B0600049FB7D /* RightViewController.xib in Resources */,
 				82EE77E41DC64CF200C3A344 /* Creditos.storyboard in Resources */,
 				8295EF011DC4B0600049FB7D /* CustomTableViewCell.xib in Resources */,
 				23A86F971DD8DA6C00DBAA28 /* CellGuiaDetalleSaberMas.xib in Resources */,
+				82F16FFC1DDB62DE000806E4 /* AjustesViewController.xib in Resources */,
 				82EE78081DC668AF00C3A344 /* ViewImage.xib in Resources */,
 				8295EE6D1DC4AF5C0049FB7D /* OpenSans-Regular.ttf in Resources */,
 				8295EF1C1DC4B0600049FB7D /* CellGuiaDetalle.xib in Resources */,
@@ -3611,7 +3663,7 @@
 				8295F0981DC4BD6E0049FB7D /* Home.storyboard in Resources */,
 				8295F18D1DC4C1480049FB7D /* OpenSans-Italic.ttf in Resources */,
 				8295F08D1DC4BD6E0049FB7D /* ComoLlegar.storyboard in Resources */,
-				82F8AD201DDA4193007D9845 /* AjustesViewController.xib in Resources */,
+				82F170001DDB65D9000806E4 /* AjustesViewController.xib in Resources */,
 				8295F1831DC4BFA50049FB7D /* Splash.storyboard in Resources */,
 				8295F1901DC4C1480049FB7D /* OpenSans-Semibold.ttf in Resources */,
 				8295F0901DC4BD6E0049FB7D /* CopyrightCell.xib in Resources */,
@@ -3642,6 +3694,7 @@
 				2314F21C1DC515130048F9E4 /* GuiasBorneiro.storyboard in Resources */,
 				8295F1791DC4BD830049FB7D /* CellGuiaBorneiroDetalleSinImagen.xib in Resources */,
 				8295F1B51DC4D6BA0049FB7D /* OpenSans-Regular.ttf in Resources */,
+				82F170041DDB6609000806E4 /* AjustesViewController.xib in Resources */,
 				8295F14C1DC4BD830049FB7D /* CopyrightBorneiro.storyboard in Resources */,
 				8295EC4B1DC4A87D0049FB7D /* LaunchScreen.storyboard in Resources */,
 				8295F1B31DC4D6BA0049FB7D /* OpenSans-Italic.ttf in Resources */,
@@ -3655,7 +3708,6 @@
 				23A86FB41DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib in Resources */,
 				23A501721DC6200D00019783 /* CellCidaBorneiro.xib in Resources */,
 				82EE77FB1DC6689C00C3A344 /* ViewImage.xib in Resources */,
-				82F8AD211DDA4193007D9845 /* AjustesViewController.xib in Resources */,
 				8295F1801DC4BEFB0049FB7D /* Splash.storyboard in Resources */,
 				23A501921DC6272500019783 /* HeaderCultura.xib in Resources */,
 				23A5018F1DC6272500019783 /* CellCulturaSinImagen.xib in Resources */,

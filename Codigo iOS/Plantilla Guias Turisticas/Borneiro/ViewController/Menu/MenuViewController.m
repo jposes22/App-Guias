@@ -9,6 +9,7 @@
 #import "MenuViewController.h"
 #import "HomeViewController.h"
 #import "RightViewController.h"
+#import "AjustesViewController.h"
 #import "Constants.h"
 
 @interface MenuViewController ()<RightMenuComunication>
@@ -111,6 +112,11 @@
             sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;
+        case SideDrawerMenuItemAjustes:
+            controllerLoader = [[AjustesViewController alloc] initWithNibName:@"AjustesViewController" bundle:nil];
+            
+            break;
+
             /*
         case SideDrawerMenuItemHelps:
             controllerLoader = [[HelpMainViewController alloc] initWithNibName:@"HelpMainViewController" bundle:nil];

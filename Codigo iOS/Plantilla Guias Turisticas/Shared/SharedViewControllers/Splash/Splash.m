@@ -449,6 +449,9 @@
     
     [[Settings sharedInstance] resetSettings];
     [self resetDownloadVar];
+    _downloadWithoutErrorParametos=1;
+    _downloadWithoutErrorIdioma =1;
+    //TODO: remove context elements
      [_progressView setProgress:0 animated:YES];
     [self downloadData];
 }

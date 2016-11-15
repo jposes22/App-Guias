@@ -140,6 +140,7 @@
                                 handler:^(UIAlertAction * action) {
                                     //Handle your yes please button action here
                                    // [self downloadParameters];
+                                     [self initPicker];
                                 }];
     
     [alert addAction:yesButton];

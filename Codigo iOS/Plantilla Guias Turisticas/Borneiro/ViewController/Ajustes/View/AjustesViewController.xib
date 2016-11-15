@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AjustesViewController">
+            <connections>
+                <outlet property="fieldLanguage" destination="xOh-22-P0V" id="l69-r2-YJw"/>
+                <outlet property="lblTitle" destination="zZc-Yp-scX" id="WvT-II-TWn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ve-ZT-6ea">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="09P-MK-Oen">
+                            <barButtonItem key="rightBarButtonItem" image="btnMenu" id="xE4-xp-Enh">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="openMenu:" destination="-1" id="9jq-Bd-8Nc"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idioma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZc-Yp-scX">
+                    <rect key="frame" x="161.5" y="104" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xOh-22-P0V">
+                    <rect key="frame" x="115" y="133" width="145" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="19y-Mm-fbf"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Ve-ZT-6ea" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DGw-jx-A6e">
+                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                </constraint>
+                <constraint firstItem="xOh-22-P0V" firstAttribute="top" secondItem="zZc-Yp-scX" secondAttribute="bottom" constant="8" id="EFx-FN-isp"/>
+                <constraint firstItem="4Ve-ZT-6ea" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hld-2i-b1W"/>
+                <constraint firstItem="zZc-Yp-scX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jal-xt-hNn"/>
+                <constraint firstItem="xOh-22-P0V" firstAttribute="centerX" secondItem="zZc-Yp-scX" secondAttribute="centerX" id="Mva-Dw-gPu"/>
+                <constraint firstAttribute="trailing" secondItem="4Ve-ZT-6ea" secondAttribute="trailing" id="U5w-yy-cMl"/>
+                <constraint firstItem="zZc-Yp-scX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="rUz-jI-0Kn"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="57.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btnMenu" width="60" height="60"/>
+    </resources>
+</document>

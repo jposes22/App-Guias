@@ -19,6 +19,20 @@
 "menu_selfie" = "Selfie";
 "menu_creditos" = "Créditos";
 
+
+//Nav
+"nav_home" = "Inicio";
+"nav_como_llegar" = "Cómo llegar";
+"nav_a_cida_borneiro" = "A Cidá Borneiro";
+"nav_visita" = "Comenzar visita";
+"nav_cultura_castrenha" = "Cultura Castreña";
+"nav_sitios_interes" = "Sitios de interés";
+"nav_copyright" = "Copyright";
+"nav_referencias" = "Referencias";
+"nav_ajustes" = "Ajustes";
+"nav_selfie" = "Selfie";
+"nav_creditos" = "Créditos";
+
 //Saber mas
 "subtitle_saber_mas" = "Saber más...";
 "text_audio_guia" = "Audioguia";
@@ -52,3 +66,14 @@
 /*Como llegar*/
 
 "como_llegar_ver_mapa"="Ver en mapa";
+
+/*Ajustes*/
+"ajustes_idioma" ="Idioma:";
+"ajustes_title_change_language"="Cambio de idioma";
+"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_ok_language"="Ok";
+"ajustes_cancel_language"="Cancelar";
+
+"ajustes_title_change_language"="Error de conexión";
+"ajustes_descripcion_language"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_ok_language"="Ok";

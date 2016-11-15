@@ -29,11 +29,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewSplash;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (nonatomic) float progresValue;
-@property (nonatomic) BOOL downloadWithoutErrorParametos;
-@property (nonatomic) BOOL downloadWithoutErrorIdioma;
-@property (nonatomic) BOOL downloadWithoutErrorMenu;
-@property (nonatomic) BOOL downloadWithoutErrorPoi;
-@property (nonatomic) BOOL downloadWithoutErrorGuia;
+@property (nonatomic) NSInteger downloadWithoutErrorParametos;
+@property (nonatomic) NSInteger downloadWithoutErrorIdioma;
+@property (nonatomic) NSInteger downloadWithoutErrorMenu;
+@property (nonatomic) NSInteger downloadWithoutErrorPoi;
+@property (nonatomic) NSInteger downloadWithoutErrorGuia;
+@property (nonatomic) NSInteger downloadWithoutErrorGuiaDetalle;
+@property (nonatomic) NSInteger downloadWithoutErrorGuiaSaberMas;
+@property (nonatomic) NSInteger downloadWithoutErrorGuiaSaberMasDetalle;
 
 
 
@@ -46,6 +49,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //init variables
+    _downloadWithoutErrorParametos=0;
+    _downloadWithoutErrorIdioma =0;
+    _downloadWithoutErrorMenu = 0;
+    _downloadWithoutErrorPoi = 0;
+    _downloadWithoutErrorGuia = 0;
+    _downloadWithoutErrorGuiaDetalle = 0;
+    _downloadWithoutErrorGuiaSaberMas = 0;
+    _downloadWithoutErrorGuiaSaberMasDetalle = 0;
     // Do any additional setup after loading the view.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(idiomaElegido:) name:@"NOTIFICATION_IDIOMA_ELEGIDO" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteAllData) name:@"CHANGE_LANGUAGE" object:nil];
@@ -141,6 +153,10 @@
     [self downloadMenu];
     [self downloadPoi];
     [self downloadGuia];
+    [self downloadGuiaDetalle];
+    [self downloadGuiaSaberMas];
+    [self downloadGuiaSaberMasDetalle];
+    
     
     
 }
@@ -159,15 +175,18 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            self.downloadWithoutErrorParametos = YES;
+            self.downloadWithoutErrorParametos = 1;
             break;
         case kDAO_RESPONSE_FAIL:
+            self.downloadWithoutErrorParametos = 2;
             //show error
             break;
         case kDAO_RESPONSE_TIMEOUT:
+            self.downloadWithoutErrorParametos = 2;
             break;
             //show error
         default:
+            self.downloadWithoutErrorParametos = 2;
             break;
     }
     [self downloadIdioma];
@@ -179,15 +198,18 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            self.downloadWithoutErrorIdioma = YES;
+            self.downloadWithoutErrorIdioma = 1;
             break;
         case kDAO_RESPONSE_FAIL:
+            self.downloadWithoutErrorIdioma = 2;
             //show error
             break;
         case kDAO_RESPONSE_TIMEOUT:
+            self.downloadWithoutErrorIdioma = 2;
             break;
             //show error
         default:
+            self.downloadWithoutErrorIdioma = 2;
             break;
     }
     if(![[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil && self.downloadWithoutErrorIdioma){
@@ -205,19 +227,20 @@
         case kDAO_RESPONSE_OK_WITH_DATA:
             [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_UPDATE_MENU object:nil];
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            self.downloadWithoutErrorMenu = YES;
+            self.downloadWithoutErrorMenu = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
 
             break;
         case kDAO_RESPONSE_FAIL:
-
+            self.downloadWithoutErrorMenu = 2;
             //show error
             break;
         case kDAO_RESPONSE_TIMEOUT:
-
+            self.downloadWithoutErrorMenu = 2;
             break;
             //show error
         default:
+            self.downloadWithoutErrorMenu = 2;
             break;
     }
     
@@ -229,15 +252,18 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            self.downloadWithoutErrorPoi = YES;
+            self.downloadWithoutErrorPoi = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
             break;
         case kDAO_RESPONSE_FAIL:
+            self.downloadWithoutErrorPoi = 2;
             break;
         case kDAO_RESPONSE_TIMEOUT:
+            self.downloadWithoutErrorPoi = 2;
             break;
             //show error
         default:
+            self.downloadWithoutErrorPoi = 2;
             break;
     }
     [self firstDownloadOk];
@@ -249,21 +275,25 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            [self downloadGuiaDetalle];
+           
+            _downloadWithoutErrorGuia = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
 
             break;
         case kDAO_RESPONSE_FAIL:
             NSLog(@"communicationUpdateGuia - PArseo " );
-
+             _downloadWithoutErrorGuia = 2;
             //show error
             break;
         case kDAO_RESPONSE_TIMEOUT:
+            _downloadWithoutErrorGuia = 2;
             NSLog(@"communicationUpdateGuia - timeout " );
 
             break;
             //show error
+            
         default:
+            _downloadWithoutErrorGuia = 2;
             break;
     }
         [self firstDownloadOk];
@@ -273,21 +303,23 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            [self downloadGuiaSaberMas];
+            
+            _downloadWithoutErrorGuiaDetalle = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
 
             break;
         case kDAO_RESPONSE_FAIL:
             //show error
             NSLog(@"communicationUpdateGuiaDetalle - PArseo " );
-
+            _downloadWithoutErrorGuiaDetalle = 2;
             break;
         case kDAO_RESPONSE_TIMEOUT:
             NSLog(@"communicationUpdateGuiaDetalle - timeout " );
-
+            _downloadWithoutErrorGuiaDetalle = 2;
             break;
             //show error
         default:
+            _downloadWithoutErrorGuiaDetalle = 2;
             break;
     }
         [self firstDownloadOk];
@@ -297,20 +329,24 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            [self downloadGuiaSaberMasDetalle];
+           
+            _downloadWithoutErrorGuiaSaberMas = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
-
+            
             break;
         case kDAO_RESPONSE_FAIL:
             NSLog(@"communicationUpdateGuiaSaberMas - PArseo " );
             //show error
+            _downloadWithoutErrorGuiaSaberMas = 2;
             break;
         case kDAO_RESPONSE_TIMEOUT:
             NSLog(@"communicationUpdateGuiaSaberMas - timeout " );
+            _downloadWithoutErrorGuiaSaberMas = 2;
             break;
             
             //show error
         default:
+            _downloadWithoutErrorGuiaSaberMas = 2;
             break;
             
     }
@@ -321,18 +357,21 @@
     switch (sended) {
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
-            self.downloadWithoutErrorGuia = YES;
+            self.downloadWithoutErrorGuiaSaberMasDetalle = 1;
             [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
 
             break;
         case kDAO_RESPONSE_FAIL:
+            self.downloadWithoutErrorGuiaSaberMasDetalle = 2;
             NSLog(@"communicationUpdateGuiaSaberMasDetalle - PArseo " );
                    break;
         case kDAO_RESPONSE_TIMEOUT:
+            self.downloadWithoutErrorGuiaSaberMasDetalle = 2;
             NSLog(@"communicationUpdateGuiaSaberMasDetalle - Timeout " );
             break;
             //show error
         default:
+            self.downloadWithoutErrorGuiaSaberMasDetalle = 2;
             break;
             
     }
@@ -369,14 +408,18 @@
 #pragma mark - Primera descarga ok
 -(void)firstDownloadOk{
     if(![[Settings sharedInstance] wasStaredAppBefore]){
-        if(self.downloadWithoutErrorGuia && self.downloadWithoutErrorPoi && self.downloadWithoutErrorMenu && self.downloadWithoutErrorIdioma && self.downloadWithoutErrorParametos){
+        if(self.downloadWithoutErrorGuia == 1 && _downloadWithoutErrorGuiaDetalle == 1 && _downloadWithoutErrorGuiaSaberMas == 1 && _downloadWithoutErrorGuiaSaberMasDetalle ==1 && self.downloadWithoutErrorPoi == 1 && self.downloadWithoutErrorMenu == 1 && self.downloadWithoutErrorIdioma == 1 && self.downloadWithoutErrorParametos == 1){
             [self loadMenuAndHomeViewController];
             [[Settings sharedInstance] setWasStaredAppBefore: YES];
             [[Settings sharedInstance] saveSettings];
         }else{
-            NSLog(@"Error en la descarga: erorrEnguia %d, error en Poi : %d, error en Menu %d, error en idioma : %d, error en parametros: %d", _downloadWithoutErrorGuia, _downloadWithoutErrorPoi, _downloadWithoutErrorMenu, _downloadWithoutErrorIdioma, _downloadWithoutErrorParametos);
+            NSLog(@"Error en la descarga: erorrEnguia %ld, error en Poi : %ld, error en Menu %ld, error en idioma : %ld, error en parametros: %ld", (long)_downloadWithoutErrorGuia, (long)_downloadWithoutErrorPoi, (long)_downloadWithoutErrorMenu, (long)_downloadWithoutErrorIdioma, (long)_downloadWithoutErrorParametos);
             //show error
-            //[self showAlertViewRetry];
+            //
+            if(self.downloadWithoutErrorGuia !=0 && _downloadWithoutErrorGuiaDetalle != 0 && _downloadWithoutErrorGuiaSaberMas != 0 && _downloadWithoutErrorGuiaSaberMasDetalle !=0 &&  self.downloadWithoutErrorPoi != 0 && self.downloadWithoutErrorMenu != 0 && self.downloadWithoutErrorIdioma != 0 && self.downloadWithoutErrorParametos != 0){
+                [self showAlertViewRetry];
+            
+            }
         }
 
     }

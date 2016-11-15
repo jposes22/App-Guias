@@ -64,8 +64,12 @@
 
 
 /*Ajustes*/
-
+"ajustes_idioma" ="Idioma:";
 "ajustes_title_change_language"="Cambio de idioma";
-"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma?";
+"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
 "ajustes_ok_language"="Ok";
 "ajustes_cancel_language"="Cancelar";
+
+"ajustes_title_change_language"="Error de conexión";
+"ajustes_descripcion_language"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_ok_language"="Ok";

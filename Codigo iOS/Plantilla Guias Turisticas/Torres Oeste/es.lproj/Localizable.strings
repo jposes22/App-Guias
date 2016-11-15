@@ -8,6 +8,7 @@
 "aux" = "Texto castellano";
 
 
+
 /*Titles Nav*/
 "title_home" = "Inicio";
 "title_como_torres" = "Torres do Oeste";
@@ -22,6 +23,8 @@
 "text_saber_mas" = "Saber más  ";
 
 "text_audio_guia" = "Audioguia";
+
+
 
 /*Titles Menu*/
 "menu_home" = "Inicio";
@@ -58,3 +61,16 @@
 /*Como llegar*/
 
 "como_llegar_ver_mapa"="Ver en mapa";
+
+
+
+/*Ajustes*/
+"ajustes_idioma" ="Idioma:";
+"ajustes_title_change_language"="Cambio de idioma";
+"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_ok_language"="Ok";
+"ajustes_cancel_language"="Cancelar";
+
+"ajustes_title_change_language"="Error de conexión";
+"ajustes_descripcion_language"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_ok_language"="Ok";

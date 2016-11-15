@@ -32,6 +32,7 @@
 "nav_ajustes" = "Ajustes";
 "nav_selfie" = "Selfie";
 "nav_creditos" = "Créditos";
+"title_ajustes" ="Axustes";
 
 //Saber mas
 "subtitle_saber_mas" = "Saber más...";
@@ -74,6 +75,6 @@
 "ajustes_ok_language"="Ok";
 "ajustes_cancel_language"="Cancelar";
 
-"ajustes_title_change_language"="Error de conexión";
-"ajustes_descripcion_language"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_title_error_internet"="Error de conexión";
+"ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
 "ajustes_ok_language"="Ok";

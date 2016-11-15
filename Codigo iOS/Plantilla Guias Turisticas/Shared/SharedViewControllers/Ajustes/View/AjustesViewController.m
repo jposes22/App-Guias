@@ -43,6 +43,7 @@
 }
 
 -(void)initPicker{
+    _lblTitle.text = NSLocalizedString(@"ajustes_idioma", nil);
     //_topics = [ProceduresCategoryDAO getProceduresCategories];
     _pickerView = [[UIPickerView alloc] init];
     _pickerController = [[LanguagePickerController alloc] init];

@@ -6,16 +6,22 @@
   Copyright © 2016 Evelb. All rights reserved.
 */
 "aux" = "Texto English";
+
 /*Titles Nav*/
-"title_home" = "";
-"title_como_torres" = "";
-"title_como_romeria" = "";
-"title_lugares" = "";
+"title_home" = "Inicio";
+"title_como_torres" = "Torres do Oeste";
+"title_como_romeria" = "Romería";
+"title_lugares" = "Lugares de interese";
 "title_como_llegar" = "Como Chegar";
-"title_bibliografía" = "";
-"title_copyright" = "";
-"title_ajustes" = "";
-"title_creditos" = "";
+"title_bibliografía" = "Referecias bibliográficas";
+"title_copyright" = "Copyright";
+"title_ajustes" = "Axustes";
+"title_creditos" = "Créditos";
+"subtitle_saber_mas" = "Saber más...";
+"text_saber_mas" = "Saber más  ";
+
+"text_audio_guia" = "Audioguia";
+
 
 
 /*Titles Menu*/
@@ -31,14 +37,17 @@
 
 
 /* POIS 7 elements*/
-"pois_petroglifo" = "";
-"pois_molinos" = "";
-"pois_rutas" = "";
-"pois_laguna" = "";
+"pois_petroglifo" = "Petroglífos";
+"pois_molinos" = "Molinos tradicionales";
+"pois_rutas" = "Rutas de senderismo";
+"pois_laguna" = "La laguna de Pedras Miudas";
 
-"pois_alojamiento" = "";
-"pois_restaurante" = "";
-"pois_telefonos" = "";
+"pois_alojamiento" = "Alojamientos";
+"pois_restaurante" = "Restaurantes";
+"pois_telefonos" = "Teléfonos de interés";
+
+
+
 
 
 /* ERROR FIRST TIME*/
@@ -50,3 +59,16 @@
 /*Como llegar*/
 
 "como_llegar_ver_mapa"="Ver en mapa";
+
+
+
+/*Ajustes*/
+"ajustes_idioma" ="Idioma:";
+"ajustes_title_change_language"="Cambio de idioma";
+"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_ok_language"="Ok";
+"ajustes_cancel_language"="Cancelar";
+
+"ajustes_title_change_language"="Error de conexión";
+"ajustes_descripcion_language"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_ok_language"="Ok";

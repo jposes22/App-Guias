@@ -73,7 +73,7 @@
     //[StylesBaronha setStyleTitle:_lblTitle];
 }
 -(void)loadNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Lugares de Interés"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_lugares", nil)];
 }
 - (IBAction)btnOpenMenu:(id)sender {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

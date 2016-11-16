@@ -16,7 +16,7 @@
 @implementation HeaderCopyright
 
 - (void) loadData:(NSString *)titulo{
-    _labelTitulo.text = titulo;
+    _labelTitulo.text = NSLocalizedString(@"copyright_titulo", nil);
     [UtilsAppearance setStyleTitle:_labelTitulo];
     _labelTitulo.textColor = [UtilsAppearance getSecondaryColor];
 }

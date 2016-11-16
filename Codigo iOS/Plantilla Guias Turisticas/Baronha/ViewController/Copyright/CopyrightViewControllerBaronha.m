@@ -29,7 +29,7 @@
     [self loadTableController];
 }
 - (void) loadData {
-    _listData = [[NSArray alloc] initWithObjects:@"<span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 20px;'><br>FALTA TEXTO<br></span><br><br>", nil];
+    _listData = [[NSArray alloc] initWithObjects:NSLocalizedString(@"copyright_texto", nil), nil];
 }
 -(void)loadStyle{
     [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Copyright"];

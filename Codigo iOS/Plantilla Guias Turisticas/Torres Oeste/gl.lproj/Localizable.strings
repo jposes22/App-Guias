@@ -1,26 +1,26 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto galego";
 
 
 
 /*Titles Nav*/
 "title_home" = "Inicio";
-"title_como_torres" = "Torres do Oeste";
-"title_como_romeria" = "Romería";
+"title_como_torres" = "Torres de Oeste";
+"title_como_romeria" = "Romaría";
 "title_lugares" = "Lugares de interese";
 "title_como_llegar" = "Como Chegar";
 "title_bibliografía" = "Referecias bibliográficas";
 "title_copyright" = "Copyright";
 "title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";
-"subtitle_saber_mas" = "Saber más...";
-"text_saber_mas" = "Saber más  ";
+"subtitle_saber_mas" = "Saber máis...";
+"text_saber_mas" = "Saber máis  ";
 
 "text_audio_guia" = "Audioguia";
 
@@ -28,8 +28,8 @@
 
 /*Titles Menu*/
 "menu_home" = "Inicio";
-"menu_como_torres" = "Torres do Oeste";
-"menu_como_romeria" = "Romeraría";
+"menu_como_torres" = "Torres de Oeste";
+"menu_como_romeria" = "Romaría";
 "menu_lugares" = "Lugares de interese";
 "menu_como_llegar" = "Como Chegar";
 "menu_bibliografía" = "Referecias bibliográficas";
@@ -39,17 +39,20 @@
 
 
 /* POIS 7 elements*/
-"pois_petroglifo" = "Petroglífos";
-"pois_molinos" = "Molinos tradicionales";
-"pois_rutas" = "Rutas de senderismo";
-"pois_laguna" = "La laguna de Pedras Miudas";
+"pois_petroglifo" = "Petróglifos";
+"pois_molinos" = "Muíños tradicionais";
+"pois_rutas" = "Rutas de sendeirismo e paseo fluvial";
+"pois_laguna" = "A Lagoa de Pedras Miúdas";
 
-"pois_alojamiento" = "Alojamientos";
+"pois_alojamiento" = "Aloxamentos";
 "pois_restaurante" = "Restaurantes";
-"pois_telefonos" = "Teléfonos de interés";
+"pois_telefonos" = "Teléfonos de interese";
 
 
+//Copyright
 
+"copyright_titulo" = "Referencias";
+"copyright_texto" = "<span style='color: rgb(9, 79, 107); font-family: Caviar Dreams; font-size: 25px;'>Copyright</span><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><br><br>A propiedade intelectual desta App pertence ao Concello de Catoira e foi realizada por Tictura.<br><br> Calquera forma de reproducción distribución, comunicación pública ou transformación desta obra só pode ser realizada coa autorización dos seus titulares, salvo excepción prevista pola lei. Si necesita citala, recomendámosche facelo do seguinte xeito:<br> Torres de Oeste. Aplicación móbil desenvolvida polo Concello de Catoira.<br></span>";
 
 
 /* ERROR FIRST TIME*/
@@ -67,11 +70,10 @@
 /*Ajustes*/
 "ajustes_idioma" ="Idioma:";
 "ajustes_title_change_language"="Cambio de idioma";
-"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_descripcion_language"="Está seguro que desea cambiar de idioma? borraranse os datos da aplicación";
 "ajustes_ok_language"="Ok";
 "ajustes_cancel_language"="Cancelar";
 
 "ajustes_title_error_internet"="Error de conexión";
-"ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_descripcion_error_no_internet"= "Por favor comprobe a súa conexión a internet e volva tentalo";
 "ajustes_ok_language"="Ok";
-

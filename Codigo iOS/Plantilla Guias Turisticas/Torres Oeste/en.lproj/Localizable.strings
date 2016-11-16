@@ -1,52 +1,55 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto English";
 
 /*Titles Nav*/
-"title_home" = "Inicio";
-"title_como_torres" = "Torres do Oeste";
+"title_home" = "Home";
+"title_como_torres" = "Torres de Oeste";
 "title_como_romeria" = "Romería";
-"title_lugares" = "Lugares de interese";
-"title_como_llegar" = "Como Chegar";
-"title_bibliografía" = "Referecias bibliográficas";
+"title_lugares" = "Places of interest";
+"title_como_llegar" = "How to get";
+"title_bibliografía" = "References";
 "title_copyright" = "Copyright";
-"title_ajustes" = "Axustes";
-"title_creditos" = "Créditos";
-"subtitle_saber_mas" = "Saber más...";
-"text_saber_mas" = "Saber más  ";
-
-"text_audio_guia" = "Audioguia";
+"title_ajustes" = "Settings";
+"title_creditos" = "Credits";
+"subtitle_saber_mas" = "Learn more...";
+"text_saber_mas" = "Learn more";
+"text_audio_guia" = "Audioguide";
 
 
 
 /*Titles Menu*/
-"menu_home" = "Inicio";
-"menu_como_torres" = "Torres do Oeste";
-"menu_como_romeria" = "Romeraría";
-"menu_lugares" = "Lugares de interese";
-"menu_como_llegar" = "Como Chegar";
-"menu_bibliografía" = "Referecias bibliográficas";
+"menu_home" = "Home";
+"menu_como_torres" = "Torres de Oeste";
+"menu_como_romeria" = "Romería";
+"menu_lugares" = "Places of interest";
+"menu_como_llegar" = "How to get";
+"menu_bibliografía" = "References";
 "menu_copyright" = "Copyright";
-"menu_ajustes" = "Axustes";
-"menu_creditos" = "Créditos";
+"menu_ajustes" = "Settings";
+"menu_creditos" = "Credits";
 
 
 /* POIS 7 elements*/
-"pois_petroglifo" = "Petroglífos";
-"pois_molinos" = "Molinos tradicionales";
-"pois_rutas" = "Rutas de senderismo";
-"pois_laguna" = "La laguna de Pedras Miudas";
+"pois_petroglifo" = "Rock art";
+"pois_molinos" = "Traditional mills";
+"pois_rutas" = "Hiking trails and river walks";
+"pois_laguna" = "Pedras Miudas Pond";
 
-"pois_alojamiento" = "Alojamientos";
-"pois_restaurante" = "Restaurantes";
-"pois_telefonos" = "Teléfonos de interés";
+"pois_alojamiento" = "Accommodations";
+"pois_restaurante" = "Restaurants";
+"pois_telefonos" = "Telephone numbers of interest";
 
 
+//Copyright
+
+"copyright_titulo" = "Referencias";
+"copyright_texto" = "<span style='color: rgb(9, 79, 107); font-family: Caviar Dreams; font-size: 25px;'>Copyright</span><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><br> This application was created by Tictura and the owner is the City Council of Catoira.<br><br>Any reproduction, distribution, public communication or transformation of this work can only be done with the permission of the owner, unless otherwise provided by law.<br> If you need to reference it, we recommend you to do it in the following way:<span style='font-weight: bold;'>Torres de Oeste.</span> 2016. Catoira City Council Mobile Application.<br></span>";
 
 
 
@@ -58,18 +61,17 @@
 
 /*Como llegar*/
 
-"como_llegar_ver_mapa"="Ver en mapa";
+"como_llegar_ver_mapa"="View on map";
 
 
 
 /*Ajustes*/
-"ajustes_idioma" ="Idioma:";
-"ajustes_title_change_language"="Cambio de idioma";
-"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_idioma" ="Language:";
+"ajustes_title_change_language"="Change of language";
+"ajustes_descripcion_language"="Are you sure you want to change language? Application data was deleted";
 "ajustes_ok_language"="Ok";
-"ajustes_cancel_language"="Cancelar";
+"ajustes_cancel_language"="Cancel";
 
-"ajustes_title_error_internet"="Error de conexión";
-"ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_title_error_internet"="Connection error";
+"ajustes_descripcion_error_no_internet"= "Please check your internet connection and try again";
 "ajustes_ok_language"="Ok";
-

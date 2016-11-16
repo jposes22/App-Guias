@@ -1,35 +1,34 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto español";
 /*Menu*/
-"menu_home" = "INICIO";
-"menu_como_llegar" = "COMO LLEGAR";
-"menu_castro" = "CASTRO DE BAROÑA";
-"menu_reconstrucion" = "RECONSTRUCCIÓN 3D";
-"menu_lugares" = "LUGARES DE INTERÉS";
-"menu_bibliografía" = "BIBLIOGRAFÍA";
-"menu_ajustes" = "AJUSTES";
-"menu_creditos" = "CRÉDITOS";
-
+"menu_home" = "Inicio";
+"menu_como_llegar" = "Cómo llegar";
+"menu_castro" = "Castro de Baroña";
+"menu_reconstrucion" = "Reconstrucción 3D";
+"menu_lugares" = "Lugares próximos";
+"menu_bibliografía" = "Bibliografía";
+"menu_ajustes" = "Ajustes";
+"menu_creditos" = "Créditos";
 /*Home*/
 
 "title_logo" = "CASTRO DE BAROÑA";
 "sub_title_logo" = "Comienza la visita";
-"btn_como_llegar" = "Como llegar";
+"btn_como_llegar" = "Cómo llegar";
 "btn_como_castro" = "Castro de Baroña";
-"btn_como_lugares" = "Lugares de interés";
+"btn_como_lugares" = "Lugares próximos";
 
 /*Titles Nav*/
 "title_home" = "Inicio";
-"title_como_llegar" = "Como Llegar";
+"title_como_llegar" = "Cómo Llegar";
 "title_castro" = "Castro de Baroña";
 "title_reconstrucion" = "Reconstrucción 3D";
-"title_lugares" = "Lugares de interés";
+"title_lugares" = "Lugares próximos";
 "title_bibliografía" = "Bibliografía";
 "title_ajustes" = "Ajustes";
 "title_creditos" = "Créditos";
@@ -40,10 +39,15 @@
 "text_audio_guia" = "Audioguia";
 
 /* POIS 4 elements*/
-"pois_petroglifo" = "Petroglífos";
-"pois_castro_queiruga" = "Queiruga ";
-"pois_praia_coido" = "Praia coido";
-"pois_arealonga" = "Arealonga";
+"pois_petroglifo" = "Petroglífos del Monte da Gurita";
+"pois_castro_queiruga" = "Castro de Queiruga ";
+"pois_praia_coido" = "Playa do Coido";
+"pois_arealonga" = "Playa de Arealonga";
+
+//Copyright
+
+"copyright_titulo" = "Copyright";
+"copyright_texto" = "<div style='text-align: justify;'><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXTO</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span></div>";
 
 /* ERROR FIRST TIME*/
 "error_title_first_time" = "";
@@ -57,10 +61,12 @@
 /*Ajustes*/
 "ajustes_idioma" ="Idioma:";
 "ajustes_title_change_language"="Cambio de idioma";
-"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_descripcion_language"="¿Está seguro que desea cambiar de idioma? se borrarán los datos de la aplicación";
 "ajustes_ok_language"="Ok";
 "ajustes_cancel_language"="Cancelar";
 
 "ajustes_title_error_internet"="Error de conexión";
 "ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
 "ajustes_ok_language"="Ok";
+
+

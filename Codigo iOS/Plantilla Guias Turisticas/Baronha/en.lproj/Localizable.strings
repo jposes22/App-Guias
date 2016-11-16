@@ -1,18 +1,18 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto inglés";
 
 /*Menu*/
-"menu_home" = "";
-"menu_como_llegar" = "";
-"menu_castro" = "";
-"menu_reconstrucion" = "";
-"menu_lugares" = "";
+"menu_home" = "Home";
+"menu_como_llegar" = "Getting there";
+"menu_castro" = "Castro de Baroña";
+"menu_reconstrucion" = "3D Reconstruction";
+"menu_lugares" = "Nearby places";
 "menu_bibliografía" = "";
 "menu_ajustes" = "";
 "menu_creditos" = "";
@@ -46,6 +46,12 @@
 "pois_praia_coido" = "Praia coido";
 "pois_arealonga" = "Arealonga";
 
+
+//Copyright
+
+"copyright_titulo" = "Copyright";
+"copyright_texto" = "<div style='text-align: justify;'><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXT</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>PHOTOGRAPHS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span></div>";
+
 /* ERROR FIRST TIME*/
 "error_title_first_time" = "";
 "error_description_first_time" = "";
@@ -65,3 +71,4 @@
 "ajustes_title_error_internet"="Error de conexión";
 "ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
 "ajustes_ok_language"="Ok";
+

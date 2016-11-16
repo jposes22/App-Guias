@@ -1,62 +1,61 @@
-/* 
-  Localizable.strings
-  Plantilla Guias Turisticas
-
-  Created by Jose Pose on 29/10/16.
-  Copyright © 2016 Evelb. All rights reserved.
-*/
+/*
+ Localizable.strings
+ Plantilla Guias Turisticas
+ 
+ Created by Jose Pose on 29/10/16.
+ Copyright © 2016 Evelb. All rights reserved.
+ */
 "aux" = "Texto galego";
 //Menu
 "menu_home" = "Inicio";
-"menu_como_llegar" = "Cómo llegar";
-"menu_a_cida_borneiro" = "A Cidá Borneiro";
-"menu_visita" = "Comenzar visita";
-"menu_cultura_castrenha" = "Cultura Castreña";
-"menu_sitios_interes" = "Sitios de interés";
+"menu_como_llegar" = "Como chegar";
+"menu_a_cida_borneiro" = "A Cidá de Borneiro";
+"menu_visita" = "Visita";
+"menu_cultura_castrenha" = "Cultura Castrexa";
+"menu_sitios_interes" = "Sitios de interese";
 "menu_copyright" = "Copyright";
 "menu_referencias" = "Referencias";
-"menu_ajustes" = "Ajustes";
+"menu_ajustes" = "Axustes";
 "menu_selfie" = "Selfie";
 "menu_creditos" = "Créditos";
 
 
 //Nav
 "nav_home" = "Inicio";
-"nav_como_llegar" = "Cómo llegar";
-"nav_a_cida_borneiro" = "A Cidá Borneiro";
-"nav_visita" = "Comenzar visita";
-"nav_cultura_castrenha" = "Cultura Castreña";
-"nav_sitios_interes" = "Sitios de interés";
+"nav_como_llegar" = "Como chegar";
+"nav_a_cida_borneiro" = "A Cidá de Borneiro";
+"nav_visita" = "Visita";
+"nav_cultura_castrenha" = "Cultura Castrexa";
+"nav_sitios_interes" = "Sitios de interese";
 "nav_copyright" = "Copyright";
 "nav_referencias" = "Referencias";
-"nav_ajustes" = "Ajustes";
+"nav_ajustes" = "Axustes";
 "nav_selfie" = "Selfie";
 "nav_creditos" = "Créditos";
-"title_ajustes" ="Axustes";
 
 //Saber mas
-"subtitle_saber_mas" = "Saber más...";
+"subtitle_saber_mas" = "Saber máis...";
 "text_audio_guia" = "Audioguia";
-"text_saber_mas" = "Saber más  ";
+"text_saber_mas" = "Saber máis  ";
 //Home
-"btn_home_comollegar" = "Cómo llegar";
+"btn_home_comollegar" = "Como chegar";
 "btn_home_ciudad" = "A Cidá de Borneiro";
 "btn_home_visita" = "Comenzar visita";
-"btn_home_cultura" = "Cultura Castreña";
-"btn_home_sitios" = "Sitios de interés";
+"btn_home_cultura" = "Cultura Castrexa";
+"btn_home_sitios" = "Sitios de interese";
 
 //POI
-"poi_patrimonio_arqueologico" = "Patrimonio arqueológico";
-"poi_patrimonio_historico" = "Patrimonio histórico - artístico";
-"poi_rutas_senderismo" = "Rutas de senderismo";
-"poi_playas" = "Playas";
+"poi_patrimonio_arqueologico" = "PPatrimonio Arqueolóxico";
+"poi_patrimonio_historico" = "Patrimonio histórico-artístico";
+"poi_rutas_senderismo" = "Rutas";
+"poi_playas" = "Praias";
 "poi_directorio" = "Directorio";
-"poi_guia_hosteleria" = "Guía de hostelería";
+"poi_guia_hosteleria" = "Guía de hostalería";
 
 //Copyright
 
-"copyright_titulo" = "Propiedad intelectual";
-"copyright_texto" = "<div style='text-align: justify;'><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 20px;'>Esta aplicación fue creada por Tictura y su titular es el Ayuntamiento de Cabana de Bergantiños. <br>Cualquier forma de reproducción, distribución, comunicación pública o transformación de esta obra solo puede ser realizada con la autorización de su titular, salvo excepción prevista por la ley. <br>Si necesita citarla, le recomendamos hacerlo del siguiente modo:<br><br><span style='font-weight: bold;'>A Cidá de Borneiro. </span>2016. Aplicación móvil del Ayuntamiento de Cabana de Bergantiños. <br><br><br><span style='font-weight: bold;'>Textos</span><br>Tictura <br><br><span style='font-weight: bold;'>Revisión desde el Ayto. de Cabana de Bergantiños</span><br>Ángel Eiroa Pose<br><br><span style='font-weight: bold;'>Asesoría</span><br>Fidel Méndez Fernández<br><br><span style='font-weight: bold;'>Ilustraciones</span><br>José Ramón Almeida Olmedo<br><br><span style='font-weight: bold;'>Mapas</span><br>Anxo Rodríguez Paz (Incipit-CSIC)<br>César Parcero-Oubiña (Incipit-CSIC)<br><br><span style='font-weight: bold;'>Revisión ortográfica y de estilo</span><br>Manuel González Alvarellos<br><br><span style='font-weight: bold;'>Dibujos selfie</span><br>Juan Venditti<br><br><span style='font-weight: bold;'>Fotografías</span><br>Ayuntamiento de Cabana de Bergantiños<br>Incipit (CSIC)<br>Dirección Xeral de Patrimonio Cultural-Xunta de Galicia<br> Universidad de Santiago de Compostela <br> Tictura<br> Se ha utilizado las siguientes imágenes bajo licencia Creative Commons:<br> 1.&nbsp;&nbsp;&nbsp; Panoramic view of the Castro de Viladonga (Lugo, Spain). By PePeEfe - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17884064<br><br>2.&nbsp;&nbsp;&nbsp; Santa Tecla- Pontevedra. By Gabriel González from Boliñas-Aguasantas-Cotobade, España - Santa Tecla - Pontevedra, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=20430870 <br><br><br><span style='font-weight: bold;'>Agradecimientos</span><br>Gracias a las siguientes personas o instituciones por la información documental o gráfica aportada para la creación de esta App:<br> Fidel Méndez Fernández, Ana Romero Masiá, Ángel Eiroa Pose, Marco V. García-Quintela, Cristina Seoane Novo, Ana Arenaz Martínez, Patricia Mañana-Borrazás, A. César González-García, César Parcero-Oubiña y Lois Armada-Pita.<br>Ayuntamiento de Cabana de Bergantiños, Museo Arqueolóxico e Histórico do Castelo de San Antón, Instituto de Ciencias del Patrimonio (CSIC), Universidad de Santiago de Compostela (USC) y Dirección Xeral do Patrimonio Cultural (Xunta de Galicia).<br><br><br><br></span></div>";
+"copyright_titulo" = "Copyright";
+"copyright_texto" = "<div style='text-align: justify;'><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXTO</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span></div>";
 
 /* ERROR FIRST TIME*/
 "error_title_first_time" = "";
@@ -71,10 +70,10 @@
 /*Ajustes*/
 "ajustes_idioma" ="Idioma:";
 "ajustes_title_change_language"="Cambio de idioma";
-"ajustes_descripcion_language"="Está seguro que desa cambiar de idioma? se borrarán los datos de la aplicación";
+"ajustes_descripcion_language"="Está seguro que desexa cambiar de idioma? borraranse os datos da aplicación";
 "ajustes_ok_language"="Ok";
 "ajustes_cancel_language"="Cancelar";
 
-"ajustes_title_error_internet"="Error de conexión";
-"ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
+"ajustes_title_error_internet"="Erro de conexión";
+"ajustes_descripcion_error_no_internet"= "Por favor comprobe a súa conexión a internet e volva tentalo";
 "ajustes_ok_language"="Ok";

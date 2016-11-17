@@ -182,19 +182,19 @@
                                 <rect key="frame" x="0.0" y="64" width="667" height="936"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-0X-RDg">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCc-mq-A6V">
-                                                <rect key="frame" x="8" y="34" width="321.5" height="105"/>
+                                                <rect key="frame" x="8" y="34" width="321.5" height="155"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="petroglifos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLP-AX-WyY">
-                                                        <rect key="frame" x="21" y="76.5" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="126.5" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_petroglifos" translatesAutoresizingMaskIntoConstraints="NO" id="6xF-Fe-0Y6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -209,16 +209,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2H-dz-c6e">
-                                                <rect key="frame" x="8" y="154.5" width="321.5" height="105.5"/>
+                                                <rect key="frame" x="8" y="204.5" width="321.5" height="155.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rutas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydg-SD-xxu">
-                                                        <rect key="frame" x="21" y="77" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="127" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_ruta" translatesAutoresizingMaskIntoConstraints="NO" id="XDZ-se-FYT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -233,16 +233,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPv-eO-TQb">
-                                                <rect key="frame" x="8" y="276.5" width="321.5" height="105"/>
+                                                <rect key="frame" x="8" y="376.5" width="321.5" height="155"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alojamiento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hml-3J-8y8">
-                                                        <rect key="frame" x="21" y="76.5" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="126.5" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_alojamientos" translatesAutoresizingMaskIntoConstraints="NO" id="mbQ-h1-FoB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -257,16 +257,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Jn-4t-avx">
-                                                <rect key="frame" x="337" y="34" width="321.5" height="105"/>
+                                                <rect key="frame" x="337" y="34" width="321.5" height="155"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="molinos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxX-eA-PQs">
-                                                        <rect key="frame" x="21" y="76.5" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="126.5" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_molinos" translatesAutoresizingMaskIntoConstraints="NO" id="5O0-jg-PFN">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -281,16 +281,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6U-tN-dqc">
-                                                <rect key="frame" x="337" y="154.5" width="321.5" height="105.5"/>
+                                                <rect key="frame" x="337" y="204.5" width="321.5" height="155.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="laguna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q3-vo-Zn9">
-                                                        <rect key="frame" x="21" y="77" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="127" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_laguna" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-mq-Ocx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118.5"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -305,16 +305,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-ez-Rmr">
-                                                <rect key="frame" x="337" y="276.5" width="321.5" height="105"/>
+                                                <rect key="frame" x="337" y="376.5" width="321.5" height="155"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="restaurante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fC1-4L-TUu">
-                                                        <rect key="frame" x="21" y="76.5" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="126.5" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_restaurantes" translatesAutoresizingMaskIntoConstraints="NO" id="VlI-2b-RZb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -329,16 +329,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oBb-Jp-YK0">
-                                                <rect key="frame" x="8" y="395" width="321.5" height="105"/>
+                                                <rect key="frame" x="8" y="545" width="321.5" height="155"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teléfonos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OS-T0-BvS">
-                                                        <rect key="frame" x="21" y="76.5" width="279.5" height="21"/>
+                                                        <rect key="frame" x="21" y="126.5" width="279.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interes_telefonos" translatesAutoresizingMaskIntoConstraints="NO" id="Gph-YJ-bze">
-                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="68"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="321.5" height="118"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -380,7 +380,7 @@
                                             <constraint firstItem="oBb-Jp-YK0" firstAttribute="leading" secondItem="IlZ-0X-RDg" secondAttribute="leading" constant="8" id="oZQ-CQ-zaa"/>
                                             <constraint firstItem="VCc-mq-A6V" firstAttribute="leading" secondItem="IlZ-0X-RDg" secondAttribute="leading" constant="8" id="q6v-bB-LdL"/>
                                             <constraint firstItem="E6U-tN-dqc" firstAttribute="width" secondItem="VCc-mq-A6V" secondAttribute="width" id="qDn-Pm-IaN"/>
-                                            <constraint firstAttribute="height" constant="500" id="rPo-eE-66z">
+                                            <constraint firstAttribute="height" constant="700" id="rPo-eE-66z">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="700"/>
                                             </constraint>
                                             <constraint firstItem="E6U-tN-dqc" firstAttribute="leading" secondItem="U2H-dz-c6e" secondAttribute="trailing" constant="7.5" id="rVX-q0-AZc"/>

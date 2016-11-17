@@ -3563,7 +3563,7 @@
 					};
 					8295EC381DC4A87D0049FB7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 946XCWF69B;
+						DevelopmentTeam = 7Z62CD9PPW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -4625,7 +4625,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 946XCWF69B;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4641,7 +4641,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 946XCWF69B;
+				DEVELOPMENT_TEAM = 7Z62CD9PPW;
 				INFOPLIST_FILE = Borneiro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

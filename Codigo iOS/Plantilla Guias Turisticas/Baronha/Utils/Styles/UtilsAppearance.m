@@ -86,6 +86,7 @@
 }
 + (void) setStyleNavigationBarSaberMas:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
     navigationBar.translucent = NO;
+    navigationBar.backIndicatorImage = nil;
     [navigationBar setBarTintColor:[UtilsAppearance getPrimaryColor]];
     NSRange rangeText= NSMakeRange(0, title.length);
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];

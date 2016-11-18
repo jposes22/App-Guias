@@ -17,7 +17,7 @@
 
 
 
-@interface SlideGuide ()<CommunicationTableController>
+@interface SlideGuide ()<CommunicationTableController, AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 @property (weak, nonatomic) IBOutlet UIImageView *imageAudio;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -129,7 +129,13 @@
     }
     
 }
-
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+        
+    }
+}
 
 /*
 #pragma mark - Navigation

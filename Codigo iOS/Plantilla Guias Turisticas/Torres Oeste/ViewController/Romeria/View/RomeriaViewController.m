@@ -18,8 +18,10 @@
 #import "AlbumViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "Settings.h"
+#import "Constants.h"
+#import "SaberMasViewController.h"
 
-@interface RomeriaViewController ()<CommnicationMenu, CommunicationTableController>
+@interface RomeriaViewController ()<CommnicationMenu, CommunicationTableController, AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
@@ -38,13 +40,23 @@
     [self loadController];
     [self loadStyle];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+      [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openSaberMas:) name:kNOTIFICATION_GO_TO_SABER_MAS object:nil];
+}
 -(void) viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+   
     if(_audioPlayer && [_audioPlayer isPlaying]){
         [_audioPlayer stop];
         [[Settings sharedInstance] setIsPlaying:NO];
         
     }
+    
+}
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     
 }
 - (void)didReceiveMemoryWarning {
@@ -120,6 +132,25 @@
         }
     }
     
+}
+#pragma mark - Notification methods
+- (void) openSaberMas:(NSNotification *)notification{
+    if([notification.name isEqualToString:kNOTIFICATION_GO_TO_SABER_MAS]){
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Guias" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SaberMasViewController"];
+        ((SaberMasViewController *)vc).guia = notification.object;
+        ((SaberMasViewController *)vc).titleNavigation = NSLocalizedString(@"title_como_romeria", nil);
+        [self.navigationController presentViewController:vc animated:YES completion:nil];
+        
+    }
+    
+}
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+        
+    }
 }
 -(void) communicationImageSelected:(NSArray *)list{
     AlbumViewController * viewController = [[AlbumViewController alloc] initWithNibName:@"AlbumViewController" bundle:nil];

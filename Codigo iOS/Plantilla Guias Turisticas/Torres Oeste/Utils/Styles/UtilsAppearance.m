@@ -81,7 +81,7 @@
 }
 + (void) setStyleNavigationBarSaberMas:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
     navigationBar.translucent = NO;
-    [navigationBar setBackgroundColor:[UtilsAppearance getPrimaryColor]];
+    [navigationBar setTintColor:[UtilsAppearance getPrimaryColor]];
     NSRange rangeText= NSMakeRange(0, title.length);
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
     [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];

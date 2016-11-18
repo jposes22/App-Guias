@@ -16,7 +16,7 @@
 
 
 
-@interface SlideGuideBaronha ()<CommunicationTableController>
+@interface SlideGuideBaronha ()<CommunicationTableController, AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 @property (weak, nonatomic) IBOutlet UIImageView *imageAudio;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -50,6 +50,15 @@
     [super viewDidAppear:animated];
     [_tableView reloadData];
 
+}
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
+    
 }
 - (void)loadStyle{
 
@@ -111,7 +120,13 @@
     }
     
 }
-
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+        
+    }
+}
 
 /*
 #pragma mark - Navigation

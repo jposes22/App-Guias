@@ -147,22 +147,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Borneiro/ViewController/ACidaBorneiro/View/ACidaBorneiroViewController.m"
-            timestampString = "500850480.294865"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "-comunicationPlayAudioGuia:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Borneiro/ViewController/TorresDeOeste/View/SaberMas/SaberMasBorneiroViewController.m"
             timestampString = "500850516.420501"
             startingColumnNumber = "9223372036854775807"
@@ -170,38 +154,6 @@
             startingLineNumber = "79"
             endingLineNumber = "79"
             landmarkName = "-comunicationPlayAudioGuia:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Borneiro/ViewController/ACidaBorneiro/View/ACidaBorneiroViewController.m"
-            timestampString = "501183886.108654"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "-audioPlayerDidFinishPlaying:successfully:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/TorresDeOeste/View/GuiaViewController.m"
-            timestampString = "501186112.156298"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "-openSaberMas:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

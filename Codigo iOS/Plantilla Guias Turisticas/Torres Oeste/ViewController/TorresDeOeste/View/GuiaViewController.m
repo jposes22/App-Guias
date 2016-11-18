@@ -41,6 +41,7 @@
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openAlbum:) name:@"OPEN_ALBUM" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openSaberMas:) name:kNOTIFICATION_GO_TO_SABER_MAS object:nil];
+    
 }
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -58,7 +59,7 @@
 }
 #pragma mark - Load data
 -(void)setNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Torres do Oeste"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_como_torres", nil)];
 }
 
 #pragma mark - Style navigation bar
@@ -121,6 +122,8 @@
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Guias" bundle:nil];
         UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SaberMasViewController"];
         ((SaberMasViewController *)vc).guia = notification.object;
+        ((SaberMasViewController *)vc).titleNavigation = NSLocalizedString(@"title_como_torres", nil);
+
         [self.navigationController presentViewController:vc animated:YES completion:nil];
         
     }

@@ -11,4 +11,6 @@
 
 @interface SaberMasViewController : UIViewController
 @property (nonatomic, strong) GuiaSaberMasList * guia;
+@property (nonatomic, strong) NSString * titleNavigation;
+
 @end

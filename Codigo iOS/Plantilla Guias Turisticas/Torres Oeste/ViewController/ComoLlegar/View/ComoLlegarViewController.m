@@ -42,7 +42,7 @@
 }
 
 - (void)setNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Cómo llegar"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_como_llegar", nil)];
 
 }
 -(void) loadData{

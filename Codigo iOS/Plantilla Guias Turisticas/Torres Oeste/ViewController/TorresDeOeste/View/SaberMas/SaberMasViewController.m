@@ -67,7 +67,7 @@
 }
 
 -(void) loadData{
-    [UtilsAppearance setStyleNavigationBarSaberMas:self.navigationBar withTitle:NSLocalizedString(@"title_como_torres", nil)];
+    [UtilsAppearance setStyleNavigationBar:self.navigationBar withTitle:_titleNavigation];
     _labelSubtitle.text = NSLocalizedString(@"subtitle_saber_mas", nil);
 }
 -(void) loadStyle{

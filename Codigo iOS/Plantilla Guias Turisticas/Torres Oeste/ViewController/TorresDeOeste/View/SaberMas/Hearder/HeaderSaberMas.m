@@ -9,6 +9,7 @@
 #import "HeaderSaberMas.h"
 #import "UtilsAppearance.h"
 #import "Settings.h"
+#import "Metodos.h"
 @interface HeaderSaberMas()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *imageGuia;
@@ -41,11 +42,7 @@
         _labelAudioGuia.textColor = [UtilsAppearance getPrimaryDarkColor];
 
     }
-    _labelTitle.text = guia.titulo;
-    [UtilsAppearance setStyleTitle:_labelTitle];
-    _labelTitle.textColor = [UtilsAppearance getPrimaryDarkColor];
-    
-    
+    _labelTitle.attributedText = [Metodos convertHTMLToString: guia.titulo];
 }
 
 - (void)tapImageAudioGuia:(UITapGestureRecognizer *)tap

@@ -26,6 +26,7 @@
 + (void)setStyleTitleList:(UILabel *) label;
 + (void)setSytleSubtitleList:(UILabel *) label;
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label;
++ (void)setStyleTitlePoi:(UILabel *)label;
 
 +(void)setCircleView:(UIView *) view;
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title;

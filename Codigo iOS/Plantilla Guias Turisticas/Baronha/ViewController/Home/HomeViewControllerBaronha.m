@@ -76,9 +76,19 @@
 }
 -(void)loadStyle{
     [StylesBaronha setStyleTitleWhite:_lblTitle];
-    [_lblTitle setFont:[UIFont fontWithName:@"Santana" size:16]];
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        [_lblTitle setFont:[UIFont fontWithName:@"Santana" size:30]];
+    }else{
+        [_lblTitle setFont:[UIFont fontWithName:@"Santana" size:18]];
+
+    }
     [StylesBaronha setSytleSubtitle:_lblSubTitle];
-    [_lblSubTitle setFont:[UIFont fontWithName:@"Santana" size:12]];
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        [_lblSubTitle setFont:[UIFont fontWithName:@"Santana" size:20]];
+    }else{
+        [_lblTitle setFont:[UIFont fontWithName:@"Santana" size:14]];
+
+    }
     [StylesBaronha setStyleButtonText:_btnComoLlegar];
     [StylesBaronha setStyleButtonText:_btnTorresOeste];
     [StylesBaronha setStyleButtonText:_btnLugaresInteres];

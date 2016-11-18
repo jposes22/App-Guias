@@ -15,6 +15,7 @@
 #import "NavigationBar.h"
 #import "UtilsAppearance.h"
 #import "DetailPoiViewControllerBaronha.h"
+#import "StylesBaronha.h"
 
 @interface PoiViewControllerBaronha ()<CommnicationMenu>
 @property (weak, nonatomic) IBOutlet UIView *viewPetroglifos;
@@ -64,10 +65,10 @@
 
 -(void)loadStyle{
 
-    [UtilsAppearance setStyleTextBold:_labelPetroglifos];
-    [UtilsAppearance setStyleTextBold:_labelCastroQueiruga];
-    [UtilsAppearance setStyleTextBold:_labelPraiaCoido];
-    [UtilsAppearance setStyleTextBold:_labelPraiaArealonga];
+    [StylesBaronha setStyleTitlePoi:_labelPetroglifos];
+    [StylesBaronha setStyleTitlePoi:_labelCastroQueiruga];
+    [StylesBaronha setStyleTitlePoi:_labelPraiaCoido];
+    [StylesBaronha setStyleTitlePoi:_labelPraiaArealonga];
     _labelPetroglifos.textColor = [UtilsAppearance getPrimaryColor];
     _labelCastroQueiruga.textColor =   [UtilsAppearance getPrimaryColor];
     _labelPraiaCoido.textColor =  [UtilsAppearance getPrimaryColor];

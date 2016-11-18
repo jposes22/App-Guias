@@ -8,6 +8,7 @@
 
 #import "UtilsAppearance.h"
 #import "StyleBorneiro.h"
+#import <UIKit/UIKit.h>
 
 @implementation UtilsAppearance
 +(UIColor * )getPrimaryColor{
@@ -26,6 +27,7 @@
     label.textColor = [UtilsAppearance getPrimaryColor];
     
 }
+
 + (void)setSytleSubtitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
 

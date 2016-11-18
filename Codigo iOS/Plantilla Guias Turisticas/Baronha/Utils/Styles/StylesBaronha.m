@@ -7,6 +7,7 @@
 //
 
 #import "StylesBaronha.h"
+#import <UIKit/UIKit.h>
 
 @implementation StylesBaronha
 
@@ -24,7 +25,14 @@
 +(UIColor * )getThirdColor{
     return [UIColor colorWithRed:91.0/255.0 green:91.0/255.0 blue:95.0/255.0 alpha:1.0];
 }
++ (void)setStyleTitlePoi:(UILabel *)label{
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        [label setFont:[UIFont fontWithName:@"Santana" size:30]];
+    }else{
+        [label setFont:[UIFont fontWithName:@"Santana" size:20]];
+    }
 
+}
 
 + (void)setStyleTitle:(UILabel *) label{
     [label setFont:[UIFont fontWithName:@"Santana" size:30]];

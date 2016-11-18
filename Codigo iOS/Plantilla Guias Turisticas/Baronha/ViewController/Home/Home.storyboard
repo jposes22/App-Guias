@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="landscape">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,15 +20,15 @@
                         <viewControllerLayoutGuide type="bottom" id="cjW-jh-vHi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="l9y-YZ-LWx">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="portada" translatesAutoresizingMaskIntoConstraints="NO" id="Vqa-va-6NX">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <color key="backgroundColor" red="1" green="0.2383997887173599" blue="0.16465353556898477" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="Pkm-aP-PND">
-                                <rect key="frame" x="193" y="120" width="281" height="145"/>
+                                <rect key="frame" x="190.33333333333337" y="120" width="355.33333333333326" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="631" id="ADi-TT-ei6"/>
                                     <constraint firstAttribute="width" secondItem="Pkm-aP-PND" secondAttribute="height" multiplier="143:74" id="xTL-aQ-etP"/>
@@ -46,7 +46,7 @@
                                 </variation>
                             </imageView>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-9h-HyN">
-                                <rect key="frame" x="635" y="95.5" width="42" height="184"/>
+                                <rect key="frame" x="704" y="115" width="42" height="184"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="KW8-ev-L6n"/>
                                     <constraint firstAttribute="height" constant="184" id="cNj-Dt-oG1">
@@ -55,13 +55,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-Wh-rrf">
-                                <rect key="frame" x="318" y="245.5" width="31" height="14.5"/>
+                                <rect key="frame" x="352.66666666666669" y="269.66666666666674" width="31" height="14.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jq2-Ge-RlV">
-                                <rect key="frame" x="312.5" y="222.5" width="42" height="20.5"/>
+                                <rect key="frame" x="347.33333333333331" y="239.33333333333331" width="42" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -87,9 +87,17 @@
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Pkm-aP-PND" firstAttribute="centerX" secondItem="l9y-YZ-LWx" secondAttribute="centerX" id="cii-ZB-45F"/>
-                            <constraint firstItem="1Qh-Wh-rrf" firstAttribute="bottom" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="-5" id="e4t-cP-VAB"/>
+                            <constraint firstItem="1Qh-Wh-rrf" firstAttribute="bottom" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="-15" id="e4t-cP-VAB">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-20"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="-20"/>
+                            </constraint>
                             <constraint firstItem="1Qh-Wh-rrf" firstAttribute="centerX" secondItem="Pkm-aP-PND" secondAttribute="centerX" id="fH0-9B-PcM"/>
-                            <constraint firstItem="1Qh-Wh-rrf" firstAttribute="top" secondItem="Jq2-Ge-RlV" secondAttribute="bottom" constant="2.5" id="fv0-7T-r7S"/>
+                            <constraint firstItem="1Qh-Wh-rrf" firstAttribute="top" secondItem="Jq2-Ge-RlV" secondAttribute="bottom" constant="5" id="fv0-7T-r7S">
+                                <variation key="heightClass=compact-widthClass=compact" constant="2"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                            </constraint>
                             <constraint firstItem="Yd7-Dn-nso" firstAttribute="leading" secondItem="l9y-YZ-LWx" secondAttribute="leadingMargin" constant="20" id="ig1-sE-UIW"/>
                             <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="Pkm-aP-PND" secondAttribute="bottom" constant="110" id="uRK-91-uG6"/>
                             <constraint firstItem="cjW-jh-vHi" firstAttribute="top" secondItem="Vqa-va-6NX" secondAttribute="bottom" id="voV-CU-Hrf"/>
@@ -126,7 +134,7 @@
                 <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="BcW-kw-xcO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="C6c-yq-SI9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="C6c-yq-SI9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -143,9 +151,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_home_menu" width="42" height="280"/>
-        <image name="logo2_home" width="171" height="81"/>
-        <image name="logo_home" width="275" height="150"/>
+        <image name="btn_home_menu" width="28" height="186"/>
+        <image name="logo2_home" width="114" height="54"/>
+        <image name="logo_home" width="183" height="100"/>
         <image name="portada" width="640" height="360"/>
     </resources>
 </document>

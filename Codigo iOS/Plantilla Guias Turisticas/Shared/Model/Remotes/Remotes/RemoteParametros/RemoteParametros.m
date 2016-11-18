@@ -25,6 +25,7 @@
     op.responseSerializer = [AFJSONResponseSerializer serializer];
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
+             [[NSOperationQueue new] addOperationWithBlock:^{
             RemoteParametrosVO * parametrosRemote = [[RemoteParametrosVO alloc] initParametros:responseObject];
             [ParametrosDAO insertarParametros:parametrosRemote.answere];
             if(_delegateParametros && [_delegateParametros respondsToSelector:@selector(communicationUpdateParametros:)]){
@@ -37,6 +38,7 @@
                 }
                 
             }
+             }];
         }
         @catch (NSException *exception) {
             if(_delegateParametros && [_delegateParametros respondsToSelector:@selector(communicationUpdateParametros:)]){

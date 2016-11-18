@@ -24,7 +24,7 @@
     op.responseSerializer = [AFJSONResponseSerializer serializer];
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
-            
+             [[NSOperationQueue new] addOperationWithBlock:^{
             RemoteDetalleGuiaVO * guiaDetalleRemote = [[RemoteDetalleGuiaVO alloc] initGuiaDetalle:responseObject];
             [GuiaDetalleDAO insertarGuiaDetalle:guiaDetalleRemote.answere];
             if(_delegateGuiaDetalle && [_delegateGuiaDetalle respondsToSelector:@selector(communicationUpdateGuiaDetalle:)]){
@@ -37,6 +37,7 @@
                 }
                 
             }
+             }];
             
         }
         @catch (NSException *exception) {

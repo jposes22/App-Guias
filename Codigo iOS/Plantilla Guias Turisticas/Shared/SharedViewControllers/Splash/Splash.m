@@ -100,8 +100,10 @@
         [[Settings sharedInstance] setWasStaredAppBefore:YES];
         [[Settings sharedInstance] saveSettings];
     }
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
         MenuViewController * menu = [MenuViewController new];
         [self presentViewController:menu animated:NO completion:nil];
+    }];
 
 }
 //Descargamos los idiomas disponibles
@@ -236,7 +238,7 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_UPDATE_MENU object:nil];
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
             self.downloadWithoutErrorMenu = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
 
             break;
         case kDAO_RESPONSE_FAIL:
@@ -261,7 +263,7 @@
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
             self.downloadWithoutErrorPoi = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
             break;
         case kDAO_RESPONSE_FAIL:
             self.downloadWithoutErrorPoi = 2;
@@ -285,7 +287,7 @@
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
            
             _downloadWithoutErrorGuia = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
 
             break;
         case kDAO_RESPONSE_FAIL:
@@ -313,7 +315,7 @@
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
             
             _downloadWithoutErrorGuiaDetalle = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
 
             break;
         case kDAO_RESPONSE_FAIL:
@@ -339,7 +341,7 @@
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
            
             _downloadWithoutErrorGuiaSaberMas = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
             
             break;
         case kDAO_RESPONSE_FAIL:
@@ -366,7 +368,7 @@
         case kDAO_RESPONSE_OK_WITH_DATA:
         case kDAO_RESPONSE_OK_WITHOUT_DATA:
             self.downloadWithoutErrorGuiaSaberMasDetalle = 1;
-            [self performSelector:@selector(increaseProgressValue) withObject:self afterDelay:0.1];
+            [self increaseProgressValue];
 
             break;
         case kDAO_RESPONSE_FAIL:

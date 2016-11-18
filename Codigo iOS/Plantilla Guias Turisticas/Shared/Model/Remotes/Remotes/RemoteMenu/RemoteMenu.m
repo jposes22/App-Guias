@@ -25,7 +25,7 @@
     op.responseSerializer = [AFJSONResponseSerializer serializer];
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
-            
+             [[NSOperationQueue new] addOperationWithBlock:^{
             RemoteMenuVO * menuRemote = [[RemoteMenuVO alloc] initMenu:responseObject];
             [MenuDAO insertarMenuItems:menuRemote.answere];
             if(_delegateMenu && [_delegateMenu respondsToSelector:@selector(communicationUpdateMenu:)]){
@@ -38,6 +38,7 @@
                 }
                 
             }
+             }];
             
         }
         @catch (NSException *exception) {

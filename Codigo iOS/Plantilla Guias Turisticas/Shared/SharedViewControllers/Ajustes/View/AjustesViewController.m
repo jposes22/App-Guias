@@ -85,7 +85,7 @@
     [barItems addObject:flexSpace];
     
    // UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(pickerDoneClicked)];
-    UIBarButtonItem * doneBtn = [[UIBarButtonItem alloc] initWithTitle:@"Recent" style:UIBarButtonItemStyleBordered target:self action:@selector(pickerDoneClicked)];
+    UIBarButtonItem * doneBtn = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"ajustes_ok_language",nil) style:UIBarButtonItemStyleBordered target:self action:@selector(pickerDoneClicked)];
     [doneBtn setTintColor:[UIColor whiteColor]];
     
     [barItems addObject:doneBtn];

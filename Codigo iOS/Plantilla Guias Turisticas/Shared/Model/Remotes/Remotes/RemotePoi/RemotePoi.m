@@ -23,7 +23,7 @@
     op.responseSerializer = [AFJSONResponseSerializer serializer];
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
-            
+             [[NSOperationQueue new] addOperationWithBlock:^{
             RemotePoiVO * poiRemote = [[RemotePoiVO alloc] initPoi:responseObject];
             [PoiDAO insertarPoi:poiRemote.answere];
             if(_delegatePoi && [_delegatePoi respondsToSelector:@selector(communicationUpdatePoi:)]){
@@ -36,6 +36,7 @@
                 }
                 
             }
+             }];
             
         }
         @catch (NSException *exception) {

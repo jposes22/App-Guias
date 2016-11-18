@@ -24,6 +24,7 @@
     op.responseSerializer = [AFJSONResponseSerializer serializer];
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
+             [[NSOperationQueue new] addOperationWithBlock:^{
             RemoteIdiomaVO * idiomaRemote = [[RemoteIdiomaVO alloc] initRemoteIdioma:responseObject];
             [IdiomaDAO insertarIdiomas:idiomaRemote.answere];
             if(_delegateIdioma && [_delegateIdioma respondsToSelector:@selector(communicationUpdateIdiomas:)]){
@@ -36,6 +37,7 @@
                 }
                 
             }
+             }];
         }
         @catch (NSException *exception) {
             if(_delegateIdioma && [_delegateIdioma respondsToSelector:@selector(communicationUpdateIdiomas:)]){

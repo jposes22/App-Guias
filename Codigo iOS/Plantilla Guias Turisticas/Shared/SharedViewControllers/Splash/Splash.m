@@ -166,9 +166,12 @@
     
     //this var solve total bar charge vs number of services consult in server
     //if the incrementValue is more than 0.98 (we use 0.98 because 1%3 is 0.99) the bar was charged
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+
     float incrementValue = 1.0/k_NUMBER_DOWNLOADS_CHARGE;
     _progresValue = _progresValue + incrementValue;
     [_progressView setProgress:_progresValue animated:YES];
+    }];
 }
 
 #pragma mark - Communication Parametros
@@ -453,6 +456,7 @@
     _downloadWithoutErrorIdioma =1;
     //TODO: remove context elements
      [_progressView setProgress:0 animated:YES];
+    _progressView.hidden = NO;
     [self downloadData];
 }
 

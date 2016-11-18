@@ -25,11 +25,17 @@
     [self setupRightDrawer];
     [self loadGesturesAllowed];
     [self loadNotificationCenter];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeViewController) name:@"CHANGE_LANGUAGE" object:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void) removeViewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];

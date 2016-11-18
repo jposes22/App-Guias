@@ -20,7 +20,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Constants.h"
 #import "SaberMasBorneiroViewController.h"
-@interface ACidaBorneiroViewController ()<CommnicationMenu, CommunicationCidaTableController>
+@interface ACidaBorneiroViewController ()<CommnicationMenu, CommunicationCidaTableController, AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
@@ -116,6 +116,7 @@
         
         NSURL *fileURL = [NSURL fileURLWithPath:path];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        _audioPlayer.delegate = self;
         if (_audioPlayer == nil){
             NSLog(@"%@", [error description]);
         }else{
@@ -128,6 +129,13 @@
         }
     }
     
+}
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+        
+    }
 }
 #pragma mark - Notification methods
 - (void) openSaberMas:(NSNotification *)notification{

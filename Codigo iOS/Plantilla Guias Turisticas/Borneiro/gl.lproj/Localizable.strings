@@ -68,6 +68,8 @@
 "como_llegar_ver_mapa"="Ver en mapa";
 
 /*Ajustes*/
+"title_ajustes" = "Axustes";
+
 "ajustes_idioma" ="Idioma:";
 "ajustes_title_change_language"="Cambio de idioma";
 "ajustes_descripcion_language"="Está seguro que desexa cambiar de idioma? borraranse os datos da aplicación";

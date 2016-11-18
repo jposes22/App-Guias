@@ -20,7 +20,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "Constants.h"
 #import "SaberMasBorneiroViewController.h"
-@interface CulturaViewController ()<CommnicationMenu, CommunicationCulturaTableController>
+@interface CulturaViewController ()<CommnicationMenu, CommunicationCulturaTableController, AVAudioPlayerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) GuiaList * guia;
@@ -50,6 +50,10 @@
         [[Settings sharedInstance] setIsPlaying:NO];
         
     }
+
+}
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 
 }
@@ -119,6 +123,8 @@
         
         NSURL *fileURL = [NSURL fileURLWithPath:path];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        _audioPlayer.delegate = self;
+
         if (_audioPlayer == nil){
             NSLog(@"%@", [error description]);
         }else{
@@ -131,6 +137,13 @@
         }
     }
     
+}
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+        
+    }
 }
 #pragma mark - Notification methods
 - (void) openSaberMas:(NSNotification *)notification{

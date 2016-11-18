@@ -7,6 +7,7 @@
 //
 
 #import "StyleBorneiro.h"
+#import <UIKit/UIKit.h>
 
 @implementation StyleBorneiro
 
@@ -125,10 +126,17 @@
     
 }
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label{
-    [label setFont:[UIFont fontWithName:@"Giorgio" size:12]];
-    
+    if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
+        [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
+
+    }else{
+        [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];
+
+    }
+
     
 }
+
 
 +(void)setCircleView:(UIView *) view{
     view.layer.shadowColor = [UIColor blackColor].CGColor;

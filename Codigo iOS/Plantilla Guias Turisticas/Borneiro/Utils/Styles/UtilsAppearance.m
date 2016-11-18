@@ -7,10 +7,11 @@
 //
 
 #import "UtilsAppearance.h"
+#import "StyleBorneiro.h"
 
 @implementation UtilsAppearance
 +(UIColor * )getPrimaryColor{
-    return [UIColor colorWithRed:20.0/255.0 green:151.0/255.0 blue:173.0/255.0 alpha:1.0];
+    return [UIColor colorWithRed:161.0/255.0 green:182.0/255.0 blue:156.0/255.0 alpha:1.0];
 }
 +(UIColor * )getPrimaryDarkColor{
     return [UIColor colorWithRed:9.0/255.0 green:79.0/255.0 blue:107.0/255.0 alpha:1.0];
@@ -69,10 +70,10 @@
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
     navigationBar.translucent = NO;
     NSRange rangeText= NSMakeRange(0, title.length);
-    //navigationBar.barTintColor = [UIColor whiteColor];
+    navigationBar.barTintColor = [StyleBorneiro getVerdeOscuroComoLlegar];
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
-    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"OpenSans-Light" size:20] range:rangeText];
-    [attString addAttribute:NSForegroundColorAttributeName value:[UtilsAppearance getPrimaryColor] range:rangeText];
+    [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Giorgio" size:20] range:rangeText];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:rangeText];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(81, 11, 300, 44)];
     label.attributedText = attString;
     [label sizeToFit];

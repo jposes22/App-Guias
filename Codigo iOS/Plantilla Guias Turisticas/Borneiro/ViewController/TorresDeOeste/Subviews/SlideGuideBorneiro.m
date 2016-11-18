@@ -12,7 +12,8 @@
 #import "GuiaDetalleDAO.h"
 #import "AlbumViewController.h"
 #import <AVFoundation/AVFoundation.h>
-@interface SlideGuideBorneiro ()<CommunicationVisitaTableController>
+#import "Settings.h"
+@interface SlideGuideBorneiro ()<CommunicationVisitaTableController, AVAudioPlayerDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) DetalleVisitaTableController * tableController;
 @property (nonatomic, strong) NSArray * listOfGuiaDetalle;
@@ -41,6 +42,14 @@
    //
     [_tableView reloadData];
     
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    if(_audioPlayer && [_audioPlayer isPlaying]){
+        [_audioPlayer stop];
+        [[Settings sharedInstance] setIsPlaying:NO];
+        
+    }
 }
 - (void)loadStyle{
     
@@ -94,6 +103,8 @@
         
         NSURL *fileURL = [NSURL fileURLWithPath:path];
         _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:&error];
+        _audioPlayer.delegate = self;
+
         if (_audioPlayer == nil){
             NSLog(@"%@", [error description]);
         }else{
@@ -101,6 +112,13 @@
         }
     }
     
+}
+-(void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag{
+    if(flag){
+        [[Settings sharedInstance] setIsPlaying:NO];
+        [_tableView reloadData];
+
+    }
 }
 
 @end

@@ -26,6 +26,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelCultura;
 @property (weak, nonatomic) IBOutlet UIView *viewSitiosInteres;
 @property (weak, nonatomic) IBOutlet UILabel *labelSitios;
+@property (weak, nonatomic) IBOutlet UIImageView *imageComoLlegar;
+@property (weak, nonatomic) IBOutlet UIImageView *imageCiudadBorneiro;
+@property (weak, nonatomic) IBOutlet UIImageView *imageComenzarVisita;
+@property (weak, nonatomic) IBOutlet UIImageView *imageCulturaCastrense;
+@property (weak, nonatomic) IBOutlet UIImageView *imageSitiosInteres;
 
 
 @end
@@ -62,6 +67,7 @@
    
 }
 -(void)loadStyle{
+
     self.labelComoLlegar.adjustsFontSizeToFitWidth = YES;
     [StyleBorneiro setStyleSubtitleMoreInfo:_labelComoLlegar];
     self.labelComoLlegar.textColor = [UIColor whiteColor];

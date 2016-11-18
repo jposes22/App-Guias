@@ -68,6 +68,8 @@
 "como_llegar_ver_mapa"="View on map";
 
 /*Ajustes*/
+"title_ajustes" = "Settings";
+
 "ajustes_idioma" ="Language:";
 "ajustes_title_change_language"="Change of language";
 "ajustes_descripcion_language"="Are you sure you want to change language? Application data will be erased";

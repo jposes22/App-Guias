@@ -40,6 +40,7 @@
 + (void)setSytleSubtitleList:(UILabel *) label;
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label;
 
+
 + (void)setStyleTitleComoLlegar:(UILabel *) label;
 + (void)setStyleTitleVisita:(UILabel *) label;
 + (void)setStyleTitleCida:(UILabel *) label;

@@ -36,6 +36,7 @@
     // Configure the view for the selected state
 }
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
+    _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
         _labelTitle.hidden = YES;
         _constraintTopTitle.constant = 0;

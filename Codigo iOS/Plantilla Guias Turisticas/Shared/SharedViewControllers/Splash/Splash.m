@@ -169,7 +169,7 @@
     //this var solve total bar charge vs number of services consult in server
     //if the incrementValue is more than 0.98 (we use 0.98 because 1%3 is 0.99) the bar was charged
     [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-
+        _progressView.hidden = NO;
     float incrementValue = 1.0/k_NUMBER_DOWNLOADS_CHARGE;
     _progresValue = _progresValue + incrementValue;
     [_progressView setProgress:_progresValue animated:YES];
@@ -223,8 +223,9 @@
             break;
     }
     if(![[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil && self.downloadWithoutErrorIdioma){
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             [self performSegueWithIdentifier:@"showIdiomas" sender:nil];
-
+        }];
     }else if([[Settings sharedInstance] wasStaredAppBefore] && [[Settings sharedInstance] idioma] == nil && !self.downloadWithoutErrorIdioma){
         [self showAlertViewRetry];
     }else{
@@ -457,8 +458,9 @@
     _downloadWithoutErrorParametos=1;
     _downloadWithoutErrorIdioma =1;
     //TODO: remove context elements
-     [_progressView setProgress:0 animated:YES];
-    _progressView.hidden = NO;
+    _progresValue = 0;
+     //[_progressView setProgress:0 animated:YES];
+   // _progressView.hidden = NO;
     [self downloadData];
 }
 

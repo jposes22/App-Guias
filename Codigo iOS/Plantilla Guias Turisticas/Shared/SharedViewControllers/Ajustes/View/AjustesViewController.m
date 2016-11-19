@@ -124,15 +124,16 @@
                                     else if (remoteHostStatus == ReachableViaWiFi) {
                                         Idioma * idiomaAux = ((Idioma*)[_listIdiomas objectAtIndex:[_pickerView selectedRowInComponent:0]]) ;
                                         [[Settings sharedInstance] setIdioma:idiomaAux.codigoIdioma];
+                                         [NSBundle setLanguage:idiomaAux.codigoIdioma];
                                         [[Settings sharedInstance] saveSettings];
-                                        [NSBundle setLanguage:idiomaAux.codigoIdioma];
                                         [[NSNotificationCenter defaultCenter] postNotificationName:@"CHANGE_LANGUAGE" object:nil];
                                     }
                                     else if (remoteHostStatus == ReachableViaWWAN) {
                                         Idioma * idiomaAux = ((Idioma*)[_listIdiomas objectAtIndex:[_pickerView selectedRowInComponent:0]]) ;
                                         [[Settings sharedInstance] setIdioma:idiomaAux.codigoIdioma];
-                                        [[Settings sharedInstance] saveSettings];
                                         [NSBundle setLanguage:idiomaAux.codigoIdioma];
+                                        [[Settings sharedInstance] saveSettings];
+                                       
                                        [[NSNotificationCenter defaultCenter] postNotificationName:@"CHANGE_LANGUAGE" object:nil];
                                     
                                     }

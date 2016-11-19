@@ -56,9 +56,9 @@
             [self updatePoi:guia];
         }
     }
-    dispatch_async(dispatch_get_main_queue(), ^{
+   // dispatch_async(dispatch_get_main_queue(), ^{
         [[CoreDataUtil instancia] saveContext:&error];
-    });
+   // });
 }
 +(void)updatePoi:(Guia *)guia{
     NSError *error;

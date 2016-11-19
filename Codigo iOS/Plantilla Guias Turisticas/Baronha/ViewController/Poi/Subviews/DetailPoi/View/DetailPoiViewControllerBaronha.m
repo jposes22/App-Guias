@@ -14,6 +14,8 @@
 #import "UtilsAppearance.h"
 #import "StylesBaronha.h"
 #import "PoiImagen+CoreDataProperties.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
 #import "AlbumViewController.h"
 
 @interface DetailPoiViewControllerBaronha ()
@@ -41,12 +43,19 @@
 
 
 -(void) loadData{
-    [_imgViewDetail removeFromSuperview];
+   // [_imgViewDetail removeFromSuperview];
     NSArray *listPois =  [PoiDAO getPoiByCategory:_categoryPoi];
     if(listPois && listPois.count > 0){
         _poiDetail = listPois.firstObject;
         _lblTitle.attributedText = [Metodos convertHTMLToString:_poiDetail.titulo];
         _lblDescription.attributedText = [Metodos convertHTMLToString:_poiDetail.descripcion];
+        NSLog(@"-->%@",_poiDetail.urlImagen);
+        if(_poiDetail.urlImagen){
+            [_imgViewDetail sd_setImageWithURL:[[NSURL alloc] initWithString:_poiDetail.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
+        }else{
+           // _imgViewDetail.image = [UIImage imageNamed:@"iimageNone"];
+            [_imgViewDetail removeFromSuperview];
+        }
         
         if(_poiDetail.listImagen && _poiDetail.listImagen.count > 0){
             NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -57,11 +66,11 @@
             [_imageViewList addGestureRecognizer:tapListImages];
 
         }else{
-            [_imgViewDetail removeFromSuperview];
+            [_imageViewList removeFromSuperview];
         }
 
     }else{
-        [_imgViewDetail removeFromSuperview];
+        [_imageViewList removeFromSuperview];
     }
 }
 - (void)didReceiveMemoryWarning {

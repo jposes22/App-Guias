@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "NSBundle.h"
 #import "CoreDataUtil.h"
+#import "Settings.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +20,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
    
-    [NSBundle setLanguage:@"es"];
+    if(![[Settings sharedInstance] wasStaredAppBefore]){
+        [Settings sharedInstance];
+        [NSBundle setLanguage:@"es"];
+    }else{
+        [NSBundle setLanguage:[[Settings sharedInstance] idioma]];
+    }
+    
     return YES;
 }
 

@@ -53,9 +53,9 @@
             [self updateParameter:parametro];
         }
     }
-    dispatch_async(dispatch_get_main_queue(), ^{
+  //  dispatch_async(dispatch_get_main_queue(), ^{
         [[CoreDataUtil instancia] saveContext:&error];
-    });
+  //  });
 }
 +(void)updateParameter:(ParametrosApp *)parametro{
     NSError *error;

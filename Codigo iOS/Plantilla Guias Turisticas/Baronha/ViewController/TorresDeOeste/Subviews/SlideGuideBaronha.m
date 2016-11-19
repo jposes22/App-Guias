@@ -13,6 +13,7 @@
 #import "GuiaDetalleDAO.h"
 #import "AlbumViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Settings.h"
 
 
 

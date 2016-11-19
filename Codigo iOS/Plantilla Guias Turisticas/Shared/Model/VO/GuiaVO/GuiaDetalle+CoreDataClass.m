@@ -41,25 +41,22 @@
             self.longitud = [[json objectForKey:@"longitud"] doubleValue];
         }
         if([json objectForKey:@"titulo"] != [NSNull null]){
-            self.titulo = [json objectForKey:@"titulo"] ;
+            //if(((NSString*) [json objectForKey:@"titulo"]).length >1 ){
+                self.titulo = [json objectForKey:@"titulo"] ;
+           // }
         }
         if([json objectForKey:@"descripcion"] != [NSNull null]){
             self.descripcion = [json objectForKey:@"descripcion"] ;
         }
         if([json objectForKey:@"listGuiaDetalleImagen"] != [NSNull null]){
-             [[NSOperationQueue new] addOperationWithBlock:^{
                 NSMutableArray * listImage  = [NSMutableArray new];
                  for (id jsonImage in [json objectForKey:@"listGuiaDetalleImagen"]) {
                      GuiaDetalleImagen * guiaImagenDetalle = [[GuiaDetalleImagen alloc] initGuiaDetalleImagenWithJson:jsonImage];
                      if(guiaImagenDetalle){
                          [listImage addObject:guiaImagenDetalle];
                      }
-                
                  }
                  [GuiaDetalleImagenDAO insertarGuiaDetalleImagen:listImage];
-             }];
-           
-
         }
     }
     return self;

@@ -25,8 +25,8 @@
     [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         @try {
              [[NSOperationQueue new] addOperationWithBlock:^{
-            RemoteDetalleGuiaVO * guiaDetalleRemote = [[RemoteDetalleGuiaVO alloc] initGuiaDetalle:responseObject];
-            [GuiaDetalleDAO insertarGuiaDetalle:guiaDetalleRemote.answere];
+                 RemoteDetalleGuiaVO * guiaDetalleRemote = [[RemoteDetalleGuiaVO alloc] initGuiaDetalle:responseObject];
+                 [GuiaDetalleDAO insertarGuiaDetalle:guiaDetalleRemote.answere];
             if(_delegateGuiaDetalle && [_delegateGuiaDetalle respondsToSelector:@selector(communicationUpdateGuiaDetalle:)]){
                 [[Settings sharedInstance] setLastUpdateGuiaDetalle:guiaDetalleRemote.dateTo];
                 [[Settings sharedInstance] saveSettings];

@@ -28,7 +28,6 @@
         }
         
         if([json objectForKey:@"urlImagen"] != [NSNull null]){
-            //
                 
             self.urlImagen = [json objectForKey:@"urlImagen"] ;
             

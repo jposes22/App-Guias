@@ -21,8 +21,8 @@
     self = [self init:self.managedObjectContext];
     if(self){
         
-        if([json objectForKey:@"idGuiaSaberMAsDetalleImagen"] != [NSNull null]){
-            self.idGuiaSaberMAsDetalleImagen = [[json objectForKey:@"idGuiaSaberMAsDetalleImagen"] integerValue];
+        if([json objectForKey:@"idGuiaSaberMasDetalleImagen"] != [NSNull null]){
+            self.idGuiaSaberMAsDetalleImagen = [[json objectForKey:@"idGuiaSaberMasDetalleImagen"] integerValue];
         }
         if([json objectForKey:@"idGuiaSaberMasDetalle"] != [NSNull null]){
             self.idGuiaSaberMasDetalle = [[json objectForKey:@"idGuiaSaberMasDetalle"] integerValue];

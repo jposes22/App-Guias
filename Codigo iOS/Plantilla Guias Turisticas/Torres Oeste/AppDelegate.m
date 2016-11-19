@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NSBundle.h"
-
+#import "Settings.h"
 #import "CoreDataUtil.h"
 
 @interface AppDelegate ()
@@ -22,7 +22,12 @@
     // Override point for customization after application launch.
     UIImage * image = [UIImage imageNamed:@"background_navigation"];
     [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsCompact];
-     [NSBundle setLanguage:@"es"];
+    if(![[Settings sharedInstance] wasStaredAppBefore]){
+        [Settings sharedInstance];
+        [NSBundle setLanguage:@"es"];
+    }else{
+        [NSBundle setLanguage:[[Settings sharedInstance] idioma]];
+    }
     
 
     return YES;

@@ -48,7 +48,6 @@
             self.descripcion = [json objectForKey:@"descripcion"] ;
         }
         if([json objectForKey:@"listGuiaSaberMasDetalleImagen"] != [NSNull null]){
-            [[NSOperationQueue new] addOperationWithBlock:^{
                 NSMutableArray * listImage  = [NSMutableArray new];
                 for (id jsonImage in [json objectForKey:@"listGuiaSaberMasDetalleImagen"]) {
                     GuiaSaberMasDetalleImagen * guiaImagenDetalle = [[GuiaSaberMasDetalleImagen alloc] initGuiaDetalleImagenWithJson:jsonImage];
@@ -58,7 +57,6 @@
                     
                 }
                 [GuiaSaberMasDetalleImagenDAO insertarGuiaSaberMasDetalleImagen:listImage];
-            }];
             
             
         }

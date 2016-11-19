@@ -43,7 +43,7 @@
     NSManagedObjectContext *context = [[CoreDataUtil instancia] managedObjectContext];
     NSEntityDescription *entityDescription = [NSEntityDescription
                                               entityForName:@"Poi" inManagedObjectContext:context];
-    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"tipoPoi == %d", category];
+    NSPredicate * predicate = [NSPredicate predicateWithFormat:@"tipoPoi == %d && isActivo == YES", category];
     NSSortDescriptor * sort = [NSSortDescriptor sortDescriptorWithKey:@"titulo" ascending:YES];
     //Creamos la consulta y le asociamos la entidad que acabamos de crear
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
@@ -77,9 +77,9 @@
             [self updatePoi:poi];
         }
     }
-   // dispatch_async(dispatch_get_main_queue(), ^{
-        [[CoreDataUtil instancia] saveContext:&error];
-   // });
+    if( listOfPoi.count > 0){
+         [[CoreDataUtil instancia] saveContext:&error];
+    }
 }
 
 +(void)updatePoi:(Poi *)poi{

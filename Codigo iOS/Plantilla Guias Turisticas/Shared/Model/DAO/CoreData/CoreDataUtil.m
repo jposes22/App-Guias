@@ -92,7 +92,11 @@ static CoreDataUtil *_instancia;
             NSLog(@"Unresolved error %@, %@", *error, [*error userInfo]);
             //abort();
             return NO;
+        }else{
+            NSLog(@"Guardado correctamente");
         }
+    }else{
+        NSLog(@"managedObject nil");
     }
     return YES;
 }

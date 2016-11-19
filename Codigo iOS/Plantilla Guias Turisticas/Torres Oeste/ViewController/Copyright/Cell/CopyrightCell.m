@@ -29,7 +29,7 @@
 }
 - (void) loadData:(NSString *)nombre texto:(NSString *)texto{
     _labelText.attributedText = [Metodos convertHTMLToString:texto];
-    [UtilsAppearance setStyleText:_labelText];
+    //[UtilsAppearance setStyleText:_labelText];
     
     
 }

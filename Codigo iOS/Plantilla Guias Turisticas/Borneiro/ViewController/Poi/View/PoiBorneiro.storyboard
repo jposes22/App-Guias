@@ -14,7 +14,7 @@
         <scene sceneID="c9U-Lq-iTH">
             <objects>
                 <navigationController storyboardIdentifier="PoiBorneiroNC" id="Rbw-iV-eNf" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ryD-g5-qHn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryD-g5-qHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -398,6 +398,7 @@
                             <constraint firstItem="g5I-0E-FCg" firstAttribute="width" secondItem="Cf2-Fg-0t6" secondAttribute="width" id="1Cw-Ez-MIk"/>
                             <constraint firstItem="YkM-c7-eyo" firstAttribute="top" secondItem="hBh-dG-TAA" secondAttribute="bottom" id="C92-6x-8EB"/>
                             <constraint firstAttribute="trailing" secondItem="YkM-c7-eyo" secondAttribute="trailing" id="Umq-1T-w6v"/>
+                            <constraint firstItem="4u3-0y-mFI" firstAttribute="top" secondItem="hBh-dG-TAA" secondAttribute="bottom" priority="150" constant="10" id="joc-1s-Fho"/>
                             <constraint firstItem="7Ba-lX-mNg" firstAttribute="top" secondItem="YkM-c7-eyo" secondAttribute="bottom" id="lKA-Ls-ef7"/>
                             <constraint firstItem="YkM-c7-eyo" firstAttribute="leading" secondItem="Cf2-Fg-0t6" secondAttribute="leading" id="omb-ng-09M"/>
                         </constraints>

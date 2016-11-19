@@ -9,7 +9,6 @@
 #import "DetailPoiBorneiroViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import "PoiDAO.h"
-#import "Poi+CoreDataClass.h"
 #import "Metodos.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "StyleBorneiro.h"
@@ -24,7 +23,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewList;
 
-@property (nonatomic, strong) Poi * poi;
 @end
 
 @implementation DetailPoiBorneiroViewController
@@ -44,10 +42,15 @@
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
 - (void)loadData{
-   NSArray * listPoi = [PoiDAO getPoiByCategory:_categoryPoi];
-    if(listPoi){
+    if(!_poi){
+        
+       NSArray * listPoi = [PoiDAO getPoiByCategory:_categoryPoi];
         _poi = [listPoi firstObject];
+    }
+    if(_poi){
+        
         _labelText.attributedText = [Metodos convertHTMLToString:_poi.descripcion];
+        
         if(_poi.titulo){
             _labelTitle.attributedText = [Metodos convertHTMLToString:_poi.titulo];
         }else{
@@ -65,15 +68,17 @@
             
             UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
             [_imageViewList addGestureRecognizer:tapListImages];
-           // [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
+            // [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
         }else{
             [_imageViewList removeFromSuperview];
         }
     }else{
         [_imageViewList removeFromSuperview];
     }
-}
 
+    
+    
+}
 - (void) loadStyle{
     //[StyleBorneiro setStyleText:_labelText];
    // [StyleBorneiro setStyleSubTitlePoi:_labelTitle];

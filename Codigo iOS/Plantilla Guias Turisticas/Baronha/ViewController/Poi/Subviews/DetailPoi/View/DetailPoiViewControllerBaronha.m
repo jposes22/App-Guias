@@ -9,6 +9,7 @@
 #import "DetailPoiViewControllerBaronha.h"
 #import "UIViewController+MMDrawerController.h"
 #import "PoiDAO.h"
+#import "PoiImagenDAO.h"
 #import "Poi+CoreDataProperties.h"
 #import "Metodos.h"
 #import "UtilsAppearance.h"
@@ -22,7 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewDetail;
 @property (weak, nonatomic) IBOutlet UILabel *lblTitle;
 @property (weak, nonatomic) IBOutlet UILabel *lblDescription;
-
+@property (nonatomic, strong) NSArray * listImages;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewList;
 
 
@@ -49,17 +50,17 @@
         _poiDetail = listPois.firstObject;
         _lblTitle.attributedText = [Metodos convertHTMLToString:_poiDetail.titulo];
         _lblDescription.attributedText = [Metodos convertHTMLToString:_poiDetail.descripcion];
-        NSLog(@"-->%@",_poiDetail.urlImagen);
         if(_poiDetail.urlImagen){
-            [_imgViewDetail sd_setImageWithURL:[[NSURL alloc] initWithString:_poiDetail.urlImagen] placeholderImage:[UIImage imageNamed:@"iimageNone" ]];
+            [_imgViewDetail sd_setImageWithURL:[[NSURL alloc] initWithString:_poiDetail.urlImagen] placeholderImage:[UIImage imageNamed:@"imageNone" ]];
         }else{
            // _imgViewDetail.image = [UIImage imageNamed:@"iimageNone"];
             [_imgViewDetail removeFromSuperview];
         }
         
-        if(_poiDetail.listImagen && _poiDetail.listImagen.count > 0){
+        _listImages = [PoiImagenDAO getPoiImagenesByidPoi:_poiDetail.idPoi ];
+        if(_listImages.count > 0){
             NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-            path = [path stringByAppendingString:((PoiImagen *)[_poiDetail.listImagen anyObject]).urlImagen];
+            path = [path stringByAppendingString:((PoiImagen *)[_listImages firstObject]).urlImagen];
             _imageViewList.image = [UIImage imageWithContentsOfFile:path ];
             
             UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
@@ -90,7 +91,7 @@
 
 -(void) openAlbum{
     AlbumViewController *album = [AlbumViewController new];
-    [album setListfOfImage:[_poiDetail.listImagen allObjects]];
+    [album setListfOfImage:_listImages];
     [self presentViewController:album animated:YES completion:nil];
     
 }

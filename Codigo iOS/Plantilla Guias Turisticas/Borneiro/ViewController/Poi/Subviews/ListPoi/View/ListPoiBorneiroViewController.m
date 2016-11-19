@@ -57,8 +57,8 @@
 - (IBAction)btnOpenMenu:(id)sender {
    [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
--(void) communicationPoiSelected:(NSInteger)index{
-      [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPoiRutasSenderismo)];
+-(void) communicationPoiSelected:(Poi *)poi{
+      [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:poi];
 
 }
 
@@ -70,7 +70,7 @@
 
     if([[segue identifier] isEqualToString:kSEGUE_SHOW_DETAIL]){
         DetailPoiBorneiroViewController *vc = [segue destinationViewController];
-        [vc setCategoryPoi:[sender integerValue]];
+        [vc setPoi:sender];
         
     }
 }

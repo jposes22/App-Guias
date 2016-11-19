@@ -68,20 +68,20 @@
         if (count == NSNotFound){
             //Ocurrio algun error
         } else if (count == 0){ //No existe entonces creamos un objecto
-            Poi * poi = [PoiDAO getPoi:poiImagen.idPoi];
+          //  Poi * poi = [PoiDAO getPoi:poiImagen.idPoi];
             [context insertObject:poiImagen];
             
-            if(poi){
+          /*  if(poi){
                 [poiImagen setPoi:poi];
                 [poi addListImagenObject:poiImagen];
-            }
+            }*/
         }else{
             [self updatePoiImagen:poiImagen];
         }
     }
-    dispatch_async(dispatch_get_main_queue(), ^{
+  //  dispatch_async(dispatch_get_main_queue(), ^{
         [[CoreDataUtil instancia] saveContext:&error];
-    });
+ //   });
     
 }
 

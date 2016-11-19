@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Poi+CoreDataClass.h"
+
 @interface DetailPoiBorneiroViewController : UIViewController
 @property (nonatomic) NSInteger categoryPoi;
 @property (nonatomic, strong) NSString * titleSection;
+@property (nonatomic, strong) Poi * poi;
 @end

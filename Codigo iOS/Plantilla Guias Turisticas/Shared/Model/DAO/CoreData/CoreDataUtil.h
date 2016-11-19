@@ -11,9 +11,9 @@
 
 @interface CoreDataUtil : NSObject
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (readonly, strong, atomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, atomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, atomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 +(CoreDataUtil *) instancia;
 - (BOOL)saveContext:(NSError **) error;

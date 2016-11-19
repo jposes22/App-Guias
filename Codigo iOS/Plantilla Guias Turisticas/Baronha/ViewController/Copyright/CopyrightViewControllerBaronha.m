@@ -32,7 +32,7 @@
     _listData = [[NSArray alloc] initWithObjects:NSLocalizedString(@"copyright_texto", nil), nil];
 }
 -(void)loadStyle{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:@"Copyright"];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"copyright_titulo", nil)];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

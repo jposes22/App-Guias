@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "Poi+CoreDataClass.h"
 
 @protocol CommunicationControllerPoiBorneiro<NSObject>
 @optional
--(void)communicationPoiSelected:(NSInteger) index;
+-(void)communicationPoiSelected:(Poi *) poi;
 @end
 
 @interface PoiBorneiroTableController : NSObject<UITableViewDelegate,UITableViewDataSource>

@@ -38,6 +38,7 @@
     // Do any additional setup after loading the view.
     [self loadData];
     [self loadStyle];
+    [self loadNavigationBar];
 }
 
 
@@ -83,7 +84,8 @@
     //[StylesBaronha setStyleTitle:_lblTitle];
 }
 -(void)loadNavigationBar{
-    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_lugares", nil)];
+    [UtilsAppearance setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"title_lugares", nil)];
+
 }
 - (IBAction)btnOpenMenu:(id)sender {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];

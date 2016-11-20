@@ -7,7 +7,7 @@
 //
 
 #import "AlbumPagerController.h"
-#import "ViewImage.h"
+#import "ViewImageViewController.h"
 #import "GuiaDetalleImagen+CoreDataProperties.h"
 @interface AlbumPagerController()
 @property (strong, nonatomic) UIPageViewController *pageController;
@@ -23,7 +23,7 @@
     [self.view setBackgroundColor: [UIColor blackColor]];
     [[self.pageController view] setFrame:CGRectMake(0, 0, self.frame.size.width+8, self.frame.size.height)];
     
-    ViewImage *initialViewController = [self viewControllerAtIndex:0];
+    ViewImageViewController *initialViewController = [self viewControllerAtIndex:0];
     NSArray *viewControllers = [NSArray arrayWithObject:initialViewController];
     
     
@@ -35,9 +35,9 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
 }
 
-- (ViewImage *)viewControllerAtIndex:(NSUInteger)index {
+- (ViewImageViewController *)viewControllerAtIndex:(NSUInteger)index {
     
-    ViewImage *childViewController = [[ViewImage alloc] initWithNibName:@"ViewImage" bundle:nil];
+    ViewImageViewController *childViewController = [[ViewImageViewController alloc] initWithNibName:@"ViewImageViewController" bundle:nil];
     childViewController.index = index;
     if(_listImages && _listImages.count > 0){
         [childViewController setImageShow:((GuiaDetalleImagen *)[_listImages objectAtIndex:index]).urlImagen];
@@ -49,7 +49,7 @@
 
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
-    NSUInteger index = [(ViewImage *)viewController index];
+    NSUInteger index = [(ViewImageViewController *)viewController index];
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
@@ -59,7 +59,7 @@
     
 }
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
-    NSUInteger index = [(ViewImage *)viewController index];
+    NSUInteger index = [(ViewImageViewController *)viewController index];
     
     if (index == NSNotFound) {
         return nil;

@@ -93,7 +93,7 @@ static CoreDataUtil *_instancia;
             //abort();
             return NO;
         }else{
-            NSLog(@"Guardado correctamente");
+           // NSLog(@"Guardado correctamente");
         }
     }else{
         NSLog(@"managedObject nil");

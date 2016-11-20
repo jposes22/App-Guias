@@ -56,9 +56,9 @@
 
 
 /* ERROR FIRST TIME*/
-"error_title_first_time" = "";
-"error_description_first_time" = "";
-"error_button_first_time"="";
+"error_title_first_time" = "Error";
+"error_description_first_time" = "Erro de conexión, revise que dispon de rede";
+"error_button_first_time"="Reintentar";
 
 
 /*Como llegar*/
@@ -77,3 +77,9 @@
 "ajustes_title_error_internet"="Error de conexión";
 "ajustes_descripcion_error_no_internet"= "Por favor comprobe a súa conexión a internet e volva tentalo";
 "ajustes_ok_language"="Ok";
+
+
+/* Arranque app*/
+"arranque_title_idioma"="Seleccione un idioma:";
+"arranque_button_select"="Seleccionar";
+

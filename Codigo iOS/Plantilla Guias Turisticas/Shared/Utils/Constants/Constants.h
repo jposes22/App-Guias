@@ -8,7 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 @interface Constants : NSObject
+
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_IPHONE_4S (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 480.0)
+#define IS_IPHONE_5 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 667.0)
+#define IS_IPHONE_6PLUS (IS_IPHONE && [[UIScreen mainScreen] nativeScale] == 3.0f)
+#define IS_IPHONE_6_PLUS (IS_IPHONE && [[UIScreen mainScreen] bounds].size.width == 736.0)
+#define IS_RETINA ([[UIScreen mainScreen] scale] == 2.0)
 
 extern NSString *SETTINGS_WAS_STARTED_APP_BEFORE;
 extern NSString *SETTINGS_kDATE_LAST_UPDATE_PARAMETERS;
@@ -59,6 +71,8 @@ extern NSString * const kSEGUE_LIST_POI;
 extern NSString * const kSEGUE_POI_ARQUELOGICO;
 extern NSString * const kSEGUE_SHOW_DETAIL;
 extern NSString * const kSEGUE_LIST_POI_SINGLE;
+
+
 
 
 @end

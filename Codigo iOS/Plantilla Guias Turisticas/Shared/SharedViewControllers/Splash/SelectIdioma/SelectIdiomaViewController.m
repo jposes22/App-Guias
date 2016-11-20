@@ -45,13 +45,14 @@
     [_tableView reloadData];
 }
 - (void)loadInitialData{
-    _labelTitulo.text = @"Seleccione un idioma";
+    
+    _labelTitulo.text = NSLocalizedString(@"arranque_title_idioma",nil);
     _btnConfirmar.enabled = NO;
-    [_btnConfirmar setTitle:@"Seleccionar" forState:UIControlStateNormal];
+    [_btnConfirmar setTitle: NSLocalizedString(@"arranque_button_select",nil) forState:UIControlStateNormal];
     
 }
 - (void)loadStyle{
-    [UtilsAppearance setStyleTextBold:_labelTitulo];
+    [UtilsAppearance setStyleTitle:_labelTitulo];
     [UtilsAppearance setStyleButtonText:_btnConfirmar];
     [_btnConfirmar setBackgroundColor:[UtilsAppearance getSecondaryColor]];
     [_btnConfirmar.layer setCornerRadius:8.0];

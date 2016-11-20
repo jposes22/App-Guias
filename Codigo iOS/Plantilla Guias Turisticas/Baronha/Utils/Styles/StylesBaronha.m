@@ -88,7 +88,7 @@
 + (void) setStyleNavigationBar:(UINavigationBar *)navigationBar withTitle:(NSString *)title{
     navigationBar.translucent = NO;
     NSRange rangeText= NSMakeRange(0, title.length);
-    //navigationBar.barTintColor = [UIColor whiteColor];
+    navigationBar.barTintColor = [UIColor whiteColor];
     NSMutableAttributedString *attString =[[NSMutableAttributedString alloc] initWithString:title];
     [attString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Santana" size:20] range:rangeText];
     [attString addAttribute:NSForegroundColorAttributeName value:[StylesBaronha getPrimaryColor] range:rangeText];

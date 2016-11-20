@@ -31,7 +31,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (void) loadData{
-    _labelTitulo.text = @"Referencias bibliográficas, ilustraciones y fotografías";
+    _labelTitulo.text = NSLocalizedString(@"", nil);
     
 }
 - (IBAction)btnMenuTouch:(id)sender {

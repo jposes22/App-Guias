@@ -47,7 +47,7 @@
 //Copyright
 
 "copyright_titulo" = "Copyright";
-"copyright_texto" = "<span style='font-family: Open Sans'; display:'block'; text-align:'justify'; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXTO</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span>";
+"copyright_texto" = "<span style='font-family: Open Sans'; display:'block'; text-align:'justify'; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>Copyright</span><br>Ángel<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Prueba Copyright<br>Prueba<br><br></span>";
 
 /* ERROR FIRST TIME*/
 "error_title_first_time" = "Error";

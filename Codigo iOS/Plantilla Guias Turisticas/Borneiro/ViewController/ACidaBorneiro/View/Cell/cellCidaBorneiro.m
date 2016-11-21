@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSArray * listImagenesDetalle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constrainHeightSaberMas;
 @property (weak, nonatomic) IBOutlet UIImageView *imageSaberMas;
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
@@ -46,18 +47,18 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
-        _contraintLabelTopHeight.constant = 0;
+        _contraintLabelTopHeight.constant = -5;
         _labelTitle.hidden = YES;
     }else{
-        _contraintLabelTopHeight.constant = 10;
+        _contraintLabelTopHeight.constant = 5;
         _labelTitle.attributedText =[Metodos convertHTMLToString:guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
     if(!guiaDetalle.descripcion){
-        _constraintTopHeight.constant = 0;
+        _constraintTopHeight.constant = -5;
         _labelDescripcion.hidden = YES;
     }else{
-        _constraintTopHeight.constant = 10;
+        _constraintTopHeight.constant = 5;
         _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
@@ -69,7 +70,7 @@
         _imageGuia.hidden = NO;
         _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
         _imageGuia.userInteractionEnabled = YES;
-		_constraintTopImagen.constant = 10;
+		_constraintTopImagen.constant = 5;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
         _imageGuia.image = [UIImage imageWithContentsOfFile:path ];
@@ -84,11 +85,12 @@
         _imageSaberMas.hidden = NO;
         _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
         
-        
+        _constrainHeightSaberMas.constant = 20.5;
         UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
         tapSaberMasGesture.numberOfTapsRequired = 1;
         [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
     }else{
+        _constrainHeightSaberMas.constant = -5;
         _labelSaberMas.hidden = YES;
         _imageSaberMas.hidden = YES;
     }

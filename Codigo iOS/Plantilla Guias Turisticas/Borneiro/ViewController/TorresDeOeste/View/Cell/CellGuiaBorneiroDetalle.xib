@@ -19,26 +19,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="467" height="327"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnj-6V-cCt">
-                        <rect key="frame" x="16" y="18" width="433" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnj-6V-cCt">
+                        <rect key="frame" x="16" y="13" width="433" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-VH-1b5">
-                        <rect key="frame" x="16" y="32" width="435" height="0.0"/>
+                        <rect key="frame" x="16" y="18" width="435" height="16.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CB9-BH-HaT">
-                        <rect key="frame" x="10" y="42" width="447" height="250"/>
+                        <rect key="frame" x="10" y="39.5" width="447" height="250"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="250" id="WHP-v6-ydi"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" Saber mas" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iy-6X-vnL">
-                        <rect key="frame" x="53" y="297" width="404" height="20.5"/>
+                        <rect key="frame" x="53" y="294" width="404" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20.5" id="gTV-gg-znK"/>
                         </constraints>
@@ -47,25 +47,25 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_saber_mas" translatesAutoresizingMaskIntoConstraints="NO" id="zYq-h9-jkN">
-                        <rect key="frame" x="8" y="292" width="451" height="31"/>
+                        <rect key="frame" x="8" y="294.5" width="451" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30.5" id="sbI-6g-XkR"/>
+                            <constraint firstAttribute="height" constant="20" id="sbI-6g-XkR"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="pCB-VH-1b5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="0iX-Dk-bD0"/>
                     <constraint firstItem="Xnj-6V-cCt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="9BY-HM-tPv"/>
-                    <constraint firstItem="pCB-VH-1b5" firstAttribute="top" secondItem="Xnj-6V-cCt" secondAttribute="bottom" constant="14" id="APE-hX-ssh"/>
+                    <constraint firstItem="pCB-VH-1b5" firstAttribute="top" secondItem="Xnj-6V-cCt" secondAttribute="bottom" constant="5" id="APE-hX-ssh"/>
                     <constraint firstAttribute="trailingMargin" secondItem="pCB-VH-1b5" secondAttribute="trailing" constant="8" id="COb-2F-POm"/>
-                    <constraint firstItem="Xnj-6V-cCt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="DSY-0H-1IM"/>
+                    <constraint firstItem="Xnj-6V-cCt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="DSY-0H-1IM"/>
                     <constraint firstItem="0iy-6X-vnL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="45" id="GER-wU-Rmz"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Xnj-6V-cCt" secondAttribute="trailing" constant="10" id="HOr-jT-beB"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="0iy-6X-vnL" secondAttribute="bottom" constant="2" id="JZ1-aM-Llq"/>
-                    <constraint firstItem="CB9-BH-HaT" firstAttribute="top" secondItem="pCB-VH-1b5" secondAttribute="bottom" constant="10" id="NvX-40-d38"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0iy-6X-vnL" secondAttribute="bottom" constant="5" id="JZ1-aM-Llq"/>
+                    <constraint firstItem="CB9-BH-HaT" firstAttribute="top" secondItem="pCB-VH-1b5" secondAttribute="bottom" constant="5" id="NvX-40-d38"/>
                     <constraint firstItem="CB9-BH-HaT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="PTg-38-7Tg"/>
                     <constraint firstItem="zYq-h9-jkN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XFc-lk-VHx"/>
-                    <constraint firstItem="zYq-h9-jkN" firstAttribute="top" secondItem="CB9-BH-HaT" secondAttribute="bottom" id="b5n-IA-NMV"/>
+                    <constraint firstItem="zYq-h9-jkN" firstAttribute="top" secondItem="CB9-BH-HaT" secondAttribute="bottom" constant="5" id="b5n-IA-NMV"/>
                     <constraint firstAttribute="trailingMargin" secondItem="CB9-BH-HaT" secondAttribute="trailing" constant="2" id="dAt-nJ-X9Y"/>
                     <constraint firstItem="0iy-6X-vnL" firstAttribute="centerY" secondItem="zYq-h9-jkN" secondAttribute="centerY" id="ta3-Xh-iA2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="0iy-6X-vnL" secondAttribute="trailing" constant="2" id="tmE-dg-4Co"/>
@@ -73,6 +73,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="constrainHeightSaberMas" destination="sbI-6g-XkR" id="p9e-S2-wlR"/>
                 <outlet property="constraintTopHeight" destination="APE-hX-ssh" id="IpH-6m-gEl"/>
                 <outlet property="constraintTopImagen" destination="NvX-40-d38" id="atf-kX-Bot"/>
                 <outlet property="contraintLabelTopHeight" destination="DSY-0H-1IM" id="qFt-BD-iSn"/>

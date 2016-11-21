@@ -55,11 +55,11 @@
     
     HeaderCida *nibView = [[[NSBundle mainBundle] loadNibNamed:@"HeaderCida" owner:self options:nil] objectAtIndex:0];
     if(_guia.urlAudioGuia){
-        nibView.frame = CGRectMake(0, 0, tableView.frame.size.width, 100);
+        nibView.frame = CGRectMake(0, 0, tableView.frame.size.width, 200);
         nibView.delegateAudioGuia = self;
         
     }else{
-        nibView.frame = CGRectMake(0, 0, tableView.frame.size.width, 50);
+        nibView.frame = CGRectMake(0, 0, tableView.frame.size.width, 170);
         
     }
     [nibView loadData:_guia];
@@ -67,7 +67,7 @@
 }
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if(!_guia.urlAudioGuia){
-        return 150;
+        return 170;
     }
     return 200;
 }

@@ -21,6 +21,8 @@
 @property (nonatomic, strong) NSArray * listImagenesDetalle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constrainHeightSaberMas;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
 @property (weak, nonatomic) IBOutlet UIImageView *imagenSaberMas;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
@@ -44,19 +46,19 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
-        _contraintLabelTopHeight.constant = 0;
+        _contraintLabelTopHeight.constant = -5;
         _labelTitle.hidden = YES;
     }else{
-        _contraintLabelTopHeight.constant = 10;
+        _contraintLabelTopHeight.constant = 5;
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
     if(!guiaDetalle.descripcion){
         _labelDescripcion.hidden = YES;
-        _constraintTopHeight.constant = 0;
+        _constraintTopHeight.constant = -5;
     }else{
         _labelDescripcion.hidden = NO;
-        _constraintTopHeight.constant = 10;
+        _constraintTopHeight.constant = 5;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     if(!guiaDetalle.listOfGuiaDetalleImagen || guiaDetalle.listOfGuiaDetalleImagen.count == 0){
@@ -66,7 +68,7 @@
         _imageGuia.hidden = NO;
         _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
         _imageGuia.userInteractionEnabled = YES;
-        _constraintTopImagen.constant = 10;
+        _constraintTopImagen.constant = 5;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
         _imageGuia.image = [UIImage imageWithContentsOfFile:path ];
@@ -77,6 +79,7 @@
         
     }
     if(guiaDetalle.saberMasList != nil){
+        _constrainHeightSaberMas.constant = 20.5;
         _labelSaberMas.hidden = NO;
         _imagenSaberMas.hidden = NO;
         _labelSaberMas.text = NSLocalizedString(@"text_saber_mas", nil);
@@ -86,6 +89,7 @@
         tapSaberMasGesture.numberOfTapsRequired = 1;
         [_labelSaberMas addGestureRecognizer:tapSaberMasGesture];
     }else{
+        _constrainHeightSaberMas.constant = -5;
         _labelSaberMas.hidden = YES;
         _imagenSaberMas.hidden = YES;
     }

@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopDescripcion;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopTitle;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constrainsHeightSaberMas;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMAs;
 @property (weak, nonatomic) IBOutlet UIImageView *imageSaberMas;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
@@ -39,19 +41,18 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
-        _constraintTopTitle.constant = 0;
+        _constraintTopTitle.constant = -5;
         _labelTitle.hidden = YES;
     }else{
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
-        _constraintTopTitle.constant = 10;
+        _constraintTopTitle.constant = 5;
         _labelTitle.hidden = NO;
-
     }
     if(!guiaDetalle.descripcion){
-        _constraintTopDescripcion.constant = 0;
+        _constraintTopDescripcion.constant = -5;
         _labelDescripcion.hidden = YES;
     }else{
-        _constraintTopDescripcion.constant = 10;
+        _constraintTopDescripcion.constant = 5;
         _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
@@ -59,12 +60,13 @@
         _labelSaberMAs.hidden = NO;
         _imageSaberMas.hidden = NO;
         _labelSaberMAs.text = NSLocalizedString(@"text_saber_mas", nil);
-        
+        _constrainsHeightSaberMas.constant = 20.5;
         
         UITapGestureRecognizer * tapSaberMasGesture = [[UITapGestureRecognizer alloc] initWithTarget:self  action:@selector(openSaberMas:)];
         tapSaberMasGesture.numberOfTapsRequired = 1;
         [_labelSaberMAs addGestureRecognizer:tapSaberMasGesture];
     }else{
+        _constrainsHeightSaberMas.constant = -5;
         _labelSaberMAs.hidden = YES;
         _imageSaberMas.hidden = YES;
     }

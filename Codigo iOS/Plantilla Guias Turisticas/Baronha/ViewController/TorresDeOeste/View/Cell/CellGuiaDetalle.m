@@ -23,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constrainHeightSaberMas;
+
 
 
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
@@ -43,19 +45,19 @@
 
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
-        _contraintLabelTopHeight.constant = 0;
+        _contraintLabelTopHeight.constant = -5;
         _labelTitle.hidden = YES;
     }else{
-        _contraintLabelTopHeight.constant = 10;
+        _contraintLabelTopHeight.constant = 5;
         _labelTitle.hidden = NO;
         _labelTitle.text = guiaDetalle.titulo;
     }
     if(!guiaDetalle.descripcion){
-        _constraintTopHeight.constant = 0;
+        _constraintTopHeight.constant = -5;
         _labelDescripcion.hidden = YES;
 
     }else{
-        _constraintTopHeight.constant = 10;
+        _constraintTopHeight.constant = 5;
         _labelDescripcion.hidden = NO;
 
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
@@ -69,7 +71,7 @@
         
         _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
         _imageGuia.userInteractionEnabled = YES;
-		_constraintTopImagen.constant = 10;
+		_constraintTopImagen.constant = 5;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
         _imageGuia.image = [UIImage imageWithContentsOfFile:path ];

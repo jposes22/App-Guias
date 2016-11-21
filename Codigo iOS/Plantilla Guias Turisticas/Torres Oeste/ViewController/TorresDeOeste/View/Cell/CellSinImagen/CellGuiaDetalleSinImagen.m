@@ -47,7 +47,7 @@
         _labelTitle.hidden = NO;
         _labelTitle.textColor = [UIColor redColor];
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
-        _constraintTopTitle.constant = 10;
+        _constraintTopTitle.constant = 5;
 
     }
     if(!guiaDetalle.descripcion){
@@ -56,7 +56,7 @@
         _labelDescripcion.textColor = [UIColor greenColor];
     }else{
         _labelDescripcion.hidden = NO;
-        _constraintTopDescripcion.constant = 10;
+        _constraintTopDescripcion.constant = 5;
         _labelDescripcion.textColor = [UIColor purpleColor];
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }

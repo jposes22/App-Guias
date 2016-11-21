@@ -103,6 +103,8 @@
     [[NSUserDefaults standardUserDefaults] setObject:self.lastUpdateGuiaDetalleSaberMasImagen forKey:SETTINGS_kDATE_LAST_UPDATE_GUIA_SABER_MAS_DETALLE_IMAGEN];
     
     [[NSUserDefaults standardUserDefaults] setObject:self.idioma forKey:SETTINGS_IDIOMA];
+    
+    [[NSUserDefaults standardUserDefaults] synchronize];
 
 
 

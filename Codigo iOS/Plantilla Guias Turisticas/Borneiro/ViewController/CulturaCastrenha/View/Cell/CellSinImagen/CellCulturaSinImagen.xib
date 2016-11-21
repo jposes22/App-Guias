@@ -12,11 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellCulturaSinImagen" rowHeight="68" id="KGk-i7-Jjw" customClass="CellCulturaSinImagen">
-            <rect key="frame" x="0.0" y="0.0" width="367" height="68"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellCulturaSinImagen" rowHeight="57" id="KGk-i7-Jjw" customClass="CellCulturaSinImagen">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="57"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="367" height="67.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="367" height="56"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg1-pU-rHO">
@@ -31,11 +31,14 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_saber_mas_cutura" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-Kn-jf6">
-                        <rect key="frame" x="8" y="23" width="343" height="31.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="btn_saber_mas_cutura" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-Kn-jf6">
+                        <rect key="frame" x="8" y="24" width="343" height="20.5"/>
                     </imageView>
-                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-E9-ZDr">
-                        <rect key="frame" x="53" y="23" width="291" height="31.5"/>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaW-E9-ZDr">
+                        <rect key="frame" x="53" y="24" width="291" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="he9-TR-oOs"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -60,6 +63,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="constrainHeightSaberMas" destination="he9-TR-oOs" id="8Kg-SI-23g"/>
                 <outlet property="constraintTopDescripcion" destination="xmG-54-odI" id="fBR-nU-OHi"/>
                 <outlet property="constraintTopTitle" destination="Qkh-GQ-b3d" id="dZg-kH-Lxa"/>
                 <outlet property="imageSaberMas" destination="PdT-Kn-jf6" id="Pq4-IE-UNf"/>
@@ -67,7 +71,7 @@
                 <outlet property="labelSaberMas" destination="EaW-E9-ZDr" id="GHy-FO-99g"/>
                 <outlet property="labelTitle" destination="qg1-pU-rHO" id="QMb-SS-w77"/>
             </connections>
-            <point key="canvasLocation" x="57.5" y="66"/>
+            <point key="canvasLocation" x="57.5" y="60.5"/>
         </tableViewCell>
     </objects>
     <resources>

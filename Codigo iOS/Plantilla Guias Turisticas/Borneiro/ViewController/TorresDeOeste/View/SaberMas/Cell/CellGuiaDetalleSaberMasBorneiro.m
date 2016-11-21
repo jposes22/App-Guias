@@ -38,18 +38,18 @@
 - (void)loadData:(GuiaSaberMasDetalleList *)guiaDetalle{
     
     if(!guiaDetalle.titulo){
-        _constraintTopLabel.constant = 0;
+        _constraintTopLabel.constant = -5;
         _labelTitle.hidden = YES;
     }else{
-        _constraintTopLabel.constant = 10;
+        _constraintTopLabel.constant = 5;
         _labelTitle.attributedText = [Metodos convertHTMLToString: guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
     if(!guiaDetalle.descripcion){
         _labelDescripcion.hidden = YES;
-        _constraintTopSublabel.constant = 0;
+        _constraintTopSublabel.constant = -5;
     }else{
-        _constraintTopSublabel.constant = 10;
+        _constraintTopSublabel.constant = 5;
         _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
@@ -60,7 +60,7 @@
         _imageGuia.hidden = NO;
         _listImagenesDetalle =  guiaDetalle.listOfGuiaSaberMasDetalleImagen;
         _imageGuia.userInteractionEnabled = YES;
-        _constraintTopImagen.constant = 10;
+        _constraintTopImagen.constant = 5;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         path = [path stringByAppendingString:((GuiaSaberMasDetalleImagen *)[guiaDetalle.listOfGuiaSaberMasDetalleImagen firstObject]).urlImagen];
         _imageGuia.image = [UIImage imageWithContentsOfFile:path ];

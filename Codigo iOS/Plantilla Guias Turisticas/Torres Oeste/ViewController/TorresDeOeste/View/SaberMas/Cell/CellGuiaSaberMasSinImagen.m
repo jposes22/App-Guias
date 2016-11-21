@@ -32,25 +32,23 @@
 }
 - (void)loadData:(GuiaSaberMasDetalleList *)guiaDetalle{
     if(!guiaDetalle.titulo){
-        _constraintTopTitle.constant = 0;
+        _constraintTopTitle.constant = -5;
         _labelTitle.hidden = YES;
     }else{
         _labelTitle.hidden = NO;
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
-        _constraintTopTitle.constant = 10;
+        _constraintTopTitle.constant = 5;
         
     }
     if(!guiaDetalle.descripcion){
         _labelDescripcion.hidden = YES;
-        _constraintTopDescripcion.constant = 0;
+        _constraintTopDescripcion.constant = -5;
     }else{
         _labelDescripcion.hidden = NO;
-        _constraintTopDescripcion.constant = 10;
+        _constraintTopDescripcion.constant = 5;
         
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
-    
-    
 }
 
 @end

@@ -51,7 +51,7 @@
         _contraintLabelTopHeight.constant = -5;
         _labelTitle.hidden = YES;
     }else{
-        _contraintLabelTopHeight.constant = 10;
+        _contraintLabelTopHeight.constant = 5;
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _labelTitle.hidden = NO;
     }
@@ -59,7 +59,7 @@
         _constraintTopHeight.constant = -5;
         _labelDescripcion.hidden = YES;
     }else{
-        _constraintTopHeight.constant = 10;
+        _constraintTopHeight.constant = 5;
         _labelDescripcion.hidden = NO;
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
@@ -71,7 +71,7 @@
         _listImagenesDetalle =  guiaDetalle.listOfGuiaDetalleImagen;
         _imageGuia.hidden = NO;
         _imageGuia.userInteractionEnabled = YES;
-		_constraintTopImagen.constant = 10;
+		_constraintTopImagen.constant = 5;
         NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
         path = [path stringByAppendingString:((GuiaDetalleImagen *)[guiaDetalle.listOfGuiaDetalleImagen firstObject]).urlImagen];
         _imageGuia.image = [UIImage imageWithContentsOfFile:path ];

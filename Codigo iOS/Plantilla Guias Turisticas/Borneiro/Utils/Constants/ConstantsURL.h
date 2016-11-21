@@ -40,6 +40,8 @@ typedef NS_ENUM(NSInteger, kTipoGuia){
     kTipoGuiaCida           = 1,
     kTipoGuiaComoLlegar     = 2,
     kTipoGuiaCultura        = 3,
+    kTipoGuiaReferencias            = 7,
+    kTipoGuiaCopyright              = 8,
 
     
 };

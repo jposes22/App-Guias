@@ -56,7 +56,7 @@
     //MenuObject * galeriaMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_", nil)iconRow:nil idElementMenu:SideDrawerMenuItemGaleria];
     //MenuObject * informacionMenu = [[MenuObject alloc] initWithTitle:@"Información" iconRow:nil idElementMenu:SideDrawerMenuItemInformacion];
     MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_bibliografía", nil) iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
-    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_creditos", nil) iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
+    MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_copyright", nil) iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
     MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_ajustes", nil)iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
     MenuObject * reconstruccion3D = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_reconstrucion", nil)iconRow:nil idElementMenu:SideDrawerMenuReconstruccion3D];
     MenuObject * creditos = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_creditos", nil)iconRow:nil idElementMenu:SideDrawerMenuCreditos];

@@ -13,6 +13,7 @@
 "menu_reconstrucion" = "RECONSTRUCIÓN 3D";
 "menu_lugares" = "LUGARES DE INTERESE";
 "menu_bibliografía" = "BIBLIOGRAFÍA";
+"menu_copyright" = "COPYRIGHT";
 "menu_ajustes" = "AXUSTES";
 "menu_creditos" = "CRÉDITOS";
 
@@ -30,6 +31,8 @@
 "title_reconstrucion" = "Reconstrución 3D";
 "title_lugares" = "Lugares de interese";
 "title_bibliografía" = "Bibliografía";
+"title_copyright" = "Copyright";
+
 "title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";
 

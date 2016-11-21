@@ -163,13 +163,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Baronha/Utils/Styles/UtilsAppearance.m"
-            timestampString = "501350878.051397"
+            filePath = "Torres Oeste/ViewController/Copyright/CopyrightViewController.m"
+            timestampString = "501450159.626689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "+setStyleNavigationBar:withTitle:"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-loadData"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

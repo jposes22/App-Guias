@@ -32,6 +32,9 @@ typedef NS_ENUM(NSInteger, SideDrawerMenuItem) {
 typedef NS_ENUM(NSInteger, kTipoGuia){
     kTipoGuiaCastroBaronha          = 0,
     kTipoGuiaComoLlegar             = 2,
+    kTipoGuiaReferencias            = 7,
+    kTipoGuiaCopyright              = 8,
+
 };
 
 //TIPOS POI
@@ -40,6 +43,7 @@ typedef NS_ENUM(NSInteger, kTipoPoi){
     kTipoPoiCastroQueiruga          = 1,
     kTipoPoiPraiaCoido              = 2,
     kTipoPoiArealonga               = 3,
+    
 };
 
 @end

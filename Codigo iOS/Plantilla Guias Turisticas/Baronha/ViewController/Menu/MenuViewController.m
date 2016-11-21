@@ -82,6 +82,7 @@
         case SideDrawerMenuItemReferencias:
              sb = [UIStoryboard storyboardWithName:@"Referencias" bundle:nil];
              controllerLoader = [sb instantiateViewControllerWithIdentifier:@"ReferenciasNC"];
+            break;
         case SideDrawerMenuItemCopyright:
             sb = [UIStoryboard storyboardWithName:@"Copyright" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CopyrightNC"];

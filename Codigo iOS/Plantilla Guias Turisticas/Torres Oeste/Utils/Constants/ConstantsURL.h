@@ -39,6 +39,8 @@ typedef NS_ENUM(NSInteger, kTipoGuia){
     kTipoGuiaTorresOeste            = 0,
     kTipoGuiaRomeria                = 1,
     kTipoGuiaComoLlegar             = 2,
+    kTipoGuiaReferencias            = 7,
+    kTipoGuiaCopyright              = 8,
 };
 
 //TIPOS POI

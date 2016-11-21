@@ -9,11 +9,14 @@
 #import "ReferenciasBorneiroViewController.h"
 #import "StyleBorneiro.h"
 #import "UIViewController+MMDrawerController.h"
-
+#import "Metodos.h"
+#import "GuiaDAO.h"
+#import "ConstantsURL.h"
 
 @interface ReferenciasBorneiroViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *labelTitulo;
 @property (weak, nonatomic) IBOutlet UILabel *labelTexto;
+@property (nonatomic,strong) Guia *datosReferencias;
 
 @end
 
@@ -23,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadData];
-    [self loadStyle];
+    [self setNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,15 +34,22 @@
     // Dispose of any resources that can be recreated.
 }
 - (void) loadData{
-    _labelTitulo.text = NSLocalizedString(@"menu_referencias", nil);
-    
+    NSArray *listGUias = [GuiaDAO getGuiasByTipo:kTipoGuiaReferencias];
+    //aquí solo necesitaremos la primera que venga ya que si hay más es un error del que metió los datos
+    if(listGUias.count > 0){
+        _datosReferencias = [listGUias firstObject];
+        _labelTitulo.attributedText = [Metodos convertHTMLToString: _datosReferencias.titulo];
+        _labelTexto.attributedText = [Metodos convertHTMLToString:_datosReferencias.descripcion];
+    }else{
+        _labelTexto.text = @"";
+        _labelTitulo.text = @"";
+    }
 }
 - (IBAction)btnMenuTouch:(id)sender {
      [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
 }
 
-- (void) loadStyle{
-    [StyleBorneiro setStyleTitle:_labelTitulo];
+- (void) setNavigationBar{
     [StyleBorneiro setStyleNavigationBar:self.navigationController.navigationBar withTitle:NSLocalizedString(@"menu_referencias", nil) backgroundColor:[StyleBorneiro getPrimaryDarkColor]];
 
     

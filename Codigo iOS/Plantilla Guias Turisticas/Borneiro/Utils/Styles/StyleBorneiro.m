@@ -8,6 +8,7 @@
 
 #import "StyleBorneiro.h"
 #import <UIKit/UIKit.h>
+#import "Constants.h"
 
 @implementation StyleBorneiro
 
@@ -128,6 +129,11 @@
 + (void)setStyleSubtitleMoreInfo:(UILabel *) label{
     if ( UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ){
         [label setFont:[UIFont fontWithName:@"Giorgio" size:20]];
+
+    }else if(IS_IPHONE_4S){
+        [label setFont:[UIFont fontWithName:@"Giorgio" size:11]];
+    }else if (IS_IPHONE_5){
+        [label setFont:[UIFont fontWithName:@"Giorgio" size:14]];
 
     }else{
         [label setFont:[UIFont fontWithName:@"Giorgio" size:15]];

@@ -5,39 +5,39 @@
  Created by Jose Pose on 29/10/16.
  Copyright © 2016 Evelb. All rights reserved.
  */
-"aux" = "Texto español";
-/*Menu*/
-"menu_home" = "Inicio";
-"menu_como_llegar" = "Cómo llegar";
-"menu_castro" = "Castro de Baroña";
-"menu_reconstrucion" = "Reconstrucción 3D";
-"menu_lugares" = "Lugares próximos";
-"menu_bibliografía" = "Bibliografía";
-"menu_ajustes" = "Ajustes";
-"menu_creditos" = "Créditos";
-/*Home*/
+"menu_home" = "INICIO";
+"menu_como_llegar" = "COMO CHEGAR";
+"menu_castro" = "CASTRO DE BAROÑA";
+"menu_reconstrucion" = "RECONSTRUCIÓN 3D";
+"menu_lugares" = "LUGARES DE INTERESE";
+"menu_bibliografía" = "BIBLIOGRAFÍA";
+"menu_copyright" = "COPYRIGHT";
+"menu_ajustes" = "AXUSTES";
+"menu_creditos" = "CRÉDITOS";
 
+/* Home */
 "title_logo" = "CASTRO DE BAROÑA";
-"sub_title_logo" = "Comienza la visita";
-"btn_como_llegar" = "Cómo llegar";
+"sub_title_logo" = "Comeza a visita";
+"btn_como_llegar" = "Como chegar";
 "btn_como_castro" = "Castro de Baroña";
-"btn_como_lugares" = "Lugares próximos";
+"btn_como_lugares" = "Lugares de interese";
 
 /*Titles Nav*/
 "title_home" = "Inicio";
-"title_como_llegar" = "Cómo Llegar";
+"title_como_llegar" = "Como Chegar";
 "title_castro" = "Castro de Baroña";
-"title_reconstrucion" = "Reconstrucción 3D";
-"title_lugares" = "Lugares próximos";
+"title_reconstrucion" = "Reconstrución 3D";
+"title_lugares" = "Lugares de interese";
 "title_bibliografía" = "Bibliografía";
-"title_ajustes" = "Ajustes";
+"title_copyright" = "Copyright";
+
+"title_ajustes" = "Axustes";
 "title_creditos" = "Créditos";
 
 "subtitle_saber_mas" = "Saber más...";
 "text_saber_mas" = "Saber más  ";
 
 "text_audio_guia" = "Audioguia";
-
 /* POIS 4 elements*/
 "pois_petroglifo" = "Petroglífos del Monte da Gurita";
 "pois_castro_queiruga" = "Castro de Queiruga ";

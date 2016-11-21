@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopDescripcion;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopTitle;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintHeightSaberMas;
+
 @property (weak, nonatomic) IBOutlet UILabel *labelDescripcion;
 @property (weak, nonatomic) IBOutlet UIImageView *imagenSaberMas;
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMAs;
@@ -38,25 +40,29 @@
 - (void)loadData:(GuiaDetalleList *)guiaDetalle{
     _guiaDetalle = guiaDetalle;
     if(!guiaDetalle.titulo){
-        _constraintTopTitle.constant = 0;
+        _constraintTopTitle.constant = -5;
         _labelTitle.hidden = YES;
+         _labelTitle.textColor = [UIColor blackColor];
     }else{
         _labelTitle.hidden = NO;
+        _labelTitle.textColor = [UIColor redColor];
         _labelTitle.attributedText = [Metodos convertHTMLToString:guiaDetalle.titulo];
         _constraintTopTitle.constant = 10;
 
     }
     if(!guiaDetalle.descripcion){
         _labelDescripcion.hidden = YES;
-        _constraintTopDescripcion.constant = 0;
+        _constraintTopDescripcion.constant = -5;
+        _labelDescripcion.textColor = [UIColor greenColor];
     }else{
         _labelDescripcion.hidden = NO;
         _constraintTopDescripcion.constant = 10;
-
+        _labelDescripcion.textColor = [UIColor purpleColor];
         _labelDescripcion.attributedText = [Metodos convertHTMLToString:guiaDetalle.descripcion];
     }
     
     if(guiaDetalle.saberMasList != nil){
+        _constraintHeightSaberMas.constant = 20.5;
         _labelSaberMAs.hidden = NO;
         _labelSaberMAs.text = NSLocalizedString(@"text_saber_mas", nil);
         _imagenSaberMas.hidden = NO;
@@ -68,6 +74,7 @@
     }else{
         _labelSaberMAs.hidden = YES;
         _imagenSaberMas.hidden = YES;
+        _constraintHeightSaberMas.constant = -5;
     }
     
 }

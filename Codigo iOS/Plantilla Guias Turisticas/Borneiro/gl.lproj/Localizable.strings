@@ -58,9 +58,9 @@
 "copyright_texto" = "<div style='text-align: justify;'><span style='font-family: Open Sans; color: rgb(91, 91, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXTO</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span></div>";
 
 /* ERROR FIRST TIME*/
-"error_title_first_time" = "";
-"error_description_first_time" = "";
-"error_button_first_time"="";
+"error_title_first_time" = "Error";
+"error_description_first_time" = "Erro de conexión, revise que dispon de rede";
+"error_button_first_time"="Reintentar";
 
 
 /*Como llegar*/
@@ -79,3 +79,7 @@
 "ajustes_title_error_internet"="Erro de conexión";
 "ajustes_descripcion_error_no_internet"= "Por favor comprobe a súa conexión a internet e volva tentalo";
 "ajustes_ok_language"="Ok";
+
+/* Arranque app*/
+"arranque_title_idioma"="Seleccione un idioma:";
+"arranque_button_select"="Seleccionar";

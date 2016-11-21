@@ -72,3 +72,8 @@
 "ajustes_title_error_internet"="Error de conexión";
 "ajustes_descripcion_error_no_internet"= "Por favor compruebe su conexión a internet y vuelva a intentarlo";
 "ajustes_ok_language"="Ok";
+
+/* Arranque app*/
+"arranque_title_idioma"="Seleccione un idioma:";
+"arranque_button_select"="Seleccionar";
+

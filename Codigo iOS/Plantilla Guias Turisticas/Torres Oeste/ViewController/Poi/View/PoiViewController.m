@@ -97,9 +97,11 @@
     _labelRestauracion.textColor = [UIColor whiteColor];
     _labelTelefonosInteres.textColor = [UIColor whiteColor];
 
-    
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad || IS_IPHONE_6_PLUS ){
+        self.navigationController.navigationBar.tintColor = [UtilsAppearance getPrimaryDarkColor];
+    }else{
+        self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    }
     _labelPetroglifos.text = NSLocalizedString(@"pois_petroglifo", nil);
     _labelMolinos.text = NSLocalizedString(@"pois_molinos", nil);
     _labelRutas.text = NSLocalizedString(@"pois_rutas", nil);

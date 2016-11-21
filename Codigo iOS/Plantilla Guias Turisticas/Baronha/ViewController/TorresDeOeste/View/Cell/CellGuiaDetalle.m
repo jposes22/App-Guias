@@ -23,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contraintLabelTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintTopImagen;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *labelSaberMas;
 @end
 

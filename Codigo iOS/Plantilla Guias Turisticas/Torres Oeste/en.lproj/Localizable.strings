@@ -54,9 +54,9 @@
 
 
 /* ERROR FIRST TIME*/
-"error_title_first_time" = "";
-"error_description_first_time" = "";
-"error_button_first_time"="";
+"error_title_first_time" = "Error";
+"error_description_first_time" = "Please check your internet connection";
+"error_button_first_time"="Retry";
 
 
 /*Como llegar*/
@@ -75,3 +75,9 @@
 "ajustes_title_error_internet"="Connection error";
 "ajustes_descripcion_error_no_internet"= "Please check your internet connection and try again";
 "ajustes_ok_language"="Ok";
+
+
+
+/* Arranque app*/
+"arranque_title_idioma"="Choose language:";
+"arranque_button_select"="Choose";

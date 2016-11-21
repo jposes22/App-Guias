@@ -103,13 +103,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Poi/View/PoiViewController.m"
-            timestampString = "501351929.197275"
+            filePath = "Torres Oeste/ViewController/Poi/Subviews/ListPoi/View/ListPoiViewController.m"
+            timestampString = "501443727.487039"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "101"
-            endingLineNumber = "101"
-            landmarkName = "-loadStyle"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-loadController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -119,13 +119,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Poi/View/PoiViewController.m"
-            timestampString = "501351942.788762"
+            filePath = "Torres Oeste/ViewController/Poi/Subviews/ListPoi/View/ListPoiViewController.m"
+            timestampString = "501443728.22501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-loadStyle"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "-loadController"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

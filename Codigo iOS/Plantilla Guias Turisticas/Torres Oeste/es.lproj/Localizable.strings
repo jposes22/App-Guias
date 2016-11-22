@@ -14,7 +14,7 @@
 "title_como_torres" = "Torres de Oeste";
 "title_como_romeria" = "Romería";
 "title_lugares" = "Lugares de interés";
-"title_como_llegar" = "Como Chegar";
+"title_como_llegar" = "Como llegar";
 "title_bibliografía" = "Referecias bibliográficas";
 "title_copyright" = "Copyright";
 "title_ajustes" = "Ajustes";
@@ -29,9 +29,9 @@
 /*Titles Menu*/
 "menu_home" = "Inicio";
 "menu_como_torres" = "Torres de Oeste";
-"menu_como_romeria" = "Romeraría";
+"menu_como_romeria" = "Romería";
 "menu_lugares" = "Lugares de interés";
-"menu_como_llegar" = "Como Chegar";
+"menu_como_llegar" = "Como llegar";
 "menu_bibliografía" = "Referecias bibliográficas";
 "menu_copyright" = "Copyright";
 "menu_ajustes" = "Ajustes";

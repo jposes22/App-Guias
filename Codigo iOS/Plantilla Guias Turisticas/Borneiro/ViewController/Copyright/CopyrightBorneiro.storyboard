@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,16 +25,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXg-pj-jR5">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="47"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-rL-nbq">
-                                                <rect key="frame" x="10" y="15" width="355" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-rL-nbq">
+                                                <rect key="frame" x="10" y="5" width="355" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-co-HLd">
-                                                <rect key="frame" x="10" y="51" width="355" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtS-co-HLd">
+                                                <rect key="frame" x="10" y="26" width="355" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -42,10 +42,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="qtS-co-HLd" secondAttribute="bottom" constant="20" id="7sX-MF-Nhw"/>
+                                            <constraint firstAttribute="bottom" secondItem="qtS-co-HLd" secondAttribute="bottom" id="7sX-MF-Nhw"/>
                                             <constraint firstItem="qtS-co-HLd" firstAttribute="leading" secondItem="RXg-pj-jR5" secondAttribute="leading" constant="10" id="MfX-wi-2CM"/>
-                                            <constraint firstItem="qtS-co-HLd" firstAttribute="top" secondItem="b6m-rL-nbq" secondAttribute="bottom" constant="15" id="anN-3X-GUD"/>
-                                            <constraint firstItem="b6m-rL-nbq" firstAttribute="top" secondItem="RXg-pj-jR5" secondAttribute="top" constant="15" id="dcR-eB-cTq"/>
+                                            <constraint firstItem="qtS-co-HLd" firstAttribute="top" secondItem="b6m-rL-nbq" secondAttribute="bottom" id="anN-3X-GUD"/>
+                                            <constraint firstItem="b6m-rL-nbq" firstAttribute="top" secondItem="RXg-pj-jR5" secondAttribute="top" constant="5" id="dcR-eB-cTq"/>
                                             <constraint firstAttribute="trailing" secondItem="b6m-rL-nbq" secondAttribute="trailing" constant="10" id="kdR-ly-djb"/>
                                             <constraint firstAttribute="trailing" secondItem="qtS-co-HLd" secondAttribute="trailing" constant="10" id="y3d-UQ-P3w"/>
                                             <constraint firstItem="b6m-rL-nbq" firstAttribute="leading" secondItem="RXg-pj-jR5" secondAttribute="leading" constant="10" id="zc0-T4-5oc"/>
@@ -91,7 +91,7 @@
             <objects>
                 <navigationController storyboardIdentifier="CopyrightBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" id="S4a-D0-TgK" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ON5-sP-lv4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ON5-sP-lv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

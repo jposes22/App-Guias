@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
 @property (nonatomic,strong) Guia *datosCopyright;
 
-
 @end
 
 @implementation CopyrightViewController

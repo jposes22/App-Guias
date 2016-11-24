@@ -454,6 +454,7 @@
     }
     
     [[Settings sharedInstance] resetSettings];
+    
     [self resetDownloadVar];
     _downloadWithoutErrorParametos=1;
     _downloadWithoutErrorIdioma =1;

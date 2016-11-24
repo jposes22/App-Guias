@@ -5,17 +5,20 @@
  Created by Jose Pose on 29/10/16.
  Copyright © 2016 Evelb. All rights reserved.
  */
-"menu_home" = "INICIO";
-"menu_como_llegar" = "COMO CHEGAR";
-"menu_castro" = "CASTRO DE BAROÑA";
-"menu_reconstrucion" = "RECONSTRUCIÓN 3D";
-"menu_lugares" = "LUGARES DE INTERESE";
-"menu_bibliografía" = "BIBLIOGRAFÍA";
-"menu_copyright" = "COPYRIGHT";
-"menu_ajustes" = "AXUSTES";
-"menu_creditos" = "CRÉDITOS";
 
-/* Home */
+/*Menu*/
+"menu_home" = "Inicio";
+"menu_como_llegar" = "Como chegar";
+"menu_castro" = "Castro de Baroña";
+"menu_reconstrucion" = "Reconstrucción 3D";
+"menu_lugares" = "Lugares de interese";
+"menu_bibliografía" = "Bibliografía";
+"menu_ajustes" = "Axustes";
+"menu_copyright" = "Copyright";
+"menu_creditos" = "Créditos";
+
+/*Home*/
+
 "title_logo" = "CASTRO DE BAROÑA";
 "sub_title_logo" = "Comeza a visita";
 "btn_como_llegar" = "Como chegar";
@@ -29,25 +32,20 @@
 "title_reconstrucion" = "Reconstrución 3D";
 "title_lugares" = "Lugares de interese";
 "title_bibliografía" = "Bibliografía";
-"title_copyright" = "Copyright";
-
 "title_ajustes" = "Axustes";
+"title_copyright" = "Copyright";
 "title_creditos" = "Créditos";
 
-"subtitle_saber_mas" = "Saber más...";
-"text_saber_mas" = "Saber más  ";
+"subtitle_saber_mas" = "Saber máis...";
+"text_saber_mas" = "Saber máis  ";
 
-"text_audio_guia" = "Audioguia";
+"text_audio_guia" = "Audioguía";
+
 /* POIS 4 elements*/
-"pois_petroglifo" = "Petroglífos do Monte da Gurita";
+"pois_petroglifo" = "Petroglífos";
 "pois_castro_queiruga" = "Castro de Queiruga ";
-"pois_praia_coido" = "Praia coido";
+"pois_praia_coido" = "Praia do Coido";
 "pois_arealonga" = "Praia de Arealonga";
-
-//Copyright
-
-"copyright_titulo" = "Copyright";
-"copyright_texto" = "<span style='font-family: Open Sans; display:block; text-align:center; color: rgb(255, 255, 95); font-size: 15px;'><span style='font-weight: bold;'>TEXTO fasdf asdf asdf asdf asdf asdf adsf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asdf asd fadsf asdf asdf asdf asdf asdf asdf asd fasdf asdf asdf asdf asdf</span><br>Ángel Concheiro Coello<br><br><span style='font-weight: bold;'>FOTOGRAFÍAS</span><br>Luis Francisco López Álvarez<br>Marcial rodríguez Rodríguez<br>Ángel Concheiro Coello<br><br></span>";
 
 
 /* ERROR FIRST TIME*/

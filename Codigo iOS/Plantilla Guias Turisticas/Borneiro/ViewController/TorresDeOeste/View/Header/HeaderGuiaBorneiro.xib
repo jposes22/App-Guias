@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -22,14 +22,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_audioguia_off" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-Po-i2A">
-                    <rect key="frame" x="10" y="42" width="100" height="44"/>
+                    <rect key="frame" x="10" y="42" width="125" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="UlD-sN-CDm"/>
-                        <constraint firstAttribute="width" constant="100" id="Wzo-Oh-Pda"/>
+                        <constraint firstAttribute="width" constant="125" id="baR-DQ-iJU">
+                            <variation key="heightClass=regular-widthClass=regular" constant="155"/>
+                        </constraint>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJL-zL-AdG">
-                    <rect key="frame" x="63" y="42" width="42" height="44"/>
+                    <rect key="frame" x="45" y="42" width="42" height="44"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -39,10 +41,12 @@
             <constraints>
                 <constraint firstItem="L2Q-Po-i2A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="CWG-hX-B7U"/>
                 <constraint firstItem="L2Q-Po-i2A" firstAttribute="top" secondItem="pTf-st-UHR" secondAttribute="bottom" constant="10" id="Cw3-er-96K"/>
+                <constraint firstItem="IJL-zL-AdG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="D2O-a5-Ega">
+                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                </constraint>
                 <constraint firstItem="pTf-st-UHR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="FTW-F3-tEO"/>
                 <constraint firstItem="pTf-st-UHR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="SGE-0D-PJ7"/>
                 <constraint firstAttribute="trailing" secondItem="pTf-st-UHR" secondAttribute="trailing" constant="10" id="Z7z-fT-CvT"/>
-                <constraint firstItem="IJL-zL-AdG" firstAttribute="trailing" secondItem="L2Q-Po-i2A" secondAttribute="trailing" constant="-5" id="aRL-Ua-sVW"/>
                 <constraint firstItem="IJL-zL-AdG" firstAttribute="bottom" secondItem="L2Q-Po-i2A" secondAttribute="bottom" id="cKN-Wp-8Hj"/>
                 <constraint firstItem="IJL-zL-AdG" firstAttribute="top" secondItem="L2Q-Po-i2A" secondAttribute="top" id="tOH-sH-y5l"/>
             </constraints>

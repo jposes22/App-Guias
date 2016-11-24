@@ -66,8 +66,8 @@
         tapSaberMasGesture.numberOfTapsRequired = 1;
         [_labelSaberMAs addGestureRecognizer:tapSaberMasGesture];
     }else{
-        _constrainsHeightSaberMas.constant = -5;
-        _labelSaberMAs.hidden = YES;
+        _constrainsHeightSaberMas.constant = 0;
+       // _labelSaberMAs.hidden = YES;
         _imageSaberMas.hidden = YES;
     }
 

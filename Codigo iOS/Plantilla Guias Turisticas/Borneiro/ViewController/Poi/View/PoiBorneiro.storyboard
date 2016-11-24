@@ -14,7 +14,7 @@
         <scene sceneID="c9U-Lq-iTH">
             <objects>
                 <navigationController storyboardIdentifier="PoiBorneiroNC" id="Rbw-iV-eNf" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ryD-g5-qHn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ryD-g5-qHn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20D-2E-EgC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="542"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lugar_interes" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-49-Ide">
                                                 <rect key="frame" x="138" y="10" width="100" height="100"/>
@@ -151,8 +151,33 @@
                                                     <constraint firstItem="Jf1-ua-oRv" firstAttribute="top" secondItem="b3X-AU-RYd" secondAttribute="top" id="y9j-C8-tuh"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RNh-yg-aok">
+                                                <rect key="frame" x="10" y="334" width="179.5" height="101"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia festas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Vg-nK-Sk0">
+                                                        <rect key="frame" x="10" y="72.5" width="169.5" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_festas" translatesAutoresizingMaskIntoConstraints="NO" id="uB3-6J-caP">
+                                                        <rect key="frame" x="0.0" y="0.5" width="179.5" height="64"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="2Vg-nK-Sk0" firstAttribute="leading" secondItem="RNh-yg-aok" secondAttribute="leading" constant="10" id="Gdg-wF-gXd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="2Vg-nK-Sk0" secondAttribute="trailing" id="JGu-df-pGD"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2Vg-nK-Sk0" secondAttribute="bottom" constant="8" id="O4c-Wh-oOU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uB3-6J-caP" secondAttribute="bottom" constant="37" id="UJw-tt-upc"/>
+                                                    <constraint firstAttribute="width" secondItem="RNh-yg-aok" secondAttribute="height" multiplier="16:9" id="m6T-Vt-QHk"/>
+                                                    <constraint firstItem="uB3-6J-caP" firstAttribute="leading" secondItem="RNh-yg-aok" secondAttribute="leading" id="oyx-Sv-Ebw"/>
+                                                    <constraint firstItem="uB3-6J-caP" firstAttribute="top" secondItem="RNh-yg-aok" secondAttribute="top" id="w2N-DH-VuZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uB3-6J-caP" secondAttribute="trailing" id="yX0-SG-0Ik"/>
+                                                </constraints>
+                                            </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R6-4g-ptf">
-                                                <rect key="frame" x="10" y="334" width="172.5" height="97"/>
+                                                <rect key="frame" x="10" y="445" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU7-Y2-uSe">
                                                         <rect key="frame" x="10" y="68" width="162.5" height="21"/>
@@ -210,20 +235,23 @@
                                             <constraint firstItem="b3X-AU-RYd" firstAttribute="trailing" secondItem="RnG-do-NKa" secondAttribute="trailing" id="AgB-4A-ofa"/>
                                             <constraint firstItem="bwW-yh-BoU" firstAttribute="trailing" secondItem="b3X-AU-RYd" secondAttribute="trailing" id="Be9-hZ-6Tl"/>
                                             <constraint firstItem="2R6-4g-ptf" firstAttribute="leading" secondItem="GCb-9F-eye" secondAttribute="leading" id="Ekm-KX-FoN"/>
+                                            <constraint firstItem="bwW-yh-BoU" firstAttribute="leading" secondItem="RNh-yg-aok" secondAttribute="trailing" constant="3" id="G45-Nu-Tph"/>
                                             <constraint firstItem="bwW-yh-BoU" firstAttribute="leading" secondItem="2R6-4g-ptf" secondAttribute="trailing" constant="10" id="IXH-j1-uaE"/>
                                             <constraint firstItem="HLQ-7c-dHi" firstAttribute="leading" secondItem="20D-2E-EgC" secondAttribute="leading" constant="10" id="MsN-26-Vqm"/>
                                             <constraint firstItem="bwW-yh-BoU" firstAttribute="top" secondItem="b3X-AU-RYd" secondAttribute="bottom" constant="10" id="O6W-uP-Aoe"/>
+                                            <constraint firstItem="RNh-yg-aok" firstAttribute="top" secondItem="GCb-9F-eye" secondAttribute="bottom" constant="10" id="OZ8-RD-EuX"/>
                                             <constraint firstItem="HLQ-7c-dHi" firstAttribute="top" secondItem="eVh-49-Ide" secondAttribute="bottom" constant="10" id="Pv9-IU-WwS"/>
                                             <constraint firstItem="GCb-9F-eye" firstAttribute="top" secondItem="HLQ-7c-dHi" secondAttribute="bottom" constant="10" id="QN0-U0-qo7"/>
-                                            <constraint firstItem="2R6-4g-ptf" firstAttribute="top" secondItem="GCb-9F-eye" secondAttribute="bottom" constant="10" id="Rrj-0j-tVR"/>
                                             <constraint firstItem="RnG-do-NKa" firstAttribute="leading" secondItem="HLQ-7c-dHi" secondAttribute="trailing" constant="10" id="VUx-h6-Bh1"/>
                                             <constraint firstItem="RnG-do-NKa" firstAttribute="width" secondItem="HLQ-7c-dHi" secondAttribute="width" id="XTc-lk-7XC"/>
                                             <constraint firstAttribute="trailing" secondItem="RnG-do-NKa" secondAttribute="trailing" constant="10" id="XgM-4E-Rjx"/>
                                             <constraint firstItem="b3X-AU-RYd" firstAttribute="leading" secondItem="GCb-9F-eye" secondAttribute="trailing" constant="10" id="adw-uS-SmQ"/>
                                             <constraint firstItem="GCb-9F-eye" firstAttribute="leading" secondItem="HLQ-7c-dHi" secondAttribute="leading" id="bMx-lV-fGY"/>
+                                            <constraint firstAttribute="bottom" secondItem="2R6-4g-ptf" secondAttribute="bottom" id="cF2-vr-DAN"/>
                                             <constraint firstItem="b3X-AU-RYd" firstAttribute="top" secondItem="RnG-do-NKa" secondAttribute="bottom" constant="10" id="eEd-YH-zFT"/>
                                             <constraint firstItem="RnG-do-NKa" firstAttribute="top" secondItem="HLQ-7c-dHi" secondAttribute="top" id="ghS-Ud-DBa"/>
-                                            <constraint firstAttribute="bottom" secondItem="bwW-yh-BoU" secondAttribute="bottom" constant="10" id="suc-zT-iVi"/>
+                                            <constraint firstItem="2R6-4g-ptf" firstAttribute="top" secondItem="RNh-yg-aok" secondAttribute="bottom" constant="10" id="hFs-we-4k4"/>
+                                            <constraint firstItem="RNh-yg-aok" firstAttribute="leading" secondItem="20D-2E-EgC" secondAttribute="leading" constant="10" id="u4M-fx-6ZX"/>
                                             <constraint firstItem="b3X-AU-RYd" firstAttribute="width" secondItem="GCb-9F-eye" secondAttribute="width" id="zoX-uO-dNU"/>
                                         </constraints>
                                     </view>
@@ -255,12 +283,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="labelDirectorio" destination="rU7-Y2-uSe" id="HaI-bF-yT0"/>
+                        <outlet property="labelFesta" destination="2Vg-nK-Sk0" id="pTx-ga-j29"/>
                         <outlet property="labelHosteleria" destination="EQc-vh-Xg4" id="ldV-Bm-oNI"/>
                         <outlet property="labelPlayas" destination="pez-54-QoZ" id="dhR-DG-E4k"/>
                         <outlet property="labelRecursosArqueologicos" destination="IKg-kB-mcV" id="UE4-6V-qxC"/>
                         <outlet property="labelRecursosHistoricos" destination="cXy-8N-fL1" id="Gz6-VQ-0bG"/>
                         <outlet property="labelRutasSenderismo" destination="Qwh-sS-zkz" id="Rjv-D4-CYC"/>
                         <outlet property="viewDirectorio" destination="2R6-4g-ptf" id="tTY-GG-aff"/>
+                        <outlet property="viewFesta" destination="RNh-yg-aok" id="4BK-fn-2BC"/>
                         <outlet property="viewHosteleria" destination="bwW-yh-BoU" id="K2A-xQ-hoa"/>
                         <outlet property="viewPlayas" destination="b3X-AU-RYd" id="Hcv-Tp-f07"/>
                         <outlet property="viewRecursosArqueologico" destination="HLQ-7c-dHi" id="UBE-Bd-rvF"/>
@@ -273,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcP-cl-pzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="161"/>
+            <point key="canvasLocation" x="880.79999999999995" y="160.56971514242881"/>
         </scene>
         <!--List Poi Borneiro View Controller-->
         <scene sceneID="P6V-ba-G9O">
@@ -426,6 +456,7 @@
         <image name="btnMenu_white" width="60" height="60"/>
         <image name="ic_lugar_interes" width="67" height="67"/>
         <image name="image_directorio" width="859" height="206"/>
+        <image name="image_festas" width="859" height="206"/>
         <image name="image_hosteleria" width="859" height="206"/>
         <image name="image_patrimonio_arqueologico" width="859" height="206"/>
         <image name="image_patrimonio_historico" width="859" height="206"/>

@@ -71,22 +71,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Borneiro/ViewController/Poi/View/PoiBorneiroViewController.m"
-            timestampString = "500835772.848515"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "-prepareForSegue:sender:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Borneiro/ViewController/Poi/Subviews/ListPoi/View/CellSinglePoi/PoiBorneiroSinglePoiTableViewCell.m"
             timestampString = "500836692.392656"
             startingColumnNumber = "9223372036854775807"

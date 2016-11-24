@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIView *viewPlayas;
 @property (weak, nonatomic) IBOutlet UIView *viewDirectorio;
 @property (weak, nonatomic) IBOutlet UIView *viewHosteleria;
+@property (weak, nonatomic) IBOutlet UIView *viewFesta;
 
 
 @property (weak, nonatomic) IBOutlet UILabel *labelRecursosArqueologicos;
@@ -32,6 +33,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelPlayas;
 @property (weak, nonatomic) IBOutlet UILabel *labelDirectorio;
 @property (weak, nonatomic) IBOutlet UILabel *labelHosteleria;
+@property (weak, nonatomic) IBOutlet UILabel *labelFesta;
 
 @end
 
@@ -71,6 +73,7 @@
     _labelRutasSenderismo.text = NSLocalizedString(@"poi_rutas_senderismo", nil);
     _labelRecursosHistoricos.text = NSLocalizedString(@"poi_patrimonio_historico", nil);
     _labelRecursosArqueologicos.text = NSLocalizedString(@"poi_patrimonio_arqueologico", nil);
+    _labelFesta.text = NSLocalizedString(@"poi_fiesta",nil);
 
 }
 
@@ -82,6 +85,7 @@
     [StyleBorneiro setStyleSubTitlePoi:_labelHosteleria];
     [StyleBorneiro setStyleSubTitlePoi:_labelDirectorio];
     [StyleBorneiro setStyleSubTitlePoi:_labelPlayas];
+    [StyleBorneiro setStyleSubTitlePoi:_labelFesta];
     
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
@@ -102,6 +106,11 @@
     [self.viewDirectorio addGestureRecognizer:tapDirectorio];
     UITapGestureRecognizer *tapHosteleria = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openHosteleria)];
     [self.viewHosteleria addGestureRecognizer:tapHosteleria];
+    
+    UITapGestureRecognizer *tapFesta = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openFestas)];
+    [self.viewFesta addGestureRecognizer:tapFesta];
+    
+    //kTipoFestas
 }
 
 
@@ -116,6 +125,10 @@
 }
 -(void)openPlayas{
     [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiPlayas)];
+}
+
+-(void) openFestas{
+    [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoFestas)];
 }
 -(void)openHosteleria{
      [self performSegueWithIdentifier:kSEGUE_SHOW_DETAIL sender:@(kTipoPoiHoteleria)];

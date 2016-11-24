@@ -45,12 +45,13 @@
 "btn_home_sitios" = "Sitios de interese";
 
 //POI
-"poi_patrimonio_arqueologico" = "PPatrimonio Arqueolóxico";
+"poi_patrimonio_arqueologico" = "Patrimonio Arqueolóxico";
 "poi_patrimonio_historico" = "Patrimonio histórico-artístico";
 "poi_rutas_senderismo" = "Rutas";
 "poi_playas" = "Praias";
 "poi_directorio" = "Directorio";
 "poi_guia_hosteleria" = "Guía de hostalería";
+"poi_fiesta"="Festas";
 
 //Copyright
 

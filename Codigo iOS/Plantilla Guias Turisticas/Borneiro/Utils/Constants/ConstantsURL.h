@@ -54,6 +54,7 @@ typedef NS_ENUM(NSInteger, kTipoPoi){
     kTipoPoiPlayas                      = 3,
     kTipoPoiDirectorio                  = 4,
     kTipoPoiHoteleria                   = 5,
+    kTipoFestas                         = 6,
 };
 
 @end

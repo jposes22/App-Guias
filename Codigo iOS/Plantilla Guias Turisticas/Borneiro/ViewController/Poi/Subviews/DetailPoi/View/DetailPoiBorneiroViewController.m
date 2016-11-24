@@ -14,7 +14,7 @@
 #import "StyleBorneiro.h"
 #import "PoiImagen+CoreDataProperties.h"
 #import "AlbumViewController.h"
-
+#import "PoiImagenDAO.h"
 
 
 @interface DetailPoiBorneiroViewController ()
@@ -22,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelText;
 @property (weak, nonatomic) IBOutlet UILabel *labelTitle;
 @property (weak, nonatomic) IBOutlet UIImageView *imageViewList;
-
+@property (nonatomic, strong) NSArray *listImages;
 @end
 
 @implementation DetailPoiBorneiroViewController
@@ -61,14 +61,17 @@
         }else{
             [_imageView removeFromSuperview];
         }
-        if(_poi.listImagen && _poi.listImagen.count > 0){
+        
+         _listImages = [PoiImagenDAO getPoiImagenesByidPoi:_poi.idPoi];
+        if(_listImages && _listImages.count > 0){
+            //////
             NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-            path = [path stringByAppendingString:((PoiImagen *)[_poi.listImagen anyObject]).urlImagen];
+            path = [path stringByAppendingString:((PoiImagen *)[_listImages firstObject]).urlImagen];
             _imageViewList.image = [UIImage imageWithContentsOfFile:path ];
             
             UITapGestureRecognizer *tapListImages = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openAlbum)];
-            [_imageViewList addGestureRecognizer:tapListImages];
-            // [_poiSelected.listImagen setByAddingObjectsFromArray:_listImages];
+            [self.imageViewList addGestureRecognizer:tapListImages];
+           
         }else{
             [_imageViewList removeFromSuperview];
         }
@@ -86,7 +89,7 @@
 }
 -(void) openAlbum{
     AlbumViewController *album = [AlbumViewController new];
-    [album setListfOfImage:[_poi.listImagen allObjects]];
+    [album setListfOfImage:_listImages];
     [self presentViewController:album animated:YES completion:nil];
     
 }

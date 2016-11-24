@@ -18,7 +18,7 @@
     return [UIColor colorWithRed:9.0/255.0 green:79.0/255.0 blue:107.0/255.0 alpha:1.0];
 }
 +(UIColor * )getSecondaryColor{
-    return [UIColor colorWithRed:41.0/255.0 green:91.0/255.0 blue:95.0/255.0 alpha:1.0];
+    return [StyleBorneiro getPrimaryColor];
 }
 
 

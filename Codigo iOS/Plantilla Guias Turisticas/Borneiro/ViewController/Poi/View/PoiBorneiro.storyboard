@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20D-2E-EgC">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="538"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_lugar_interes" translatesAutoresizingMaskIntoConstraints="NO" id="eVh-49-Ide">
                                                 <rect key="frame" x="138" y="10" width="100" height="100"/>
@@ -52,13 +52,13 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLQ-7c-dHi">
-                                                <rect key="frame" x="10" y="120" width="172.5" height="129.5"/>
+                                                <rect key="frame" x="10" y="120" width="172.5" height="97"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_patrimonio_arqueologico" translatesAutoresizingMaskIntoConstraints="NO" id="Rve-8W-8YM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrimonio arque" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKg-kB-mcV">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -67,7 +67,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="Rve-8W-8YM" firstAttribute="top" secondItem="HLQ-7c-dHi" secondAttribute="top" id="3ko-2V-QtI"/>
-                                                    <constraint firstAttribute="width" secondItem="HLQ-7c-dHi" secondAttribute="height" multiplier="4:3" id="5uq-G9-c3f"/>
+                                                    <constraint firstAttribute="width" secondItem="HLQ-7c-dHi" secondAttribute="height" multiplier="16:9" id="5uq-G9-c3f"/>
                                                     <constraint firstItem="Rve-8W-8YM" firstAttribute="leading" secondItem="HLQ-7c-dHi" secondAttribute="leading" id="CxZ-lj-bf6"/>
                                                     <constraint firstAttribute="bottom" secondItem="Rve-8W-8YM" secondAttribute="bottom" constant="37" id="Dnr-QU-AXC"/>
                                                     <constraint firstItem="IKg-kB-mcV" firstAttribute="leading" secondItem="HLQ-7c-dHi" secondAttribute="leading" constant="10" id="JyI-Ps-w7C"/>
@@ -77,16 +77,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RnG-do-NKa">
-                                                <rect key="frame" x="192.5" y="120" width="172.5" height="129.5"/>
+                                                <rect key="frame" x="192.5" y="120" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patrimonio historico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXy-8N-fL1">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_patrimonio_historico" translatesAutoresizingMaskIntoConstraints="NO" id="gz7-VD-ZaV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -95,28 +95,28 @@
                                                     <constraint firstAttribute="trailing" secondItem="cXy-8N-fL1" secondAttribute="trailing" id="GqF-aI-rdJ"/>
                                                     <constraint firstItem="cXy-8N-fL1" firstAttribute="leading" secondItem="RnG-do-NKa" secondAttribute="leading" constant="10" id="Km0-An-a5P"/>
                                                     <constraint firstAttribute="bottom" secondItem="gz7-VD-ZaV" secondAttribute="bottom" constant="37" id="MdF-MF-FeB"/>
-                                                    <constraint firstAttribute="width" secondItem="RnG-do-NKa" secondAttribute="height" multiplier="4:3" id="euv-5d-yCT"/>
+                                                    <constraint firstAttribute="width" secondItem="RnG-do-NKa" secondAttribute="height" multiplier="16:9" id="euv-5d-yCT"/>
                                                     <constraint firstAttribute="bottom" secondItem="cXy-8N-fL1" secondAttribute="bottom" constant="8" id="jaz-vy-zpo"/>
                                                     <constraint firstAttribute="trailing" secondItem="gz7-VD-ZaV" secondAttribute="trailing" id="mFX-GX-eQv"/>
                                                     <constraint firstItem="gz7-VD-ZaV" firstAttribute="leading" secondItem="RnG-do-NKa" secondAttribute="leading" id="tuU-oX-zDd"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCb-9F-eye">
-                                                <rect key="frame" x="10" y="259.5" width="172.5" height="129.5"/>
+                                                <rect key="frame" x="10" y="227" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rutas senderismo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwh-sS-zkz">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_rutas" translatesAutoresizingMaskIntoConstraints="NO" id="jio-3i-f1y">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="GCb-9F-eye" secondAttribute="height" multiplier="4:3" id="QbY-yn-uiT"/>
+                                                    <constraint firstAttribute="width" secondItem="GCb-9F-eye" secondAttribute="height" multiplier="16:9" id="QbY-yn-uiT"/>
                                                     <constraint firstAttribute="bottom" secondItem="Qwh-sS-zkz" secondAttribute="bottom" constant="8" id="Rhz-8N-SDd"/>
                                                     <constraint firstAttribute="trailing" secondItem="jio-3i-f1y" secondAttribute="trailing" id="WOf-K5-bmu"/>
                                                     <constraint firstItem="jio-3i-f1y" firstAttribute="top" secondItem="GCb-9F-eye" secondAttribute="top" id="c5Z-kx-dPh"/>
@@ -127,16 +127,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3X-AU-RYd">
-                                                <rect key="frame" x="192.5" y="259.5" width="172.5" height="129.5"/>
+                                                <rect key="frame" x="192.5" y="227" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pez-54-QoZ">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_playas" translatesAutoresizingMaskIntoConstraints="NO" id="Jf1-ua-oRv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,26 +147,26 @@
                                                     <constraint firstAttribute="trailing" secondItem="Jf1-ua-oRv" secondAttribute="trailing" id="JTA-cR-Y65"/>
                                                     <constraint firstAttribute="trailing" secondItem="pez-54-QoZ" secondAttribute="trailing" id="YFp-7E-U8e"/>
                                                     <constraint firstItem="Jf1-ua-oRv" firstAttribute="leading" secondItem="b3X-AU-RYd" secondAttribute="leading" id="dEE-B8-Xi1"/>
-                                                    <constraint firstAttribute="width" secondItem="b3X-AU-RYd" secondAttribute="height" multiplier="4:3" id="vub-zN-Zk3"/>
+                                                    <constraint firstAttribute="width" secondItem="b3X-AU-RYd" secondAttribute="height" multiplier="16:9" id="vub-zN-Zk3"/>
                                                     <constraint firstItem="Jf1-ua-oRv" firstAttribute="top" secondItem="b3X-AU-RYd" secondAttribute="top" id="y9j-C8-tuh"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2R6-4g-ptf">
-                                                <rect key="frame" x="10" y="399" width="172.5" height="129.5"/>
+                                                <rect key="frame" x="10" y="334" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directorio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rU7-Y2-uSe">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_directorio" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-GC-LL3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="92.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="60"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="2R6-4g-ptf" secondAttribute="height" multiplier="4:3" id="GkR-rU-8cZ"/>
+                                                    <constraint firstAttribute="width" secondItem="2R6-4g-ptf" secondAttribute="height" multiplier="16:9" id="GkR-rU-8cZ"/>
                                                     <constraint firstItem="rU7-Y2-uSe" firstAttribute="leading" secondItem="2R6-4g-ptf" secondAttribute="leading" constant="10" id="I90-xZ-bbe"/>
                                                     <constraint firstAttribute="trailing" secondItem="rU7-Y2-uSe" secondAttribute="trailing" id="Pcr-d9-YW4"/>
                                                     <constraint firstItem="qfM-GC-LL3" firstAttribute="top" secondItem="2R6-4g-ptf" secondAttribute="top" id="Tjk-hW-ISV"/>
@@ -177,16 +177,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwW-yh-BoU">
-                                                <rect key="frame" x="192.5" y="399" width="172.5" height="129"/>
+                                                <rect key="frame" x="192.5" y="334" width="172.5" height="97"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guia hosteleria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-vh-Xg4">
-                                                        <rect key="frame" x="10" y="100.5" width="162.5" height="21"/>
+                                                        <rect key="frame" x="10" y="68.5" width="162.5" height="21"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_hosteleria" translatesAutoresizingMaskIntoConstraints="NO" id="ZUC-mm-OiC">
-                                                        <rect key="frame" x="0.0" y="0.5" width="172.5" height="92"/>
+                                                        <rect key="frame" x="0.0" y="0.5" width="172.5" height="60"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,7 +194,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="ZUC-mm-OiC" secondAttribute="trailing" id="5kX-Zp-f0y"/>
                                                     <constraint firstAttribute="bottom" secondItem="EQc-vh-Xg4" secondAttribute="bottom" constant="8" id="Ahx-Ck-NVG"/>
                                                     <constraint firstAttribute="trailing" secondItem="EQc-vh-Xg4" secondAttribute="trailing" id="HDk-Pd-Prp"/>
-                                                    <constraint firstAttribute="width" secondItem="bwW-yh-BoU" secondAttribute="height" multiplier="4:3" id="UCv-gt-cQr"/>
+                                                    <constraint firstAttribute="width" secondItem="bwW-yh-BoU" secondAttribute="height" multiplier="16:9" id="UCv-gt-cQr"/>
                                                     <constraint firstItem="ZUC-mm-OiC" firstAttribute="top" secondItem="bwW-yh-BoU" secondAttribute="top" id="chi-vp-dMV"/>
                                                     <constraint firstItem="ZUC-mm-OiC" firstAttribute="leading" secondItem="bwW-yh-BoU" secondAttribute="leading" id="g6Z-lR-v4i"/>
                                                     <constraint firstItem="EQc-vh-Xg4" firstAttribute="leading" secondItem="bwW-yh-BoU" secondAttribute="leading" constant="10" id="kRX-as-dEC"/>
@@ -433,7 +433,7 @@
         <image name="image_rutas" width="859" height="206"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UHS-k6-gmr"/>
         <segue reference="flk-VO-fbK"/>
+        <segue reference="3vF-lH-utg"/>
     </inferredMetricsTieBreakers>
 </document>

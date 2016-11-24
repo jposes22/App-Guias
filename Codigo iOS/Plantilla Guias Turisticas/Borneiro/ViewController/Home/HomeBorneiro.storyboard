@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,7 @@
                 <navigationController storyboardIdentifier="HomeBorneiroNC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="Sel-OI-lOZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="s2e-h0-n1p">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="s2e-h0-n1p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -53,7 +53,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNS-oT-JIA">
-                                <rect key="frame" x="603" y="-5" width="44" height="44"/>
+                                <rect key="frame" x="603" y="0.0" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="EEn-eU-bpV"/>
                                     <constraint firstAttribute="width" constant="44" id="mvJ-14-DcP"/>
@@ -251,7 +251,7 @@
                             <constraint firstItem="cNL-Mc-Zyw" firstAttribute="leading" secondItem="h8S-4d-Qdq" secondAttribute="trailing" id="ASz-g7-NCI"/>
                             <constraint firstItem="Kwg-FT-9tA" firstAttribute="top" secondItem="AYU-Vy-447" secondAttribute="bottom" id="E6s-0O-BYz"/>
                             <constraint firstItem="AYU-Vy-447" firstAttribute="leading" secondItem="83b-ch-agG" secondAttribute="leading" id="I4v-Y9-GDl"/>
-                            <constraint firstItem="nNS-oT-JIA" firstAttribute="top" secondItem="83b-ch-agG" secondAttribute="topMargin" constant="-5" id="IPg-hM-SQI">
+                            <constraint firstItem="nNS-oT-JIA" firstAttribute="top" secondItem="83b-ch-agG" secondAttribute="topMargin" id="IPg-hM-SQI">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>
                             <constraint firstItem="Kwg-FT-9tA" firstAttribute="top" secondItem="cNL-Mc-Zyw" secondAttribute="bottom" constant="20" id="L92-QW-ZC1"/>

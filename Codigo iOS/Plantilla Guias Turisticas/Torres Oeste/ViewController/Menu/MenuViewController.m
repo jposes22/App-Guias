@@ -11,6 +11,7 @@
 #import "RightViewController.h"
 #import "AjustesViewController.h"
 #import "Constants.h"
+#import "SelfieNavigationController.h"
 
 @interface MenuViewController ()<RightMenuComunication>
 
@@ -95,7 +96,11 @@
             sb = [UIStoryboard storyboardWithName:@"Creditos" bundle:nil];
             controllerLoader = [sb instantiateViewControllerWithIdentifier:@"CreditosNC"];
             break;
-    
+        case SideDrawerMenuSelfie:
+            sb = [UIStoryboard storyboardWithName:@"Selfie" bundle:nil];
+            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"SelfieNC"];
+            break;
+
         case SideDrawerMenuItemAjustes:
             controllerLoader = [[AjustesViewController alloc] initWithNibName:@"AjustesViewController" bundle:nil];
             
@@ -112,10 +117,21 @@
         if(isToogle){
             [self toggleDrawerSide:MMDrawerSideRight animated:YES completion:^(BOOL finished) {
                 [self setCenterViewController:controllerLoader];
+                [self supportedInterfaceOrientations];
             }];
         }
         
     }
+}
+-(BOOL)shouldAutorotate{
+    return NO;
+}
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    if([self.centerViewController isKindOfClass:[SelfieNavigationController class]]){
+        return UIInterfaceOrientationMaskPortrait;
+    }
+    return UIInterfaceOrientationMaskLandscape;
 }
 -(void) changeCenterViewControllerWithMenu:(SideDrawerMenuItem)sideDrawerMenuSelected  {
     [self changeCenterViewController: sideDrawerMenuSelected toogle:YES];

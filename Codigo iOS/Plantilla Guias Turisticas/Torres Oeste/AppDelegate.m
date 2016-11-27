@@ -20,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     UIImage * image = [UIImage imageNamed:@"background_navigation"];
     [[UINavigationBar appearance] setBackgroundImage:image forBarMetrics:UIBarMetricsCompact];
     if(![[Settings sharedInstance] wasStaredAppBefore]){
@@ -29,10 +30,18 @@
         [NSBundle setLanguage:[[Settings sharedInstance] idioma]];
     }
     
+    
 
     return YES;
 }
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    if(_isRotated){
+        return UIInterfaceOrientationMaskPortrait;
+    }else{
+        return UIInterfaceOrientationMaskLandscape;
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

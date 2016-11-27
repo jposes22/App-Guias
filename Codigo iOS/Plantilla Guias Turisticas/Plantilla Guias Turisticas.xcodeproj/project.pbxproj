@@ -75,6 +75,10 @@
 		23A86FB41DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A86FAC1DD8FCFD00DBAA28 /* HeaderSaberMasBorneiro.xib */; };
 		23A86FB51DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FAE1DD8FCFD00DBAA28 /* SaberMasBorneiroViewController.m */; };
 		23A86FB91DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A86FB81DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m */; };
+		827509911DEB5753000277A0 /* SelfieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 827509901DEB5753000277A0 /* SelfieViewController.m */; };
+		827509931DEB5772000277A0 /* Selfie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 827509921DEB5772000277A0 /* Selfie.storyboard */; };
+		827509951DEB5EF4000277A0 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827509941DEB5EF4000277A0 /* AssetsLibrary.framework */; };
+		827509981DEB6C29000277A0 /* SelfieNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 827509971DEB6C29000277A0 /* SelfieNavigationController.m */; };
 		8295EBAB1DC4A4CC0049FB7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAA1DC4A4CC0049FB7D /* main.m */; };
 		8295EBAE1DC4A4CC0049FB7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBAD1DC4A4CC0049FB7D /* AppDelegate.m */; };
 		8295EBB11DC4A4CC0049FB7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8295EBB01DC4A4CC0049FB7D /* ViewController.m */; };
@@ -642,6 +646,12 @@
 		44F1CF3822CA23EAF81D1340 /* Pods-Borneiro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Borneiro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Borneiro/Pods-Borneiro.debug.xcconfig"; sourceTree = "<group>"; };
 		4BA4643B780218C3C6B554CD /* Pods-Borneiro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Borneiro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Borneiro/Pods-Borneiro.release.xcconfig"; sourceTree = "<group>"; };
 		51A0E2A5BB61093C6BDA83BB /* libPods-Borneiro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Borneiro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8275098F1DEB5753000277A0 /* SelfieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieViewController.h; sourceTree = "<group>"; };
+		827509901DEB5753000277A0 /* SelfieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieViewController.m; sourceTree = "<group>"; };
+		827509921DEB5772000277A0 /* Selfie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Selfie.storyboard; sourceTree = "<group>"; };
+		827509941DEB5EF4000277A0 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		827509961DEB6C29000277A0 /* SelfieNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieNavigationController.h; sourceTree = "<group>"; };
+		827509971DEB6C29000277A0 /* SelfieNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieNavigationController.m; sourceTree = "<group>"; };
 		8295EBA61DC4A4CC0049FB7D /* Plantilla Guias Turisticas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plantilla Guias Turisticas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8295EBAA1DC4A4CC0049FB7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8295EBAC1DC4A4CC0049FB7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1064,6 +1074,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				827509951DEB5EF4000277A0 /* AssetsLibrary.framework in Frameworks */,
 				8295EF311DC4B25D0049FB7D /* libPods-Torres Oeste.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1302,6 +1313,26 @@
 				23A86FB81DD8FD0700DBAA28 /* SaberMasBorneiroTableController.m */,
 			);
 			path = SaberMasTableController;
+			sourceTree = "<group>";
+		};
+		8275098D1DEB5738000277A0 /* Selfie */ = {
+			isa = PBXGroup;
+			children = (
+				8275098E1DEB5738000277A0 /* View */,
+			);
+			path = Selfie;
+			sourceTree = "<group>";
+		};
+		8275098E1DEB5738000277A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8275098F1DEB5753000277A0 /* SelfieViewController.h */,
+				827509901DEB5753000277A0 /* SelfieViewController.m */,
+				827509921DEB5772000277A0 /* Selfie.storyboard */,
+				827509961DEB6C29000277A0 /* SelfieNavigationController.h */,
+				827509971DEB6C29000277A0 /* SelfieNavigationController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8295EB9D1DC4A4CC0049FB7D = {
@@ -1956,6 +1987,7 @@
 		8295EE671DC4AF5C0049FB7D /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8275098D1DEB5738000277A0 /* Selfie */,
 				82F16FF91DDB62DE000806E4 /* Ajustes */,
 				82EE77E01DC64CF200C3A344 /* Creditos */,
 				8295EE731DC4B0600049FB7D /* ComoLlegar */,
@@ -3326,6 +3358,7 @@
 		CC8CF9C9ACD984DA48B6C670 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				827509941DEB5EF4000277A0 /* AssetsLibrary.framework */,
 				8295EF321DC4B26C0049FB7D /* libPods-Baronha.a */,
 				8295EF301DC4B25D0049FB7D /* libPods-Torres Oeste.a */,
 				8295EF2E1DC4B2420049FB7D /* libPods-Torres Oeste.a */,
@@ -3506,6 +3539,7 @@
 				8295EEFC1DC4B0600049FB7D /* NavigationBar.xib in Resources */,
 				8295EE691DC4AF5C0049FB7D /* CaviarDreams_Bold.ttf in Resources */,
 				8295EE681DC4AF5C0049FB7D /* CaviarDreams.ttf in Resources */,
+				827509931DEB5772000277A0 /* Selfie.storyboard in Resources */,
 				8295EF091DC4B0600049FB7D /* Poi.storyboard in Resources */,
 				8295F2041DC4F9BE0049FB7D /* Localizable.strings in Resources */,
 				8295EF1A1DC4B0600049FB7D /* CellGuiaCollectionView.xib in Resources */,
@@ -3867,6 +3901,7 @@
 				8295F19C1DC4C9190049FB7D /* ConstantsURL.m in Sources */,
 				8295EFDF1DC4B3AE0049FB7D /* Idioma+CoreDataClass.m in Sources */,
 				8295EF4C1DC4B3160049FB7D /* GuiaDetalleImagenDAO.m in Sources */,
+				827509981DEB6C29000277A0 /* SelfieNavigationController.m in Sources */,
 				8295EC0A1DC4A8650049FB7D /* AppDelegate.m in Sources */,
 				8295EF5E1DC4B3300049FB7D /* ParametrosDAO.m in Sources */,
 				8295EFA61DC4B3970049FB7D /* GuiaDetalle+CoreDataProperties.m in Sources */,
@@ -3936,6 +3971,7 @@
 				8295EFE61DC4B3B50049FB7D /* Menu+CoreDataProperties.m in Sources */,
 				8295EF051DC4B0600049FB7D /* PoiTableController.m in Sources */,
 				8295EFBB1DC4B3A00049FB7D /* GuiaSaberMas+CoreDataClass.m in Sources */,
+				827509911DEB5753000277A0 /* SelfieViewController.m in Sources */,
 				82EE78031DC668AA00C3A344 /* AlbumPagerController.m in Sources */,
 				8295EF841DC4B3690049FB7D /* RemoteImageDetalleVO.m in Sources */,
 				8295EEF81DC4B0600049FB7D /* CopyrightViewController.m in Sources */,

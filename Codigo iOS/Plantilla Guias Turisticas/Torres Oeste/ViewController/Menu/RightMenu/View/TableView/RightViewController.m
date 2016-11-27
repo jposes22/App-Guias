@@ -57,12 +57,13 @@
     MenuObject * informacionMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemInformacion];
     MenuObject * referenciasMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_bibliografía", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemReferencias];
     MenuObject * copyrightMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_copyright", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemCopyright];
+     MenuObject * selfieMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_selfie", nil)  iconRow:nil idElementMenu:SideDrawerMenuSelfie];
     MenuObject * ajustesMenu = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_ajustes", nil)  iconRow:nil idElementMenu:SideDrawerMenuItemAjustes];
     MenuObject * creditos = [[MenuObject alloc] initWithTitle:NSLocalizedString(@"menu_creditos", nil)  iconRow:nil idElementMenu:SideDrawerMenuCreditos];
     
     
     //creamos un dicionario provisional para buscar los elementos que vienen del servidor y enlazarlos si están activos y ponerlos en el menú si coinciden
-    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, romeriaMenu, poiMenu,comoLlegarMenu,galeriaMenu,informacionMenu,referenciasMenu,copyrightMenu,ajustesMenu,creditos] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemGuia),@(SideDrawerMenuItemRomeria),@(SideDrawerMenuItemPoi),@(   SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemGaleria),@(SideDrawerMenuItemInformacion),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes),@(SideDrawerMenuCreditos)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
+    NSDictionary *dictionaryItemsMenu = [[NSDictionary alloc] initWithObjects:@[homeMenu, torresMenu, romeriaMenu, poiMenu,comoLlegarMenu,galeriaMenu,informacionMenu,referenciasMenu,copyrightMenu,ajustesMenu,creditos,selfieMenu] forKeys:@[@(SideDrawerMenuItemHome),@(SideDrawerMenuItemGuia),@(SideDrawerMenuItemRomeria),@(SideDrawerMenuItemPoi),@(   SideDrawerMenuItemComoLlegar),@(SideDrawerMenuItemGaleria),@(SideDrawerMenuItemInformacion),@(SideDrawerMenuItemReferencias),@(SideDrawerMenuItemCopyright),@(SideDrawerMenuItemAjustes),@(SideDrawerMenuCreditos),@(SideDrawerMenuSelfie)]];//:homeMenu, torresMenu, romeriaMenu, poiMenu, comoLlegarMenu, galeriaMenu, informacionMenu, referenciasMenu, copyrightMenu, ajustesMenu,nil];
     NSArray *listItemsMenu = [MenuDAO getMenuItems];
     for (Menu *item in listItemsMenu) {
     

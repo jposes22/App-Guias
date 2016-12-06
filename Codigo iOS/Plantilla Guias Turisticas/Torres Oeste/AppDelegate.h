@@ -18,5 +18,7 @@
 
 - (void)saveContext;
 - (void)deleteAllEntities:(NSString *)nameEntity;
+
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window;
 @end
 

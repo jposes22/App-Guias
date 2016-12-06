@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   /* AppDelegate* blah = (AppDelegate*)[[UIApplication sharedApplication]delegate];
+    blah.isRotated = YES;
+    [blah application:[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:[UIApplication sharedApplication].windows.firstObject];
 
+*/
     // Do any additional setup after loading the view.
 }
 

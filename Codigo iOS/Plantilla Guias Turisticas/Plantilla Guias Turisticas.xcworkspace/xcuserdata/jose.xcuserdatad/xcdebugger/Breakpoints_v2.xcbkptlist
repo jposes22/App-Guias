@@ -6,22 +6,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Menu/MenuViewController.m"
-            timestampString = "501969568.936669"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "-changeCenterViewController:toogle:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -191,13 +175,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Menu/MenuViewController.m"
-            timestampString = "501971188.366288"
+            filePath = "Torres Oeste/ViewController/Selfie/View/SelfieViewController.m"
+            timestampString = "502576881.687343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
-            landmarkName = "-supportedInterfaceOrientations"
+            startingLineNumber = "360"
+            endingLineNumber = "360"
+            landmarkName = "-guardar:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -207,13 +191,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Menu/MenuViewController.m"
-            timestampString = "501971167.98268"
+            filePath = "Torres Oeste/ViewController/Selfie/View/SelfieViewController.m"
+            timestampString = "502576881.687343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "-changeCenterViewController:toogle:"
+            startingLineNumber = "280"
+            endingLineNumber = "280"
+            landmarkName = "-imageFromSampleBuffer:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -223,13 +207,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Torres Oeste/ViewController/Menu/MenuViewController.m"
-            timestampString = "501971169.197636"
+            filePath = "Torres Oeste/ViewController/Selfie/View/SelfieViewController.m"
+            timestampString = "502576881.687343"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "-changeCenterViewController:toogle:"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "-guardar:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Torres Oeste/ViewController/Selfie/View/SelfieViewController.m"
+            timestampString = "502576881.687343"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "342"
+            endingLineNumber = "342"
+            landmarkName = "-guardar:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

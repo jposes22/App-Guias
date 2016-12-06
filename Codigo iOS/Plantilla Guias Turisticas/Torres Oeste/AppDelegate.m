@@ -10,7 +10,8 @@
 #import "NSBundle.h"
 #import "Settings.h"
 #import "CoreDataUtil.h"
-
+#import "SelfieNavigationController.h"
+#import "SelfieViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -36,7 +37,8 @@
 }
 
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
-    if(_isRotated){
+    
+    if ([self.window.rootViewController.presentedViewController.presentedViewController isKindOfClass:[SelfieNavigationController class]]){
         return UIInterfaceOrientationMaskPortrait;
     }else{
         return UIInterfaceOrientationMaskLandscape;

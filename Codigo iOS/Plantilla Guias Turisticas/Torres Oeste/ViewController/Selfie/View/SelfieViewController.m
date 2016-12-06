@@ -9,6 +9,8 @@
 #import "SelfieViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "Constants.h"
+#import "UtilsAppearance.h"
 
 
 @interface SelfieViewController ()<AVSpeechSynthesizerDelegate,AVCaptureVideoDataOutputSampleBufferDelegate>
@@ -32,6 +34,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *bthombre ;
 @property (weak, nonatomic) IBOutlet UIButton *btmujer;
 @property (weak, nonatomic) IBOutlet UIImageView *imageoverlay;
+@property (weak, nonatomic) IBOutlet UIButton *btnTouchPhoto;
+@property (weak, nonatomic) IBOutlet UIView *viewPhoto;
 
 
 @property (nonatomic,weak) IBOutlet UIView *mainview;
@@ -51,6 +55,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self cambiartipo:nil];
+    [self.viewPhoto setBackgroundColor:[UtilsAppearance getPrimaryColor]];
     
     // Do any additional setup after loading the view.
 }
@@ -60,6 +66,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) viewWillAppear:(BOOL)animated{
+    [UIView setAnimationsEnabled:NO];
+}
+
+- (IBAction)exitButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 -(void) viewDidAppear:(BOOL)animated{
@@ -317,30 +330,38 @@
     
     
     
-    UIImage *overlayImage  = [UIImage imageNamed:@"hombre_fondo"]; //foverlayImage image
+    UIImage *overlayImage  = [UIImage imageNamed:@"vikingo_fondo.png"]; //foverlayImage image
     
-    if (_tipo == 1) overlayImage  = [UIImage imageNamed:@"mujer_fondo.png"]; //foverlayImage image
+    if (_tipo == 1) overlayImage  = [UIImage imageNamed:@"vikinga_fondo.png"]; //foverlayImage image
     
-    
-    CGSize newSize = image.size;
+    CGSize newSize2 = image.size;
+    CGSize newSize = CGSizeMake(750, 1000);
     UIGraphicsBeginImageContext( newSize );
+    double percent = 1;
     
-    [image drawInRect:CGRectMake(50,-155,newSize.width*0.96,newSize.height*0.96)];
+    if(V_IS_IPHONE_5){
+        percent = -11;
+    }else if(V_IS_IPHONE_4S){
+        percent = -22;
+    }else if(V_IS_IPHONE_6PLUS){
+        percent = +11;
+    }else if(V_IS_IPAD){
+        percent = 20;
+    }
     
+    //[image drawInRect:CGRectMake(50,-155,newSize.width*0.96,newSize.height*0.96)];
+    if(_tipo ==1){
+        [image drawInRect:CGRectMake(160 ,218 + percent,160,220)];
+    }else{
+        [image drawInRect:CGRectMake(322 ,218 + percent ,160,200)];
+    }
     // Apply supplied opacity if applicable
+    
     [overlayImage drawInRect:CGRectMake(0,0,newSize.width,newSize.height) blendMode:kCGBlendModeNormal alpha:1];
     
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
-    
-    
-    
-    
-    
-    
-    
-    
     
     CGImageRef cgim = [newImage CGImage];
     
@@ -356,8 +377,7 @@
                         [group addAsset:asset];
                         *stop = YES;
                         NSLog(@"Añadida imagen");
-                        
-                        
+                      
                     }
                     if (!group){
                         
@@ -368,17 +388,12 @@
                             NSLog(@"Error add asset");
                         }];
                         
-                        
-                        
-                        
                     }
                     
                 } failureBlock:^(NSError *error) {
                     NSLog(@"Error nivel 3");
                 }];
-                
-                
-                
+
             } failureBlock:^(NSError *error) {
                 NSLog(@"%@", error);
             }];
@@ -405,15 +420,15 @@
     
     _tipo = 0;
     
-    [_bthombre setImage:[UIImage imageNamed:@"hombreon.png"] forState:UIControlStateNormal];
-    [_bthombre setImage:[UIImage imageNamed:@"hombreon.png"] forState:UIControlStateHighlighted];
-    [_bthombre setImage:[UIImage imageNamed:@"hombreon.png"] forState:UIControlStateSelected];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_ON.png"] forState:UIControlStateNormal];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_ON.png"] forState:UIControlStateHighlighted];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_ON.png"] forState:UIControlStateSelected];
     
-    [_btmujer setImage:[UIImage imageNamed:@"mujeroff.jpg"] forState:UIControlStateNormal];
-    [_btmujer setImage:[UIImage imageNamed:@"mujeroff.jpg"] forState:UIControlStateHighlighted];
-    [_btmujer setImage:[UIImage imageNamed:@"mujeroff.jpg"] forState:UIControlStateSelected];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_OFF.jpg"] forState:UIControlStateNormal];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_OFF.jpg"] forState:UIControlStateHighlighted];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_OFF.jpg"] forState:UIControlStateSelected];
     
-    [_imageoverlay setImage:[UIImage imageNamed:@"hombre_grande.png"]];
+    [_imageoverlay setImage:[UIImage imageNamed:@"vikingo_grande.png"]];
     
     
     
@@ -423,15 +438,15 @@
     
     _tipo = 1;
     
-    [_bthombre setImage:[UIImage imageNamed:@"hombreoff.jpg"] forState:UIControlStateNormal];
-    [_bthombre setImage:[UIImage imageNamed:@"hombreoff.jpg"] forState:UIControlStateHighlighted];
-    [_bthombre setImage:[UIImage imageNamed:@"hombreoff.jpg"] forState:UIControlStateSelected];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_OFF.png"] forState:UIControlStateNormal];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_OFF.png"] forState:UIControlStateHighlighted];
+    [_bthombre setImage:[UIImage imageNamed:@"vikingo_OFF.png"] forState:UIControlStateSelected];
     
-    [_btmujer setImage:[UIImage imageNamed:@"mujeron.png"] forState:UIControlStateNormal];
-    [_btmujer setImage:[UIImage imageNamed:@"mujeron.png"] forState:UIControlStateHighlighted];
-    [_btmujer setImage:[UIImage imageNamed:@"mujeron.png"] forState:UIControlStateSelected];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_ON.png"] forState:UIControlStateNormal];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_ON.png"] forState:UIControlStateHighlighted];
+    [_btmujer setImage:[UIImage imageNamed:@"vikinga_ON.png"] forState:UIControlStateSelected];
     
-    [_imageoverlay setImage:[UIImage imageNamed:@"mujer_grande.png"]];
+    [_imageoverlay setImage:[UIImage imageNamed:@"vikinga_grande.png"]];
     
 }
 

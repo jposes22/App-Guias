@@ -12,9 +12,10 @@
 #import "AjustesViewController.h"
 #import "Constants.h"
 #import "SelfieNavigationController.h"
+#import "AppDelegate.h"
 
 @interface MenuViewController ()<RightMenuComunication>
-
+@property (nonatomic,weak) AppDelegate * appDelegate;
 @end
 
 @implementation MenuViewController
@@ -26,6 +27,7 @@
     [self setupRightDrawer];
     [self loadGesturesAllowed];
     [self loadNotificationCenter];
+    _appDelegate = [[UIApplication sharedApplication] delegate];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(removeViewController) name:@"CHANGE_LANGUAGE" object:nil];
     
 }
@@ -98,7 +100,8 @@
             break;
         case SideDrawerMenuSelfie:
             sb = [UIStoryboard storyboardWithName:@"Selfie" bundle:nil];
-            controllerLoader = [sb instantiateViewControllerWithIdentifier:@"SelfieNC"];
+            controllerLoader = nil;
+            [self presentViewController:[sb instantiateViewControllerWithIdentifier:@"SelfieNC"] animated:YES completion:nil];
             break;
 
         case SideDrawerMenuItemAjustes:
@@ -116,13 +119,15 @@
         [self setCenterViewController:controllerLoader];
         if(isToogle){
             [self toggleDrawerSide:MMDrawerSideRight animated:YES completion:^(BOOL finished) {
+                
                 [self setCenterViewController:controllerLoader];
-                [self supportedInterfaceOrientations];
+               
             }];
         }
         
     }
 }
+/*
 -(BOOL)shouldAutorotate{
     return NO;
 }
@@ -133,6 +138,7 @@
     }
     return UIInterfaceOrientationMaskLandscape;
 }
+*/
 -(void) changeCenterViewControllerWithMenu:(SideDrawerMenuItem)sideDrawerMenuSelected  {
     [self changeCenterViewController: sideDrawerMenuSelected toogle:YES];
 }
